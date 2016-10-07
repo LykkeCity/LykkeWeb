@@ -1,0 +1,61 @@
+.user_badge {
+  margin-bottom: 25px;
+  @include clearfix;
+
+  &__img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-radius: 100px;
+    margin-right: 20px;
+
+    img {
+      border-radius: 100px;
+      width: 100%;
+    }
+  }
+
+  &__info, &__message {
+    overflow: hidden;
+    padding-top: 6px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: #333333;
+    letter-spacing: 1.79px;
+    line-height: 32px;
+    font-weight: $fw-semi;
+    text-transform: uppercase;
+
+    a {
+      color: inherit;
+
+      &:hover {
+
+      }
+    }
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: #3F4D60;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgba(#3F4D60, .6);
+  }
+
+  &--small {
+    margin-bottom: 0;
+
+    .user_badge__img {
+      width: 30px;
+      height: 30px;
+      margin-right: 17px;
+    }
+
+    .user_badge__info, .user_badge__message {
+      padding-top: 4px;
+    }
+  }
+}

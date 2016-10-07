@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lykke - anyone can trade</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport">-->
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+<header class="header header--new">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-sm-3"><a href="/" class="logo header__logo"><img src="img/lykke_new.svg" height="50" alt=""/></a></div>
+      <div class="col-xs-10 col-sm-9 col-md-6 text-center">
+        <button type="button" class="navbar-toggle collapsed btn btn--stroke pull-right" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <div class="t-simulate">
+            <div class="t-row">
+              <div class="t-cell">
+
+                <ul class="nav nav--header">
+                  <li class="_add_active_exchange">
+                    <a class="dropdown__control" href="https://lykke.com/exchange.php">Exchange</a>
+                    <div class="dropdown__container">
+                      <ul class="dropdown__nav">
+                        <li><a href="https://lykke.com/lykkex_rulebook.php">LykkeX Rulebook</a></li>
+                        <li><a href="https://lykke.com/term_conditions_colored_coins.php">Term of Issuance</a></li>
+                        <li><a href="https://api.lykkex.com/swagger/ui/index#/" target="_blank">LykkeX API</a></li>
+                        <li><a href="https://github.com/LykkeCity/" target="_blank">Github</a></li>
+                        <li><a href="https://lykke.com/colored_coin_exchange_white_paper.php">White Paper</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="dropdown__control" href="https://lykke.com/city/start">City</a>
+                    <div class="dropdown__container">
+                      <ul class="dropdown__nav">
+                        <li><a href="https://lykke.com/city/start?do=register">Check In</a></li>
+                        <li><a href="https://lykke.com/city/yellowpages/registerform">Become a Citizen</a></li>
+                        <li><a href="https://lykke.com/city/about/openposition">Open Positions</a></li>
+                        <li><a href="https://lykke.com/city/openprojects/index">Projects Board</a></li>
+                        <li><a href="https://lykke.com/city/lykketimes">Lykke Times</a></li>
+                        <li><a href="https://lykke.com/city/blog/index">Blog</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="_add_active"><a class="dropdown__control" href="https://www.lykke.com/leadership.php">Corp</a>
+                    <div class="dropdown__container">
+                      <ul class="dropdown__nav">
+                        <li><a href="https://lykke.com/leadership.php">Leadership</a></li>
+                        <li><a href="https://lykke.com/technology.php">Technology </a></li>
+                        <li><a href="https://lykke.com/contacts.php">Contacts</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="dropdown__control" href="https://lykke.com/lykkewallet/">Consulting</a>
+                  </li>
+                </ul>
+                <a href="https://wiki.lykkex.com/start?do=login" class="visible-xs-inline-block visible-sm-inline-block btn">Sign In</a>
+              </div>
+            </div>
+          </div>
+          <ul class="social social--header visible-xs visible-sm">
+            <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon_img icon_img--fb"></i></a></li>
+            <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon_img icon_img--tw"></i></a></li>
+            <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon_img icon_img--inst"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon_img icon_img--yt"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-3 hidden-xs hidden-sm">
+        <a href="https://wiki.lykkex.com/start?do=login" class="btn btn-link pull-right">Sign In</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article class="content page">
+  <nav class="page_nav page__nav">
+    <div class="page_nav__inner">
+      <div class="container">
+        <ul class="page_nav__list">
+          <li class="page_nav__item"><a href="https://lykke.com/city/start?do=register">Check In</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/yellowpages/registerform">Become a Citizen</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/about/openposition">Open Positions</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/openprojects/index">Projects Board</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/lykketimes">Lykke Times</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/blog/index">Blog</a></li>
+          <li class="pull-right hidden-xs hidden-sm"><a type="button" class="btn btn-circle new-project-button" href="/Project/Create">+</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="section section--lead section--padding">
+    <div class="container container--extend">
+      <div class="page__actions">
+        <div class="edit_page_link pull-right"><a href=""><i class="icon icon--edit"></i> Edit</a></div>
+        <div class="back_link"><a href=""><i class="icon icon--back"></i> Back to Projects</a></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 content__left">
+          <h2>High Frequency Trading Risk Management Tools Based on Scaling Law</h2>
+
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="prize">
+                <div class="prize__value">$2000</div>
+                <div class="prize__title">1<sup>st</sup>Prize</div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="prize">
+                <div class="prize__value">$1000</div>
+                <div class="prize__title">3&times;2<sup>nd</sup>Prize</div>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="icon_with_title">
+                <a href="">
+                  <img src="img/competition/wallet_icn.svg" width="55" alt="">
+                  <span>View Project’s Wallet</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="progress progress--green"> <!--green, red, yellow, blue-->
+            <div class="progress__bar" style="width: 95.6%"></div>
+            <div class="progress__content">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="progress__title">Competition registration</div>
+                </div>
+                <div class="col-sm-6 text-right">
+                  <ul class="progress__info">
+                    <li><i class="icon icon--participate"></i> 7 participants</li>
+                    <li><i class="icon icon--deadline"></i> Apr 30</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Info</a></li>
+            <li role="presentation"><a href="#participants" aria-controls="participants" role="tab" data-toggle="tab">Participants <sup>7</sup></a></li>
+            <li role="presentation"><a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">Comments <sup>32</sup></a></li>
+            <li role="presentation"><a href="#results" aria-controls="results" role="tab" data-toggle="tab">Results</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="info">
+             <div class="text">
+               <ul>
+                 <li><div class="li">Scaling-law has been observed in an extraordinary</div></li>
+                 <li><div class="li">Scaling-law has been observed in an extraordinary</div></li>
+                 <li><div class="li">Scaling-law has been observed in an extraordinary</div></li>
+                 <li><div class="li">Scaling-law has been observed in an extraordinary</div></li>
+               </ul>
+               <p>Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance, computer science, and demography to the social sciences. Scaling-law processes yield scaling properties for a broad range of values, sometimes for many orders of magnitude. Using the event-driven paradigm of directional changes and overshoots to analyse Foreign Exchange (FX) markets, Glattfelder, Dupuis, and Olsen (2011) discovered 12 independent scaling laws in high frequency FX data. In finance, where frames of reference and fixed points are hard to come by and often illusory, these new scaling laws provide a reliable framework for developing risk management tools and represent the foundation of a completely new generation of tools for studying high frequency market volatility. The objective of this project is to study the dynamic behaviour of markets and improve the quality of the inferences and predictions we make about the behaviour of prices. Using high frequency FX dataset, we aim to extract patterns from short-term market activity to infer, measure, and predict volatility over longer time horizons.</p>
+               <p>This project is part of the EU commission funded BigDataFinance project (2015–2019) that provides doctoral training and research in sophisticated data-driven risk management and research at the crossroads of Finance and Big Data. The project will be lead by Professor Stefano Battiston of University of Zurich and the research fellow will be actively mentored by Richard Olsen.</p>
+               <p>The project will provide robust risk management tools for the high frequency trading (HFT) community and advance  a theoretical and empirical explanation for the occurrence of scaling law for both canonical models (Brownian Motion, Levy processes etc.) and high frequency FX data. The risk management tool will be extended to a multi-asset case and tested and validated with empirical data (FX rates).</p>
+
+             </div>
+              <div class="asset_link">
+                <div class="asset_link__icon"><a href=""><i class="icon icon--pdf_file"><span class="path1"></span><span class="path2"></span></i></a></div>
+                <div class="asset_link__info">
+                  <div class="asset_link__title"><a href="">Brief and concept.pdf</a></div>
+                  <div class="asset_link__desc">24.8MB</div>
+                  <div class="asset_link__link"><a href="">Download</a></div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="participants">
+              <form action="" class="form form--share_result">
+                <button type="button" class="btn btn-md _show_hidden_form"><i class="icon icon--share_result"></i> Add Your Result</button>
+
+                <div class="hidden_form">
+                  <div class="row">
+                    <div class="col-sm-9"><input class="form-control" type="text" placeholder="Insert link to file sharing (Dropbox, googleDrive, GitHub)"></div>
+                    <div class="col-sm-3"><button type="button" class="btn btn-md"><i class="icon icon--share_result"></i> Send Result</button></div>
+                  </div>
+                </div>
+              </form>
+
+              <div class="table-responsive">
+                <table class="table table--board">
+                  <tr>
+                    <th>Username</th>
+                    <th>Registration date</th>
+                    <th class="text-center">Result</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                        <div class="user_badge__info">Kaylee Harper</div>
+                      </div>
+                    </td>
+                    <td>Apr 25, 2016 06:37</td>
+                    <td class="text-center"><i class="icon icon--result"><span class="path1"></span><span class="path2"></span></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                        <div class="user_badge__info">Kaylee Harper</div>
+                      </div>
+                    </td>
+                    <td class="text-right">Apr 25, 2016 06:37</td>
+                    <td class="text-center"><a href="">Edit</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="comments">
+              <form action="" class="form form--message">
+                <div class="message_card message_card--form">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a></div>
+                        <textarea id="msg" placeholder="Enter your comment here..." class="form-control form-control--textarea message_card__area"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="message_actions">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="checkbox">
+                        <label for="ch1" class="checkbox__label"><input type="checkbox" id="ch1" class="checkbox__control"> Notify me of new comments via email</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                      <button type="button" class="btn">Post comment</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <div class="messages_list">
+                <div class="message_card">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">⋅ 9:46 PM April 9, 2016</span></div>
+                        <div class="message_card__message">
+                          <p>
+                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                          </p>
+                          <button type="button" class="btn btn--default">Reply</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="message_card message_card--accent">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a> </div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="label label--primary">creator</span> <span class="message_card__date">⋅ 9:46 PM April 9, 2016</span></div>
+                        <div class="message_card__message">
+                          <p>
+                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn--default btn-block btn-md">Show all comments</button>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="results">...</div>
+          </div>
+        </div>
+
+        <aside class="col-md-4 content__right">
+          <div class="row">
+            <div class="col-sm-6 col-md-12">
+              <p class="text-muted small_desc">To participate in the contest with the prize, you must be registered in the competition. Registration can be completed at any time.</p>
+
+              <button class="btn btn-block btn_participate"><i class="icon icon--participate"></i>Participate</button>
+
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default"><i class="icon icon--finance"><span class="path1"></span><span class="path2"></span></span><span class="path3"></span></i>Finance</button>
+                <button type="button" class="btn btn-default"><i class="icon icon--follow"></i>Follow</button>
+                <button type="button" class="btn btn-default"><i class="icon--more"></i></button>
+              </div>
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-1 col-md-offset-0 col-md-12">
+              <div class="user_badge">
+                <div class="user_badge__img"><img src="http://lorempixel.com/70/70/" alt=""></div>
+                <div class="user_badge__info">
+                  <div class="user_badge__title">Anton Golub</div>
+                  <div class="user_badge__desc">Creator</div>
+                </div>
+              </div>
+
+              <ul class="list list--info">
+                <li class="list__item"><div class="text-muted">Created</div><span>Apr 25, 2016 ⋅ 14 days ago</span></li>
+                <li class="list__item"><div class="text-muted">Updated</div><span>Apr 28, 2016 ⋅ yesterday</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-12">
+              <h5 class="border-bottom">Tags</h5>
+
+              <div class="tags_list">
+                <div class="tag_item"><a href="">Java</a></div>
+                <div class="tag_item"><a href="">Features</a></div>
+                <div class="tag_item"><a href="">Landing</a></div>
+                <div class="tag_item"><a href="">Margin Trading</a></div>
+                <div class="tag_item"><a href="">Swaps</a></div>
+              </div>
+            </div>
+
+            <div class="col-sm-5 col-sm-offset-1 col-md-offset-0 col-md-12">
+              <h5 class="border-bottom">Share</h5>
+
+              <div class="sharing">
+                <a class="sharing__link" href=""><i class="icon icon--facebook_icn"><span class="path1"></span><span class="path2"></span></i></a>
+                <a class="sharing__link" href=""><i class="icon icon--twitter_icn"><span class="path1"></span><span class="path2"></span></i></a>
+              </div>
+            </div>
+          </div>
+
+          <h5 class="border-bottom">Other Projects</h5>
+
+          <ul class="list list--text_previews">
+            <li class="list__item">
+              <a href="">
+                <p><b>High Frequency Trading Risk Management Tools Based on Scaling Law</b></p>
+                <span class="text-muted">$2000 ⋅ 48 members</span>
+              </a>
+            </li>
+            <li class="list__item">
+              <a href="">
+                <p><b>Lykke USD, EUR... Coins</b></p>
+                <span class="text-muted">$2000 ⋅ 48 members</span>
+              </a>
+            </li>
+          </ul>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+</article>
+
+<footer class="footer page__footer">
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 hidden-xs">
+
+        </div>
+        <div class="col-xs-6 col-sm-4 text-right pull-right">
+          <div class="clearfix">
+            <ul class="social social--footer_alt">
+              <li><a href="" target="_blank" class="social__item"><i class="icon_img icon_img--in"></i></a></li>
+              <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon_img icon_img--fb"></i></a></li>
+              <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon_img icon_img--tw"></i></a></li>
+              <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon_img icon_img--inst"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon_img icon_img--yt"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 text-center">
+          <div class="footer__copy">&copy; Lykke 2016. All rights reserved</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/fastclick.min.js"></script>
+<script src="js/vendor/jquery.inview.min.js"></script>
+<script src="js/functions_landing.js"></script>
+<script src="js/vendor/autosize.min.js"></script>
+
+<script>
+  $('._show_hidden_form').on('click' ,function(ev) {
+    ev.preventDefault();
+    $(this).hide().siblings('.hidden_form').show()
+  });
+
+  $('#msg')
+    .bind('blur', function(){
+      if (!$(this).val()) {
+        $(this).parents('.form--message').removeClass("focused");
+        $(this).parents('.message_card__inner').removeAttr('style')
+      }
+    })
+    .bind('focus', function(){ $(this).parents('.form--message').addClass('focused'); })
+    .keyup(function(){
+      if ($(this).val()) { $(this).parents('.form--message').addClass('with_value'); }
+      else { $(this).parents('.form--message').removeClass('with_value'); }
+    })
+
+  $('#msg')
+    .each(function(){ autosize(this); })
+    .on('autosize:resized', function(){
+      $('.message_card__inner').css({ height: 'auto' })
+  });
+</script>
+
+</body>
+</html>

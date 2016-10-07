@@ -1,0 +1,49 @@
+// necessary for all pages
+@import 'common/fonts';
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/general';
+@import 'common/typo';
+
+// necessary for header/footer
+@import 'blocks/footer';
+@import 'blocks/header';
+@import 'blocks/form';
+@import 'blocks/icons';
+@import 'blocks/social';
+@import 'blocks/dropdown';
+@import 'blocks/nav';
+
+// elements
+@import 'blocks/animate';
+@import 'blocks/component-animations';
+@import 'blocks/elements';
+@import 'blocks/tooltip';
+@import 'blocks/grid';
+@import 'blocks/progress';
+@import 'blocks/sections';
+@import 'blocks/features';
+@import 'blocks/table';
+@import 'blocks/list';
+@import 'blocks/links';
+@import 'blocks/labels';
+@import 'blocks/tags';
+@import 'blocks/user';
+@import 'blocks/video';
+@import 'blocks/message';
+
+// vendors
+@import 'vendor/royalslider';
+@import 'vendor/jquery.fullPage';
+
+// necessary for all pages
+@import 'pages/contant';
+@import 'pages/page';
+
+// optional pages
+@import 'pages/competition';
+//@import 'pages/landing';
+//@import 'pages/world';
+
+// necessary for all pages
+@import 'responsive';
