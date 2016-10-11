@@ -500,6 +500,8 @@
     display: block;
     width: 32px;
     overflow: hidden;
+    line-height: normal !important;
+    top: -2px !important;
 
     img {
       height: 30px;

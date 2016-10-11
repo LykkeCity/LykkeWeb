@@ -111,8 +111,8 @@ header { padding: 22px 0; }
 
 .nav { margin-right: -15px; padding: 3px 0; }
 .nav > li { float: left; position: relative; }
-.nav > li > a { background: transparent !important; color: #3f4d60; }
-.nav > li > a:hover { color: rgba(63, 77, 96, 0.6); }
+.nav > li > a { background: transparent; color: #3f4d60; }
+.nav > li > a:hover { background: transparent; color: rgba(63, 77, 96, 0.6); }
 .nav > li.active > a { color: #ab00ff; }
 .nav--header { display: inline-block; vertical-align: top; }
 .nav--header > li > a { text-transform: uppercase; letter-spacing: 0.07em; font-weight: 600; font-size: 14px; white-space: normal; }
@@ -150,7 +150,7 @@ header { padding: 22px 0; }
 .header--new .btn:after, .header--new .btn:before { display: none !important; }
 .header--new .btn-link { background: transparent !important; color: #AB00FF !important; text-decoration: none !important; margin-top: 6px; }
 .header--new .btn-link:hover { color: rgba(171, 0, 255, 0.8) !important; }
-.header--new .header__logo { display: block; line-height: 50px; }
+.header--new .header__logo { display: block; line-height: 50px; position: relative; top: -4px; }
 .header--new .nav--header { padding-top: 7px; padding-bottom: 7px; }
 .header--new .nav--header > li > a { text-transform: none; font-weight: 600; font-size: 20px; letter-spacing: normal; }
 .header--new .nav--header > li:hover > a { color: #AB00FF; }
@@ -174,10 +174,15 @@ header { padding: 22px 0; }
 .header--new.nav-up .navbar-toggle .icon-bar, .nav-up .header--new .navbar-toggle .icon-bar, .header--new.fixed .navbar-toggle .icon-bar { background-color: #fff; }
 .header--new.nav-up .header__logo, .nav-up .header--new .header__logo, .header--new.fixed .header__logo { background: url(../img/lykke_white.svg) no-repeat; width: 34px; height: 32px; -webkit-background-size: 34px 32px; -moz-background-size: 34px 32px; -ms-background-size: 34px 32px; -o-background-size: 34px 32px; background-size: 34px 32px; }
 .header--new.nav-up .header__logo img, .nav-up .header--new .header__logo img, .header--new.fixed .header__logo img { display: none; }
+.header--new a.btn.btn-red { border-radius: 4px; background-color: #ff2900; font-size: 14px; padding: 6px 20px; letter-spacing: 2px; line-height: 24px; color: #ffffff; margin-top: 2px; }
+.header--new a.btn.btn-red:hover { color: #FFFFFF; }
 @media (min-width: 768px) { .header--new { padding: 23px 0; }
   .header--new.nav-up, .nav-up .header--new, .header--new.fixed { padding: 14px 0; } }
+@media (max-width: 640px) { .header--new a.btn.btn-red { padding: 3px 15px; margin-top: 0; } }
 
-.btn { color: #ffffff !important; font-weight: 600; font-size: 18px; padding: 10px 28px; border: 0; background: #ab00ff; position: relative; overflow: hidden; display: inline-block; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; -ms-box-shadow: none !important; -o-box-shadow: none !important; box-shadow: none !important; }
+.header--new.fixed a.btn.btn-red, .header--new.fixed a.btn.btn-red:hover { background-color: #ffffff; color: #ab00ff; margin-top: -2px; }
+
+.btn { color: #fff; font-weight: 600; font-size: 18px; padding: 10px 28px; border: 0; background: #ab00ff; position: relative; overflow: hidden; display: inline-block; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; -ms-box-shadow: none !important; -o-box-shadow: none !important; box-shadow: none !important; }
 .btn:after { content: ''; position: absolute; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; width: 0%; height: 200%; background: rgba(255, 255, 255, 0.15); z-index: 1; right: 0; top: 0; margin: -5px 0 0 -5px; -webkit-transform-origin: 0 0; -webkit-transform: rotate(-20deg); -moz-transform-origin: 0 0; -moz-transform: rotate(-20deg); -ms-transform-origin: 0 0; -ms-transform: rotate(-20deg); transform-origin: 0 0; transform: rotate(-20deg); }
 .btn:not([disabled]):hover { -webkit-transform: scale(1.02); -moz-transform: scale(1.02); -ms-transform: scale(1.02); -o-transform: scale(1.02); transform: scale(1.02); }
 .btn:not([disabled]):hover:after { width: 40%; }
@@ -1347,6 +1352,8 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; /*A
 
 .page_landing .social { text-align: center; margin-bottom: 35px; }
 .page_landing .social--footer_alt > li, .page_landing .social--header > li { margin-left: 68px; }
+.page_landing .social--footer_alt > li:first-child, .page_landing .social--header > li:first-child { margin-left: 0 !important; }
+@media all and (max-width: 640px) { .page_landing .social--footer_alt > li, .page_landing .social--header > li { margin-left: 20px; } }
 .page_landing .icon_img--yt { width: 25px; height: 17px; }
 .page_landing .icon_img--inst { width: 28px; height: 28px; }
 .page_landing .icon_img--tw { width: 22px; height: 18px; }
@@ -1356,13 +1363,13 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; /*A
 .page_landing .lw_logo img { margin-left: auto; margin-right: auto; }
 .page_landing .trading_data { width: 770px; height: 780px; max-width: 100%; margin: 0 auto; position: relative; overflow: hidden; }
 .page_landing .trading_data__item { position: absolute; top: 0; }
-.page_landing .trading_data__item--iphone { width: 431px; height: 888px; background: url(../../landing/img/iphone.png) no-repeat center top; z-index: 2; -webkit-background-size: contain; -moz-background-size: contain; -ms-background-size: contain; -o-background-size: contain; background-size: contain; }
+.page_landing .trading_data__item--iphone { width: 431px; height: 888px; background: url(../../img/landing/iphone.png) no-repeat center top; z-index: 2; -webkit-background-size: contain; -moz-background-size: contain; -ms-background-size: contain; -o-background-size: contain; background-size: contain; }
 .page_landing .trading_data__item--iphone .trading_data__inner { top: 113px; left: 28px; right: 28px; }
-.page_landing .trading_data__item--android { width: 394px; height: 790px; right: 0; top: 78px; background: url(../../landing/img/android.png) no-repeat center top; -webkit-background-size: contain; -moz-background-size: contain; -ms-background-size: contain; -o-background-size: contain; background-size: contain; }
+.page_landing .trading_data__item--android { width: 394px; height: 790px; right: 0; top: 78px; background: url(../../img/landing/android.png) no-repeat center top; -webkit-background-size: contain; -moz-background-size: contain; -ms-background-size: contain; -o-background-size: contain; background-size: contain; }
 .page_landing .trading_data__item--android .trading_data__inner { top: 64px; left: 17px; right: 17px; }
 .page_landing .trading_data__content { position: absolute; top: 0; left: 0; right: 0; color: #3d4b5e; }
 .page_landing .trading_data__label { font-size: 14px; color: #ab00ff; padding: 5px 12px; letter-spacing: .04em; float: right; display: block; border: 1px solid; border-radius: 20px; min-width: 92px; text-align: center; white-space: nowrap; }
-.page_landing .trading_data__table { background: #f4f6f7; margin-top: 119px; }
+.page_landing .trading_data__table { margin-top: 119px; }
 .page_landing .trading_data__table .tr_icn { color: rgba(61, 75, 94, 0.6); }
 .page_landing .trading_data__table table { width: 100%; }
 .page_landing .trading_data__table table tr th { font-weight: normal; font-size: 14px; background: #fff; padding: 11px 10px 10px; color: rgba(61, 75, 94, 0.6); border-bottom: 1px solid #e6e8eb; }
@@ -1500,7 +1507,7 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; /*A
   .menu-collapsed .page_nav__title { opacity: 0; visibility: hidden; } }
 @media (max-width: 640px) { .header { padding: 10px 0; }
   .header .page_nav__title { font-size: 20px; line-height: 30px; }
-  .header__logo { display: block; width: 32px; overflow: hidden; }
+  .header__logo { display: block; width: 32px; overflow: hidden; line-height: normal !important; top: -2px !important; }
   .header__logo img { height: 30px; }
   .menu-collapsed .header__logo { width: 98px; }
   .page_nav, .navbar-collapse { top: 50px; }

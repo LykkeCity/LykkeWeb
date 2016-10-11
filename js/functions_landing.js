@@ -19,7 +19,7 @@ $(window).resize(function() {
     maxHeight: $(window).outerHeight() - $('header').outerHeight()
   });
 
-  $('body').css({
+  $('.new_pages').css({
     paddingBottom: $('footer').outerHeight()
   })
 }).trigger('resize');

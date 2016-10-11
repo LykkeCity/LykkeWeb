@@ -151,6 +151,14 @@
 
   .social--footer_alt > li, .social--header > li {
     margin-left: 68px;
+
+    &:first-child {
+      margin-left: 0 !important;
+    }
+
+    @media all and (max-width: 640px) {
+      margin-left: 20px;
+    }
   }
 
   .icon_img--yt {
@@ -203,7 +211,7 @@
       &--iphone {
         width: 431px;
         height: 888px;
-        background: url(../../landing/img/iphone.png) no-repeat center top;
+        background: url(../../img/landing/iphone.png) no-repeat center top;
         z-index: 2;
 
         @include background-size(contain);
@@ -220,7 +228,7 @@
         height: 790px;
         right: 0;
         top: 78px;
-        background: url(../../landing/img/android.png) no-repeat center top;
+        background: url(../../img/landing/android.png) no-repeat center top;
 
         @include background-size(contain);
 
@@ -255,7 +263,7 @@
     }
 
     &__table {
-      background: #f4f6f7;
+      //background: #f4f6f7;
       margin-top: 119px;
 
       .tr_icn {
