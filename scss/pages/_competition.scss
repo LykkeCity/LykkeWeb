@@ -19,4 +19,14 @@
       margin-right: 5px;
     }
   }
+
+  @media all and (max-width: 767px) {
+    &__value {
+      font-size: 32px;
+    }
+    &__title {
+      font-size: 12px;
+      line-height: normal;
+    }
+  }
 }

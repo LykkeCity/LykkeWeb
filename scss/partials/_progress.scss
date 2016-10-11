@@ -92,4 +92,8 @@
       background: rgba(185, 193, 200, 1);
     }
   }
+
+  @media all and (max-width: 767px) {
+    margin: 20px 0;
+  }
 }

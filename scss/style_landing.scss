@@ -4,11 +4,11 @@
 
 @import 'common/general';
 
-@import 'blocks/header';
-@import 'blocks/footer';
-@import 'blocks/icons';
-@import 'blocks/social';
-@import 'blocks/grid';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/icons';
+@import 'partials/social';
+@import 'partials/grid';
 
 @import 'pages/page';
 @import 'pages/landing';
