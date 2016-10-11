@@ -6,31 +6,33 @@
 @import 'common/typo';
 
 // necessary for header/footer
-@import 'blocks/footer';
-@import 'blocks/header';
-@import 'blocks/form';
-@import 'blocks/icons';
-@import 'blocks/social';
-@import 'blocks/dropdown';
-@import 'blocks/nav';
+@import 'partials/footer';
+@import 'partials/header';
+@import 'partials/form';
+@import 'partials/icons';
+@import 'partials/social';
+@import 'partials/dropdown';
+@import 'partials/nav';
 
 // elements
-@import 'blocks/animate';
-@import 'blocks/component-animations';
-@import 'blocks/elements';
-@import 'blocks/tooltip';
-@import 'blocks/grid';
-@import 'blocks/progress';
-@import 'blocks/sections';
-@import 'blocks/features';
-@import 'blocks/table';
-@import 'blocks/list';
-@import 'blocks/links';
-@import 'blocks/labels';
-@import 'blocks/tags';
-@import 'blocks/user';
-@import 'blocks/video';
-@import 'blocks/message';
+@import 'partials/animate';
+@import 'partials/component-animations';
+@import 'partials/elements';
+@import 'partials/tooltip';
+@import 'partials/grid';
+@import 'partials/progress';
+@import 'partials/sections';
+@import 'partials/features';
+@import 'partials/table';
+@import 'partials/list';
+@import 'partials/links';
+@import 'partials/labels';
+@import 'partials/tags';
+@import 'partials/user';
+@import 'partials/video';
+@import 'partials/message';
+@import 'partials/tabs';
+@import 'partials/card';
 
 // vendors
 @import 'vendor/royalslider';
@@ -42,7 +44,7 @@
 
 // optional pages
 @import 'pages/competition';
-//@import 'pages/landing';
+@import 'pages/landing';
 //@import 'pages/world';
 
 // necessary for all pages

@@ -161,23 +161,18 @@
   content: "\e927";
 }
 
-.icon--facebook_icn .path1:before {
-  content: "\e90e";
-  color: rgb(60, 90, 152);
-}
-.icon--facebook_icn .path2:before {
-  content: "\e90f";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
-}
-.icon--twitter_icn .path1:before {
-  content: "\e910";
-  color: rgb(43, 169, 224);
-}
-.icon--twitter_icn .path2:before {
+.icon--comment:before {
   content: "\e922";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
+}
+.icon--arrow-down:before {
+  content: "\e90f";
+}
+
+.icon--facebook_icn:before {
+  content: "\e90e";
+}
+.icon--twitter_icn:before {
+  content: "\e910";
 }
 
 .store_icon {

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lykke - anyone can trade</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<meta name="viewport">-->
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lte IE 9]>
+    <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+<header class="header header--new">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-2 col-sm-3"><a href="/" class="logo header__logo"><img src="img/lykke_new.svg" height="43" alt=""/></a></div>
+      <div class="col-xs-10 col-sm-9 col-md-6 text-center">
+        <button type="button" class="navbar-toggle collapsed btn btn--stroke pull-right" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <div class="t-simulate">
+            <div class="t-row">
+              <div class="t-cell">
+
+                <ul class="nav nav--header">
+                  <li class="_add_active_exchange">
+                    <a class="dropdown__control" href="https://lykke.com/exchange.php">Exchange</a>
+                    <div class="dropdown__container">
+                      <ul class="dropdown__nav">
+                        <li><a href="https://lykke.com/lykkex_rulebook.php">LykkeX Rulebook</a></li>
+                        <li><a href="https://lykke.com/term_conditions_colored_coins.php">Term of Issuance</a></li>
+                        <li><a href="https://api.lykkex.com/swagger/ui/index#/" target="_blank">LykkeX API</a></li>
+                        <li><a href="https://github.com/LykkeCity/" target="_blank">Github</a></li>
+                        <li><a href="https://lykke.com/colored_coin_exchange_white_paper.php">White Paper</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="dropdown__control" href="https://lykke.com/city/start">City</a>
+                    <div class="dropdown__container">
+                      <ul class="dropdown__nav">
+                        <li><a href="https://lykke.com/city/start?do=register">Check In</a></li>
+                        <li><a href="https://lykke.com/city/yellowpages/registerform">Become a Citizen</a></li>
+                        <li><a href="https://lykke.com/city/about/openposition">Open Positions</a></li>
+                        <li><a href="https://lykke.com/city/openprojects/index">Projects Board</a></li>
+                        <li><a href="https://lykke.com/city/lykketimes">Lykke Times</a></li>
+                        <li><a href="https://lykke.com/city/blog/index">Blog</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="_add_active"><a class="dropdown__control" href="https://www.lykke.com/leadership.php">Corp</a>
+                    <div class="dropdown__container">
+                      <ul class="dropdown__nav">
+                        <li><a href="https://lykke.com/leadership.php">Leadership</a></li>
+                        <li><a href="https://lykke.com/technology.php">Technology </a></li>
+                        <li><a href="https://lykke.com/contacts.php">Contacts</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="dropdown__control" href="https://lykke.com/lykkewallet/">Consulting</a>
+                  </li>
+                </ul>
+                <a href="https://wiki.lykkex.com/start?do=login" class="visible-xs-inline-block visible-sm-inline-block btn">Sign In</a>
+              </div>
+            </div>
+          </div>
+          <ul class="social social--header visible-xs visible-sm">
+            <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon_img icon_img--fb"></i></a></li>
+            <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon_img icon_img--tw"></i></a></li>
+            <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon_img icon_img--inst"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon_img icon_img--yt"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-3 hidden-xs hidden-sm">
+        <a href="https://wiki.lykkex.com/start?do=login" class="btn btn-link pull-right">Sign In</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<article class="content page">
+  <nav class="page_nav page__nav">
+    <div class="page_nav__inner">
+      <div class="container">
+        <ul class="page_nav__list">
+          <li class="page_nav__item"><a href="https://lykke.com/city/start?do=register">Check In</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/yellowpages/registerform">Become a Citizen</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/about/openposition">Open Positions</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/openprojects/index">Projects Board</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/lykketimes">Lykke Times</a></li>
+          <li class="page_nav__item"><a href="https://lykke.com/city/blog/index">Blog</a></li>
+          <li class="pull-right hidden-xs hidden-sm"><a type="button" class="btn btn-circle new-project-button" href="/Project/Create">+</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="section section--lead section--padding">
+    <div class="container container--extend">
+      <div class="pull-right"><button class="btn-link simple_single_search" type="button"><i class="icon--search"></i></button></div>
+      <div class="tabs_stack">
+        <div class="tab_item tab_item--active"><a class="tab_item__link" href="">All projects</a></div>
+        <div class="tab_item"><a class="tab_item__link" href="">my projects</a></div>
+        <div class="tab_item"><a class="tab_item__link" href="">following</a></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="select form-group" data-control="select">
+            <label for="select1" class="select__label control-label">Category:</label>
+            <div class="select__value"><span class="_value">All</span></div>
+            <select id="select1" class="form-control select__elem">
+              <option>All</option>
+              <option>All2</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="select form-group" data-control="select">
+            <label for="select2" class="select__label control-label">Status:</label>
+            <div class="select__value"><span class="_value">All</span></div>
+            <select id="select2" class="form-control select__elem">
+              <option>All</option>
+              <option>All2</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--competition_list">
+    <div class="container container--extend">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card--preview">
+            <div class="card__inner">
+              <div class="card__body">
+                <div class="card__header">
+                  <div class="card__sum h3 pull-right">$2000</div>
+                  <div class="card__title h3"><a href="">High Frequency Trading Risk Management Tools Based on Scaling Law</a></div>
+                </div>
+                <div class="card__desc">
+                  <a href="" class="label label--blue label--flat">initiative</a>
+                  <span class="votes">42 votes</span>
+                </div>
+                <p class="card__text">
+                  Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance, computer science, and demography to the social sciences. Scaling-law processes yield... scaling properties for a broad range of values, sometimes for many orders of magnitude. Using the event-driven paradigm of directional changes and overshoots to analyse Foreign Exchange (FX) markets, Glattfelder, Dupuis, and Olsen (2011) discovered 12 independent scaling laws in high frequency FX data. In finance, where frames of reference and fixed points are hard to come by and often illusory, these new scaling laws provide a reliable framework for developing risk management tools and represent the foundation of a completely new generation of tools for studying high frequency market volatility. The objective of this project is to study the dynamic behaviour of markets and improve the quality of the inferences and predictions we make about the behaviour of prices. Using high frequency FX dataset, we aim to extract patterns from short-term market activity to infer, measure, and predict volatility over longer time horizons.
+                </p>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__actions text-right">
+                  <a href="" class="action_link action_link--comments"><i class="icon icon--comment"></i> 24</a>
+                  <a href="" class="action_link action_link--more"><i class="icon icon--more"></i></a>
+                </div>
+
+                <div class="user_badge">
+                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
+                  <div class="user_badge__info">
+                    <div class="user_badge__title"><a href="">Anton Golub</a></div>
+                    <div class="user_badge__desc">In <a href="">Java</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card--preview">
+            <div class="card__inner">
+              <div class="card__body">
+                <div class="card__header">
+                  <div class="card__sum h3 pull-right">$2000</div>
+                  <div class="card__title h3"><a href="">Lykke USD, EUR... Coins</a></div>
+                </div>
+                <div class="card__desc">
+                  <a href="" class="label label--green label--flat">competition registration</a>
+                  <span class="votes">42 participants</span>
+                  <div class="users_stack">
+                    <a href="">
+                      <span class="users_stack__count">+9</span>
+                      <div class="users_stack__item"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                      <div class="users_stack__item"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                      <div class="users_stack__item"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                    </a>
+                  </div>
+                </div>
+                <p class="card__text">
+                  Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance, computer science, and demography to the social sciences. Scaling-law processes yield... scaling properties for a broad range of values, sometimes for many orders of magnitude. Using the event-driven paradigm of directional changes and overshoots to analyse Foreign Exchange (FX) markets, Glattfelder, Dupuis, and Olsen (2011) discovered 12 independent scaling laws in high frequency FX data. In finance, where frames of reference and fixed points are hard to come by and often illusory, these new scaling laws provide a reliable framework for developing risk management tools and represent the foundation of a completely new generation of tools for studying high frequency market volatility. The objective of this project is to study the dynamic behaviour of markets and improve the quality of the inferences and predictions we make about the behaviour of prices. Using high frequency FX dataset, we aim to extract patterns from short-term market activity to infer, measure, and predict volatility over longer time horizons.
+                </p>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__actions text-right">
+                  <a href="" class="action_link action_link--deadline"><i class="icon icon--deadline"></i> 30.05.2016</a>
+                  <a href="" class="action_link action_link--comments"><i class="icon icon--comment"></i> 16</a>
+                  <a href="" class="action_link action_link--more"><i class="icon icon--more"></i></a>
+                </div>
+
+                <div class="user_badge">
+                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
+                  <div class="user_badge__info">
+                    <div class="user_badge__title"><a href="">Anton Golub</a></div>
+                    <div class="user_badge__desc">In <a href="">Java</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card--preview">
+            <div class="card__inner">
+              <div class="card__body">
+                <div class="card__header">
+                  <div class="card__sum h3 pull-right">$2000</div>
+                  <div class="card__title h3"><a href="">High Frequency Trading Risk Management Tools Based on Scaling Law</a></div>
+                </div>
+                <div class="card__desc">
+                  <a href="" class="label label--red label--flat">implementation</a>
+                  <span class="votes">42 participants</span>
+                  <div class="users_stack">
+                    <a href="">
+                      <span class="users_stack__count">+9</span>
+                      <div class="users_stack__item"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                      <div class="users_stack__item"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                      <div class="users_stack__item"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                    </a>
+                  </div>
+                </div>
+                <p class="card__text">
+                  Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance, computer science, and demography to the social sciences. Scaling-law processes yield... scaling properties for a broad range of values, sometimes for many orders of magnitude. Using the event-driven paradigm of directional changes and overshoots to analyse Foreign Exchange (FX) markets, Glattfelder, Dupuis, and Olsen (2011) discovered 12 independent scaling laws in high frequency FX data. In finance, where frames of reference and fixed points are hard to come by and often illusory, these new scaling laws provide a reliable framework for developing risk management tools and represent the foundation of a completely new generation of tools for studying high frequency market volatility. The objective of this project is to study the dynamic behaviour of markets and improve the quality of the inferences and predictions we make about the behaviour of prices. Using high frequency FX dataset, we aim to extract patterns from short-term market activity to infer, measure, and predict volatility over longer time horizons.
+                </p>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__actions text-right">
+                  <a href="" class="action_link action_link--comments"><i class="icon icon--comment"></i> 24</a>
+                  <a href="" class="action_link action_link--more"><i class="icon icon--more"></i></a>
+                </div>
+
+                <div class="user_badge">
+                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
+                  <div class="user_badge__info">
+                    <div class="user_badge__title"><a href="">Anton Golub</a></div>
+                    <div class="user_badge__desc">In <a href="">Java</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card--preview">
+            <div class="card__inner">
+              <div class="card__body">
+                <div class="card__header">
+                  <div class="card__sum h3 pull-right">$2000</div>
+                  <div class="card__title h3"><a href="">Lykke USD, EUR... Coins</a></div>
+                </div>
+                <div class="card__desc">
+                  <a href="" class="label label--yellow label--flat">voting</a>
+                  <a href="" class="votes">8 results</a>
+                </div>
+                <p class="card__text">
+                  Scaling-law has been observed in an extraordinary wide range of natural phenomena, from physics, biology, earth and planetary sciences, economics and finance, computer science, and demography to the social sciences. Scaling-law processes yield... scaling properties for a broad range of values, sometimes for many orders of magnitude. Using the event-driven paradigm of directional changes and overshoots to analyse Foreign Exchange (FX) markets, Glattfelder, Dupuis, and Olsen (2011) discovered 12 independent scaling laws in high frequency FX data. In finance, where frames of reference and fixed points are hard to come by and often illusory, these new scaling laws provide a reliable framework for developing risk management tools and represent the foundation of a completely new generation of tools for studying high frequency market volatility. The objective of this project is to study the dynamic behaviour of markets and improve the quality of the inferences and predictions we make about the behaviour of prices. Using high frequency FX dataset, we aim to extract patterns from short-term market activity to infer, measure, and predict volatility over longer time horizons.
+                </p>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__actions text-right">
+                  <a href="" class="action_link action_link--deadline"><i class="icon icon--deadline"></i> 30.05.2016</a>
+                  <a href="" class="action_link action_link--comments"><i class="icon icon--comment"></i> 16</a>
+                  <a href="" class="action_link action_link--more"><i class="icon icon--more"></i></a>
+                </div>
+
+                <div class="user_badge">
+                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
+                  <div class="user_badge__info">
+                    <div class="user_badge__title"><a href="">Anton Golub</a></div>
+                    <div class="user_badge__desc">In <a href="">Java</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card--preview">
+            <div class="card__inner">
+              <div class="card__body">
+                <div class="card__header">
+                  <div class="card__sum h3 pull-right">$2000</div>
+                  <div class="card__title h3"><a href="">Lykke USD, EUR... Coins</a></div>
+                </div>
+                <div class="card__desc">
+                  <a href="" class="label label--grey label--flat">archive</a>
+                  <span class="votes">4 winners</span>
+                  <div class="users_stack">
+                    <!--winner 2st place and other-->
+                    <div class="users_stack__item">
+                      <a href="">
+                        <img src="http://lorempixel.com/30/30/" alt="">
+                        <span class="winner_label">2</span>
+                      </a>
+                    </div>
+                    <div class="users_stack__item"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <!--winner 1st place-->
+                    <div class="users_stack__item">
+                      <a href="">
+                        <img src="http://lorempixel.com/30/30/" alt="">
+                        <span class="winner_label winner_label--yellow">1</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <p class="card__text">
+                  Scaling-law has been observed in an extraordinary wide range of natural phenomena.
+                </p>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__actions text-right">
+                  <a href="" class="action_link action_link--deadline"><i class="icon icon--deadline"></i> 30.05.2016</a>
+                  <a href="" class="action_link action_link--comments"><i class="icon icon--comment"></i> 16</a>
+                  <a href="" class="action_link action_link--more"><i class="icon icon--more"></i></a>
+                </div>
+
+                <div class="user_badge">
+                  <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/50/50/" alt=""></a></div>
+                  <div class="user_badge__info">
+                    <div class="user_badge__title"><a href="">Anton Golub</a></div>
+                    <div class="user_badge__desc">In <a href="">Java</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+
+<footer class="footer page__footer">
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 hidden-xs">
+
+        </div>
+        <div class="col-xs-6 col-sm-4 text-right pull-right">
+          <div class="clearfix">
+            <ul class="social social--footer_alt">
+              <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item"><i class="icon_img icon_img--in"></i></a></li>
+              <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon_img icon_img--fb"></i></a></li>
+              <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon_img icon_img--tw"></i></a></li>
+              <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon_img icon_img--inst"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon_img icon_img--yt"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-4 text-center">
+          <div class="footer__copy">&copy; Lykke 2016. All rights reserved</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/fastclick.min.js"></script>
+<script src="js/vendor/jquery.inview.min.js"></script>
+<script src="js/functions_landing.js"></script>
+<script src="js/vendor/autosize.min.js"></script>
+
+<script>
+
+</script>
+
+</body>
+</html>

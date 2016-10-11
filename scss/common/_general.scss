@@ -119,6 +119,33 @@ hr {
   border-top: 2px solid #DFE1E5;
 }
 
+@media (max-width: 640px)  {
+  h1, .h1 {
+    font-size: 36px;
+    margin-bottom: 27px;
+  }
+
+  h2, .h2 {
+    font-size: 28px;
+  }
+
+
+  h3, .h3 {
+    font-size: 22px;
+  }
+
+  p, ul, ul li, ol, ol li, b, strong {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  ul, ol {
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
 .automargin {float: none;margin-right: auto; margin-left: auto;}
 .bold {font-weight: $fw-semi}
 .semibold {font-weight: $fw-semi}

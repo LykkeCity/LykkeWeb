@@ -30,10 +30,6 @@
     color: rgba(#3f4d60, .6);
   }
 
-  .h3 {
-
-  }
-
   .slide {
     max-width: 975px;
     margin: 0 auto;
@@ -176,4 +172,19 @@ hr.full {
   line-height: 24px;
   margin-top: 10px;
   margin-bottom: 25px;
+}
+
+.simple_single_search {
+  color: rgba($secondary, .6);
+
+  @include transition(color .3s ease);
+
+  &:hover {
+    color: rgba($secondary, 1);
+  }
+
+  .icon--search {
+    font-size: 18px;
+    margin-right: 0;
+  }
 }

@@ -18,6 +18,10 @@ $(window).resize(function() {
   $('.video iframe').css({
     maxHeight: $(window).outerHeight() - $('header').outerHeight()
   });
+
+  $('body').css({
+    paddingBottom: $('footer').outerHeight()
+  })
 }).trigger('resize');
 
 // Tel
@@ -124,3 +128,8 @@ if (!isMobile && wW >= 767) {
     }
   });
 }
+
+$('[data-control="select"] ._value').text($(this).siblings('select').val());
+$('[data-control="select"] select').on('change', function() {
+  $(this).siblings('._value').text(this.value);
+});
