@@ -6,10 +6,11 @@
 @import 'common/typo';
 
 // necessary for header/footer
+@import 'partials/icons';
 @import 'partials/footer';
 @import 'partials/header';
 @import 'partials/form';
-@import 'partials/icons';
+@import 'partials/btn';
 @import 'partials/social';
 @import 'partials/dropdown';
 @import 'partials/nav';
@@ -33,6 +34,8 @@
 @import 'partials/message';
 @import 'partials/tabs';
 @import 'partials/card';
+@import 'partials/voting';
+@import 'partials/banner';
 
 // vendors
 @import 'vendor/royalslider';

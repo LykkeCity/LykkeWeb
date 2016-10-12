@@ -1,5 +1,7 @@
 .user_badge {
   margin-bottom: 25px;
+  white-space: normal;
+
   @include clearfix;
 
   .label {

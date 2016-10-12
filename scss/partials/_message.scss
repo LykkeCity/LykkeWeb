@@ -8,7 +8,12 @@
     line-height: 22px;
   }
 
-  .form-control {
+  &__reply {
+    margin-top: 20px;
+    color: $secondary;
+  }
+
+  &__area {
     text-align: left;
     background: #fff;
     border-radius: 0;
@@ -20,6 +25,7 @@
     min-height: 108px;
     margin-top: -4px;
     max-height: 400px;
+    border: 0 !important;
 
     @include transition(all .3s ease);
     @include transform(translate(0, -18px))

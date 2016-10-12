@@ -21,7 +21,7 @@
 
 
 </head>
-<body>
+<body class="new_page">
 
 <header class="header header--new">
   <div class="container">
@@ -211,7 +211,7 @@
                 <table class="table table--board">
                   <tr>
                     <th>Username</th>
-                    <th>Registration date</th>
+                    <th class="text-right">Registration date</th>
                     <th class="text-center">Result</th>
                   </tr>
                   <tr>
@@ -221,7 +221,7 @@
                         <div class="user_badge__info">Kaylee Harper</div>
                       </div>
                     </td>
-                    <td>Apr 25, 2016 06:37</td>
+                    <td class="text-right">Apr 25, 2016 06:37</td>
                     <td class="text-center"><i class="icon icon--result"><span class="path1"></span><span class="path2"></span></i></td>
                   </tr>
                   <tr>
@@ -276,6 +276,13 @@
                             However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
                           </p>
                           <button type="button" class="btn btn--default">Reply</button>
+
+                          <textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control--textarea"></textarea>
+
+                          <div class="text-right">
+                            <button type="button" class="btn">Send</button>
+                          </div>
+
                         </div>
                       </div>
                     </div>
@@ -301,7 +308,67 @@
               <button type="button" class="btn btn--default btn-block btn-md">Show all comments</button>
 
             </div>
-            <div role="tabpanel" class="tab-pane" id="results">...</div>
+            <div role="tabpanel" class="tab-pane" id="results">
+              <div class="banner banner--results">
+                <img src="img/competition/banner-coin.svg" class="pull-right" width="88" alt="banner-coin">
+                <div class="banner__content">
+                  <h4>Help us determine the winner!</h4>
+                  <p>Check the completed task, participants of the contest and choose the best result. You can cast votes for the various participants.</p>
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table--board">
+                  <tr>
+                    <th class="board_name">Username</th>
+                    <th class="board_date">reg. and Subm. Date</th>
+                    <th class="board_result text-center">Result</th>
+                    <th class="board_score text-center">Score</th>
+                    <th class="board_vote text-center">Vote</th>
+                    <th class="board_action"></th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                        <div class="user_badge__info">Kaylee Harper</div>
+                      </div>
+                    </td>
+                    <td>Apr 25 – May 5, 2016</td>
+                    <td class="text-center"><a href="">Vew</a></td>
+                    <td class="text-center">50<span class="text-muted">/100</span></td>
+                    <td class="text-center">7</td>
+                    <td><button type="button" class="circle_voting_btn _vote_plus">+1</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                        <div class="user_badge__info">Kaylee Harper</div>
+                      </div>
+                    </td>
+                    <td>Apr 25 – May 5, 2016</td>
+                    <td class="text-center"><a href="">Vew</a></td>
+                    <td class="text-center">50<span class="text-muted">/100</span></td>
+                    <td class="text-center">7</td>
+                    <td><button type="button" class="circle_voting_btn _vote_plus active">+1</button></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="user_badge user_badge--small">
+                        <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                        <div class="user_badge__info">Kaylee Harper</div>
+                      </div>
+                    </td>
+                    <td>Apr 25 – May 5, 2016</td>
+                    <td class="text-center"><a href="">Vew</a></td>
+                    <td class="text-center">50<span class="text-muted">/100</span></td>
+                    <td class="text-center">7</td>
+                    <td><button type="button" class="circle_voting_btn _vote_plus">+1</button></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -310,10 +377,29 @@
             <div class="col-sm-6 col-md-12">
               <p class="text-muted small_desc">To participate in the contest with the prize, you must be registered in the competition. Registration can be completed at any time.</p>
 
+              <div class="voting_group">
+                <button class="btn btn--circle btn--green _voting_btn" data-hover="Vote again"><i class="icon icon--vote_yes"></i><span>Yes</span></button>
+                <button class="btn btn--circle btn--red _voting_btn" data-hover="Vote again"><i class="icon icon--vote_no"></i><span>No</span></button>
+
+                <div class="voting_group__value">42 votes</div>
+
+                <div class="voting_group__status">
+                  <div class="voting_group__group">
+                    <div class="status_bar"><span class="status_bar__line status_bar__line--green" style="width: 56%"></span></div>
+                    <div class="voting_group__count"><span class="text-green">24<!--max 3 symbols, for example, 240 or 10k--></span> Yes</div>
+                  </div>
+                  <div class="voting_group__group">
+                    <div class="status_bar"><span class="status_bar__line status_bar__line--red" style="width: 38%"></span></div>
+                    <div class="voting_group__count"><span class="text-red">12k</span> No</div>
+                  </div>
+                </div>
+              </div>
+
               <button class="btn btn-block btn_participate"><i class="icon icon--participate"></i>Participate</button>
+              <button class="btn btn-block btn_participate"><i class="icon icon--vote_list"></i>Vote/test</button>
 
               <div class="btn-group" role="group">
-                <button type="button" class="btn btn-default"><i class="icon icon--finance"><span class="path1"></span><span class="path2"></span></span><span class="path3"></span></i>Finance</button>
+                <button type="button" class="btn btn-default"><i class="icon icon--finance"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Finance</button>
                 <button type="button" class="btn btn-default"><i class="icon icon--follow"></i>Follow</button>
                 <button type="button" class="btn btn-default"><i class="icon--more"></i></button>
               </div>
@@ -439,6 +525,10 @@
     .each(function(){ autosize(this); })
     .on('autosize:resized', function(){
       $('.message_card__inner').css({ height: 'auto' })
+  });
+
+  $('._voting_btn').on('click', function() {
+    $(this).toggleClass('active').siblings('._voting_btn').toggleClass('invisible').parents('.voting_group').toggleClass('voted');
   });
 </script>
 
