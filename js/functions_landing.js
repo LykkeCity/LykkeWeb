@@ -131,5 +131,5 @@ if (!isMobile && wW >= 767) {
 
 $('[data-control="select"] ._value').text($(this).siblings('select').val());
 $('[data-control="select"] select').on('change', function() {
-  $(this).siblings('._value').text(this.value);
+  $(this).siblings('.select__value').find('._value').text(this.value);
 });

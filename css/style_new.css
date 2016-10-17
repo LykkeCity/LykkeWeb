@@ -1099,27 +1099,6 @@ hr.full { margin-left: 0; margin-right: 0; width: 100%; }
 .banner--results .table tr:hover td { background: transparent; }
 .banner--results .table tr td { border-bottom: 0; text-align: center; padding: 5px; cursor: auto; }
 
-.steps { display: table; width: 100%; margin-bottom: 40px; position: relative; }
-.steps:before { content: ''; position: absolute; top: 25px; left: 4%; right: 9%; border-bottom: 2px dashed rgba(63, 77, 96, 0.35); z-index: 0; }
-.steps__item { display: table-cell; vertical-align: top; width: 20%; margin-bottom: 20px; padding-left: 30px; position: relative; z-index: 10; }
-.steps__item:first-child { padding-left: 0; }
-.steps__item.active .steps__index { color: #fff; }
-.steps__item.success .steps__text { color: rgba(63, 77, 96, 0.35) !important; }
-.steps__item.success .steps__index { font-size: 0; }
-.steps__item.success .steps__index:before { color: #fff; font-family: 'icon' !important; font-size: 18px; content: "\e91b"; }
-.steps__item--1.active .steps__index, .steps__item--1.success .steps__index { background: #0DA7FC; border-color: #0DA7FC; }
-.steps__item--1.active .steps__text, .steps__item--1.success .steps__text { color: #0DA7FC; }
-.steps__item--2.active .steps__index, .steps__item--2.success .steps__index { background: #13B72A; border-color: #13B72A; }
-.steps__item--2.active .steps__text, .steps__item--2.success .steps__text { color: #13B72A; }
-.steps__item--3.active .steps__index, .steps__item--3.success .steps__index { background: #FF3E2E; border-color: #FF3E2E; }
-.steps__item--3.active .steps__text, .steps__item--3.success .steps__text { color: #FF3E2E; }
-.steps__item--4.active .steps__index, .steps__item--4.success .steps__index { background: #FFAE2C; border-color: #FFAE2C; }
-.steps__item--4.active .steps__text, .steps__item--4.success .steps__text { color: #FFAE2C; }
-.steps__item--5.active .steps__index, .steps__item--5.success .steps__index { background: #3F4D60; border-color: #3F4D60; }
-.steps__item--5.active .steps__text, .steps__item--5.success .steps__text { color: rgba(63, 77, 96, 0.6); }
-.steps__index { width: 50px; height: 50px; line-height: 48px; border: 2px solid; font-size: 20px; text-align: center; font-weight: 600; border-radius: 100px; color: rgba(63, 77, 96, 0.35); margin-bottom: 22px; z-index: 10; background: #f7f8f9; box-shadow: 0 0 0 10px #f7f8f9; overflow: hidden; }
-.steps__text { text-transform: uppercase; font-weight: 600; font-size: 16px; line-height: 24px; letter-spacing: .1em; color: rgba(63, 77, 96, 0.35); }
-
 /* v1.0.6 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
 .royalSlider { direction: ltr; max-width: 100%; position: relative; }

@@ -24,6 +24,10 @@
   &__info, &__message {
     overflow: hidden;
     padding-top: 6px;
+
+    a {
+      color: inherit;
+    }
   }
 
   &__title {

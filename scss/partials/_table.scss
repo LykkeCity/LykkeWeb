@@ -74,7 +74,12 @@
     white-space: nowrap;
 
     tr {
+      &:hover td {
+        background: transparent;
+      }
+
       td {
+        cursor: auto;
         padding: 9px 20px;
 
         &:first-child {
@@ -84,7 +89,6 @@
 
       td, th {
         line-height: normal;
-        //white-space: normal;
 
         &:first-child {
           width: 240px;
@@ -93,7 +97,82 @@
         &.text-center {
           text-align: center;
         }
+      }
+    }
+  }
 
+  &--board_results {
+    .board_winner {
+      .prize__value {
+        font-size: 28px;
+      }
+
+      .user_badge--small .user_badge__img {
+        width: 80px;
+        height: 80px;
+        margin-right: 30px;
+        margin-left: 0;
+      }
+
+      .user_badge__title {
+        font-size: 18px;
+        color: #333333;
+        letter-spacing: 1.79px;
+        line-height: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+
+    .user_badge--small .user_badge__img {
+      width: 60px;
+      height: 60px;
+      margin: 0 37px 0 14px;
+    }
+
+    .user_badge__title {
+      text-transform: none;
+      font-weight: normal;
+      letter-spacing: normal;
+      color: $secondary;
+      margin-bottom: 10px;
+      line-height: normal;
+    }
+
+    .board_place {
+      width: 80px;
+
+      .icon {
+        font-size: 46px;
+      }
+
+      .icon--prize2 {
+        color: rgba($secondary, .35);
+      }
+    }
+
+    .board_name {
+      width: 450px;
+    }
+
+    .board_sum {
+      text-align: right;
+    }
+
+    .prize__value {
+      font-size: 24px;
+    }
+
+    tr {
+      td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &:first-child {
+          width: 80px;
+          vertical-align: top;
+          padding-top: 30px;
+        }
       }
     }
   }

@@ -119,6 +119,8 @@ label.error {
 }
 
 .form {
+  font-size: 16px;
+
   &--search {
     @include clearfix;
   }
@@ -177,6 +179,63 @@ label.error {
       }
     }
   }
+
+  &--default {
+    .form-group {
+      margin-bottom: 28px;
+
+      ~ .form_title {
+        margin-top: 22px;
+      }
+    }
+
+    .control-label {
+      margin-bottom: 12px;
+
+      + .text-muted {
+        padding-top: 5px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .form-control:not(.select__elem) {
+      background: #fff;
+      padding: 10px 16px;
+      font-size: 16px;
+      border: 1px solid #e1e1e1;
+    }
+
+    .select__value {
+      padding-left: 20px;
+    }
+
+    textarea.form-control {
+      height: 460px;
+      resize: auto;
+      max-width: 100%;
+    }
+
+    .prize__value {
+      font-size: 24px;
+      padding-top: 11px;
+    }
+
+    .form__submit {
+      padding: 42px 0;
+
+      .text-muted {
+        margin-top: 15px;
+      }
+
+      .btn {
+        padding: 17px 50px 16px;
+      }
+    }
+  }
 }
 
 .checkbox {
@@ -200,6 +259,11 @@ label.error {
 .control-label {
   color: rgba($secondary, .6);
   font-weight: normal;
+
+  sup {
+    text-transform: uppercase;
+    font-size: 60%;
+  }
 }
 
 .select {
@@ -219,6 +283,7 @@ label.error {
     height: auto;
     font-size: 16px;
     color: $secondary;
+    cursor: pointer;
     padding: 14px 40px 14px 0;
     
     span {
@@ -246,6 +311,7 @@ label.error {
     top: 0;
     left: 0;
     z-index: 2;
+    cursor: pointer;
   }
 
   &:after {
@@ -256,6 +322,33 @@ label.error {
     right: 15px;
     top: 50%;
     margin-top: -4px;
+    color: rgba($secondary, .6);
+  }
+}
+
+.form_title {
+  font-size: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid #DFE1E5;
+  margin-bottom: 25px;
+}
+
+.fileupload {
+  position: relative;
+
+  &__field {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__btn.btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__notice {
+    margin-left: 15px;
     color: rgba($secondary, .6);
   }
 }

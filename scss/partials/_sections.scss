@@ -37,6 +37,44 @@
       }
     }
   }
+
+  &--steps {
+    background: #f7f8f9;
+    padding: 52px 0;
+
+    .status_bar {
+      width: 100px;
+    }
+
+    .voting_group__group {
+      margin-bottom: 8px;
+    }
+
+    .voting_group__value {
+      margin-left: 0;
+      display: block;
+      padding-top: 5px;
+      margin-bottom: 14px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #DFE1E5;
+    }
+
+    .voting_group__status {
+      display: block;
+      margin-left: 0;
+    }
+
+    @media (min-width: 768px) {
+      p {
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+
+      &.section--padding {
+        padding: 40px 0;
+      }
+    }
+  }
 }
 
 .landing {
