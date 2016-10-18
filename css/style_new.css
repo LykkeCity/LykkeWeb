@@ -345,6 +345,7 @@ label.error { display: none !important; }
 .select__value span { overflow: hidden; text-overflow: ellipsis; }
 .select__label { margin: 0; padding: 14px 10px 14px 20px; font-size: 16px; width: 10px; }
 .select__elem { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: transparent; font-size: 0; position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; cursor: pointer; }
+.select__elem option { font-size: 16px; }
 .select:after { font-family: 'icon'; content: "\e90f"; position: absolute; font-size: 10px; right: 15px; top: 50%; margin-top: -4px; color: rgba(63, 77, 96, 0.6); }
 
 .form_title { font-size: 16px; padding: 11px 0; border-bottom: 1px solid #DFE1E5; margin-bottom: 25px; }

@@ -312,6 +312,10 @@ label.error {
     left: 0;
     z-index: 2;
     cursor: pointer;
+
+    option {
+      font-size: 16px;
+    }
   }
 
   &:after {
