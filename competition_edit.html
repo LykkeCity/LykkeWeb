@@ -205,9 +205,9 @@
           </div>
 
           <div class="form-group">
-            <label for="f3" class="control-label">Brief</label>
+            <label for="file" class="control-label">Brief</label>
             <div class="fileupload">
-              <input type="file" id="f3" class="fileupload__field">
+              <input type="file" id="file" class="fileupload__field">
               <button type="button" class="btn btn--default fileupload__btn">Choose file...</button>
               <span class="fileupload__notice">Maximum file size is 3Mb</span>
             </div>
@@ -413,7 +413,32 @@
       $('.message_card__inner').css({ height: 'auto' })
   });
 
-  $('#datetimepicker1').datetimepicker();
+//  $('#datetimepicker1').datetimepicker();
+
+  $(function() {
+    var $fileuploadBtn = $('.fileupload .fileupload__btn'),
+        $field = $fileuploadBtn.siblings('.fileupload__field'),
+        $notice = $fileuploadBtn.siblings('.fileupload__notice');
+
+    $fileuploadBtn.on('click', function() {
+      $field.click()
+
+      setTimeout(function() {
+        if ( $field.val() ) {
+          $notice.text($field.val().split('\\').pop())
+        }
+      }, 1);
+
+      $field.change(function() {
+        var files = [], fileArr, filename;
+
+        filename = $(this).val().split('\\').pop();
+
+        $notice.text( filename ).attr('title', filename)
+      });
+    })
+  });
+
 </script>
 
 </body>
