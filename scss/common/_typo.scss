@@ -97,7 +97,11 @@
     font-size: 18px;
     line-height: 30px;
 
-    li {color: #AB00FF; margin-bottom: 15px;}
+    li {color: #AB00FF; color: rgba(63, 77, 96, 0.8); margin-bottom: 15px;
+      &:before {
+        color: #AB00FF;
+      }
+    }
     .li {color: rgba(63, 77, 96, 0.8);}
 
     a:not(.btn) {

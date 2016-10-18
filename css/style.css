@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face { font-family: 'Proxima Nova'; src: url("../fonts/ProximaNovaRegular.eot");
   /* IE9 Compat Modes */
 src: url("../fonts/ProximaNovaRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNovaRegular.woff") format("woff"), url("../fonts/ProximaNovaRegular.ttf") format("truetype"), url("../fonts/ProximaNovaRegular.svg#2c1459d58560f08b4b0586fbe80aa4cd") format("svg");
@@ -85,7 +86,8 @@ hr { width: 80%; max-width: 770px; margin: 45px auto; border-top: 2px solid #DFE
 .text ul { list-style-position: outside; list-style-type: disc; }
 .text table { width: 100%; }
 .text ul { list-style: disc; font-weight: normal; font-style: normal; font-stretch: normal; margin-bottom: 20px; margin-top: 20px; padding-left: 25px; color: rgba(63, 77, 96, 0.8); font-size: 18px; line-height: 30px; }
-.text ul li { color: #AB00FF; margin-bottom: 15px; }
+.text ul li { color: #AB00FF; color: rgba(63, 77, 96, 0.8); margin-bottom: 15px; }
+.text ul li:before { color: #AB00FF; }
 .text ul .li { color: rgba(63, 77, 96, 0.8); }
 .text ul a:not(.btn) { color: #0da7fc; }
 .text ul + h3, .text ul + h4, .text ul + h2 { margin-top: 45px; }
@@ -326,7 +328,7 @@ label.error { display: none !important; }
 .form--default p { font-size: 16px; margin-bottom: 30px; }
 .form--default .form-control:not(.select__elem) { background: #fff; padding: 10px 16px; font-size: 16px; border: 1px solid #e1e1e1; }
 .form--default .select__value { padding-left: 20px; }
-.form--default textarea.form-control { resize: auto; max-width: 100%; }
+.form--default textarea.form-control { height: auto; resize: auto; max-width: 100%; }
 .form--default .prize__value { font-size: 24px; padding-top: 11px; }
 .form--default .form__submit { padding: 42px 0; }
 .form--default .form__submit .text-muted { margin-top: 15px; }
@@ -1019,8 +1021,10 @@ hr.full { margin-left: 0; margin-right: 0; width: 100%; }
 
 .tab_item { display: inline-block; vertical-align: top; font-size: 15px; font-weight: 600; border-radius: 100px; color: rgba(63, 77, 96, 0.6); text-transform: uppercase; letter-spacing: .07em; font-family: "Proxima Nova", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif; border: 1px solid transparent; margin-bottom: 10px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 .tab_item:hover { border-color: #ab00ff; }
+.tab_item:focus { text-decoration: none; color: rgba(63, 77, 96, 0.6); }
 .tab_item__link { padding: 7px 22px; display: block; color: rgba(63, 77, 96, 0.6); }
 .tab_item__link:hover { color: #ab00ff; }
+.tab_item__link:focus { text-decoration: none; color: rgba(63, 77, 96, 0.6); }
 .tab_item--active { color: #fff; background: #ab00ff; border-color: #ab00ff; }
 .tab_item--active .tab_item__link { color: #fff; }
 .tab_item:hover { text-decoration: none; }
@@ -1098,7 +1102,7 @@ hr.full { margin-left: 0; margin-right: 0; width: 100%; }
 .banner--results .prize__value { font-size: 28px; margin-bottom: 5px; }
 .banner--results .table { margin-bottom: 0; padding-bottom: 0; color: #3F4D60; font-size: 18px; }
 .banner--results .table tr:hover td { background: transparent; }
-.banner--results .table tr td { border-bottom: 0; text-align: center; padding: 5px; cursor: auto; }
+.banner--results .table tr td { border-top: 0; border-bottom: 0; text-align: center; padding: 5px; cursor: auto; }
 
 .steps { display: table; width: 100%; margin-bottom: 40px; position: relative; }
 .steps:before { content: ''; position: absolute; top: 25px; left: 4%; right: 9%; border-bottom: 2px dashed rgba(63, 77, 96, 0.35); z-index: 0; }
@@ -1524,7 +1528,9 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; /*A
   .page_nav__item { margin-right: 25px; }
   .page_nav__inner { border-top: 1px solid #eaedef; } }
 
-.page .tab-pane ul li { color: #AB00FF; margin-bottom: 15px; }
+.page .tab-pane ul { list-style: none; }
+.page .tab-pane ul li { color: #3f4d60; margin-bottom: 15px; position: relative; }
+.page .tab-pane ul li:before { color: #AB00FF; content: '•'; font-size: 28px; position: absolute; right: 100%; margin-right: 11px; top: -2px; }
 .page .tab-pane ul .li { color: #3f4d60; }
 .page .tab-pane ul + h3, .page .tab-pane ul + h4, .page .tab-pane ul + h2 { margin-top: 45px; }
 .page__title, .page h1.page__title, .page h2.page__title { margin-bottom: 17px; }
