@@ -15,6 +15,11 @@
 @import 'partials/dropdown';
 @import 'partials/nav';
 
+// vendors
+@import 'vendor/royalslider';
+@import 'vendor/jquery.fullPage';
+@import 'vendor/bootstrap-datetimepicker';
+
 // elements
 @import 'partials/animate';
 @import 'partials/component-animations';
@@ -37,11 +42,7 @@
 @import 'partials/voting';
 @import 'partials/banner';
 @import 'partials/steps';
-
-// vendors
-@import 'vendor/royalslider';
-@import 'vendor/jquery.fullPage';
-@import 'vendor/bootstrap-datetimepicker';
+@import 'partials/calendar';
 
 // necessary for all pages
 @import 'pages/content';

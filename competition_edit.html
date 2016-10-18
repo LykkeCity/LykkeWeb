@@ -239,18 +239,28 @@
             <div class="col-sm-4">
               <div class="form-group">
                 <label for="f5" class="control-label">Competition registration</label>
-                <input type="text" id="f5" class="form-control datetimepicker">
+                <div class="input-group datetimepicker">
+                  <input type="text" id="f5" class="form-control">
+                  <span class="input-group-addon"><i class="icon icon--calendar2"></i></span>
+                </div>
               </div>
             </div>
             <div class="col-sm-4">
               <div class="form-group">
                 <label for="f6" class="control-label">Implementation</label>
-                <input type="text" id="f6" class="form-control datetimepicker">
-              </div></div>
+                <div class="input-group datetimepicker">
+                  <input type="text" id="f6" class="form-control">
+                  <span class="input-group-addon"><i class="icon icon--calendar2"></i></span>
+                </div>
+              </div>
+            </div>
             <div class="col-sm-4">
               <div class="form-group">
                 <label for="f7" class="control-label">Voting</label>
-                <input type="text" id="f7" class="form-control datetimepicker">
+                <div class="input-group datetimepicker">
+                  <input type="text" id="f7" class="form-control">
+                  <span class="input-group-addon"><i class="icon icon--calendar2"></i></span>
+                </div>
               </div>
             </div>
           </div>
@@ -388,6 +398,10 @@
 <script src="js/functions_landing.js"></script>
 <script src="js/vendor/autosize.min.js"></script>
 
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/locale_ru.js"></script>
+<script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+
 <script>
   $('._show_hidden_form').on('click' ,function(ev) {
     ev.preventDefault();
@@ -413,7 +427,17 @@
       $('.message_card__inner').css({ height: 'auto' })
   });
 
-//  $('#datetimepicker1').datetimepicker();
+  $('.datetimepicker').datetimepicker({
+//    debug: true,
+    icons: {
+      time: "icon--clock",
+      date: "icon--calendar2",
+      up: "icon--chevron-thin-up",
+      down: "icon--chevron-thin-down",
+      previous: "icon--chevron-thin-left",
+      next: "icon--chevron-thin-right"
+    }
+  });
 
   $(function() {
     var $fileuploadBtn = $('.fileupload .fileupload__btn'),
@@ -431,9 +455,7 @@
 
       $field.change(function() {
         var files = [], fileArr, filename;
-
         filename = $(this).val().split('\\').pop();
-
         $notice.text( filename ).attr('title', filename)
       });
     })

@@ -1,0 +1,99 @@
+.fade {
+  opacity: 0;
+  @include transition(opacity .15s linear);
+  &.in {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  display: none;
+
+  &.in      { display: block; }
+}
+
+tr.collapse.in    { display: table-row; }
+
+tbody.collapse.in { display: table-row-group; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition-property(height, visibility);
+  @include transition-duration(.35s);
+  @include transition-timing-function(ease);
+}
+
+
+.bootstrap-datetimepicker-widget {
+  background: #fff;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  overflow: hidden;
+  position: absolute;
+  z-index:100;
+
+  &:after {
+    display: none;
+  }
+
+  table {
+    th {
+      font-weight: $fw-semi;
+    }
+
+    td, th {
+      padding: 10px;
+    }
+
+    td {
+      &.active, &.active:hover {
+        background: $primary;
+        color: #fff;
+      }
+
+      &.old, &.new {
+        color: rgba($secondary, .35);
+      }
+    }
+  }
+
+  [class^="icon--"], [class*=" icon--"] {
+    margin-right: 0;
+  }
+
+  .picker-switch a {
+    color: $secondary;
+  }
+
+  .timepicker-hour, .timepicker-minute, .timepicker-second {
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+
+  table td span.active {
+    background: $primary;
+    text-shadow: none;
+  }
+
+  .btn {
+    padding: 4px;
+    background: #fff;
+    border-radius: 4px;
+    height: auto;
+    color: $secondary;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+.collapse {
+  overflow: hidden;
+
+  @include transition(height .2s ease);
+}

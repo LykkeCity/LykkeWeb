@@ -356,3 +356,16 @@ label.error {
     color: rgba($secondary, .6);
   }
 }
+
+.input-group {
+  position: relative;
+  
+  &-addon {
+    position: absolute;
+    right: 0px;
+    color: rgba($secondary, .6);
+    cursor: pointer;
+    top: 4px;
+    padding: 10px;
+  }
+}
