@@ -13,7 +13,7 @@
     &--iphone {
       width: 431px;
       height: 888px;
-      background: url(../../img/landing/iphone.png) no-repeat center top;
+      background: url(../img/landing/iphone.png) no-repeat center top;
       z-index: 2;
 
       @include background-size(contain);
@@ -30,7 +30,7 @@
       height: 790px;
       right: 0;
       top: 78px;
-      background: url(../../img/landing/android.png) no-repeat center top;
+      background: url(../img/landing/android.png) no-repeat center top;
 
       @include background-size(contain);
 
