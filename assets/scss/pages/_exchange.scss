@@ -1,39 +1,29 @@
 .exchange_header {
   position: relative;
-  padding: 130px 0 60px;
+
+  @include rem(margin-top, -40px);
 
   &__bg {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    margin: 0 0 0 -406px;
     z-index:-1;
-  }
 
-  .h1 {
-
+    @include rem(margin-bottom, -100px);
   }
 
   .h2 {
     font-weight: normal;
     line-height: normal;
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    @include rem(font-size, 34px);
+    @include rem(line-height, 44px);
+    @include rem(margin-bottom, 50px)
   }
 
-  @media all and (max-width: 539px) {
-    padding: 90px 0px 40px;
-
-    .h1 {
-      font-size: 30px;
-    }
-
-    .h2 {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
+  @media all and (max-width: $screen-mobile) {
     &__bg {
-      width: 630px;
-      margin: 0 0 0 -315px;
+      margin-bottom: -20px;
 
       img {
         max-width: 100%;
@@ -43,25 +33,44 @@
 }
 
 .exchange {
-  padding-top: 40px !important;
+  @include rem(padding-top, 40px !important);
 
   hr {
     border-width: 1px;
     max-width: 100%;
     width: 100%;
     margin: 10px 0;
+
+    @include rem(margin, 10px 0);
+  }
+
+  .list-inline {
+    color: rgba($secondary, 0.8);
+
+    @include rem(margin-top, 20px);
+    @include rem(margin-bottom, 20px);
+    @include rem(font-size, 18px);
+    @include rem(line-height, 30px);
+  }
+
+  .text {
+    p {
+      color: rgba($secondary, 0.8);
+    }
   }
 
   .table-responsive {
-    margin: 30px 0 10px;
+    @include rem(margin, 30px 0 10px);
   }
 
   .back_link {
     color: rgba($secondary, .6);
-    font-size: 16px;
-    margin-bottom: 60px;
     display: inline-block;
     text-decoration: none !important;
+
+    @include rem(margin-bottom, 60px);
+    @include rem(font-size, 16px);
+
 
     &:hover {
       color: $primary;
@@ -72,7 +81,8 @@
       vertical-align: middle;
       position: relative;
       top: -1px;
-      margin-right: 6px;
+
+      @include rem(margin-right, 6px);
     }
 
     @media (min-width: 992px) {
@@ -80,34 +90,38 @@
     }
 
     @media (max-width: 767px) {
-      margin: -39px -15px 20px;
       padding: 20px;
       display: block;
       background: #f7f8f9;
+
+      @include rem(margin, -39px -15px 20px);
+      @include rem(padding, 20px)
     }
   }
 
   .h2-alt {
-    font-size: 39px;
-    margin-bottom: 26px;
     letter-spacing: .04em;
 
-    @media all and (max-width: 540px) {
-      font-size: 32px;
+    @include rem(font-size, 39px);
+    @include rem(margin-bottom, 26px);
 
-      img {
-        margin-right: 10px;
-      }
-    }
   }
 
   .text {
     p {
-      margin-bottom: 15px;
+      @include rem(margin-bottom, 15px);
     }
   }
 }
 
 #RatesTableUSD, #RatesTableBTC {
   min-height: 418px;
+}
+
+.image-container {
+  .image {
+    + figcaption {
+      @include rem(margin-top, 40px);
+    }
+  }
 }

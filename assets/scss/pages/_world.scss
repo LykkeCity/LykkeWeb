@@ -5,7 +5,6 @@
 }
 
 .page_world {
-
   .header {
     position: relative;
 
@@ -21,7 +20,7 @@
       @include rem(margin-right, 20px);
 
       > a {
-        font-weight: 600;
+        font-weight: $fw-semi;
         letter-spacing: 1.2px;
         color: rgba(#333, .4);
         background: transparent !important;
@@ -48,15 +47,15 @@
   }
 
   a {
-    color: #0da7fc;
+    color: $blue;
 
     &:hover {
-      color: #3f4d60;
+      color: $secondary;
       text-decoration: none;
     }
   }
 
-  @media all and (max-width: 767px) {
+  @media all and (max-width: $screen-landscape) {
 
     .header {
       padding: 28px 0;
@@ -90,11 +89,6 @@
 
         &:first-child {
           margin-left: 0;
-        }
-
-        > a {
-          //font-size: 11px;
-          //padding: 4px 10px;
         }
       }
     }

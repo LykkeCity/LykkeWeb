@@ -136,13 +136,13 @@
 
 $(window).scroll(function() {
   if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-    $('body').find('#launcher, .btn_feedback').css({
+    $('body').find('#launcher').css({
       bottom: $('.footer').outerHeight()
     })
   }
 
   else {
-    $('body').find('#launcher, .btn_feedback').css({
+    $('body').find('#launcher').css({
       bottom: 0
     })
   }

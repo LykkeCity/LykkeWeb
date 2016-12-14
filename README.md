@@ -1,3 +1,4 @@
 # Lykke Web
-Lykke Markup
+Lykke.com static markup
+
  https://lykkecity.github.io/LykkeWeb/public/
