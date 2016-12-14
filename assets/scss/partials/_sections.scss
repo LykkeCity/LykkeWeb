@@ -1,0 +1,104 @@
+.section--padding {
+  @include rem(padding, 60px 0);
+}
+
+.section {
+  &--banner {
+    text-align: center;
+    background: rgba(#eaedef, .4);
+
+    &.section--padding {
+      padding: 60px 20px;
+    }
+
+    .btn {
+      padding: 13px 43px;
+    }
+
+    p {
+      margin-bottom: 34px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--media {
+    .landing--video, .video {
+      margin-left: -105px;
+      margin-right: -105px;
+    }
+
+    @media (max-width: 992px)  {
+      .landing--video, .video {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+  }
+
+  &--steps {
+    background: #f7f8f9;
+    padding: 52px 0;
+
+    .status_bar {
+      width: 100px;
+    }
+
+    .voting_group__group {
+      margin-bottom: 8px;
+    }
+
+    .voting_group__value {
+      margin-left: 0;
+      display: block;
+      padding-top: 5px;
+      margin-bottom: 14px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #DFE1E5;
+    }
+
+    .voting_group__status {
+      display: block;
+      margin-left: 0;
+    }
+
+    @media (min-width: 768px) {
+      p {
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+
+      &.section--padding {
+        padding: 40px 0;
+      }
+    }
+  }
+}
+
+.section_header {
+  border-bottom: 1px solid #EBEDEF;
+
+  @include rem(padding-top, 6px);
+  @include rem(padding-bottom, 13px);
+  @include rem(margin-bottom, 38px);
+
+  &__link {
+    font-weight: $fw-semi;
+    color: $blue;
+    letter-spacing: 0;
+
+    @include rem(margin-top, 10px);
+    @include rem(font-size, 18px);
+    @include rem(line-height, 24px);
+
+    &:hover {
+      color: #3f4d60;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+}

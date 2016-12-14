@@ -1,2 +1,2 @@
-# LykkeCompetition
-Lykke Competition Markup
+# Lykke Web
+Lykke Markup

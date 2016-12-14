@@ -1,0 +1,36 @@
+@import "../../node_modules/LykkeFramework/assets/scss/style-minimal.scss";
+
+// elements
+@import '../../node_modules/LykkeFramework/assets/scss/partials/elements';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/animate';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/component-animations';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/sections';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/table';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/list';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/links';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/labels';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/tags';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/tabs';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/calendar';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/modificators';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/spinner';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/assets';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/modal';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/video';
+
+// optional
+@import 'partials/qa';
+@import 'partials/trading_data';
+@import 'partials/apps';
+@import 'partials/landing';
+@import 'partials/sections';
+@import 'partials/features';
+
+// optional pages
+@import 'pages/home';
+@import 'pages/leadership';
+@import 'pages/world';
+
+.zEWidget-launcher {
+  z-index:100 !important;
+}

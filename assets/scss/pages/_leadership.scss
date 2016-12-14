@@ -1,0 +1,57 @@
+.leadership {
+  .h1 {
+    @include rem(margin-bottom, 70px);
+  }
+}
+
+.leadership_list {
+
+}
+
+.leadership_item {
+  @include rem(margin-bottom, 80px);
+
+  &__image {
+    float: left;
+
+    @include transition(transform .2s ease-in-out);
+    @include rem(width, 170px);
+    @include rem(margin-right, 30px);
+
+    img {
+      width: 100%;
+    }
+  }
+  
+  &__info {
+    overflow: hidden;
+  }
+
+  &__title {
+    line-height: normal;
+    margin-bottom: 0;
+
+    @include rem(font-size, 22px);
+    @include transition(color .2s ease);
+  }
+
+  &__control {
+    display: block;
+
+    @include clearfix;
+
+    &:hover {
+      .leadership_item__title {
+        color: #000;
+      }
+
+      .leadership_item__image {
+        @include scale(1.015);
+      }
+    }
+  }
+}
+
+.description {
+  display: none;
+}

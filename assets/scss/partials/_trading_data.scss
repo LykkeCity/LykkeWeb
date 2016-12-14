@@ -1,0 +1,202 @@
+.trading_data {
+  width: 770px;
+  height: 780px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  &__item {
+    position: absolute;
+    top: 0;
+
+    &--iphone {
+      width: 431px;
+      height: 888px;
+      background: url(../../img/landing/iphone.png) no-repeat center top;
+      z-index: 2;
+
+      @include background-size(contain);
+
+      .trading_data__inner {
+        top: 113px;
+        left: 28px;
+        right: 28px;
+      }
+    }
+
+    &--android {
+      width: 394px;
+      height: 790px;
+      right: 0;
+      top: 78px;
+      background: url(../../img/landing/android.png) no-repeat center top;
+
+      @include background-size(contain);
+
+      .trading_data__inner {
+        top: 64px;
+        left: 17px;
+        right: 17px;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: $secondary;
+  }
+
+  &__label {
+    color: $primary;
+    letter-spacing: .04em;
+    float: right;
+    display: block;
+    border: 1px solid;
+    text-align: center;
+    white-space: nowrap;
+
+    @include rem(padding, 5px 12px);
+    @include rem(border-radius, 20px);
+    @include rem(min-width, 92px);
+    @include rem(font-size, 14px);
+  }
+
+  &__lastprice {
+    position: absolute;
+    font-weight: $fw-semi;
+    letter-spacing: .02em;
+    background: #9c27b0;
+    color: rgba($white, .9);
+
+    @include rem(padding, 10px);
+    @include rem(font-size, 23px);
+    @include rem(top, 145px);
+    @include rem(left, 4px);
+  }
+
+  &__buy,
+  &__sell {
+    position: absolute;
+    font-weight: $fw-semi;
+    text-transform: uppercase;
+    color: #212121;
+    background: $white;
+    text-align: center;
+
+    @include rem(width, 100px);
+    @include rem(padding, 5px);
+    @include rem(font-size, 24px);
+    @include rem(top, 181px);
+
+  }
+
+  &__buy {
+    @include rem(left, 203px);
+  }
+
+  &__sell {
+    left: 38px;
+
+    @include rem(left, 38px);
+  }
+
+  &__table {
+    margin-top: 119px;
+
+    .tr_icn {
+      color: rgba(#3d4b5e, .6);
+    }
+
+    table {
+      width: 100%;
+
+      tr {
+        th {
+          font-weight: normal;
+          background: $white;
+          color: rgba($secondary, .6);
+          border-bottom: 1px solid #e6e8eb;
+
+          @include rem(padding, 11px 10px 10px);
+          @include rem(font-size, 14px);
+        }
+
+        td {
+          border-bottom: 1px solid #e6e8eb;
+          text-align: left;
+
+          @include rem(padding, 10px 32px);
+        }
+      }
+    }
+  }
+
+  &__inner {
+    position: absolute;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    max-width: none;
+    width: 100%;
+    min-width: 360px;
+    height: 766px;
+
+    &__item {
+
+      &--iphone {
+        width: 300px;
+        height: 617px;
+
+        .trading_data__inner {
+          top: 79px;
+          left: 21px;
+          right: 20px;
+        }
+      }
+
+      &--android {
+        width: 320px;
+
+        .trading_data__inner {
+          top: 53px;
+          left: 15px;
+          right: 14px;
+        }
+      }
+    }
+
+    &__table {
+      margin-top: 85px;
+
+      table tr {
+        th {
+          font-size: 11px;
+          padding:5px 10px 6px;
+        }
+
+        td {
+          font-size: 12px;
+          padding: 5px 17px 6px;
+        }
+      }
+    }
+
+    &__buy,
+    &__sell {
+      top: 150px;
+      left: 20px;
+    }
+
+    &__buy {
+      left: 160px;
+    }
+  }
+}

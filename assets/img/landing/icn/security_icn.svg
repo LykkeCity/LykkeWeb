@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62px" height="69px" viewBox="0 0 62 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>security_icn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-2.22044605e-14%" id="linearGradient-1">
+            <stop stop-color="#AB00FF" offset="0%"></stop>
+            <stop stop-color="#C955FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Lykke_Wallet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01a_lykke_wallet_landing" transform="translate(-961.000000, -2200.000000)">
+            <g id="security_icn" transform="translate(962.000000, 2201.000000)">
+                <rect id="Rectangle-11-Copy" fill="url(#linearGradient-1)" x="5" y="36" width="50" height="26" rx="1"></rect>
+                <g id="Page-1-Copy" stroke="#333333" stroke-width="2">
+                    <path d="M55,67 L5,67 C2.239,67 0,64.761 0,62 L0,36 C0,33.239 2.239,31 5,31 L55,31 C57.761,31 60,33.239 60,36 L60,62 C60,64.761 57.761,67 55,67 L55,67 Z" id="Stroke-1"></path>
+                    <path d="M50,30 L50,20 C50,8.954 41.046,0 30,0 C18.954,0 10,8.954 10,20 L10,30" id="Stroke-3" stroke-linecap="round"></path>
+                </g>
+                <path d="M18,46 L18,52" id="Path-5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M34,46 L34,52" id="Path-5-Copy-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M42,46 L42,52" id="Path-5-Copy-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M26,46 L26,52" id="Path-5-Copy-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
