@@ -8,27 +8,27 @@
   .header {
     position: relative;
 
-    @include rem(padding, 58px 0)
-  }
+    @include rem(padding, 58px 0);
 
-  .nav {
+    .nav {
+      @include rem(padding, 9px 0);
+      @include rem(margin-left, -15px);
 
-    @include rem(padding, 9px 0);
-    @include rem(margin-left, -15px);
+      > li {
+        @include rem(margin-right, 20px);
 
-    > li {
-      @include rem(margin-right, 20px);
+        > a {
+          font-weight: $fw-semi;
+          letter-spacing: 1.2px;
+          color: rgba(#333, .4);
+          text-transform: uppercase;
+          background: transparent !important;
 
-      > a {
-        font-weight: $fw-semi;
-        letter-spacing: 1.2px;
-        color: rgba(#333, .4);
-        background: transparent !important;
+          @include rem(font-size, 14px);
 
-        @include rem(font-size, 14px);
-
-        &:hover {
-          color: rgba(#333, .8);
+          &:hover {
+            color: rgba(#333, .8);
+          }
         }
       }
     }

@@ -18,7 +18,7 @@
       maxHeight: $(window).outerHeight() - $('header').outerHeight()
     });
 
-    $('.new_page').css({
+    $('body').css({
       paddingBottom: $('footer').outerHeight()
     })
   }).trigger('resize');

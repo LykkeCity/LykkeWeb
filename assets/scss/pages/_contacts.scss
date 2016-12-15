@@ -1,0 +1,73 @@
+.contacts {
+  @include background-size(cover);
+  background-position: center;
+  padding: 22% 0 15%;
+
+  &--bottom {
+
+    @include rem(font-size, 18px);
+    @include rem(padding, 65px 0 30px);
+
+    p {
+      color: $secondary;
+    }
+    a {
+      color: $blue !important;
+    }
+
+    .sub_title {
+      @include rem(padding-right, 20px);
+    }
+  }
+
+  &__icon {
+    background: url(../img/corp/contacts-icon.png) no-repeat;
+    width: 26px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    margin-right: 10px;
+    right: 100%;
+
+    @include background-size(26px 73px);
+
+    &--pin {background-position: 0 -47px; height: 30px; top: -4px}
+    &--call {background-position: 0 -21px; height: 26px; top: -2px}
+  }
+
+  &__block {
+    margin-bottom: 35px;
+
+    @include rem(margin-bottom, 35px);
+  }
+
+  @media (max-width: $screen-landscape) {
+    padding: 100px 0;
+    position: relative;
+    background-position: center right;
+
+    &:before {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      background: rgba(#fff, .5);
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (max-width: $screen-mobile) {
+    &--bottom {
+      .col-xs-6 {
+        width: 100%;
+      }
+
+      .col-xs-10 {
+        width: 75%;
+      }
+    }
+  }
+}
