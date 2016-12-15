@@ -1,0 +1,158 @@
+.news_list {
+  &__item {
+    border-bottom: 1px solid $border-alt;
+
+    @include rem(padding, 35px 0 25px);
+  }
+
+  &__media {
+    @include rem(margin-bottom, 30px);
+
+    img {
+      max-width: 100%;
+      min-width: 80%;
+    }
+  }
+
+  &__date {
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    color: rgba($secondary, .6);
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+
+    @include rem(font-size, 16px);
+  }
+
+  &__info {
+    color: rgba($secondary, .6);
+    @include rem(margin-bottom, 9px);
+
+    a {
+      color: rgba($secondary, .8);
+    }
+  }
+
+  &__title,
+  &__title.h3 {
+    color: $text;
+    margin-top: 0;
+
+    @include rem(margin-bottom, 9px);
+    @include rem(padding-right, 20px);
+
+
+    a:not(.btn) {
+      color: inherit;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  &__text,
+  p.news_list__text {
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    color: $gray-dark;
+
+    @include rem(font-size, 22px);
+  }
+}
+
+.news_article {
+  @include rem(padding, 20px 0);
+
+  &__media {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__header {
+    @include rem(margin, 0 0 80px);
+
+    .news_article__media {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1170px + 30px;
+    }
+  }
+
+  &__body {
+    .container {
+      max-width: 970px + 30px;
+    }
+  }
+
+  &__title {
+    @include rem(margin-bottom, 60px);
+  }
+
+  &__info {
+    @include rem(font-size, 16px);
+    @include rem(line-height, 24px);
+    @include rem(margin-bottom, 20px);
+
+    time {
+      display: block;
+    }
+  }
+
+  &__text {
+    @include rem(margin-top, -5px);
+    @include rem(margin-bottom, 60px);
+
+    &.text {
+      .lead {
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.64;
+        color: $secondary;
+
+        @include rem(font-size, 22px);
+        @include rem(margin-bottom, 48px);
+      }
+
+      p, ul, ol {
+        @include rem(margin-bottom, 20px);
+      }
+
+      blockquote {
+        font-weight: $fw-semi;
+        color: $secondary;
+        border-left: 2px solid $primary;
+
+        @include rem(font-size, 22px);
+        @include rem(line-height, 40px);
+        @include rem(margin, 50px 0);
+        @include rem(padding, 0 20px);
+
+        cite {
+          font-weight: $fw-semi;
+          color: $gray-light;
+          letter-spacing: 0;
+          display: block;
+
+          @include rem(font-size, 22px);
+          @include rem(line-height, 40px);
+        }
+      }
+    }
+  }
+}
+
+.text--dark_gray {
+  color: rgba($secondary, .8) ;
+}
