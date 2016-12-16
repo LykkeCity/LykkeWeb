@@ -5,18 +5,19 @@
 }
 
 .leadership_list {
-
+  @include clearfix;
+  @include rem(margin-bottom, 70px);
 }
 
 .leadership_item {
-  @include rem(margin-bottom, 80px);
+  float: left;
+
+  @include rem(width, 25%);
 
   &__image {
     float: left;
-
-    @include transition(transform .2s ease-in-out);
-    @include rem(width, 170px);
-    @include rem(margin-right, 30px);
+    width: 100%;
+    @include transition(transform .2s ease);
 
     img {
       width: 100%;
@@ -25,14 +26,30 @@
   
   &__info {
     overflow: hidden;
+    display: none;
+  }
+
+  &__desc {
+    color: $gray-dark;
+    font-weight: normal;
+
+    @include rem(font-size, 22px);
+    @include rem(line-height, 36px);
+  }
+
+  &__text {
+    color: $secondary;
+    letter-spacing: 0;
+
+    @include rem(font-size, 18px);
+    @include rem(line-height, 30px);
+    @include rem(margin, 10px 0 10px);
   }
 
   &__title {
     line-height: normal;
-    margin-bottom: 0;
 
-    @include rem(font-size, 22px);
-    @include transition(color .2s ease);
+    @include rem(margin-bottom, 5px);
   }
 
   &__control {
@@ -46,12 +63,146 @@
       }
 
       .leadership_item__image {
-        @include scale(1.015);
+        @include scale(1.02);
       }
+    }
+  }
+  
+  @media (max-width: $screen-tablet) {
+    @include rem(width, 33.3333%);
+  }
+
+  @media (max-width: $screen-mobile) {
+    @include rem(width, 50%);
+  }
+
+  @media (max-width: $screen-mobile-tiny) {
+    @include rem(width, 100%);
+  }
+}
+
+.leadership_modal {
+  display: block !important;
+  visibility: hidden;
+  opacity: 0;
+
+  @include transition(all .4s ease);
+
+  &.fade.in {
+    visibility: visible;
+    opacity: 1;
+
+    .modal-content {
+      @include transform(scale(1) translate(0, 0));
+    }
+
+    .close {
+      @include transform(translate(0, 0));
+    }
+  }
+
+  .modal-body {
+    @include rem(padding, 40px);
+  }
+
+  &__image {
+    width: 100%;
+    height: 355px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px 8px 0 0;
+
+    @include background-size(cover);
+  }
+
+  .modal-inner {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .modal-content {
+    pointer-events: all;
+    width: 570px;
+    max-width: 100%;
+    background: $white;
+    border-radius: 8px;
+    margin: 30px auto;
+    position: relative;
+
+    @include transition(transform .2s ease-in-out);
+    @include transform(scale(.8) translate(0, 10%));
+  }
+
+  .modal-dialog {
+    display: table;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .close {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    opacity: .7;
+
+    background: url(../img/corp/circle_close.svg) no-repeat center;
+
+    @include background-size(cover);
+    @include transition(all $transition-default);
+    @include rem(width, 60px);
+    @include rem(height, 60px);
+    @include rem(margin, 40px auto);
+
+    @include transform(translate(0, -100%));
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @media (max-height: $screen-landscape) {
+    .close {
+      top: 10px;
+      right: 10px;
+      left: auto;
+      margin: 0;
+    }
+  }
+
+  @media (max-width: $screen-mobile) {
+    display: block;
+    padding: 0 !important;
+    background: $white;
+
+    &__image {
+      border-radius: 0;
+    }
+
+    .modal-inner, .modal-dialog {
+       display: block;
+    }
+
+    .modal-content {
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .close {
+      top: 10px;
+      right: 10px;
+      left: auto;
+      margin: 0;
+      width: 30px;
+      height: 30px;
     }
   }
 }
 
-.description {
-  display: none;
+@media (max-width: $screen-landscape) {
+
 }

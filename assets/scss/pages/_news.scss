@@ -156,3 +156,39 @@
 .text--dark_gray {
   color: rgba($secondary, .8) ;
 }
+
+.page_nav {
+  position: relative;
+
+  .back_link {
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    padding: 10px 5px;
+    z-index:10;
+    opacity: .8;
+    top: 50%;
+    margin-bottom: 0;
+
+    @include rem(margin, -14px 0 0 30px);
+    @include box-sizing(content-box);
+
+    background: url(../img/corp/back_icn.svg) no-repeat center;
+
+    &:hover {
+      opacity:1;
+    }
+  }
+
+  @media (max-width: 1190px) {
+    .back_link {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: $screen-landscape) {
+    .back_link {
+      display: none;
+    }
+  }
+}
