@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="74px" height="65px" viewBox="0 0 74 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>business_case_icn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-1.11022302e-14%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#20D330" offset="0%"></stop>
+            <stop stop-color="#13B72A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="04_Lykke_B2B" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03_lykke_b2b/03a_how_we_do_it" transform="translate(-972.000000, -340.000000)">
+            <g id="business_case_icn" transform="translate(973.000000, 340.000000)">
+                <path d="M36,51 L36,61" id="Path-3-Copy" stroke="#333333" stroke-width="2"></path>
+                <circle id="Oval-4-Copy" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" cx="36" cy="61" r="3"></circle>
+                <g id="Group-3-Copy" transform="translate(4.000000, 1.000000)">
+                    <rect id="Rectangle-3-Copy-18" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" x="0" y="0" width="64" height="50" rx="4"></rect>
+                    <rect id="Rectangle-3-Copy-19" fill="url(#linearGradient-1)" x="5" y="5" width="54" height="40" rx="1"></rect>
+                    <path d="M30,36 C25.0294373,36 21,31.9705627 21,27 C21,22.0294373 25.0294373,18 30,18 L30,26.0047582 C30,26.5544151 30.455761,27 31.0024733,27 L39,27 C39,31.9705627 34.9705627,36 30,36 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"></path>
+                    <path d="M43.9995864,22.0871934 C43.9998619,22.0581616 44,22.0290969 44,22 C44,17.0294373 39.9705627,13 35,13 L35,21.0847201 C35,21.6383708 35.4445598,22.0871934 35.9979684,22.0871934 L43.9995864,22.0871934 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"></path>
+                </g>
+                <path d="M0,1 L72,1" id="Path-9" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

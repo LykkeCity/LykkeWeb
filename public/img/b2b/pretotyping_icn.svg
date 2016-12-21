@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="71px" height="52px" viewBox="0 0 71 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>pretotyping_icn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-3.33066907e-14%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFCB48" offset="0%"></stop>
+            <stop stop-color="#FFAE2C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="04_Lykke_B2B" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03_lykke_b2b/03a_how_we_do_it" transform="translate(-974.000000, -566.000000)">
+            <g id="pretotyping_icn" transform="translate(974.000000, 567.000000)">
+                <path d="M1.0029907,0 L68.9970093,0 C69.5509458,0 70,0.447525736 70,0.998768955 L70,49.001231 C70,49.5528359 69.5529938,50 68.9970093,50 L1.0029907,50" id="Rectangle-3-Copy-18" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF"></path>
+                <rect id="Rectangle-3-Copy-18" fill="url(#linearGradient-1)" x="0" y="5" width="49" height="40" rx="1"></rect>
+                <path d="M54,1 L54,49.8067288" id="Path-3" stroke="#333333" stroke-width="2"></path>
+                <circle id="Oval-4" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="#FFFFFF" cx="62" cy="24" r="3"></circle>
+                <path d="M24,10 L24,20" id="Path-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M38,10 L38,20" id="Path-4-Copy-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10,10 L10,20" id="Path-4-Copy-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M17,10 L17,15" id="Path-4-Copy-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M31,10 L31,15" id="Path-4-Copy-5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Path-8" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="20 30 24 27 24 36"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
