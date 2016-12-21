@@ -54,6 +54,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+
+        <a href="" class="pull-right btn btn--icon visible-xs visible-sm btn_contact_header"><i class="icon icon--mail"></i></a>
+
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <div class="t-simulate">
             <div class="t-row">
@@ -82,7 +85,17 @@
                       </ul>
                     </div>
                   </li>
-                  <li class="active"><a class="dropdown__control" href="https://lykke.com/corp.php">Corp</a>
+                  <li class="active">
+                    <a class="dropdown__control" href="b2b.html">B2B</a>
+                    <div class="dropdown__container">
+                      <ul class="dropdown__nav">
+                        <li><a href="b2b_what_we_do.html">What We Do</a></li>
+                        <li><a href="b2b_how_we_do.html">How We Do It</a></li>
+                        <li><a href="b2b_case_studies.html">Case Studies</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class=""><a class="dropdown__control" href="https://lykke.com/corp.php">Corp</a>
                     <div class="dropdown__container">
                       <ul class="dropdown__nav">
                         <li><a href="https://lykke.com/leadership.php">Leadership</a></li>
@@ -119,10 +132,12 @@
     <div class="page_nav__inner">
       <div class="container">
         <ul class="page_nav__list">
-          <li class="page_nav__item"><a href="leadership.html">Leadership</a></li>
-          <li class="page_nav__item"><a href="technology.html">Technology</a></li>
-          <li class="page_nav__item"><a href="contacts.html">Contacts</a></li>
+          <li class="page_nav__item"><a href="b2b_what_we_do.html">What We Do</a></li>
+          <li class="page_nav__item active"><a href="b2b_how_we_do.html">How We Do It</a></li>
+          <li class="page_nav__item"><a href="b2b_case_studies.html">Case Studies</a></li>
         </ul>
+
+        <a href="" class="btn btn_contact pull-right hidden-xs hidden-sm"><i class="icon icon--mail"></i> Contact us</a>
       </div>
     </div>
   </nav>
@@ -131,56 +146,173 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 automargin">
-          <h1 class="text-center page__title">Lykke<span>Corp</span></h1>
-          <h3 class="page__subtitle">Anyone can trade</h3>
-
-          <p class="lead">Lykke is building one global marketplace that is a level playing field and where everyone has access. The marketplace will use the <a href="https://lykke.com/technology.php">blockchain technology</a> pioneered by Bitcoin to offer immediate settlement and direct ownership. Lykke is founded by Richard Olsen in Switzerland and received the first seed funding in 2015. Lykke shares are issued in the form of colored coins. Our software is open-source.</p>
+          <h1>How We Do It</h1>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--media">
+  <section class="section">
     <div class="container">
       <div class="row">
         <div class="col-sm-8 automargin">
-          <div class="landing--video">
-            <div class="responsive_video">
-              <iframe id="player" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="390" src="https://www.youtube.com/embed/Le3b6km81uc?enablejsapi=1&amp;origin=https%3A%2F%2Flykke.com&amp;widgetid=1"></iframe>
-            </div>
 
-            <button class="btn_video" id="btn_video">
-              <span class="btn_video__icon"><img src="img/play.svg" width="50" alt=""></span>
-              <span class="btn_video__text">WATCH VIDEO</span>
-            </button>
-          </div>
+          <ul class="list list--media">
+            <li class="list__item">
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 pull-right">
+                  <img src="img/b2b/business_case_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>Business Case</h3>
+                  <p>We first work out the business drivers and identify the areas where tradable tokens can add the most value or save the most money. This includes understanding the market and potentially building models of how people will use the new tokens. </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list__item">
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 pull-right">
+                  <img src="img/b2b/pretotyping_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>Pretotyping</h3>
+                  <p>
+                    Before building anything, we do light and cheap experiments to learn some of the market dynamics quickly. This is very cost-effective and informs our next steps. 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list__item">
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 pull-right">
+                  <img src="img/b2b/token_design_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>Token Design</h3>
+                  <p>
+                    We write the specifications for the tokens and how they will bind to rights and obligations in the real world. We have created simple tokens and exotic derivatives. We have experience in collateralization and bond creation, as well as financial engineering of sophisticated market products. 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list__item">
+              <div class="row">
+                <div class="col-xs-12 col-sm-2 pull-right">
+                  <img src="img/b2b/issuance_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>Issuance</h3>
+                  <p>
+                    Depending on the tokens, issuance can be simply a matter of sending them to people who will use them, or it can be a complex legal process ending in a sale of assets to the public. 
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section--padding section--links">
+  <section class="section section--padding section--banner">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 automargin">
-          <h3>Links</h3>
+        <div class="col-sm-6 automargin">
+          <h3>Contact Us!</h3>
+          <p>Lykke community forms Lykke City with inhabitants from around the world that contribute. Sign in to become an inhabitant of Lykke City:</p>
 
-          <div class="row">
-            <div class="col-sm-6">
-              <ul class="page__list page__list--links">
-                <li><a href="https://lykke.com/technology.php">Blockchain Technology</a></li>
-                <li><a href="https://zg.chregister.ch/cr-portal/auszug/auszug.xhtml?uid=CHE-345.258.499">Commercial register of canton Zug</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-6">
-              <ul class="page__list page__list--links">
-                <li><a href="https://lykke.com/Whitepaper_LykkeExchange.pdf">Lykke Exchange White Paper</a></li>
-                <li><a href="https://www.coinprism.info/asset/AXkedGbAH1XGDpAypVzA5eyjegX4FaCnvM">Lykke Corp Equity on Coinprism</a></li>
-              </ul>
-            </div>
-          </div>
+          <a href="" class="btn"><i class="icon icon--mail"></i> Contact us</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section section--padding_bottom">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8 automargin">
+
+          <ul class="list list--media">
+            <li class="list__item">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/b2b/communication_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>Communication & Education</h3>
+                  <p>
+                    Projects like these are 20 percent technology and 80 percent business process change. Especially when introducing a new tool, it’s easy to underestimate the amount of effort required. We offer a full suite of blockchain and crypto-educational experiences and materials, to help get your team up to speed and speaking the same language.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list__item">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/b2b/token_management_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>Token Management</h3>
+                  <p>
+                    Often, there are tools that must be built and integrated into your existing systems to create and manage a token ecosystem.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list__item">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/b2b/market_making_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>Market Making</h3>
+                  <p>
+                    In many cases, it’s wise to have a market maker who will purchase tokens and helps build demand for the market. We can partner with you or outside investors for this. 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list__item">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/b2b/ecosystem_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>Ecosystems</h3>
+                  <p>
+                    The more people who use cryptographic tokens, the more efficient the markets become. After using them in your company for some time, you may want to offer them to other trading partners or even to the public. This could involve creating new types of tokens, derivatives, contracts, wallets, trading desks, analytics, etc. We provide high-performance market tools with a blockchain settlement system.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list__item">
+              <div class="row">
+                <div class="col-sm-2">
+                  <img src="img/b2b/white_labeling_icn.svg" alt="">
+                </div>
+                <div class="col-sm-10">
+                  <h3>White Labeling</h3>
+                  <p>
+                    Our entire Lykke ecosystem — consisting of wallets, exchanges, dashboards, tools, and liquidity providers — can be rebranded and built into any existing system. 
+                  </p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
     </div>
   </section>
 </article>
@@ -214,44 +346,7 @@
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap-custom.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
-<script src="js/vendor/jquery.inview.min.js"></script>
 <script src="js/functions.js"></script>
-
-<script>
-  var tag = document.createElement('script');
-
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-  var player;
-
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      videoId : 'Le3b6km81uc',
-      height: '390',
-      width: '640',
-      events: {
-        'onReady': onPlayerReady
-      }
-    });
-  }
-
-  function onPlayerReady(event) {
-
-    // bind events
-    var playButton = document.getElementById("btn_video");
-    playButton.addEventListener("click", function() {
-      player.playVideo();
-
-      console.log('play')
-
-      $('.landing--video').addClass('video_played');
-    });
-
-  }
-</script>
 
 </body>
 </html>

@@ -9,6 +9,7 @@
 
     &:last-child {
       margin-bottom: 0;
+      border-bottom: 0;
 
       .col-sm-6:last-child {
         .qa_item {
@@ -71,6 +72,28 @@
     }
   }
 
+  &--alt {
+    .row {
+      @include rem(margin-bottom, 40px);
+
+      &:last-child {
+        .qa_item {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .qa_item {
+      padding-top: 0;
+
+      @include rem(padding-bottom, 50px);
+
+      &__num {
+        color: $primary;
+      }
+    }
+  }
+
   @media all and (max-width: $screen-landscape) {
     .row {
       border-bottom: 0;
@@ -80,6 +103,12 @@
     &_item {
       border-bottom: 1px solid $border-alt;
       padding: 40px 0;
+    }
+
+    &--alt {
+      .row {
+        @include rem(margin-bottom, 30px);
+      }
     }
   }
 }

@@ -1,0 +1,126 @@
+.list {
+  &--striped {
+    @include rem(margin-top, -7px);
+    @include rem(margin-bottom, 60px);
+
+    .list__item {
+      border-top: 1px solid $border-alt;
+      color: $text;
+
+      @include rem(font-size, 18px);
+      @include rem(line-height, 30px);
+      @include rem(padding, 10px 0);
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      a {
+        color: inherit;
+
+        @include rem(padding, 10px 0);
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.page_nav {
+  .container {
+    position: relative;
+  }
+
+  .btn_contact {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+
+    @include rem(margin-top, -25px);
+  }
+
+  @media all and (max-width: $screen-tablet) {
+
+  }
+}
+
+.section--padding_bottom {
+  @include rem(padding-bottom, 60px)
+}
+
+.btn_contact_header {
+  @include rem(line-height, 40px);
+
+  .icon {
+    @include rem(font-size, 28px);
+  }
+
+  &:hover {
+    color: $text;
+  }
+
+  .fixed & {
+    color: #fff;
+    margin-top: -9px;
+  }
+
+  @media all and (max-width: $screen-mobile-old) {
+    line-height: 25px;
+
+    &:hover {
+      color: $white;
+    }
+
+    .icon {
+      @include rem(font-size, 22px);
+    }
+
+    .fixed & {
+      margin-top: 0px;
+    }
+  }
+}
+
+.list {
+  &--media {
+    @include rem(margin-bottom, 40px);
+
+    .list__item {
+      text-align: center;
+
+      @include rem(margin-bottom, 45px);
+
+      img {
+        @include rem(margin-bottom, 20px);
+      }
+    }
+
+
+
+    @media all and (min-width: $screen-landscape + 1) {
+      .list__item {
+        text-align: left;
+
+        img {
+          @include rem(margin-top, 70px);
+        }
+      }
+
+      .pull-right {
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media all and (max-width: $screen-landscape) {
+  h1 {
+    text-align: center;
+  }
+}
+
+.section--banner.section--padding {
+  @include rem(padding, 40px 0)
+}
