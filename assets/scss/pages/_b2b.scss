@@ -124,3 +124,95 @@
 .section--banner.section--padding {
   @include rem(padding, 40px 0)
 }
+
+
+@mixin linear-gradient($angle, $color-stops...) {
+  $_angle-with-vendor-prefix: "";
+  $_angle: "";
+  @if $angle == "to top" or $angle == "bottom" {
+    $_angle-with-vendor-prefix: bottom;
+    $_angle: to top;
+  } @else if $angle == "to right" or $angle == "left" {
+    $_angle-with-vendor-prefix: left;
+    $_angle: to right;
+  } @else if $angle == "to bottom" or $angle == "top" {
+    $_angle-with-vendor-prefix: top;
+    $_angle: to bottom;
+  } @else if $angle == "to left" or $angle == "right" {
+    $_angle-with-vendor-prefix: right;
+    $_angle: to left;
+  } @else if $angle == "to top right" or $angle == "bottom left" {
+    $_angle-with-vendor-prefix: bottom left;
+    $_angle: to top right;
+  } @else if $angle == "to bottom right" or $angle == "top left" {
+    $_angle-with-vendor-prefix: top left;
+    $_angle: to bottom right;
+  } @else if $angle == "to bottom left" or $angle == "top right" {
+    $_angle-with-vendor-prefix: top right;
+    $_angle: to bottom left;
+  } @else if $angle == "to top left" or $angle == "bottom right" {
+    $_angle-with-vendor-prefix: bottom right;
+    $_angle: to top left;
+  } @else {
+    $_angle-with-vendor-prefix: $angle % 360;
+    $_angle: (90 - $angle) % 360;
+  }
+  background: -webkit-linear-gradient($_angle-with-vendor-prefix, $color-stops);
+  background: -moz-linear-gradient($_angle-with-vendor-prefix, $color-stops);
+  background: -o-linear-gradient($_angle-with-vendor-prefix, $color-stops);
+  background: linear-gradient($_angle, $color-stops);
+}
+
+.case_studies {
+  &__item {
+    position: relative;
+
+    @include rem(margin-bottom, 80px);
+  }
+
+  h3 {
+    @include rem(margin-bottom, 14px);
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: rgba($secondary, .8);
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    @include rem(margin-bottom, 40px);
+    @include rem(height, 300px);
+    @include rem(line-height, 300px);
+
+    > a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    &--yellow {
+      @include linear-gradient('to bottom', #FFCB48, #FFAE2C);
+    }
+
+    &--green {
+      @include linear-gradient('to bottom', #20d330, #13b72a);
+    }
+
+    &--blue {
+      @include linear-gradient('to bottom', #41C5FF, #0DA7FC);
+    }
+
+    &--gray {
+      @include linear-gradient('to bottom', #EBEDEF, #CFD2D7);
+    }
+  }
+}
