@@ -147,3 +147,26 @@ $(window).scroll(function() {
     })
   }
 });
+
+$(function() {
+  var msg = $('#msg');
+
+  $('.form--message').on('click', function(e) {e.stopPropagation()})
+  msg.bind('focus', function(){ $(this).parents('.form--message').addClass('focused'); })
+    .keyup(function(){
+      if ($(this).val()) { $(this).parents('.form--message').addClass('with_value'); }
+      else { $(this).parents('.form--message').removeClass('with_value'); }
+    })
+
+  msg.each(function(){ autosize(this); })
+    .on('autosize:resized', function(){
+      $('.message_card__inner').css({ height: 'auto' })
+    });
+
+  $('body').on('click', function() {
+    if (!msg.val()) {
+      $('.form--message').removeClass("focused");
+      $('.message_card__inner').removeAttr('style');
+    }
+  });
+});

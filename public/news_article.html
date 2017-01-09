@@ -176,6 +176,132 @@
 
                 <p>Lykke was founded in Zurich by Richard Olsen and received initial seed funding in 2015. In May 2016, Lykke closed a second seed round. The company plans an ICO (Initial Coin Offering) in September.</p>
               </div>
+
+              <div class="social_share">
+                <div class="social_share__text">Liked this article? Share it!</div>
+
+                <ul class="social social--simple">
+                  <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
+                  <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
+                </ul>
+              </div>
+
+              <!--Если не залогинены, то показывать этот баннер вместо блока .form--message-->
+              <div class="alert alert--message" role="alert">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="alert__text">Please <a href="">login</a> to enter your comment</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <form action="" class="form form--message">
+                <div class="message_card message_card--form">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title">Kaylee Harper</div>
+                        <textarea id="msg" placeholder="Enter your comment here..." class="form-control form-control--textarea message_card__area"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="message_actions">
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <div class="checkbox">
+                        <div class="switcher">
+                          <input id="ch13" type="checkbox" class="switcher__elem">
+                          <label for="ch13" class="switcher__control"></label>
+                        </div>
+                        <label for="ch13" class="control-label">Notify me of new comments via email</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-5 text-right">
+                      <button type="button" class="btn">Post comment</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <div class="messages_list">
+                <div class="message_card">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="message_card__message">
+                          <p>
+                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                          </p>
+                          <!-- выводить для админа  -->
+                          <div class="card__actions">
+                            <a href="" class="action_link">Reply</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                            &middot;
+                            <a href="" class="action_link">Spam</a>
+                          </div>
+
+                           <textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control--textarea"></textarea>
+
+                           <div class="text-right">
+                             <button type="button" class="btn">Send</button>
+                           </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="message_card message_card--accent">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a> </div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="label label--primary">author</span> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="message_card__message">
+                          <p>
+                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="message_card">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="message_card__message">
+                          <p>
+                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                          </p>
+                          <!-- выводить для админа -->
+                          <div class="card__actions">
+                            <a href="" class="action_link">Reply</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                            &middot;
+                            <a href="" class="action_link">Spam</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="show_more">
+                <button type="button" class="btn btn-md">Show more</button>
+              </div>
             </div>
           </div>
         </div>
@@ -215,6 +341,7 @@
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap-custom.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
+<script src="js/vendor/autosize.min.js"></script>
 <script src="js/functions.js"></script>
 
 </body>

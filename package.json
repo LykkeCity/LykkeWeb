@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "jquery": "1.12.4",
-    "jquery-inview": "git+https://github.com/protonet/jquery.inview.git"
+    "jquery-inview": "git+https://github.com/protonet/jquery.inview.git",
+    "autosize": "3.0.20"
   }
 }

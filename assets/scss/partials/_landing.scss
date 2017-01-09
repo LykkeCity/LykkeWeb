@@ -138,7 +138,7 @@
     @include background-size(cover);
 
     @media (min-width: 768px) {
-      @include rem(padding, 120px 0);
+      @include rem(padding, 120px 0 !important);
     }
 
     .landing_intro__title,
