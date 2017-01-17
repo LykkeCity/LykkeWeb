@@ -185,6 +185,14 @@
                   <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
                 </ul>
               </div>
+            </div>
+
+            <div class="col-md-9 col-md-offset-3">
+
+              <div class="block_header">
+                <button type="button" class="btn btn-sm pull-right"><i class="icon icon--mail"></i> Subscribe</button>
+                <h3>Comments <span>3</span></h3>
+              </div>
 
               <!--Если не залогинены, то показывать этот баннер вместо блока .form--message-->
               <div class="alert alert--message" role="alert">
@@ -196,10 +204,11 @@
                   </tr>
                 </table>
               </div>
+
               <form action="" class="form form--message">
                 <div class="message_card message_card--form">
                   <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><img src="http://lorempixel.com/30/30/" alt=""></div>
+                    <div class="user_badge__img"><img src="http://lorempixel.com/40/40/" alt=""></div>
                     <div class="user_badge__message">
                       <div class="message_card__inner">
                         <div class="user_badge__title">Kaylee Harper</div>
@@ -210,16 +219,10 @@
                 </div>
                 <div class="message_actions">
                   <div class="row">
-                    <div class="col-sm-7">
-                      <div class="checkbox">
-                        <div class="switcher">
-                          <input id="ch13" type="checkbox" class="switcher__elem">
-                          <label for="ch13" class="switcher__control"></label>
-                        </div>
-                        <label for="ch13" class="control-label">Notify me of new comments via email</label>
-                      </div>
+                    <div class="col-xs-8 text-right pull-right">
+                      <div class="text--gray">Please remember to be respectful and considerate. Thanks!</div>
                     </div>
-                    <div class="col-sm-5 text-right">
+                    <div class="col-xs-4">
                       <button type="button" class="btn">Post comment</button>
                     </div>
                   </div>
@@ -229,10 +232,14 @@
               <div class="messages_list">
                 <div class="message_card">
                   <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
                     <div class="user_badge__message">
                       <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date">9:46 PM April 9, 2016</span>
+                          <span class="middot">&middot;</span>
+                        </div>
                         <div class="message_card__message">
                           <p>
                             However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
@@ -246,27 +253,141 @@
                             <a href="" class="action_link">Spam</a>
                           </div>
 
-                           <textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control--textarea"></textarea>
+                          <textarea name="" id="" cols="30" rows="10" class="form-control message_card__reply form-control--textarea"></textarea>
 
-                           <div class="text-right">
-                             <button type="button" class="btn">Send</button>
-                           </div>
+                          <div class="text-right">
+                            <button type="button" class="btn">Send</button>
+                          </div>
 
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="message_card message_card--accent">
+                <div class="message_card">
                   <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a> </div>
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
                     <div class="user_badge__message">
                       <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="label label--primary">author</span> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date">9:46 PM April 9, 2016</span>
+                          <span class="middot">&middot;</span>
+                          <div class="label label--dark label--text">edited <i class="icon icon--edit_alt"></i></div>
+                        </div>
                         <div class="message_card__message">
                           <p>
                             However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
                           </p>
+                          <!-- выводить для админа  -->
+                          <div class="card__actions">
+                            <a href="" class="action_link">Reply</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                            <span class="action_text pull-right">3 response</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="message_card">
+                        <div class="user_badge user_badge--small">
+                          <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
+                          <div class="user_badge__message">
+                            <div class="message_card__inner">
+                              <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                                <span class="middot">&middot;</span>
+                                <span class="message_card__date">9:46 PM April 9, 2016</span>
+                              </div>
+                              <div class="message_card__message">
+                                <p>
+                                  However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                                </p>
+                                <!-- выводить для админа -->
+                                <div class="card__actions">
+                                  <a href="" class="action_link">Reply</a>
+                                  &middot;
+                                  <a href="" class="action_link">Delete</a>
+                                  &middot;
+                                  <a href="" class="action_link">Spam</a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message_card">
+                        <div class="user_badge user_badge--small">
+                          <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
+                          <div class="user_badge__message">
+                            <div class="message_card__inner">
+                              <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                                <span class="middot">&middot;</span>
+                                <span class="message_card__date">9:46 PM April 9, 2016</span>
+                              </div>
+                              <div class="message_card__message">
+                                <p>
+                                  However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                                </p>
+                                <!-- выводить для админа -->
+                                <div class="card__actions">
+                                  <a href="" class="action_link">Reply</a>
+                                  &middot;
+                                  <a href="" class="action_link">Delete</a>
+                                  &middot;
+                                  <a href="" class="action_link">Spam</a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="message_card message_card--deleted">
+                        <div class="user_badge user_badge--small">
+                          <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
+                          <div class="user_badge__message">
+                            <div class="message_card__inner">
+                              <div class="user_badge__title">
+                                <a href="">Kaylee Harper</a>
+                                <span class="middot">&middot;</span>
+                                <span class="message_card__date">9:46 PM April 9, 2016</span>
+                                <span class="middot">&middot;</span>
+                                <span class="label label--dark label--text">deleted</span>
+                              </div>
+                              <div class="message_card__message">
+                                <p>
+                                  However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="message_card message_card--accent">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a> </div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                          <span class="label label--primary">author</span>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date">9:46 PM April 9, 2016</span>
+                        </div>
+                        <div class="message_card__message">
+                          <p>
+                            However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
+                          </p>
+
+                          <div class="card__actions">
+                            <a href="" class="action_link">Edit</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -275,10 +396,13 @@
 
                 <div class="message_card">
                   <div class="user_badge user_badge--small">
-                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/30/30/" alt=""></a></div>
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
                     <div class="user_badge__message">
                       <div class="message_card__inner">
-                        <div class="user_badge__title"><a href="">Kaylee Harper</a> <span class="message_card__date">&middot; 9:46 PM April 9, 2016</span></div>
+                        <div class="user_badge__title"><a href="">Kaylee Harper</a>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date">9:46 PM April 9, 2016</span>
+                        </div>
                         <div class="message_card__message">
                           <p>
                             However, they are not as well-tested as the C++ version, which can pose a risk. For example MtGox repeatedly run into difficulties with their own custom-built PHP version of the Bitcoin protocol.
@@ -290,6 +414,37 @@
                             <a href="" class="action_link">Delete</a>
                             &middot;
                             <a href="" class="action_link">Spam</a>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="message_card">
+                  <div class="user_badge user_badge--small">
+                    <div class="user_badge__img"><a href=""><img src="http://lorempixel.com/40/40/" alt=""></a></div>
+                    <div class="user_badge__message">
+                      <div class="message_card__inner">
+                        <div class="user_badge__title">
+                          <a href="">Joy Casino</a>
+                          <span class="middot">&middot;</span>
+                          <span class="message_card__date"> 9:46 PM April 9, 2016</span>
+                          <span class="middot">&middot;</span>
+                          <div class="label label--text label--red">Suspicious comment</div>
+                        </div>
+                        <div class="message_card__message">
+                          <p>
+                            Проблемы с доступом Joy Casino?
+                          </p>
+                          <!-- выводить для админа -->
+                          <div class="card__actions">
+                            <a href="" class="action_link">Reply</a>
+                            &middot;
+                            <a href="" class="action_link">Delete</a>
+                            &middot;
+                            <a href="" class="action_link">Block user</a>
                           </div>
 
                         </div>
