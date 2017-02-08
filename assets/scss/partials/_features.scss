@@ -85,3 +85,7 @@
     }
   }
 }
+
+.assets_list {
+  @extend %disable-list-style;
+}

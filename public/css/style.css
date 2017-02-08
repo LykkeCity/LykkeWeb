@@ -118,9 +118,9 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 .switcher { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
 
-.dropdown-menu ol, .dropdown-menu ul, .dropdown-list { list-style: none; padding: 0; margin: 0; }
+.dropdown-menu ol, .dropdown-menu ul, .dropdown-list, .assets_list, .list { list-style: none; padding: 0; margin: 0; }
 
-.dropdown-menu ol li:after, .dropdown-menu ul li:after, .dropdown-list li:after, .dropdown-menu ol li:before, .dropdown-menu ul li:before, .dropdown-list li:before { content: ''; display: none; }
+.dropdown-menu ol li:after, .dropdown-menu ul li:after, .dropdown-list li:after, .assets_list li:after, .list li:after, .dropdown-menu ol li:before, .dropdown-menu ul li:before, .dropdown-list li:before, .assets_list li:before, .list li:before { content: ''; display: none; }
 
 .fs22 { font-size: 22px; font-size: 1.375rem; }
 
@@ -2482,6 +2482,8 @@ tbody.collapse.in { display: table-row-group; }
 
 .user_badge--small .user_badge__info, .user_badge--small .user_badge__message { padding-top: 9px; padding-top: 0.5625rem; }
 
+.table.table--simple { margin-bottom: 30px; margin-bottom: 1.875rem; }
+
 .list--striped { margin-top: -7px; margin-top: -0.4375rem; margin-bottom: 60px; margin-bottom: 3.75rem; }
 
 .list--striped .list__item { border-top: 1px solid #EBEDEF; color: #333333; font-size: 18px; font-size: 1.125rem; line-height: 30px; line-height: 1.875rem; padding: 10px 0; padding: 0.625rem 0; }
@@ -2544,5 +2546,25 @@ tbody.collapse.in { display: table-row-group; }
 .case_studies__img--blue { background: -webkit-linear-gradient(top, #41C5FF, #0DA7FC); background: -moz-linear-gradient(top, #41C5FF, #0DA7FC); background: -o-linear-gradient(top, #41C5FF, #0DA7FC); background: linear-gradient(to bottom, #41C5FF, #0DA7FC); }
 
 .case_studies__img--gray { background: -webkit-linear-gradient(top, #EBEDEF, #CFD2D7); background: -moz-linear-gradient(top, #EBEDEF, #CFD2D7); background: -o-linear-gradient(top, #EBEDEF, #CFD2D7); background: linear-gradient(to bottom, #EBEDEF, #CFD2D7); }
+
+.list--steps { margin-top: 40px !important; margin-top: 2.5rem !important; margin-bottom: 60px !important; margin-bottom: 3.75rem !important; }
+
+.list--steps a { color: rgba(63, 77, 96, 0.6) !important; }
+
+.list--steps a:hover { color: #3f4d60 !important; }
+
+.list--steps .list_item { margin-bottom: 30px; margin-bottom: 1.875rem; }
+
+.list--steps .list_item:after, .list--steps .list_item:before { content: ""; display: table; clear: both; }
+
+.list--steps .list_item__img { float: left; text-align: center; width: 68px; width: 4.25rem; margin-right: 30px; margin-right: 1.875rem; }
+
+.list--steps .list_item__img img { max-width: 100%; }
+
+.list--steps .list_item__content { overflow: hidden; padding-top: 4px; padding-top: 0.25rem; }
+
+.list--steps .list_item__content h4 { text-transform: none; letter-spacing: 0; font-size: 21px; font-size: 1.3125rem; line-height: 24px; line-height: 1.5rem; margin-bottom: 4px; margin-bottom: 0.25rem; }
+
+.section--padding.section--padding_bottom { padding-bottom: 100px; padding-bottom: 6.25rem; }
 
 .zEWidget-launcher { z-index: 100 !important; }

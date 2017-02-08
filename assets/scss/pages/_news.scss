@@ -395,3 +395,7 @@
     @include rem(padding-top, 9px);
   }
 }
+
+.table.table--simple {
+  @include rem(margin-bottom, 30px);
+}

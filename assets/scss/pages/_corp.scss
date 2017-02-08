@@ -1,0 +1,52 @@
+.list {
+  @extend %disable-list-style;
+
+  &--steps {
+    @include rem(margin-top, 40px !important);
+    @include rem(margin-bottom, 60px !important);
+
+    a {
+      color: rgba($secondary, .6) !important;
+
+      &:hover {
+        color: rgba($secondary, 1) !important;
+      }
+    }
+
+    .list_item {
+      @include clearfix;
+      @include rem(margin-bottom, 30px);
+
+      &__img {
+        float: left;
+        text-align: center;
+
+        @include rem(width, 68px);
+        @include rem(margin-right, 30px);
+
+        img {
+          max-width: 100%;
+        }
+      }
+      
+      &__content {
+        overflow: hidden;
+
+        @include rem(padding-top, 4px);
+
+        h4 {
+          text-transform: none;
+          letter-spacing: 0;
+
+          @include rem(font-size, 21px);
+          @include rem(line-height, 24px);
+          @include rem(margin-bottom, 4px);
+        }
+      }
+    }
+  }
+}
+
+.section--padding.section--padding_bottom {
+  @include rem(padding-bottom, 100px);
+}
