@@ -1952,7 +1952,7 @@ tbody.collapse.in { display: table-row-group; }
   .qa_item { border-bottom: 1px solid #EBEDEF; padding: 40px 0; }
   .qa--alt .row { margin-bottom: 30px; margin-bottom: 1.875rem; } }
 
-.trading_data { width: 770px; height: 780px; max-width: 100%; margin: 0 auto; position: relative; overflow: hidden; }
+.trading_data { width: 770px; height: 780px; max-width: 100%; margin: 0 auto; position: relative; overflow: hidden; margin-top: 70px; margin-top: 4.375rem; }
 
 .trading_data__item { position: absolute; top: 0; }
 
@@ -2065,13 +2065,23 @@ tbody.collapse.in { display: table-row-group; }
 
 .landing--intro { background: #3F4D60 url(../img/landing/field_big.jpg) no-repeat center; color: #fff; text-align: center; padding-bottom: 0 !important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
-@media (min-width: 768px) { .landing--intro { padding: 120px 0 !important; padding: 7.5rem 0 !important; } }
+@media (min-width: 768px) { .landing--intro { padding: 120px 0 0 !important; padding: 7.5rem 0 0 !important; } }
 
 .landing--intro .landing_intro__title, .landing--intro .h3 { color: #fff; }
 
 .landing--features { text-align: center; }
 
-@media (min-width: 767px) { .landing--features { padding: 115px 0 43px; padding: 7.1875rem 0 2.6875rem; } }
+.landing--features .apps { text-align: right; margin-top: 5px; margin-top: 0.3125rem; }
+
+.landing--features .page__title, .landing--features .landing__subtitle { text-align: left; padding: 0; }
+
+.landing--features .landing_features_title { margin-bottom: 15px; margin-bottom: 0.9375rem; }
+
+@media (min-width: 767px) { .landing--features { padding: 115px 0 43px !important; padding: 7.1875rem 0 2.6875rem !important; } }
+
+@media (max-width: 767px) { .landing--features .landing_features_title { text-align: center; margin-bottom: 40px; margin-bottom: 2.5rem; }
+  .landing--features .page__title { text-align: center; margin-bottom: 25px; margin-bottom: 1.5625rem; }
+  .landing--features .apps { margin-top: 0; text-align: center; float: none !important; } }
 
 .landing--video { -webkit-background-image: linear-gradient(-179deg, #0DA7FC 0%, #0388EF 100%); background-image: linear-gradient(-179deg, #0DA7FC 0%, #0388EF 100%); position: relative; }
 

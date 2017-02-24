@@ -138,7 +138,7 @@
     @include background-size(cover);
 
     @media (min-width: 768px) {
-      @include rem(padding, 120px 0 !important);
+      @include rem(padding, 120px 0 0 !important);
     }
 
     .landing_intro__title,
@@ -150,8 +150,44 @@
   &--features {
     text-align: center;
 
+    .apps {
+      text-align: right;
+
+      @include rem(margin-top, 5px);
+    }
+
+    .page__title,
+    .landing__subtitle {
+      text-align: left;
+      padding: 0;
+    }
+
+    .landing_features_title {
+      @include rem(margin-bottom, 15px);
+    }
+
     @media (min-width: $screen-landscape) {
-      @include rem(padding, 115px 0 43px)
+      @include rem(padding, 115px 0 43px !important)
+    }
+
+    @media (max-width: $screen-landscape) {
+      .landing_features_title {
+        text-align: center;
+
+        @include rem(margin-bottom, 40px);
+      }
+
+      .page__title {
+        text-align: center;
+
+        @include rem(margin-bottom, 25px);
+      }
+
+      .apps {
+        margin-top: 0;
+        text-align: center;
+        float: none !important;
+      }
     }
   }
 

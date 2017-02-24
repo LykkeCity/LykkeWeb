@@ -6,6 +6,8 @@
   position: relative;
   overflow: hidden;
 
+  @include rem(margin-top, 70px);
+
   &__item {
     position: absolute;
     top: 0;
