@@ -47,7 +47,7 @@
 <header class="header">
   <div class="container">
     <div class="row">
-      <div class="col-xs-2 col-sm-2"><a href="/" class="logo header__logo"><img src="img/lykke_new.svg" height="50" alt=""/></a></div>
+      <div class="col-xs-2 col-sm-2"><a href="/" class="logo header__logo"><img src="img/lykke_new.svg" height="50" alt="lykke_logo"/></a></div>
       <div class="col-xs-10 col-sm-10 col-md-8 text-center">
         <button type="button" class="navbar-toggle collapsed btn btn--stroke pull-right" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
           <span class="icon-bar"></span>
@@ -114,7 +114,7 @@
   </div>
 </header>
 
-<article class="content">
+<article class="content" itemscope itemprop="organization" itemtype="http://schema.org/Organization">
   <nav class="page_nav page__nav">
     <div class="page_nav__inner">
       <div class="container">
@@ -127,7 +127,7 @@
     </div>
   </nav>
 
-  <section class="contacts" style="background-image: url(img/corp/office-bg.jpg)">
+  <section class="section contacts">
     <div class="container">
       <div class="row">
         <div class="col-xs-10 col-sm-offset-6 col-sm-6 col-md-offset-7 col-md-5">
@@ -159,9 +159,9 @@
                 <div class="col-xs-6 col-sm-12">
                   <div class="contacts__block">
                     <div class="sub_title"><i class="contacts__icon contacts__icon--call"></i> support</div>
-                    <p><a href="mailto:support@lykke.com">support@lykke.com</a></p>
-                    <a class="visible-md visible-lg" href="callto:+41615880402">+41 61 588 04 02</a>
-                    <a class="visible-xs visible-sm" href="tel:+41615880402">+41 61 588 04 02</a>
+                    <p><a href="mailto:support@lykke.com"><span itemprop="email">support@lykke.com</span></a></p>
+                    <a class="visible-md visible-lg" href="callto:+41615880402"><span itemprop="telephone">+41 61 588 04 02</span></a>
+                    <!--noindex--><a class="visible-xs visible-sm" href="tel:+41615880402">+41 61 588 04 02</a><!--/noindex-->
                   </div>
                 </div>
               </div>
@@ -173,17 +173,19 @@
 
               <div class="row">
                 <div class="col-xs-6">
-                  <p class="contacts__block">Lykke Corp <br>
-                    2 Baarerstrasse <br>
-                    6300 Zug <br>
-                    Switzerland <br>
+                  <p class="contacts__block" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="name">Lykke Corp</span> <br>
+                    <span itemprop="streetAddress">2 Baarerstrasse</span> <br>
+                    <span itemprop="postalCode">6300</span>
+                    <span itemprop="addressLocality">Zug<br> Switzerland</span>
                   </p>
                 </div>
                 <div class="col-xs-6">
-                  <p class="contacts__block">Lykke Corp UK <br>
-                    86-90 Paul Street <br>
-                    London EC2A 4NE <br>
-                    United Kingdom <br>
+                  <p class="contacts__block" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                    <span itemprop="name">Lykke Corp UK</span> <br>
+                    <span itemprop="streetAddress">86-90 Paul Street</span> <br>
+                    <span itemprop="postalCode">London EC2A 4NE</span> <br>
+                    <span itemprop="addressLocality">United Kingdom</span>
                   </p>
                 </div>
               </div>
@@ -230,7 +232,9 @@
 <script src="js/vendor/bootstrap-custom.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/vendor/jquery.inview.min.js"></script>
+<!-- build:js js/functions.js -->
 <script src="js/functions.js"></script>
+<!-- endbuild -->
 
 </body>
 </html>

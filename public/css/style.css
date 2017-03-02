@@ -2338,7 +2338,9 @@ tbody.collapse.in { display: table-row-group; }
 
 .image-container .image + figcaption { margin-top: 40px; margin-top: 2.5rem; }
 
-.contacts { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-position: center; padding: 22% 0 15%; }
+.contacts { padding: 22% 0 15%; }
+
+.contacts.section { background: url(../img/corp/office-bg.jpg) no-repeat center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 
 .contacts--bottom { font-size: 18px; font-size: 1.125rem; padding: 65px 0 30px; padding: 4.0625rem 0 1.875rem; }
 

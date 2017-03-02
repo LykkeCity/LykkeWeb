@@ -12,10 +12,13 @@ var imagemin = require('gulp-imagemin');
 var del = require('del');
 
 gulp.task('sass', function () {
-  gulp.src('./assets/scss/*.scss')
+  gulp.src('./assets/scss/style.scss')
     .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
     .pipe(gulp.dest('./public/css'))
     .pipe(livereload());
+  gulp.src('./assets/scss/style.scss')
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(gulp.dest('./dist/css'))
 });
 
 gulp.task('copy-js-vendors', function () {
@@ -64,14 +67,14 @@ gulp.task('copy-fonts-prod', function () {
   return gulp.src([
       './public/fonts/**/*'
     ])
-    .pipe(gulp.dest('./dist/fonts/', {}));
+    .pipe(gulp.dest('./dist/fonts', {}));
 });
 
 gulp.task('copy-css-prod', function () {
   return gulp.src([
-      './public/css/*/**'
+      './public/css/vendor/*'
     ])
-    .pipe(gulp.dest('./dist/css/', {}));
+    .pipe(gulp.dest('./dist/css/vendor', {}));
 });
 
 gulp.task('usemin', [
@@ -81,7 +84,6 @@ gulp.task('usemin', [
 ], function () {
   return gulp.src('./public/*.html')
     .pipe(usemin({
-      css: [],
       js: [uglify()],
       inlinejs: [uglify()]
     }))
@@ -97,13 +99,6 @@ gulp.task('imagemin', ['copy-images'], function () {
 });
 
 gulp.task('copy-favicons', function () {
-  return gulp.src([
-      './node_modules/LykkeFramework/public/favicon/*'
-    ])
-    .pipe(gulp.dest('./dist/', {}));
-});
-
-gulp.task('copy-dev-favicons', function () {
   return gulp.src([
       './node_modules/LykkeFramework/public/favicon/*'
     ])
@@ -159,16 +154,14 @@ gulp.task('dev', function () {
   gulp.start('copy-css-vendors');
   gulp.start('copy-scripts');
   gulp.start('copy-fonts');
-  gulp.start('copy-dev-favicons');
+  gulp.start('copy-favicons');
   gulp.start('copy-images');
+  gulp.start('usemin');
 });
 
 gulp.task('prod', ['dev'], function () {
   gulp.start('usemin');
-  gulp.start('copy-fonts-prod');
   gulp.start('copy-css-prod');
-  gulp.start('copy-favicons');
-  gulp.start('imagemin');
 });
 
 gulp.task('build', function () {

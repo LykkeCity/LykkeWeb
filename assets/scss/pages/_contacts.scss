@@ -1,10 +1,13 @@
 .contacts {
-  @include background-size(cover);
-  background-position: center;
   padding: 22% 0 15%;
 
-  &--bottom {
+  &.section {
+    background: url(../img/corp/office-bg.jpg) no-repeat center;
 
+    @include background-size(cover);
+  }
+
+  &--bottom {
     @include rem(font-size, 18px);
     @include rem(padding, 65px 0 30px);
 
