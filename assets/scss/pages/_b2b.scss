@@ -90,14 +90,28 @@
     .list__item {
       text-align: center;
 
-      @include rem(margin-bottom, 45px);
+      @include rem(margin-bottom, 60px);
 
       img {
         @include rem(margin-bottom, 20px);
       }
     }
 
+    .btn {
+      @include rem(margin-top, 10px)
+    }
 
+    @media all and (max-width: $screen-landscape) {
+      .pull-right {
+        float: none!important;
+      }
+
+      .list__item {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
 
     @media all and (min-width: $screen-landscape + 1) {
       .list__item {
@@ -164,14 +178,16 @@
 }
 
 .case_studies {
+  @include rem(margin-top, 50px);
+
   &__item {
     position: relative;
 
-    @include rem(margin-bottom, 80px);
+    @include rem(margin-bottom, 60px);
   }
 
   h3 {
-    @include rem(margin-bottom, 14px);
+    @include rem(margin-bottom, 10px);
 
     a {
       color: inherit;
@@ -186,8 +202,9 @@
     width: 100%;
     text-align: center;
     position: relative;
+    overflow: hidden;
 
-    @include rem(margin-bottom, 40px);
+    @include rem(margin-bottom, 30px);
     @include rem(height, 300px);
     @include rem(line-height, 300px);
 
@@ -197,6 +214,11 @@
       height: 100%;
       left: 0;
       top: 0;
+    }
+
+    img {
+      @include rem(width, 259px);
+      @include rem(margin-top, -50px);
     }
 
     &--yellow {
@@ -213,6 +235,209 @@
 
     &--gray {
       @include linear-gradient('to bottom', #EBEDEF, #CFD2D7);
+    }
+  }
+}
+
+.lead {
+  @include rem(margin-bottom, 70px);
+
+  + .lead {
+    @include rem(margin-top, -50px)
+  }
+
+}
+
+.header_nav__list {
+  float: none;
+}
+
+.site_nav .btn {
+  @media all and (max-width: $screen-tablet) {
+    @include rem(padding-left, 16px);
+    @include rem(padding-right, 16px);
+
+    span {
+      display: none;
+    }
+
+    .icon {
+      margin-right: 0;
+    }
+  }
+}
+
+
+
+.btn_show_form, .btn_show_form.btn-sm {
+  @include rem(padding-left, 40px);
+  @include rem(padding-right, 40px);
+}
+
+.radio {
+  &--plate {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+
+    input {
+      position: absolute;
+      right: 100%;
+      bottom: 100%;
+      opacity: 1;
+      visibility: hidden;
+
+      &:checked {
+        + .control-label {
+          border-color: $primary;
+          box-shadow: inset 0 0 0 1px $primary;
+        }
+      }
+    }
+
+    .control-label {
+      color: $secondary;
+      border: 1px solid #CFD2D7;
+      border-radius: 4px;
+      text-align: center;
+      width: 100%;
+
+      @include rem(padding, 14px);
+      @include rem(font-size, 16px);
+      @include rem(min-width, 120px);
+      @include rem(line-height, 20px);
+
+      @include transition(all $transition-default);
+    }
+  }
+
+  + .radio {
+    margin-top: 0;
+  }
+}
+
+.radio-group {
+  margin-left: -5px;
+  margin-right: -5px;
+
+  @include clearfix;
+
+  .radio {
+    float: left;
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    .radio {
+      width: 50% !important;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.group_salutation {
+  .radio {
+    width: 25%;
+  }
+}
+
+.group_preferred_contact {
+  .radio {
+    width: 180px;
+  }
+}
+
+.panel_group {
+  @include rem(margin-bottom, 80px);
+}
+
+.toggled_form {
+  position: relative;
+
+  .btn_close_form {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: rgba(#657180, .6);
+
+    @include rem(top, 20px);
+
+    .icon {
+      @include rem(font-size, 30px);
+    }
+  }
+}
+
+.form_accelerate {
+  position: relative;
+  max-width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include rem(margin-bottom, 60px);
+  @include rem(padding, 20px 0);
+
+  .form-group {
+    @include rem(margin-bottom, 24px);
+  }
+
+  .submit-group {
+    @include rem(margin, 60px 0 0);
+  }
+
+  .form-control {
+    border-color: #CFD2D7;
+  }
+
+  h4 {
+    text-transform: none;
+    letter-spacing: 0;
+    color: #333333;
+    border-bottom: 0;
+    padding-bottom:0;
+
+    @include rem(margin-bottom, 15px);
+    @include rem(font-size, 21px);
+
+    ~ h4 {
+      @include rem(margin-top, 50px);
+    }
+  }
+}
+
+h3.border_bottom {
+  border-bottom: 1px solid $border-alt;
+
+  @include rem(padding-bottom, 20px);
+  @include rem(margin-bottom, 30px);
+}
+
+.hint--result {
+  margin: 20px 0;
+}
+
+.list--media_alt {
+  @include rem(margin-bottom, 70px);
+
+  .list__item {
+    @include rem(margin-bottom, 25px);
+
+    img {
+      margin-top: 0 !important;
+    }
+  }
+
+  h4 {
+    text-transform: none;
+    letter-spacing: 0;
+
+    @include rem(font-size, 21px);
+  }
+
+  @media all and (min-width: $screen-landscape + 1) {
+    .col-sm-2 {
+      width: 100px;
     }
   }
 }

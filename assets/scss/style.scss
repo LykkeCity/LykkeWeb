@@ -21,6 +21,7 @@
 @import '../../node_modules/LykkeFramework/assets/scss/partials/assets';
 @import '../../node_modules/LykkeFramework/assets/scss/partials/modal';
 @import '../../node_modules/LykkeFramework/assets/scss/partials/video';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/panels';
 
 // optional
 @import 'partials/qa';
@@ -42,4 +43,18 @@
 
 .zEWidget-launcher {
   z-index:100 !important;
+}
+
+@media (max-width: 543px) {
+  .header__logo {
+    width: 36px;
+  }
+}
+
+h2, .h2 {
+  @include rem(margin-bottom, 30px);
+}
+
+h1, .h1 {
+  @include rem(margin-bottom, 30px);
 }
