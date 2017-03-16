@@ -1,7 +1,4 @@
 .landing {
-  a {
-    color: $blue;
-  }
 
   h1, .h1 {
     @include rem(margin-bottom, 30px);
@@ -118,7 +115,7 @@
   }
 
   .container {
-    width: 940px + 30px;
+    width: 970px + 30px;
     max-width: 100%;
   }
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>bitcoin_icn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="03_Lykke_Corp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="03_lykke_corp/05a_invest" transform="translate(-783.000000, -1403.000000)" stroke-width="2">
+            <g id="Group-15" transform="translate(784.000000, 1404.000000)">
+                <g id="bitcoin_icn">
+                    <g id="Page-1" transform="translate(23.000000, 17.000000)" stroke="#AB00FF">
+                        <path d="M3,0 L3,26" id="Stroke-3"></path>
+                        <path d="M7,0 L7,3" id="Stroke-5"></path>
+                        <path d="M7,24 L7,26" id="Stroke-7"></path>
+                        <path d="M0,3 L7,3 C9.209,3 11,4.791 11,7 C11,9.209 9.209,11 7,11 L6,11" id="Stroke-9"></path>
+                        <path d="M6,11 L10,11 C13.313,11 16,13.687 16,17 C16,20.313 13.313,23 10,23 L0,23" id="Stroke-11"></path>
+                    </g>
+                    <path d="M53.2470972,11.0359261 C57.468191,16.2041572 60,22.8062719 60,30 C60,46.5693103 46.5682759,60 30,60 C13.4317241,60 0,46.5693103 0,30 C0,13.4306897 13.4317241,0 30,0 C35.1826264,0 40.0583522,1.31414558 44.3120754,3.62742957" id="Stroke-3" stroke="#3F4D60" transform="translate(30.000000, 30.000000) scale(1, -1) translate(-30.000000, -30.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
