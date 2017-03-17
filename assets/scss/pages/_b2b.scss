@@ -359,6 +359,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index:10;
     color: rgba(#657180, .6);
 
     @include rem(top, 20px);
@@ -415,6 +416,18 @@ h3.border_bottom {
 
 .hint--result {
   margin: 20px 0;
+}
+
+.list--media {
+  h3 {
+    a {
+      color: inherit;
+
+      &:hover {
+        color: rgba($secondary, .8);
+      }
+    }
+  }
 }
 
 .list--media_alt {

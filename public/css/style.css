@@ -2770,7 +2770,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .toggled_form { position: relative; }
 
-.toggled_form .btn_close_form { position: absolute; right: 0; top: 0; color: rgba(101, 113, 128, 0.6); top: 20px; top: 1.25rem; }
+.toggled_form .btn_close_form { position: absolute; right: 0; top: 0; z-index: 10; color: rgba(101, 113, 128, 0.6); top: 20px; top: 1.25rem; }
 
 .toggled_form .btn_close_form .icon { font-size: 30px; font-size: 1.875rem; }
 
@@ -2789,6 +2789,10 @@ tbody.collapse.in { display: table-row-group; }
 h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; padding-bottom: 1.25rem; margin-bottom: 30px; margin-bottom: 1.875rem; }
 
 .hint--result { margin: 20px 0; }
+
+.list--media h3 a { color: inherit; }
+
+.list--media h3 a:hover { color: rgba(63, 77, 96, 0.8); }
 
 .list--media_alt { margin-bottom: 70px; margin-bottom: 4.375rem; }
 
@@ -2940,6 +2944,8 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 .review_item__author_info { color: rgba(63, 77, 96, 0.6); letter-spacing: 0; font-size: 16px; font-size: 1rem; line-height: 24px; line-height: 1.5rem; }
 
+.invest_apps { overflow: hidden; }
+
 .invest_apps .apps { margin: 55px -10px; margin: 3.4375rem -0.625rem; }
 
 .invest_apps .apps a { opacity: .7; }
@@ -2955,6 +2961,12 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
   .invest_apps .apps { text-align: left; } }
 
 @media all and (max-width: 767px) { .site_nav .nav_list__item--active a { top: 0; } }
+
+.site_nav .btn_affix { left: auto; right: auto; float: right; position: static; }
+
+.site_nav .btn_affix.affix { position: fixed; z-index: 80; top: 100px; top: 6.25rem; }
+
+@media all and (max-width: 543px) { .site_nav .btn_affix { right: 0px !important; } }
 
 .zEWidget-launcher { z-index: 100 !important; }
 

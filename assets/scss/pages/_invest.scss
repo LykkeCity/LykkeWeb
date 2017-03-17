@@ -388,6 +388,8 @@
 }
 
 .invest_apps {
+  overflow: hidden;
+
   .apps {
 
     @include rem(margin, 55px -10px);
@@ -424,8 +426,29 @@
   }
 }
 
-.site_nav .nav_list__item--active a {
-  @media all and (max-width: $screen-landscape) {
-    top: 0;
+.site_nav {
+  .nav_list__item--active a {
+    @media all and (max-width: $screen-landscape) {
+      top: 0;
+    }
+  }
+
+  .btn_affix {
+    left: auto;
+    right: auto;
+    float: right;
+    position: static;
+
+    &.affix {
+      position: fixed;
+      z-index:80;
+
+
+      @include rem(top, 100px);
+    }
+
+    @media all and (max-width: $screen-mobile) {
+      right: 0px !important;
+    }
   }
 }

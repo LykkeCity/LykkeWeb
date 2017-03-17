@@ -101,7 +101,6 @@
   });
 
 
-
   function parallaxScroll(cont, el){
     var pxElem = cont.find(el);
 
@@ -150,7 +149,9 @@ $(window).scroll(function() {
   }
 });
 
-$(function() {
+// Messages
+
+function initMessages() {
   var msg = $('#msg');
 
   $('.form--message').on('click', function(e) {e.stopPropagation()})
@@ -171,42 +172,41 @@ $(function() {
       $('.message_card__inner').removeAttr('style');
     }
   });
-});
+}
 
 // Header
 
-$('.btn_menu').on('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
+function initHeader() {
+  $('.btn_menu').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
 
-  $('body').addClass('body--menu_opened');
-  $('.sidebar_menu').addClass('sidebar_menu--open');
-});
+    $('body').addClass('body--menu_opened');
+    $('.sidebar_menu').addClass('sidebar_menu--open');
+  });
 
-$('.sidebar_menu, .header_search, .header').on('click', function(e) {
-  e.stopPropagation();
-});
+  $('.sidebar_menu, .header_search, .header').on('click', function(e) {
+    e.stopPropagation();
+  });
 
-$('body, .btn_close_menu, .menu_overlay, .btn_close_header').on('click', function() {
-  $('body').removeClass('body--menu_opened body--search_showed');
-  $('.sidebar_menu').removeClass('sidebar_menu--open');
-  $('.header_search').removeClass('header_search--show');
-});
+  $('body, .btn_close_menu, .menu_overlay, .btn_close_header').on('click', function() {
+    $('body').removeClass('body--menu_opened body--search_showed');
+    $('.sidebar_menu').removeClass('sidebar_menu--open');
+    $('.header_search').removeClass('header_search--show');
+  });
 
+  $('.btn_open_search').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
 
-// Search
-
-$('.btn_open_search').on('click', function(e) {
-  e.preventDefault();
-  e.stopPropagation();
-
-  $('body').addClass('body--search_showed');
-  $('.header_search').addClass('header_search--show');
-});
+    $('body').addClass('body--search_showed');
+    $('.header_search').addClass('header_search--show');
+  });
+}
 
 // Collapse
 
-$(document).ready(function() {
+function initCollapse() {
   $('.panel_collapse').on('show.bs.collapse', function () {
     $(this).siblings('.panel_heading').addClass('panel_heading--active');
   });
@@ -214,20 +214,86 @@ $(document).ready(function() {
   $('.panel_collapse').on('hide.bs.collapse', function () {
     $(this).siblings('.panel_heading').removeClass('panel_heading--active');
   });
-});
+}
+
 
 // b2b accelerate form
-var $target;
 
-$('.btn_show_form').on('click', function() {
-  $target = $(this).data('target');
+function initForms() {
+  var $target,
+    hash = window.location.hash;
 
-  $(this).hide();
-  $($target).removeClass('hide')
+  if (window.location.hash) {
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 0);
+
+    $target = hash;
+
+    $(hash).removeClass('hide');
+    $('.btn_show_form').hide();
+  }
+
+  $('.btn_show_form').on('click', function() {
+    $target = $(this).data('target');
+
+    $(this).hide();
+    $($target).removeClass('hide')
+  });
+
+  $('.btn_close_form').on('click', function() {
+    $('.btn_show_form').show();
+    $($target).addClass('hide');
+  });
+
+}
+
+
+// Smooth scroll
+
+function initSmoothScroll() {
+  $('.smooth_scroll').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+}
+
+
+
+// Affix
+
+function initAffix() {
+  $('.btn_affix').affix({
+    offset: {
+      top: function () {
+        return (this.top =  $('.site_nav').offset().top - $('.header_container').outerHeight())
+      }
+    }
+  });
+
+  $(window).resize(function() {
+    $('.btn_affix').css({
+      right: $('.header .container').offset().left + 15
+    })
+  }).trigger('resize')
+}
+
+// Init
+
+$(document).ready(function() {
+  initMessages();
+  initHeader();
+  initCollapse();
+  initForms();
+  initSmoothScroll();
+  initAffix();
 });
 
-$('.btn_close_form').on('click', function() {
-
-  $('.btn_show_form').show();
-  $($target).addClass('hide')
-});
