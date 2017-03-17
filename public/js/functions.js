@@ -215,3 +215,19 @@ $(document).ready(function() {
     $(this).siblings('.panel_heading').removeClass('panel_heading--active');
   });
 });
+
+// b2b accelerate form
+var $target;
+
+$('.btn_show_form').on('click', function() {
+  $target = $(this).data('target');
+
+  $(this).hide();
+  $($target).removeClass('hide')
+});
+
+$('.btn_close_form').on('click', function() {
+
+  $('.btn_show_form').show();
+  $($target).addClass('hide')
+});
