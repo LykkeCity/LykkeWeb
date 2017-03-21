@@ -274,7 +274,143 @@
   @include rem(padding-right, 40px);
 }
 
+.checkbox,
 .radio {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 5px;
+
+  @extend %noselect;
+
+  + .form-group {
+    margin-top: 10px;
+  }
+
+  &__control {
+    position: absolute;
+    right: 100%;
+    opacity: 0;
+    visibility: hidden;
+
+    &:checked {
+      ~ .control-label {
+        &:before {
+          background: $primary !important;
+          border-color: $primary !important;
+        }
+
+        &:after {
+          opacity: 1 !important;
+          visibility: visible !important;
+
+          @include transform(scale(1));
+        }
+      }
+    }
+
+    &[disabled] {
+      ~ .control-label {
+        &:before {
+          background: $gray-5 !important;
+          border-color: $gray-25 !important;
+        }
+
+        &:after {
+          color: $gray-25 !important;
+        }
+      }
+    }
+  }
+
+  &__label, label {
+    position: relative;
+    color: #3f4d60;
+
+    @include rem(padding, 5px 0 5px 30px);
+
+    &:hover {
+      &:before {
+        border-color: $gray-25;
+      }
+    }
+
+    &:before {
+      content: '';
+      border: 1px solid $gray-25;
+      position: absolute;
+      left: 0;
+
+      @include rem(top, 5px);
+      @include rem(width, 20px);
+      @include rem(height, 20px);
+
+      @include transition(background $transition-default, border $transition-default);
+    }
+
+    &:after {
+      content: '';
+      color: $white;
+      position: absolute;
+
+      @include transform(scale(0));
+      @include transition(opacity $transition-default, visibility $transition-default, transform $transition-default);
+    }
+  }
+}
+
+.checkbox {
+  &__label, label {
+    &:before {
+      @include border-radius(4px);
+    }
+
+    &:after {
+      font-family: 'icon' !important;
+      color: $white;
+      content: "\e90b";
+      left: 0;
+      text-align: center;
+
+      @include rem(width, 20px);
+      @include rem(top, 6px);
+      @include rem(font-size, 16px);
+    }
+  }
+}
+
+.radio {
+  &__control {
+    &[disabled] {
+      ~ .control-label {
+        &:after {
+          background: $gray-25 !important;
+        }
+      }
+    }
+  }
+
+  &__label, label {
+    &:before {
+      background: $white;
+
+      @include border-radius(100px);
+    }
+
+    &:after {
+      background: $white;
+
+      @include border-radius(100px);
+      @include rem(width, 6px);
+      @include rem(height, 6px);
+      @include rem(top, 12px);
+      @include rem(left, 7px);
+    }
+  }
+}
+
+.radio {
+  overflow: hidden;
+
   &--plate {
     overflow: hidden;
     position: relative;
@@ -308,6 +444,11 @@
       @include rem(line-height, 20px);
 
       @include transition(all $transition-default);
+
+      &:after,
+      &:before {
+        display: none;
+      }
     }
   }
 
@@ -451,6 +592,16 @@ h3.border_bottom {
   @media all and (min-width: $screen-landscape + 1) {
     .col-sm-2 {
       width: 100px;
+    }
+  }
+}
+
+.form {
+  .select {
+    @include rem(height, 50px);
+
+    &__value {
+      @include rem(padding-left, 16px);
     }
   }
 }

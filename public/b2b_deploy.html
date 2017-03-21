@@ -421,6 +421,10 @@
 
             <div class="radio-group group_salutation">
               <div class="radio radio--plate">
+                <input type="radio" name="salutation" id="salutation3">
+                <label for="salutation3" class="control-label">Dr.</label>
+              </div>
+              <div class="radio radio--plate">
                 <input type="radio" name="salutation" id="salutation">
                 <label for="salutation" class="control-label">Mr.</label>
               </div>
@@ -431,10 +435,6 @@
               <div class="radio radio--plate">
                 <input type="radio" name="salutation" id="salutation2">
                 <label for="salutation2" class="control-label">Ms.</label>
-              </div>
-              <div class="radio radio--plate">
-                <input type="radio" name="salutation" id="salutation3">
-                <label for="salutation3" class="control-label">Dr.</label>
               </div>
             </div>
           </div>
@@ -454,43 +454,94 @@
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="company_name" class="control-label">Company name</label>
-            <input type="text" class="form-control" id="company_name">
-          </div>
-
-          <div class="form-group">
-            <label for="company_url" class="control-label">Company URL</label>
-            <input type="url" class="form-control" id="company_url">
-          </div>
-
-          <div class="form-group">
-            <label for="email" class="control-label">Email address</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-
-          <div class="form-group">
-            <label for="preferred_contact" class="control-label">Preferred contact</label>
-
-            <div class="radio-group group_preferred_contact">
-              <div class="radio radio--plate">
-                <input type="radio" name="salutation" id="preferred_contact">
-                <label for="preferred_contact" class="control-label">Email address</label>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="company_name" class="control-label">Organisation name</label>
+                <input type="text" class="form-control" id="company_name">
               </div>
-              <div class="radio radio--plate">
-                <input type="radio" name="salutation" id="preferred_contact1">
-                <label for="preferred_contact1" class="control-label">Phone</label>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="street" class="control-label">Street</label>
+                <input type="text" class="form-control" id="street">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="city" class="control-label">City</label>
+                <input type="text" class="form-control" id="city">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="zip" class="control-label">ZIP</label>
+                <input type="text" class="form-control" id="zip">
               </div>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="area" class="control-label">Area of interest</label>
-            <textarea name="area" id="area" class="form-control"></textarea>
+            <label for="country" class="control-label">Country</label>
+            <div class="select" data-control="select">
+              <div class="select__value"><span class="_value"></span></div>
+              <select id="country" class="form-control select__elem">
+                <option>Country</option>
+                <option>Country</option>
+              </select>
+            </div>
           </div>
 
-          <div class="submit-group">
-            <button class="btn btn-block" type="submit">Submit</button>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="phone" class="control-label">Phone</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="email" class="control-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="website" class="control-label">Website</label>
+            <input type="url" class="form-control" id="website" value="http://">
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <label for="hear" class="control-label">Where did you hear about us?</label>
+            </div>
+            <div class="col-sm-8">
+              <div class="form-group">
+                <div class="radio">
+                  <input type="radio" name="hear" id="hear1" class="radio__control">
+                  <label for="hear1" class="control-label radio__label">Event</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="hear" id="hear2" class="radio__control">
+                  <label for="hear2" class="control-label radio__label">www.lykke.com</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="hear" id="hear3" class="radio__control">
+                  <label for="hear3" class="control-label radio__label">Personal network</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="hear" id="hear4" class="radio__control">
+                  <label for="hear4" class="control-label radio__label">Other</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="other" disabled>
+                </div>
+              </div>
+            </div>
           </div>
 
         </form>
