@@ -86,15 +86,12 @@
     }
 
     @media (min-width: 992px) {
-      margin-left: 50px;
+      margin-left: 38px;
     }
 
     @media (max-width: 767px) {
-      padding: 20px;
-      display: block;
-      background: #f7f8f9;
 
-      @include rem(margin, -39px -15px 20px);
+      @include rem(margin, -39px -15px 20px -25px);
       @include rem(padding, 20px)
     }
   }

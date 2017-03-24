@@ -67,8 +67,6 @@
 }
 
 .news_article {
-  @include rem(padding, 20px 0);
-
   &__media {
     text-align: center;
 
@@ -112,86 +110,11 @@
   &__text {
     @include rem(margin-top, -5px);
     @include rem(margin-bottom, 60px);
-
-    &.text {
-      .lead {
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.64;
-        color: $secondary;
-
-        @include rem(font-size, 22px);
-        @include rem(margin-bottom, 48px);
-      }
-
-      p, ul, ol {
-        @include rem(margin-bottom, 20px);
-      }
-
-      blockquote {
-        font-weight: $fw-semi;
-        color: $secondary;
-        border-left: 2px solid $primary;
-
-        @include rem(font-size, 22px);
-        @include rem(line-height, 40px);
-        @include rem(margin, 50px 0);
-        @include rem(padding, 0 20px);
-
-        cite {
-          font-weight: $fw-semi;
-          font-style: normal;
-          color: $gray-light;
-          letter-spacing: 0;
-          display: block;
-
-          @include rem(font-size, 22px);
-          @include rem(line-height, 40px);
-        }
-      }
-    }
   }
 }
 
 .text--dark_gray {
   color: rgba($secondary, .8) ;
-}
-
-.page_nav {
-  position: relative;
-
-  .back_link {
-    position: absolute;
-    width: 30px;
-    height: 10px;
-    padding: 10px 5px;
-    z-index:10;
-    opacity: .8;
-    top: 50%;
-    margin-bottom: 0;
-
-    @include rem(margin, -14px 0 0 30px);
-    @include box-sizing(content-box);
-
-    background: url(../img/corp/back_icn.svg) no-repeat center;
-
-    &:hover {
-      opacity:1;
-    }
-  }
-
-  @media (max-width: 1190px) {
-    .back_link {
-      margin-left: 0;
-    }
-  }
-
-  @media (max-width: $screen-landscape) {
-    .back_link {
-      display: none;
-    }
-  }
 }
 
 .social_share {
