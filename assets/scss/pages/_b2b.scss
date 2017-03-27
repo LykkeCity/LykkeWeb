@@ -624,6 +624,8 @@ h3.border_bottom {
   padding:3vh 0;
 
   h2 {
+    text-align: center;
+
     @include rem(margin-bottom, 40px);
   }
 
@@ -642,9 +644,4 @@ h3.border_bottom {
     }
   }
 
-  @media all and (max-width: $screen-mobile) {
-    h2 {
-      text-align: center;
-    }
-  }
 }
