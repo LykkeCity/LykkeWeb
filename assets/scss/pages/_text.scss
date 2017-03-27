@@ -35,10 +35,6 @@
     @include rem(margin-bottom, 45px);
   }
 
-  h4 {
-    @extend .h4_normal;
-  }
-
   ul, ol {
     @include rem(margin, 25px 0 40px);
   }

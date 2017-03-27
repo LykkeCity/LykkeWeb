@@ -605,3 +605,46 @@ h3.border_bottom {
     }
   }
 }
+
+.status_icon {
+  text-align: center;
+  line-height: 60px;
+
+  @include rem(line-height, 62px);
+  @include rem(margin-bottom, 40px);
+
+  &--error {
+    img {
+      @include rem(width, 72px)
+    }
+  }
+}
+
+.form_status {
+  padding:3vh 0;
+
+  h2 {
+    @include rem(margin-bottom, 40px);
+  }
+
+  p {
+    line-height: 1.64;
+    letter-spacing: normal;
+
+    @include rem(font-size, 22px);
+
+    a {
+      color: #1694fb;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    h2 {
+      text-align: center;
+    }
+  }
+}
