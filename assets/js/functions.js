@@ -185,7 +185,7 @@ function initHeader() {
     $('.sidebar_menu').addClass('sidebar_menu--open');
   });
 
-  $('.sidebar_menu, .header_search, .header').on('click', function(e) {
+  $('.sidebar_menu, .header_search').on('click', function(e) {
     e.stopPropagation();
   });
 
