@@ -263,9 +263,6 @@
     display: inline-block;
     vertical-align: top;
 
-    @include rem(font-size, 16px);
-    @include rem(line-height, 30px);
-
     &:hover {
       color: $secondary;
     }
