@@ -468,7 +468,7 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 .header_actions__login .header_user .header_user__img + .header_login__title { color: #333333; }
 
-.header_actions__login a { display: block; color: #ab00ff; padding: 3px 10px; padding: 0.1875rem 0.625rem; }
+.header_actions__login a { display: block; color: #333333; padding: 3px 10px; padding: 0.1875rem 0.625rem; }
 
 .header_actions__login a:after, .header_actions__login a:before { content: ""; display: table; clear: both; }
 
@@ -2044,7 +2044,7 @@ tbody.collapse.in { display: table-row-group; }
   100% { transform: scale(2);
     opacity: 0; } }
 
-.collapse { display: none; }
+.collapse { display: none; overflow: hidden; height: auto; }
 
 .collapse.in { display: block; }
 
@@ -2070,7 +2070,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .panel_heading--active a:after { -webkit-transform: rotate(0); -moz-transform: rotate(0); -ms-transform: rotate(0); -o-transform: rotate(0); transform: rotate(0); }
 
-.panel_title { margin-top: 0; margin-bottom: 0; text-transform: none; letter-spacing: 0; color: #333333; font-size: 21px; font-size: 1.3125rem; line-height: 32px; line-height: 2rem; }
+.panel_title { margin-top: 0; margin-bottom: 0; text-transform: none; letter-spacing: 0; color: #333333; margin-bottom: 0 !important; font-size: 21px; font-size: 1.3125rem; line-height: 32px; line-height: 2rem; }
 
 .panel_desc { color: rgba(63, 77, 96, 0.8); letter-spacing: 0; font-size: 16px; font-size: 1rem; line-height: 24px; line-height: 1.5rem; }
 
