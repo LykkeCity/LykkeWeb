@@ -1,6 +1,10 @@
 .contacts {
   padding: 22% 0 15%;
 
+  h1 {
+    text-align: left;
+  }
+
   &.section {
     background: url(../img/corp/office-bg.jpg) no-repeat center;
 
@@ -81,5 +85,28 @@
     padding: 22% 0 15%;
 
     @include background-size(cover);
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  @media (max-width: $screen-landscape) {
+    .section {
+      padding: 100px 0;
+      position: relative;
+      background-position: center right;
+
+      &:before {
+        content: '';
+        position: absolute;
+        pointer-events: none;
+        background: rgba(#fff, .5);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }

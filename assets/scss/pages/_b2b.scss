@@ -275,6 +275,10 @@ html {
   .page__title,
   .page__subtitle {
     text-align: center;
+
+    ~ p {
+      @include rem(font-size, 22px);
+    }
   }
 }
 
@@ -654,4 +658,46 @@ h3.border_bottom {
     }
   }
 
+}
+
+.contact_us_widget {
+  @include rem(margin-top, -80px);
+  @include rem(height, 80px);
+  @include rem(padding, 20px 0);
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .btn_affix {
+    left: auto;
+    right: auto;
+    float: right;
+    position: static;
+
+    &.affix {
+      position: fixed;
+      z-index:80;
+
+      @include rem(top, 110px);
+    }
+
+    @media all and (max-width: $screen-mobile) {
+      &.affix {
+        @include rem(top, 90px);
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

@@ -84,12 +84,14 @@
 
     .container {
       width: 1170px + 30px;
+      max-width: 100%;
     }
   }
 
   &__body {
     .container {
       width: 970px + 30px;
+      max-width: 100%;
     }
   }
 
