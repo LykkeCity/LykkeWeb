@@ -693,6 +693,15 @@ h3.border_bottom {
   @media all and (max-width: $screen-landscape) {
     margin: 0;
     padding: 0;
+
+    .btn_affix {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .icon {
+        margin-right: 0;
+      }
+    }
   }
 }
 

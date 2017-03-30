@@ -2899,7 +2899,9 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 @media all and (max-width: 543px) { .contact_us_widget .btn_affix.affix { top: 90px; top: 5.625rem; } }
 
-@media all and (max-width: 767px) { .contact_us_widget { margin: 0; padding: 0; } }
+@media all and (max-width: 767px) { .contact_us_widget { margin: 0; padding: 0; }
+  .contact_us_widget .btn_affix { padding-left: 10px; padding-right: 10px; }
+  .contact_us_widget .btn_affix .icon { margin-right: 0; } }
 
 .form-control { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
