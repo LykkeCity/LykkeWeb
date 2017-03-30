@@ -2594,9 +2594,9 @@ tbody.collapse.in { display: table-row-group; }
 
 .news_article__header .news_article__media { margin: 0; }
 
-.news_article__header .container { max-width: 1200px; }
+.news_article__header .container { width: 1200px; }
 
-.news_article__body .container { max-width: 1000px; }
+.news_article__body .container { width: 1000px; }
 
 .news_article__title { margin-bottom: 60px; margin-bottom: 3.75rem; }
 
