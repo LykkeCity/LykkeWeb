@@ -74,3 +74,12 @@
     }
   }
 }
+
+.page--contacts {
+  .section {
+    background: url(../img/corp/office-bg.jpg) no-repeat center;
+    padding: 22% 0 15%;
+
+    @include background-size(cover);
+  }
+}

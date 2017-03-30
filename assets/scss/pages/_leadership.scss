@@ -1,11 +1,6 @@
-.leadership {
-  .h1 {
-    @include rem(margin-bottom, 70px);
-  }
-}
-
 .leadership_list {
   @include clearfix;
+  @include rem(margin-top, 70px);
   @include rem(margin-bottom, 70px);
 }
 

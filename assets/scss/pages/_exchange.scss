@@ -32,9 +32,11 @@
   }
 }
 
-.exchange {
-  @include rem(padding-top, 40px !important);
+.nav-tabs > li > a:not(.btn) {
+  background: transparent !important;
+}
 
+.exchange, .page--exchange {
   hr {
     border-width: 1px;
     max-width: 100%;

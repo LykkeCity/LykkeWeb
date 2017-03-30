@@ -1,5 +1,9 @@
-.landing .container--extend {
-  width: 1200px;
+.landing .container {
+  width: 1000px;
+
+  &--extend {
+    width: 1200px;
+  }
 }
 
 .page--invest {
