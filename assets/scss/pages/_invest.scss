@@ -164,29 +164,23 @@
 .assets_list {
   &--alt {
     .assets_list__item {
-      width: 20%;
+      width: 100%;
+      text-align: left;
 
-      @include rem(padding, 42px 0 22px);
+      @include rem(padding, 8px 0);
+      @include rem(margin-bottom, 5px);
 
       img {
         @include rem(margin-bottom, 24px);
       }
 
       a {
-        color: $secondary !important;
+        color: $secondary;
         display: block;
-      }
-    }
 
-    @media all and (max-width: $screen-landscape) {
-      .assets_list__item {
-        width: percentage(1/3);
-      }
-    }
-
-    @media all and (max-width: $screen-mobile) {
-      .assets_list__item {
-        width: percentage(1/2);
+        &:hover {
+          color: rgba($secondary, .8)
+        }
       }
     }
   }

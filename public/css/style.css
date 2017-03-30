@@ -2950,15 +2950,13 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 .landing_media img, .landing_media iframe { max-width: 100%; }
 
-.assets_list--alt .assets_list__item { width: 20%; padding: 42px 0 22px; padding: 2.625rem 0 1.375rem; }
+.assets_list--alt .assets_list__item { width: 100%; text-align: left; padding: 8px 0; padding: 0.5rem 0; margin-bottom: 5px; margin-bottom: 0.3125rem; }
 
 .assets_list--alt .assets_list__item img { margin-bottom: 24px; margin-bottom: 1.5rem; }
 
-.assets_list--alt .assets_list__item a { color: #3F4D60 !important; display: block; }
+.assets_list--alt .assets_list__item a { color: #3F4D60; display: block; }
 
-@media all and (max-width: 767px) { .assets_list--alt .assets_list__item { width: 33.33333%; } }
-
-@media all and (max-width: 543px) { .assets_list--alt .assets_list__item { width: 50%; } }
+.assets_list--alt .assets_list__item a:hover { color: rgba(63, 77, 96, 0.8); }
 
 .section--gray { background: rgba(234, 237, 239, 0.4); padding: 100px 0 !important; padding: 6.25rem 0 !important; }
 
