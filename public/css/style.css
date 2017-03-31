@@ -360,7 +360,7 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 @media (max-width: 767px) { .footer__top .row > div { margin-bottom: 25px; }
   .footer__bottom { text-align: center; }
-  .footer .social--footer_alt { padding: 12px 15px; padding: 0.75rem 0.9375rem; }
+  .footer .social--footer_alt { padding: 12px 0; padding: 0.75rem 0; }
   .footer .social--footer_alt > li { margin-left: 10px; } }
 
 @media (max-width: 991px) { .footer .text-center { text-align: left !important; } }
@@ -552,6 +552,8 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 .main_projects_list__item a:hover .main_projects_list__title { color: rgba(63, 77, 96, 0.8); }
 
 .main_projects_list__text { color: rgba(63, 77, 96, 0.6); font-size: 16px; font-size: 1rem; line-height: 24px; line-height: 1.5rem; }
+
+@media all and (max-height: 860px) and (min-width: 992px) { .main_projects_list__text { font-size: 14px; line-height: 22px; } }
 
 @media all and (max-width: 543px) { .main_projects_list__item { border-bottom: 1px solid #EBEDEF; padding-bottom: 18px; } }
 
@@ -1038,6 +1040,10 @@ label.error { display: none !important; }
 .nav-tabs > li > a:hover { color: #3f4d60 !important; }
 
 .nav-tabs > li.active > a { color: #3f4d60 !important; }
+
+.nav-tabs > li > a:not(.btn) { background: transparent !important; }
+
+.nav-tabs sup { font-weight: normal; top: 0; position: static; margin-left: 3px; margin-left: 0.1875rem; font-size: 16px; font-size: 1rem; }
 
 .content { overflow: hidden; }
 
