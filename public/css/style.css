@@ -2422,7 +2422,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .page_landing .social--footer_alt > li:first-child, .page_landing .social--header > li:first-child { margin-left: 0 !important; }
 
-@media all and (max-width: 640px) { .page_landing .social--footer_alt > li, .page_landing .social--header > li { margin-left: 20px; } }
+@media all and (max-width: 640px) { .page_landing .social--footer_alt > li, .page_landing .social--header > li { margin-left: 10px; } }
 
 .page_landing .lw_logo { margin-bottom: 40px; margin-bottom: 2.5rem; }
 
