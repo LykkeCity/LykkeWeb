@@ -2418,7 +2418,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .page_landing .social { text-align: center; margin-bottom: 35px; margin-bottom: 2.1875rem; }
 
-.page_landing .social--footer_alt > li, .page_landing .social--header > li { margin-left: 68px; margin-left: 4.25rem; }
+.page_landing .social--footer_alt > li, .page_landing .social--header > li { margin-left: 60px; margin-left: 3.75rem; }
 
 .page_landing .social--footer_alt > li:first-child, .page_landing .social--header > li:first-child { margin-left: 0 !important; }
 

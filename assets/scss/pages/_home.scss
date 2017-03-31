@@ -7,7 +7,7 @@
 
   .social--footer_alt > li, .social--header > li {
 
-    @include rem(margin-left, 68px);
+    @include rem(margin-left, 60px);
 
     &:first-child {
       margin-left: 0 !important;
