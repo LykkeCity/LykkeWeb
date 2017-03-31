@@ -520,7 +520,7 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 .sidebar_menu--open { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
 
-@media all and (max-height: 860px), all and (max-width: 543px) { .sidebar_menu .social { text-align: center; }
+@media all and (max-height: 860px), all and (max-width: 543px), screen and (max-device-width: 991px), screen and (pointer: coarse) { .sidebar_menu .social { text-align: center; }
   .sidebar_menu .social li { float: none; width: auto; display: inline-block; vertical-align: middle; margin-left: 0px; }
   .sidebar_menu .social li:first-child { margin-left: 0; }
   .sidebar_menu .social__item .icon { margin-right: 0; }
