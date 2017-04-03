@@ -360,7 +360,6 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 @media (max-width: 767px) { .footer__top .row > div { margin-bottom: 25px; }
   .footer__bottom { text-align: center; }
-  .footer .social--footer_alt { padding: 12px 0; padding: 0.75rem 0; }
   .footer .social--footer_alt > li { margin-left: 10px; } }
 
 @media (max-width: 991px) { .footer .text-center { text-align: left !important; } }
@@ -511,6 +510,8 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 .sidebar_menu__inner { height: 100%; position: relative; }
 
 .sidebar_menu__footer { position: absolute; bottom: 0; left: 0; right: 15px; background: #fff; padding: 20px 15px 54px 30px; padding: 1.25rem 0.9375rem 3.375rem 1.875rem; }
+
+.sidebar_menu .social { text-align: left; }
 
 .sidebar_menu .social li { float: left; width: 50%; }
 
