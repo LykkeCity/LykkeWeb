@@ -63,6 +63,21 @@
     color: $gray-dark;
 
     @include rem(font-size, 22px);
+
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      line-height: 1.64;
+      color: $gray-dark;
+
+      @include rem(font-size, 22px);
+    }
+
+    b, strong {
+      font-weight: $fw-semi;
+    }
   }
 }
 
