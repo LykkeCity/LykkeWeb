@@ -542,7 +542,11 @@ html {
   }
 
   .form-control {
-    border-color: #CFD2D7;
+    border-color: $gray-25;
+
+    &:focus {
+      border-color: $gray-light;
+    }
   }
 
   h4 {
@@ -658,6 +662,9 @@ h3.border_bottom {
     }
   }
 
+  &__button {
+    @include rem(margin-top, 70px);
+  }
 }
 
 .contact_us_widget {

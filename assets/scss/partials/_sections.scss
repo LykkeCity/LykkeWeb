@@ -109,3 +109,21 @@
     max-width: 100%;
   }
 }
+
+.error_page {
+  font-weight: $fw-thin;
+  text-align: center;
+  color: $text;
+
+  @include rem(font-size, 96px);
+
+  .status_icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-bottom: 0;
+
+    @include rem(margin, 0 10px);
+    @include rem(top, -10px);
+  }
+}
