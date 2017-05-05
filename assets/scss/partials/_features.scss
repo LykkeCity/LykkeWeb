@@ -18,6 +18,10 @@
 
     @include rem(font-size, 18px);
     @include rem(margin-bottom, 17px);
+    @include transform(translate(0, 0) !important);
+    @include animation(none !important);
+    @include animation-name(none !important);
+    @include animation-duration(0s !important);
 
     &__img {
       position: relative;
@@ -81,7 +85,7 @@
 
   @media (min-width: $screen-mobile + 1) {
     &__item {
-      opacity: 0;
+      opacity: 1 !important;
     }
   }
 }

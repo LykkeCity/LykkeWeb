@@ -1,8 +1,26 @@
 .news_list {
+  @include rem(padding-right, 50px);
+
+  .label {
+    padding: 0;
+
+    @include rem(margin, 0 0 15px 0);
+  }
+
+  .middot {
+    @include rem(margin, 0 4px);
+  }
+
+  ~ .pagination_container,
+  ~ .spinner_container {
+    @include rem(padding-right, 50px);
+  }
+
   &__item {
     border-bottom: 1px solid $border-alt;
 
-    @include rem(padding, 35px 0 25px);
+    @include rem(padding-bottom, 25px);
+    @include rem(margin-bottom, 35px);
   }
 
   &__media {
@@ -14,7 +32,8 @@
     }
   }
 
-  &__date {
+  &__date,
+  &__comments {
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -29,9 +48,10 @@
 
   &__info {
     color: rgba($secondary, .6);
-    @include rem(margin-bottom, 9px);
 
-    a {
+    @include rem(margin-bottom, 5px);
+
+    a:hover {
       color: rgba($secondary, .8);
     }
   }
@@ -63,6 +83,7 @@
     color: $gray-dark;
 
     @include rem(font-size, 22px);
+    @include rem(margin-bottom, 25px);
 
     img {
       max-width: 100%;
@@ -77,6 +98,14 @@
 
     b, strong {
       font-weight: $fw-semi;
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    padding-right: 0;
+
+    ~ .pagination_container {
+      padding-right: 0;
     }
   }
 }
@@ -338,4 +367,26 @@
 
 .table.table--simple {
   @include rem(margin-bottom, 30px);
+}
+
+.h3_small {
+  @include rem(font-size, 21px);
+  @include rem(margin, 20px 0);
+}
+
+.news_filter {
+  @media all and (max-width: $screen-landscape) {
+    @include rem(margin-top, -60px);
+    @include rem(margin-bottom, 40px)
+  }
+
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+
+    > div {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
 }

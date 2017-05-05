@@ -47,7 +47,7 @@
   });
 
 
-  $('.features__item, .animElem').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+  $('.animElem').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
     if (isInView) {
       $(this).addClass('inview animated fadeInUp');
       if (visiblePartY == 'top') {
@@ -58,6 +58,13 @@
 
       }
     } else {
+    }
+  });
+
+
+  $('.features__item').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    if (isInView) {
+      $(this).addClass('inview');
     }
   });
 

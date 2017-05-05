@@ -99,6 +99,7 @@
     @media (max-width: 1100px) {
       margin: 0;
     }
+
     @media (max-width: 991px) {
       &__item {
         width: 50%;
@@ -142,6 +143,14 @@
       color: $white;
 
       @include rem(padding, 0 20px);
+
+      p {
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        margin-bottom: 0;
+      }
     }
   }
 

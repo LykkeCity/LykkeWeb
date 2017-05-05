@@ -118,11 +118,11 @@
     margin-bottom: 0;
     margin-left: 20px;
     text-align: left;
+    width: auto;
 
     @include rem(margin-top, 5px);
 
     &__value {
-      @include rem(padding-left, 18px);
       @include rem(min-width, 170px);
     }
   }
