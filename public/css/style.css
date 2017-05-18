@@ -2536,9 +2536,9 @@ tbody.collapse.in { display: table-row-group; }
 
 .categories_item:after { z-index: 0; content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); pointer-events: none; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-.categories_item:hover:after { background-color: rgba(0, 0, 0, 0.2); }
+.categories_item:hover:after, .categories_item.categories_item--active:after { background-color: rgba(0, 0, 0, 0.2); }
 
-.categories_item:hover .label { color: #333333; background-color: #fff; }
+.categories_item:hover .label, .categories_item.categories_item--active .label { color: #333333; background-color: #fff; }
 
 .categories_item a { height: 100%; width: 100%; display: block; text-decoration: none; }
 
@@ -2811,16 +2811,16 @@ tbody.collapse.in { display: table-row-group; }
 
 .news_list--blog .news_list__item { padding-bottom: 0; border-bottom: 0; margin-bottom: 30px; margin-bottom: 1.875rem; }
 
-.news_list--blog .news_list__media { margin-top: 30px; margin-top: 1.875rem; }
+.news_list--blog .news_list__media { padding-top: 30px; padding-top: 1.875rem; }
 
 .news_list--blog .news_list__content { border-bottom: 1px solid #EBEDEF; padding-bottom: 25px; padding-bottom: 1.5625rem; }
 
 .news_list--blog .news_list__text, .news_list--blog p.news_list__text { font-weight: normal; color: rgba(63, 77, 96, 0.8); }
 
+.news_list--blog ~ .pagination_container { padding-right: 0; }
+
 @media all and (max-width: 767px) { .news_list { padding-right: 0; }
   .news_list ~ .pagination_container { padding-right: 0; } }
-
-.news_article { padding: 20px 0; padding: 1.25rem 0; }
 
 .news_article__media { text-align: center; }
 
@@ -2921,6 +2921,8 @@ tbody.collapse.in { display: table-row-group; }
 .news_filter .row { margin-left: -5px; margin-right: -5px; }
 
 .news_filter .row > div { padding-left: 5px; padding-right: 5px; }
+
+h2 + .news_list--blog .news_list__item:first-of-type .news_list__media, h2 + .news_list--blog .news_list__item:first-child .news_list__media { padding-top: 0; }
 
 .list--striped { margin-top: -7px; margin-top: -0.4375rem; margin-bottom: 60px; margin-bottom: 3.75rem; }
 

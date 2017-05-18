@@ -111,7 +111,7 @@
     }
 
     .news_list__media {
-      @include rem(margin-top, 30px);
+      @include rem(padding-top, 30px);
     }
 
     .news_list__content {
@@ -125,6 +125,10 @@
       font-weight: normal;
       color: rgba($secondary, .8);
     }
+
+    ~ .pagination_container {
+      padding-right: 0;
+    }
   }
 
   @media all and (max-width: $screen-landscape) {
@@ -137,8 +141,6 @@
 }
 
 .news_article {
-  @include rem(padding, 20px 0);
-
   &__media {
     text-align: center;
 
@@ -415,6 +417,17 @@
     > div {
       padding-left: 5px;
       padding-right: 5px;
+    }
+  }
+}
+
+h2 + .news_list--blog {
+  .news_list__item {
+    &:first-of-type,
+    &:first-child {
+      .news_list__media {
+        padding-top: 0;
+      }
     }
   }
 }

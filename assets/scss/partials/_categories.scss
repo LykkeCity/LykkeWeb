@@ -32,7 +32,8 @@
     @include transition(all $transition-default);
   }
 
-  &:hover {
+  &:hover,
+  &.categories_item--active {
     &:after {
       background-color: rgba(#000, .2);
     }
