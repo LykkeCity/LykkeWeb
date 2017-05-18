@@ -34,6 +34,9 @@
 @import 'partials/sections';
 @import 'partials/features';
 @import 'partials/modal';
+@import 'partials/plate';
+@import 'partials/categories';
+@import 'partials/slick';
 
 // optional pages
 @import 'pages/home';
@@ -45,6 +48,7 @@
 @import 'pages/corp';
 @import 'pages/invest';
 @import 'pages/text';
+@import 'pages/blog';
 
 .zEWidget-launcher {
   z-index:100 !important;

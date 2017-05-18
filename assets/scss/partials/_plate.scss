@@ -1,0 +1,89 @@
+.plate {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 -2px;
+  width: 50%;
+
+  @include rem(margin, 0 -2px 40px);
+
+  a {
+    color: inherit;
+    display: inline-block;
+  }
+
+  .label {
+    padding: 0;
+    margin: 0;
+
+    @include rem(margin-bottom, 12px);
+  }
+
+  .news_list__info {
+    color: rgba($secondary, .6);
+
+    @include rem(font-size, 16px);
+  }
+
+  &__title {
+    color: $text;
+    letter-spacing: 0;
+    font-weight: $fw-semi;
+
+    @include rem(line-height, 30px);
+    @include rem(font-size, 18px);
+    @include rem(margin-bottom, 9px);
+  }
+
+  &__media {
+    overflow: hidden;
+
+    @include rem(margin-bottom, 20px);
+
+    a {
+      display: block;
+    }
+
+    &:hover {
+      img {
+        @include scale(1.02);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @include transition(transform 1s ease);
+    }
+  }
+
+  &--large {
+    width: 100%;
+    float: none;
+    display: block;
+
+    .plate__title {
+      @include rem(line-height, 40px);
+      @include rem(font-size, 28px);
+      @include rem(margin-bottom, 12px);
+    }
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    &:not(.plate--large) {
+      width: 100%;
+      margin-bottom: 20px;
+
+      .plate__media {
+        float: left;
+        width: 90px;
+        margin-bottom: 0;
+        margin-right: 15px;
+      }
+
+      .plate__content {
+        overflow: hidden;
+      }
+    }
+  }
+}
