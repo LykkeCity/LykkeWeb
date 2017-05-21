@@ -293,11 +293,61 @@ function initAffix() {
   }).trigger('resize')
 }
 
+function initStickyNav() {
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navHeight = $('.header_nav').outerHeight();
+
+  $(window).scroll(function(event){
+    didScroll = true;
+  });
+
+  setInterval(function() {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
+
+  function hasScrolled() {
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta) {
+      return;
+    }
+
+    if (st > lastScrollTop && st > navHeight){
+      // Scroll Down
+      $('.header_nav')
+        .removeClass('nav_down')
+        .addClass('nav_up')
+    } else {
+      // Scroll Up
+      if(st + $(window).height() < $(document).height()) {
+        $('.header_nav')
+          .removeClass('nav_up')
+          .addClass('nav_down')
+      }
+    }
+
+    lastScrollTop = st;
+  }
+
+  $(window).resize(function() {
+    $('.header_nav').css({
+      top: $('.header').outerHeight()
+    });
+  }).trigger('resize');
+}
+
 // Init
 
 $(document).ready(function() {
   initMessages();
   initHeader();
+  initStickyNav();
   initCollapse();
   initForms();
   initSmoothScroll();
