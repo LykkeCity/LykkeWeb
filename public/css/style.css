@@ -478,7 +478,7 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 .site_nav .container { max-width: 1200px; }
 
-.site_nav__inner { overflow: hidden; overflow-x: auto; padding: 20px 0; padding: 1.25rem 0; height: 100px; height: 6.25rem; }
+.site_nav__inner { overflow: hidden; overflow-x: auto; padding: 19px 0; padding: 1.1875rem 0; height: 100px; height: 6.25rem; }
 
 .site_nav .nav_list { padding: 0; }
 
@@ -2281,6 +2281,8 @@ tbody.collapse.in { display: table-row-group; }
 
 .trading_data__label { color: #ab00ff; letter-spacing: .04em; float: right; display: block; border: 1px solid; text-align: center; white-space: nowrap; padding: 5px 12px; padding: 0.3125rem 0.75rem; border-radius: 20px; border-radius: 1.25rem; min-width: 92px; min-width: 5.75rem; font-size: 14px; font-size: 0.875rem; }
 
+.trading_data__label span { max-width: 58px; display: inline-block; overflow: hidden; vertical-align: middle; font-feature-settings: "tnum"; max-width: 58px; max-width: 3.625rem; }
+
 .trading_data__lastprice { position: absolute; font-weight: 600; letter-spacing: .02em; background: #9c27b0; color: rgba(255, 255, 255, 0.9); padding: 10px; padding: 0.625rem; font-size: 23px; font-size: 1.4375rem; top: 145px; top: 9.0625rem; left: 4px; left: 0.25rem; }
 
 .trading_data__buy, .trading_data__sell { position: absolute; font-weight: 600; text-transform: uppercase; color: #212121; background: #fff; text-align: center; width: 100px; width: 6.25rem; padding: 5px; padding: 0.3125rem; font-size: 24px; font-size: 1.5rem; top: 181px; top: 11.3125rem; }
@@ -2297,7 +2299,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .trading_data__table table tr th { font-weight: normal; background: #fff; color: rgba(63, 77, 96, 0.6); border-bottom: 1px solid #e6e8eb; padding: 11px 10px 10px; padding: 0.6875rem 0.625rem 0.625rem; font-size: 14px; font-size: 0.875rem; }
 
-.trading_data__table table tr td { border-bottom: 1px solid #e6e8eb; text-align: left; padding: 10px 32px; padding: 0.625rem 2rem; }
+.trading_data__table table tr td { border-bottom: 1px solid #e6e8eb; text-align: left; padding: 10px 16px; padding: 0.625rem 1rem; }
 
 .trading_data__inner { position: absolute; }
 
@@ -2308,7 +2310,7 @@ tbody.collapse.in { display: table-row-group; }
   .trading_data__item--iphone .trading_data__inner { top: 79px; left: 21px; right: 20px; }
   .trading_data__item--android { width: 320px; }
   .trading_data__item--android .trading_data__inner { top: 53px; left: 15px; right: 14px; }
-  .trading_data__table { margin-top: 85px; }
+  .trading_data__table { margin-top: 85px; background-color: #fff; padding-bottom: 40px; }
   .trading_data__table table tr th { font-size: 11px; padding: 5px 10px 6px; }
   .trading_data__table table tr td { font-size: 12px; padding: 5px 17px 6px; }
   .trading_data__buy, .trading_data__sell { top: 150px; left: 20px; }
@@ -3441,6 +3443,16 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 .blog_categories { background: rgba(234, 237, 239, 0.4); padding: 30px 0; padding: 1.875rem 0; margin-bottom: 30px; margin-bottom: 1.875rem; }
 
 .blog_categories h5 { margin-bottom: 18px; margin-bottom: 1.125rem; }
+
+.blog_post_header { background-position: center; background-repeat: no-repeat; position: relative; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 500px; height: 31.25rem; }
+
+.blog_post_header:after { z-index: 0; content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); pointer-events: none; }
+
+.blog_post_header .container { height: 100%; position: relative; z-index: 3; width: 1000px; }
+
+.blog_post_header .news_article__title { text-align: center; color: #fff; margin-bottom: 0; }
+
+.blog_post_header__info { position: absolute; bottom: 0; left: 15px; right: 15px; }
 
 .zEWidget-launcher { z-index: 100 !important; }
 
