@@ -1,4 +1,4 @@
-.page--invest {
+.page_invest {
   .features {
     text-align: left;
     margin: 0 -5%;
@@ -11,7 +11,7 @@
 
       @include animation-name(none !important);
 
-      @include rem(margin-bottom, 80px);
+      @include rem(margin-bottom, 40px);
     }
 
     &__img {
@@ -69,7 +69,6 @@
   @media all and (max-width: $screen-mobile) {
     .features {
       text-align: center;
-      margin-bottom: 40px;
 
       &__item {
         text-align: left;
@@ -189,16 +188,16 @@
 }
 
 .invest_total {
-  font-weight: $fw-semi;
   color: $text;
   letter-spacing: 0;
+  font-weight: normal;
 
   @include rem(margin, 25px 0);
   @include rem(font-size, 28px);
   @include rem(line-height, 40px);
 
-  span {
-    font-weight: normal;
+  span:first-child {
+    font-weight: $fw-semi;
   }
 
   &__desc {
@@ -232,13 +231,13 @@
   }
 
   &--big {
-    font-weight: normal;
+    font-weight: $fw-light;
 
     @include rem(font-size, 50px);
     @include rem(margin, 35px 0);
 
-    span {
-      font-weight: $fw-light;
+    span:first-child {
+      font-weight: normal;
     }
   }
 
@@ -428,14 +427,14 @@
 
     &.affix {
       position: fixed;
-      z-index:80;
-
+      z-index:109;
 
       @include rem(top, 100px);
     }
 
     @media all and (max-width: $screen-mobile) {
       right: 0px !important;
+      z-index: 80;
     }
   }
 }

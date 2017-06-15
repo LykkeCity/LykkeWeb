@@ -336,9 +336,11 @@ function initStickyNav() {
   }
 
   $(window).resize(function() {
-    $('.header_nav').css({
-      top: $('.header').outerHeight()
-    });
+    setTimeout(function() {
+      $('.header_nav').css({
+        top: $('.header').outerHeight()
+      });
+    }, 30);
   }).trigger('resize');
 }
 

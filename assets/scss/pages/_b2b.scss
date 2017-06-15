@@ -685,7 +685,7 @@ h3.border_bottom {
 
     &.affix {
       position: fixed;
-      z-index:80;
+      z-index:109;
 
       @include rem(top, 110px);
     }
