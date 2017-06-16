@@ -256,6 +256,13 @@
       color: $secondary;
     }
   }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    &--big {
+      font-size: 30px;
+      margin: 15px 0;
+    }
+  }
 }
 
 .ownership_value {
@@ -426,6 +433,14 @@
     float: right;
     position: static;
 
+    &.nav_down {
+      @include translate(0,0);
+    }
+
+    &.nav_up {
+      @include translate(0,-90px);
+    }
+
     &.affix {
       position: fixed;
       z-index:109;
@@ -433,10 +448,38 @@
       @include rem(top, 100px);
     }
 
+    @media all and (max-width: $screen-landscape) {
+      &.nav_up {
+        @include translate(0, -80px);
+      }
+    }
+
     @media all and (max-width: $screen-mobile) {
       right: 0px !important;
       z-index: 80;
       position: static !important;
+
+      @include transform(none !important)
     }
+  }
+}
+
+.btn_affix {
+  &.nav_down {
+    @include translate(0,0);
+  }
+
+  &.nav_up {
+    @include translate(0,-90px);
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &.nav_up {
+      @include translate(0, -80px);
+    }
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    @include transform(none !important)
   }
 }
