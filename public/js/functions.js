@@ -338,9 +338,9 @@ function initStickyNav() {
   $(window).resize(function() {
     setTimeout(function() {
       $('.header_nav').css({
-        top: $('.header').outerHeight()
+        paddingTop: $('.header').outerHeight()
       });
-    }, 30);
+    }, 30)
   }).trigger('resize');
 }
 

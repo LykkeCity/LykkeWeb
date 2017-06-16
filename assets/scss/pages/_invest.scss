@@ -377,6 +377,7 @@
   overflow: hidden;
 
   .apps {
+    white-space: nowrap;
 
     @include rem(margin, 55px -10px);
 
@@ -435,6 +436,7 @@
     @media all and (max-width: $screen-mobile) {
       right: 0px !important;
       z-index: 80;
+      position: static !important;
     }
   }
 }

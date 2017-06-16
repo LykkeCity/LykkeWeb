@@ -120,3 +120,44 @@
     @include rem(margin-bottom, 18px);
   }
 }
+
+.blog_post_header {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @include background-size(cover);
+  @include rem(height, 500px);
+
+  &:after {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .5);
+    pointer-events: none;
+  }
+
+  .container {
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    width: 970px + 30px;
+  }
+
+  .news_article__title {
+    text-align: center;
+    color: $white;
+    margin-bottom: 0;
+  }
+
+  &__info {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+  }
+}

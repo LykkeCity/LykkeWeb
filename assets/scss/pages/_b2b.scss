@@ -681,18 +681,21 @@ h3.border_bottom {
     left: auto;
     right: auto;
     float: right;
-    position: static;
+    position: relative;
+    z-index:109;
 
     &.affix {
       position: fixed;
-      z-index:109;
 
-      @include rem(top, 110px);
+      @include rem(top, 100px);
     }
 
     @media all and (max-width: $screen-mobile) {
       &.affix {
+        position: static;
+
         @include rem(top, 90px);
+
       }
     }
   }
@@ -700,6 +703,7 @@ h3.border_bottom {
   @media all and (max-width: $screen-landscape) {
     margin: 0;
     padding: 0;
+    display: none;
 
     .btn_affix {
       padding-left: 10px;
