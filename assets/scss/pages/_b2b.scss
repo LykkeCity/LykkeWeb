@@ -684,6 +684,10 @@ h3.border_bottom {
     position: relative;
     z-index:109;
 
+    &:not(.affix) {
+      right: 0 !important;
+    }
+
     &.affix {
       position: fixed;
 

@@ -131,7 +131,7 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 .fs22 { font-size: 22px; font-size: 1.375rem; }
 
-.grayscale { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); /* Firefox 3.5+ */ filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */ }
+.grayscale { filter: gray; /* IE6-9 */ -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */ }
 
 .relative { position: relative; }
 
@@ -3172,6 +3172,8 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 .contact_us_widget .container { padding-left: 15px; padding-right: 15px; }
 
 .contact_us_widget .btn_affix { left: auto; right: auto; float: right; position: relative; z-index: 109; }
+
+.contact_us_widget .btn_affix:not(.affix) { right: 0 !important; }
 
 .contact_us_widget .btn_affix.affix { position: fixed; top: 100px; top: 6.25rem; }
 
