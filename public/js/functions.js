@@ -113,7 +113,6 @@ function initHeader() {
 
   } else {
     hideSubMenu();
-    return false;
   }
 
   $('.btn_menu').on('click', function(e) {
