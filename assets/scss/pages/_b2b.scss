@@ -664,6 +664,10 @@ h3.border_bottom {
 
   &__button {
     @include rem(margin-top, 70px);
+
+    .btn {
+      @include rem(min-width, 150px);
+    }
   }
 }
 

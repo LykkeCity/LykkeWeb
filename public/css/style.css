@@ -669,6 +669,8 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 .is_mobile .submenu_list__item > a { padding: 10px 15px; font-size: 14px; }
 
+@media all and (max-width: 543px) { .is_mobile .nav_list__item:last-child .submenu, .is_mobile .nav_list__item:last-of-type .submenu { right: 0; } }
+
 .form-control { text-align: left; background: #fff; color: #3F4D60; border: 1px solid #cfd2d7; border-radius: 4px; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; height: 50px; height: 3.125rem; padding: 10px 16px; padding: 0.625rem 1rem; font-size: 16px; font-size: 1rem; }
 
 .form-control ::-webkit-input-placeholder { color: rgba(63, 77, 96, 0.5); }
@@ -2331,9 +2333,9 @@ tbody.collapse.in { display: table-row-group; }
   .trading_data__item--iphone .trading_data__inner { top: 79px; left: 21px; right: 20px; }
   .trading_data__item--android { width: 320px; }
   .trading_data__item--android .trading_data__inner { top: 53px; left: 15px; right: 14px; }
-  .trading_data__table { margin-top: 85px; background-color: #fff; padding-bottom: 40px; }
+  .trading_data__table { margin-top: 85px; padding-bottom: 40px; }
   .trading_data__table table tr th { font-size: 11px; padding: 5px 10px 6px; }
-  .trading_data__table table tr td { font-size: 12px; padding: 5px 17px 6px; }
+  .trading_data__table table tr td { font-size: 12px; padding: 5px 10px 6px; }
   .trading_data__buy, .trading_data__sell { top: 150px; left: 20px; }
   .trading_data__buy { left: 160px; } }
 
@@ -2425,7 +2427,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .landing--video .container { width: 1280px; }
 
-.landing--video .btn_video { position: absolute; left: 0; right: 0; top: 50%; margin: -55px auto; z-index: 10; }
+.landing--video .btn_video { position: absolute; left: 0; right: 0; top: 50%; margin: -55px auto; z-index: 10; width: 150px; }
 
 .landing--video.video_played:after { opacity: 0; pointer-events: none; visibility: hidden; }
 
@@ -3188,6 +3190,8 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 .form_status__button { margin-top: 70px; margin-top: 4.375rem; }
 
+.form_status__button .btn { min-width: 150px; min-width: 9.375rem; }
+
 .contact_us_widget { margin-top: -80px; margin-top: -5rem; height: 80px; height: 5rem; padding: 20px 0; padding: 1.25rem 0; }
 
 .contact_us_widget .container { padding-left: 15px; padding-right: 15px; }
@@ -3250,6 +3254,7 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 @media all and (max-width: 543px) { .page_invest .features { text-align: center; }
   .page_invest .features__item { text-align: left; width: 100%; margin-bottom: 30px; width: 310px; max-width: 100%; }
+  .page_invest .features__item:last-child { margin-bottom: 0; }
   .page_invest .features__img { float: left; width: 100px; text-align: center; } }
 
 @media all and (min-width: 992px) { .page_invest .section--padding { padding: 100px 0; padding: 6.25rem 0; }
@@ -3268,7 +3273,7 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 @media all and (max-width: 991px) { .heading_with_select { margin-bottom: 80px; text-align: center; }
   .heading_with_select .pull-left, .heading_with_select .pull-right { float: none !important; display: inline-block; vertical-align: middle; margin-top: 0 !important; margin-bottom: 0 !important; } }
 
-@media all and (max-width: 543px) { .heading_with_select { margin-bottom: 40px; } }
+@media all and (max-width: 543px) { .heading_with_select { margin-bottom: 20px; } }
 
 .landing_media { margin: 60px 0 74px; margin: 3.75rem 0 4.625rem; }
 
@@ -3308,6 +3313,11 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 .invest_total a:hover { color: #3F4D60; }
 
+@media all and (max-width: 767px) { .invest_total__ownership { display: block; text-align: center; max-width: 240px; margin-left: auto; margin-right: auto; }
+  .invest_total__ownership ._value { margin-left: -45px; margin-left: -2.8125rem; } }
+
+@media all and (max-width: 1199px) { .invest_total--big { margin-top: 25px; margin-top: 1.5625rem; margin-bottom: 25px; margin-bottom: 1.5625rem; line-height: 45px; line-height: 2.8125rem; font-size: 40px; font-size: 2.5rem; } }
+
 @media all and (max-width: 480px) { .invest_total--big { font-size: 30px; margin: 15px 0; } }
 
 .ownership_value { border-bottom: 3px solid #0DA7FC; border-radius: 10px; }
@@ -3324,17 +3334,19 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 .list--invest .list__text p { margin-bottom: 4px; margin-bottom: 0.25rem; }
 
-.widget_tw { margin-top: -57px; margin-top: -3.5625rem; }
+.widget_tw { margin-top: -1px; margin-top: -0.0625rem; }
 
 .news_list--simple .news_list__item { padding-top: 14px; padding-top: 0.875rem; padding-bottom: 20px; padding-bottom: 1.25rem; }
 
-.news_list--simple .news_list__title { font-weight: 600; color: #333333; letter-spacing: 0; font-size: 18px; font-size: 1.125rem; line-height: 30px; line-height: 1.875rem; margin-bottom: 5px; margin-bottom: 0.3125rem; }
+.news_list--simple .news_list__title { font-weight: 600; color: #333333; letter-spacing: 0; font-size: 18px; line-height: 30px; margin-bottom: 5px; }
 
 .news_list--simple .news_list__title a { display: inline-block; }
 
 .news_list--simple .news_list__date { margin-bottom: 10px; margin-bottom: 0.625rem; }
 
-.news_list--simple .news_list__desc { margin-bottom: 0; }
+.news_list--simple .news_list__desc { margin-bottom: 0; font-style: normal; font-stretch: normal; line-height: 1.67; color: #3F4D60; font-size: 18px; font-size: 1.125rem; }
+
+.news_list--simple .news_list__desc p span { font-family: "Proxima Nova","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif !important; font-size: 18px !important; font-size: 1.125rem !important; }
 
 .review_item { position: relative; padding: 40px 0 20px; padding: 2.5rem 0 1.25rem; }
 
@@ -3383,6 +3395,8 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 @media all and (max-width: 767px) { .btn_affix.nav_up { -webkit-transform: translate(0, -80px); -moz-transform: translate(0, -80px); -ms-transform: translate(0, -80px); -o-transform: translate(0, -80px); transform: translate(0, -80px); } }
 
 @media all and (max-width: 543px) { .btn_affix { -webkit-transform: none !important; -moz-transform: none !important; -ms-transform: none !important; -o-transform: none !important; transform: none !important; } }
+
+@media all and (max-width: 767px) { .text-center-md { text-align: center; } }
 
 .page--text .section--lead { padding: 100px 0; padding: 6.25rem 0; }
 
