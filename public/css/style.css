@@ -2322,7 +2322,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .trading_data__table table tr th { font-weight: normal; background: #fff; color: rgba(63, 77, 96, 0.6); border-bottom: 1px solid #e6e8eb; padding: 11px 10px 10px; padding: 0.6875rem 0.625rem 0.625rem; font-size: 14px; font-size: 0.875rem; }
 
-.trading_data__table table tr td { border-bottom: 1px solid #e6e8eb; text-align: left; padding: 10px 16px; padding: 0.625rem 1rem; }
+.trading_data__table table tr td { border-bottom: 1px solid #e6e8eb; text-align: left; padding: 9px 16px 10px; padding: 0.5625rem 1rem 0.625rem; }
 
 .trading_data__inner { position: absolute; }
 
@@ -2333,9 +2333,12 @@ tbody.collapse.in { display: table-row-group; }
   .trading_data__item--iphone .trading_data__inner { top: 79px; left: 21px; right: 20px; }
   .trading_data__item--android { width: 320px; }
   .trading_data__item--android .trading_data__inner { top: 53px; left: 15px; right: 14px; }
+  .trading_data__label { font-size: 10px; padding: 5px 10px; min-width: 0; }
+  .trading_data__label span { max-width: 48px; }
   .trading_data__table { margin-top: 85px; padding-bottom: 40px; }
   .trading_data__table table tr th { font-size: 11px; padding: 5px 10px 6px; }
-  .trading_data__table table tr td { font-size: 12px; padding: 5px 10px 6px; }
+  .trading_data__table table tr td { font-size: 12px; padding: 4px 10px 5px; }
+  .trading_data .invert_icn { background-size: 13px 10px; top: -1px; }
   .trading_data__buy, .trading_data__sell { top: 150px; left: 20px; }
   .trading_data__buy { left: 160px; } }
 
@@ -3336,7 +3339,9 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 .list--invest .list__text p { margin-bottom: 4px; margin-bottom: 0.25rem; }
 
-.widget_tw { margin-top: -1px; margin-top: -0.0625rem; }
+.widget_tw { margin-top: -1px; margin-top: -0.0625rem; margin-left: auto; margin-right: auto; }
+
+.is_mobile .widget_tw { max-width: 380px; }
 
 .news_list--simple .news_list__item { padding-top: 14px; padding-top: 0.875rem; padding-bottom: 20px; padding-bottom: 1.25rem; }
 
@@ -3399,6 +3404,8 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 @media all and (max-width: 543px) { .btn_affix { -webkit-transform: none !important; -moz-transform: none !important; -ms-transform: none !important; -o-transform: none !important; transform: none !important; } }
 
 @media all and (max-width: 767px) { .text-center-md { text-align: center; } }
+
+iframe#twitter-widget-1 *, iframe#twitter-widget-2 * { max-width: 100% !important; }
 
 .page--text .section--lead { padding: 100px 0; padding: 6.25rem 0; }
 
@@ -3639,6 +3646,8 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 .btn--report:hover { color: #333333 !important; background-color: #d9dee2 !important; }
 
 .zEWidget-launcher { z-index: 100 !important; }
+
+@media all and (min-width: 1200px) { .footer_in_view .zEWidget-launcher { bottom: 100px !important; } }
 
 @media (max-width: 543px) { .header__logo { width: 32px; } }
 

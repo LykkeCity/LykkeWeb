@@ -352,6 +352,12 @@
 
 .widget_tw {
   @include rem(margin-top, -1px);
+  margin-left: auto;
+  margin-right: auto;
+
+  .is_mobile & {
+    max-width: 380px;
+  }
 }
 
 .news_list--simple {
@@ -547,4 +553,9 @@
   .text-center-md {
     text-align: center;
   }
+}
+
+iframe#twitter-widget-1 *,
+iframe#twitter-widget-2 * {
+  max-width: 100% !important;
 }
