@@ -334,7 +334,7 @@
   .list__item {
     float: none;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
 
     @include rem(margin-right, -4px);
     @include rem(padding-top, 20px);

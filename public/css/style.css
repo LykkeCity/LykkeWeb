@@ -3330,7 +3330,7 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 .list--invest .list__icon { width: 40px; width: 2.5rem; margin-right: 30px; margin-right: 1.875rem; margin-top: 10px; margin-top: 0.625rem; }
 
-.list--invest .list__item { float: none; display: inline-block; vertical-align: middle; margin-right: -4px; margin-right: -0.25rem; padding-top: 20px; padding-top: 1.25rem; padding-bottom: 20px; padding-bottom: 1.25rem; }
+.list--invest .list__item { float: none; display: inline-block; vertical-align: top; margin-right: -4px; margin-right: -0.25rem; padding-top: 20px; padding-top: 1.25rem; padding-bottom: 20px; padding-bottom: 1.25rem; }
 
 .list--invest .list__text { overflow: hidden; }
 
