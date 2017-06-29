@@ -321,6 +321,10 @@
 }
 
 .list--invest {
+  .middot {
+    @include rem(margin, 0 6px);
+  }
+
   .list__icon {
     @include rem(width, 40px);
     @include rem(margin-right, 30px);
