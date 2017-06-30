@@ -256,8 +256,7 @@ $report: #ff2800;
     color: $text;
 
     @include rem(font-size, 28px);
-    @include rem(margin-top, 43px);
-    @include rem(margin-bottom, 7px);
+    @include rem(margin-bottom, 30px);
   }
 
   &__hint {
@@ -350,11 +349,7 @@ $report: #ff2800;
 
   &--last {
     border-bottom: 0;
-    margin-bottom: 0;
-
-    .r_summary__accent {
-      @include rem(margin-bottom, 10px);
-    }
+    width: 410px;
   }
 
   @media all and (max-width: $screen-mobile) {
