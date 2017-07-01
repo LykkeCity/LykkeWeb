@@ -407,7 +407,9 @@ $report: #ff2800;
   @include rem(line-height, 25px);
   @include rem(letter-spacing, 2px);
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: $text !important;
     background-color: darken(#f6f7f8, 10%) !important;
   }
