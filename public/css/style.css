@@ -3641,7 +3641,7 @@ iframe#twitter-widget-1 *, iframe#twitter-widget-2 * { max-width: 100% !importan
 
 .btn--report { background-color: #f6f7f8; font-weight: 600; text-align: center; color: #333333; text-transform: uppercase; font-size: 14px; font-size: 0.875rem; line-height: 25px; line-height: 1.5625rem; letter-spacing: 2px; letter-spacing: 0.125rem; }
 
-.btn--report:hover { color: #333333 !important; background-color: #d9dee2 !important; }
+.btn--report:hover, .btn--report:active, .btn--report:focus { color: #333333 !important; background-color: #d9dee2 !important; }
 
 .zEWidget-launcher { z-index: 100 !important; }
 
