@@ -3385,21 +3385,21 @@ h3.border_bottom { border-bottom: 1px solid #EBEDEF; padding-bottom: 20px; paddi
 
 .site_nav .btn_affix { left: auto; right: auto; float: right; position: static; }
 
-.site_nav .btn_affix.nav_down { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+.site_nav .btn_affix.nav_down { -webkit-transform: translate(0, 0) !important; -moz-transform: translate(0, 0) !important; -ms-transform: translate(0, 0) !important; -o-transform: translate(0, 0) !important; transform: translate(0, 0) !important; }
 
-.site_nav .btn_affix.nav_up { -webkit-transform: translate(0, -90px); -moz-transform: translate(0, -90px); -ms-transform: translate(0, -90px); -o-transform: translate(0, -90px); transform: translate(0, -90px); }
+.site_nav .btn_affix.nav_up { -webkit-transform: translate(0, -90px) !important; -moz-transform: translate(0, -90px) !important; -ms-transform: translate(0, -90px) !important; -o-transform: translate(0, -90px) !important; transform: translate(0, -90px) !important; }
 
 .site_nav .btn_affix.affix { position: fixed; z-index: 109; top: 100px; top: 6.25rem; }
 
-@media all and (max-width: 767px) { .site_nav .btn_affix.nav_up { -webkit-transform: translate(0, -80px); -moz-transform: translate(0, -80px); -ms-transform: translate(0, -80px); -o-transform: translate(0, -80px); transform: translate(0, -80px); } }
+@media all and (max-width: 767px) { .site_nav .btn_affix.nav_up { -webkit-transform: translate(0, -80px) !important; -moz-transform: translate(0, -80px) !important; -ms-transform: translate(0, -80px) !important; -o-transform: translate(0, -80px) !important; transform: translate(0, -80px) !important; } }
 
 @media all and (max-width: 543px) { .site_nav .btn_affix { right: 0px !important; z-index: 80; position: static !important; -webkit-transform: none !important; -moz-transform: none !important; -ms-transform: none !important; -o-transform: none !important; transform: none !important; } }
 
-.btn_affix.nav_down { -webkit-transform: translate(0, 0); -moz-transform: translate(0, 0); -ms-transform: translate(0, 0); -o-transform: translate(0, 0); transform: translate(0, 0); }
+.btn_affix.nav_down { -webkit-transform: translate(0, 0) !important; -moz-transform: translate(0, 0) !important; -ms-transform: translate(0, 0) !important; -o-transform: translate(0, 0) !important; transform: translate(0, 0) !important; }
 
-.btn_affix.nav_up { -webkit-transform: translate(0, -90px); -moz-transform: translate(0, -90px); -ms-transform: translate(0, -90px); -o-transform: translate(0, -90px); transform: translate(0, -90px); }
+.btn_affix.nav_up { -webkit-transform: translate(0, -90px) !important; -moz-transform: translate(0, -90px) !important; -ms-transform: translate(0, -90px) !important; -o-transform: translate(0, -90px) !important; transform: translate(0, -90px) !important; }
 
-@media all and (max-width: 767px) { .btn_affix.nav_up { -webkit-transform: translate(0, -80px); -moz-transform: translate(0, -80px); -ms-transform: translate(0, -80px); -o-transform: translate(0, -80px); transform: translate(0, -80px); } }
+@media all and (max-width: 767px) { .btn_affix.nav_up { -webkit-transform: translate(0, -80px) !important; -moz-transform: translate(0, -80px) !important; -ms-transform: translate(0, -80px) !important; -o-transform: translate(0, -80px) !important; transform: translate(0, -80px) !important; } }
 
 @media all and (max-width: 543px) { .btn_affix { -webkit-transform: none !important; -moz-transform: none !important; -ms-transform: none !important; -o-transform: none !important; transform: none !important; } }
 

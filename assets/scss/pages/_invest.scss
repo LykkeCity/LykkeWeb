@@ -499,11 +499,11 @@
     position: static;
 
     &.nav_down {
-      @include translate(0,0);
+      @include transform(translate(0, 0) !important);
     }
 
     &.nav_up {
-      @include translate(0,-90px);
+      @include transform(translate(0, -90px) !important);
     }
 
     &.affix {
@@ -515,7 +515,7 @@
 
     @media all and (max-width: $screen-landscape) {
       &.nav_up {
-        @include translate(0, -80px);
+        @include transform(translate(0, -80px) !important);
       }
     }
 
@@ -531,16 +531,16 @@
 
 .btn_affix {
   &.nav_down {
-    @include translate(0,0);
+    @include transform(translate(0, 0) !important);
   }
 
   &.nav_up {
-    @include translate(0,-90px);
+    @include transform(translate(0, -90px) !important);
   }
 
   @media all and (max-width: $screen-landscape) {
     &.nav_up {
-      @include translate(0, -80px);
+      @include transform(translate(0, -80px) !important);
     }
   }
 
