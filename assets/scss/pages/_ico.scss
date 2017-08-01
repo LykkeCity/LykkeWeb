@@ -1,0 +1,20 @@
+.panel_group--faq {
+  .panel_heading a {
+    @include rem(padding, 19px 40px 19px 0);
+  }
+
+  .panel_body p {
+    max-width: 670px;
+    }
+}
+
+.form {
+  hr {
+    border-bottom: 0;
+    border-top-width: 1px;
+    width: 100%;
+    max-width: 100%;
+
+    @include rem(margin, 10px 0 40px);
+  }
+}

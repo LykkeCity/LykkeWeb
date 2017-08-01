@@ -127,3 +127,17 @@
     @include rem(top, -10px);
   }
 }
+
+$mt: 10px;
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mt1 {
+  margin-top: $mt !important;
+}
+
+.mt2 {
+  margin-top: $mt*2 !important;
+}

@@ -137,7 +137,7 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 .mb0 { margin-bottom: 0 !important; }
 
-@font-face { font-family: 'icon'; src: url("../fonts/icon.eot?wc1rxo"); src: url("../fonts/icon.eot?wc1rxo#iefix") format("embedded-opentype"), url("../fonts/icon.ttf?wc1rxo") format("truetype"), url("../fonts/icon.woff?wc1rxo") format("woff"), url("../fonts/icon.svg?wc1rxo#icon") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'icon'; src: url("../fonts/icon.eot?c8aepl"); src: url("../fonts/icon.eot?c8aepl#iefix") format("embedded-opentype"), url("../fonts/icon.ttf?c8aepl") format("truetype"), url("../fonts/icon.woff?c8aepl") format("woff"), url("../fonts/icon.svg?c8aepl#icon") format("svg"); font-weight: normal; font-style: normal; }
 
 [class^="icon--"], [class*=" icon--"] { /* use !important to prevent issues with browser extensions that change fonts */ font-family: 'icon' !important; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; display: inline-block; position: relative; top: -1px; margin-right: 6px; vertical-align: middle; /* Better Font Rendering =========== */ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 20px; font-size: 1.25rem; margin-right: 6px; margin-right: 0.375rem; }
 
@@ -334,6 +334,8 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 .icon--vk:before { content: "\e955"; }
 
 .icon--move_to:before { content: "\e956"; }
+
+.icon--move_to_thin:before { content: "\e960"; }
 
 .icon--exit:before { content: "\e957"; }
 
@@ -2515,6 +2517,12 @@ tbody.collapse.in { display: table-row-group; }
 
 .error_page .status_icon { display: inline-block; vertical-align: middle; position: relative; margin-bottom: 0; margin: 0 10px; margin: 0 0.625rem; top: -10px; top: -0.625rem; }
 
+.mt0 { margin-top: 0 !important; }
+
+.mt1 { margin-top: 10px !important; }
+
+.mt2 { margin-top: 20px !important; }
+
 .features { background: #f7f8f9; position: relative; text-align: center; }
 
 .features:after { left: 100%; }
@@ -3642,6 +3650,12 @@ iframe#twitter-widget-1 *, iframe#twitter-widget-2 * { max-width: 100% !importan
 .btn--report { background-color: #f6f7f8; font-weight: 600; text-align: center; color: #333333; text-transform: uppercase; font-size: 14px; font-size: 0.875rem; line-height: 25px; line-height: 1.5625rem; letter-spacing: 2px; letter-spacing: 0.125rem; }
 
 .btn--report:hover, .btn--report:active, .btn--report:focus { color: #333333 !important; background-color: #d9dee2 !important; }
+
+.panel_group--faq .panel_heading a { padding: 19px 40px 19px 0; padding: 1.1875rem 2.5rem 1.1875rem 0; }
+
+.panel_group--faq .panel_body p { max-width: 670px; }
+
+.form hr { border-bottom: 0; border-top-width: 1px; width: 100%; max-width: 100%; margin: 10px 0 40px; margin: 0.625rem 0 2.5rem; }
 
 .zEWidget-launcher { z-index: 100 !important; }
 
