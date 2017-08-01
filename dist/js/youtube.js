@@ -1,1 +1,0 @@
-function onYouTubeIframeAPIReady(){player=new YT.Player("player",{videoId:$("#player").data("video-id"),height:"390",width:"640",events:{onReady:onPlayerReady}})}function onPlayerReady(a){var b=document.getElementById("btn_video");b.addEventListener("click",function(){player.playVideo(),$(".landing--video").addClass("video_played")})}var player;
