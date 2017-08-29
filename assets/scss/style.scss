@@ -38,8 +38,12 @@
 @import 'partials/categories';
 @import 'partials/slick';
 
+@import 'partials/blocks/markets';
+@import 'partials/blocks/support';
+@import 'partials/blocks/subscribe';
+
 // optional pages
-@import 'pages/home';
+@import 'pages/homepage';
 @import 'pages/leadership';
 @import 'pages/exchange';
 @import 'pages/contacts';
@@ -74,4 +78,8 @@ h2, .h2 {
 
 h1, .h1 {
   @include rem(margin-bottom, 30px);
+}
+
+.header {
+  border-bottom: 0;
 }

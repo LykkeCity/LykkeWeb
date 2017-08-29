@@ -1,0 +1,64 @@
+.block_markets {
+  overflow: hidden;
+
+  @include rem(height, 85px);
+
+  .container {
+    overflow: hidden;
+    overflow-x: auto;
+
+    @include rem(height, 105px);
+
+    &:after,
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.pairs_list {
+  font-size: 0;
+  display: table;
+  table-layout: fixed;
+  max-width: 100%;
+
+  @include rem(margin-left, -35px);
+  @include rem(padding, 20px 0);
+
+  &__row {
+    display: table-row;
+  }
+
+  .pair {
+    display: table-cell;
+    vertical-align: top;
+    line-height: 1.5;
+    border-left: 1px solid #ebedef;
+    white-space: nowrap;
+
+    @include rem(font-size, 16px);
+    @include rem(padding, 0 35px);
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    &__title {
+      color: rgba($secondary, .6);
+
+      @include rem(margin-bottom, 2px);
+    }
+
+    &__value {
+      color: $secondary;
+    }
+  }
+
+  @media all and (min-width: $screen-desktop) {
+    .pair {
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+}

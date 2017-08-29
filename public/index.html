@@ -35,79 +35,9 @@
 
   </script>
 
-  <!-- Start of lykkex Zendesk Widget script -->
-  <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","lykkex.zendesk.com");
-  /*]]>*/</script>
-  <!-- End of lykkex Zendesk Widget script -->
-
-
-  <script>
-/*
-
-    var RatesData=[];
-    var GetAskPrice=function(ticker){
-      for (var i = 0 ; i < RatesData.length ; i++) {
-        var id=RatesData[i].Id;
-        if (id==ticker){
-          return RatesData[i].Ask;
-        } else return '';
-      }
-    }
-
-    var GetBidPrice=function(ticker){
-      for (var i = 0 ; i < RatesData.length ; i++) {
-        var id=RatesData[i].Id;
-        if (id==ticker){
-          return RatesData[i].Bid;
-        } else return '';
-      }
-    }
-
-    var BuildRatesTable=function(currency, table_id){
-      var date = new Date();
-      for (var i = 0 ; i < RatesData.length ; i++) {
-        if(RatesData[i].Id=='EURUSD'){
-          //$(aEURUSD_last).html( RatesData[i].Ask);
-          $(aEURUSD_bid).html( RatesData[i].Bid );
-          $(aEURUSD_ask).html( RatesData[i].Ask );
-        }
-        var Ticker='#'+RatesData[i].Id;
-        if (RatesData[i].Ask!=''){
-          $(Ticker).html(RatesData[i].Ask);
-        }
-      }
-    };
-
-
-    var UpdateTableRates=function() {
-      $.ajax({
-        type: 'GET',
-        url: 'https://lykke-api.azurewebsites.net/api/AllAssetPairRates',
-        data: '',
-        async: false,
-        beforeSend: function (xhr) {
-          if (xhr && xhr.overrideMimeType) {
-            xhr.overrideMimeType('application/json;charset=utf-8');
-          }
-        },
-        dataType: 'json',
-        success: function (data){
-          //$('#RatesJson').append(JSON.stringify(data.Result.Rates));
-          RatesData=data.Result.Rates;
-          BuildRatesTable();
-        },
-        error: function (response, status, error) {
-          //alert('error');
-        }
-      });
-    };
-    setInterval(UpdateTableRates, 1000);
-*/
-
-  </script>
 </head>
 
-<body class="page_landing">
+<body>
 
 <aside class="menu_overlay"></aside>
 
@@ -329,267 +259,476 @@
   </nav>
 </div>
 
-  <article class="content landing">
-    <section class="section landing--intro section--padding">
+  <article class="content homepage">
+    <div class="block_markets">
       <div class="container">
-        <div class="landing_intro">
-          <h1 class="landing_intro__title">Trade FX and Digital Assets</h1>
-          <h2 class="h3 h3--opacity">Access Easily. Use for Free.<br>
-            Settle Immediately. Own Directly.</h2>
-
-          <div class="trading_data">
-            <div class="trading_data__item trading_data__item--iphone">
-              <div class="trading_data__inner">
-                <img src="img/landing/iphone_inner.png" width="375" alt="iphone_inner">
-                <div class="trading_data__content">
-                  <div class="trading_data__table">
-                    <table>
-                      <tr>
-                        <th>Issuer/asset</th>
-                        <th>Price</th>
-                      </tr>
-                      <tr>
-                        <td>BTC <span class="invert_icn"></span> USD</td>
-                        <td><span class="trading_data__label">$ <span id="BTCUSD" class="val">606.71</span></span></td>
-                      </tr>
-                      <tr>
-                        <td>EUR <span class="invert_icn"></span> USD</td>
-                        <td><span class="trading_data__label">$ <span id="EURUSD" class="val">1.1234</span></span></td>
-                      </tr>
-                      <tr>
-                        <td>GBP <span class="invert_icn"></span> USD</td>
-                        <td><span class="trading_data__label">$ <span id="GBPUSD" class="val">1.33372</span></span></td>
-                      </tr>
-                      <tr>
-                        <td>LYKKE <span class="invert_icn"></span> USD</td>
-                        <td><span class="trading_data__label">$ <span  id="LKKUSD" class="val">0.05143</span></span></td>
-                      </tr>
-                      <tr>
-                        <td>USD <span class="invert_icn"></span> CHF</td>
-                        <td><span class="trading_data__label">₣ <span id="USDCHF" class="val">0.9723</span></span></td>
-                      </tr>
-                      <tr>
-                        <td>USD <span class="invert_icn"></span> JPY</td>
-                        <td><span class="trading_data__label">¥ <span id="USDJPY" class="val">101.856</span></span></td>
-                      </tr>
-                      <tr>
-                        <td>ETH <span class="invert_icn"></span> USD</td>
-                        <td><span class="trading_data__label">$ <span id="ETHUSD" class="val">11.98</span></span></td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-              </div>
+        <div class="pairs_list">
+          <div class="pairs_list__row">
+            <div class="pair">
+              <div class="pair__title">BTC >> USD</div>
+              <div class="pair__value">$2280.71</div>
             </div>
-            <div class="trading_data__item trading_data__item--android">
-              <div class="trading_data__inner">
-                <img src="img/landing/android_inner.jpg" width="360" alt="android_inner">
-                <div id="aEURUSD_bid" class="trading_data__sell">1.10432</div>
-                <div id="aEURUSD_ask" class="trading_data__buy">1.11528</div>
-              </div>
+            <div class="pair">
+              <div class="pair__title">BTC >> EUR</div>
+              <div class="pair__value">$1969.85</div>
+            </div>
+            <div class="pair">
+              <div class="pair__title">EUR >> USD</div>
+              <div class="pair__value">$1.14623</div>
+            </div>
+            <div class="pair">
+              <div class="pair__title">BTC >> USD</div>
+              <div class="pair__value">$2280.71</div>
+            </div>
+            <div class="pair">
+              <div class="pair__title">BTC >> EUR</div>
+              <div class="pair__value">$1969.85</div>
+            </div>
+            <div class="pair">
+              <div class="pair__title">EUR >> USD</div>
+              <div class="pair__value">$1.14623</div>
+            </div>
+            <div class="pair">
+              <div class="pair__title">BTC >> USD</div>
+              <div class="pair__value">$2280.71</div>
+            </div>
+            <div class="pair">
+              <div class="pair__title">BTC >> EUR</div>
+              <div class="pair__value">$1969.85</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="section landing--features section--padding">
-      <div class="container">
-        <div class="col-sm-8 automargin">
-          <div class="row landing_features_title">
-            <div class="col-sm-5">
-              <div class="h1 page__title">Lykke<span>Wallet</span></div>
-            </div>
-            <div class="col-sm-7">
-              <div class="apps pull-right">
-                <div class="apps_apple"><a href="https://appsto.re/ru/Dwjvcb.i" target="_blank"><img src="img/appstore-badge.svg" width="170" alt="apps_apple"></a></div>
-                <div class="apps_google"><a href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet" target="_blank"><img src="img/google-play.svg" width="170" alt="apps_google"></a></div>
-              </div>
-            </div>
-          </div>
-
-          <p class="landing__subtitle">Lykke Wallet is a key element of the Lykke trading ecosystem. The Lykke Wallet iOS and Android apps make it simple for you to buy and sell digital currencies and assets on the Lykke Exchange, our next-generation trading platform with zero commission.  Immediate settlement and direct ownership are enabled by distributed ledger technology. Now anyone can trade easily!</p>
-
-          <div class="features">
-            <div class="features__item features__item--dur1">
-              <div class="features__img"><img src="img/landing/icn/comisssion_free_icn.svg" width="70" alt="comisssion_free"></div>
-              <div class="features__title">0% commission</div>
-              <div class="features__text">Zero broker commission.</div>
-            </div>
-            <div class="features__item features__item--dur2">
-              <div class="features__img"><img src="img/landing/icn/low_spreads_icn.svg" width="62" alt="low_spreads"></div>
-              <div class="features__title">low spreads</div>
-              <div class="features__text">Matching engine with spread priority.</div>
-            </div>
-            <div class="features__item features__item--dur3">
-              <div class="features__img"><img src="img/landing/icn/guaranteed_execution_icn.svg" width="80" alt="guaranteed_execution"></div>
-              <div class="features__title">guaranteed execution</div>
-              <div class="features__text">Trading at human speed. Best execution guaranteed!</div>
-            </div>
-            <div class="features__item features__item--dur4">
-              <div class="features__img"><img src="img/landing/icn/immediate_settlement_icn.svg" width="63" alt="immediate_settlement"></div>
-              <div class="features__title">immediate settlement</div>
-              <div class="features__text">Your trade is settled in minutes.</div>
-            </div>
-            <div class="features__item features__item--dur5">
-              <div class="features__img"><img src="img/landing/icn/direct_ownership_icn.svg" width="70" alt="direct_ownership"></div>
-              <div class="features__title">direct ownership</div>
-              <div class="features__text">Guaranteed by the blockchain.</div>
-            </div>
-            <div class="features__item features__item--dur6">
-              <div class="features__img"><img src="img/landing/icn/security_icn.svg" width="60" alt="security"></div>
-              <div class="features__title">100% security</div>
-              <div class="features__text">Orders are approved by fingerprint. Your private key is stored on the device.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="landing--video">
-          <div class="responsive_video">
-            <div id="player"></div>
-            <!--<iframe width="100%" id="video" height="315" src="https://www.youtube.com/embed/h5T2gRGcMso?enablejsapi=1" frameborder="0" allowfullscreen></iframe>-->
-          </div>
-
-          <button class="btn_video" id="btn_video">
-            <span class="btn_video__icon"><img src="img/play.svg" width="50" alt="play_icn"></span>
-            <span class="btn_video__text">WATCH VIDEO</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section landing--qa section--padding">
+    <section class="section section_lead section--padding ">
       <div class="container">
         <div class="row">
-          <div class="col-sm-11 automargin">
-            <h3 class="h2">Questions & Answers</h3>
-
-            <div class="qa">
-              <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                  <div class="qa_item">
-                    <div class="qa_item__num">01</div>
-                    <div class="qa_item__title">What is Lykke Wallet?</div>
-                    <div class="qa_item__text">
-                      It's like your normal wallet or purse, only it's electronic. You use it to hold your money in different currencies. It's very practical: You can exchange one currency into another, and you don't need to go to a bank or an exchange to do it. Your wallet is linked to the Lykke Exchange. You can buy shares with it and even issue your own.
-                    </div>
-                  </div>
+          <div class="col-md-10 automargin">
+            <div class="row">
+              <div class="col-md-7">
+                <h1 class="section__title">Trade Bitcoin, Ethereum,
+                  FX and digital assets</h1>
+                <div class="section__subtitle">Access easily. Use for free.<br>
+                  Settle immediately. Own directly.</div>
+                <a href="/" class="btn btn--primary btn_custom">Get your Lykke wallet <span class="fw-normal">It’s free</span></a>
+                <div class="apps apps--small">
+                  <div class="apps_apple"><a href="https://appsto.re/ru/Dwjvcb.i" target="_blank"><img src="img/appstore-badge.svg" width="170" alt="apps_apple"></a></div>
+                  <div class="apps_google"><a href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet" target="_blank"><img src="img/google-play.svg" width="170" alt="apps_google"></a></div>
                 </div>
-                <div class="col-sm-6 col-xs-12">
-                  <div class="qa_item">
-                    <div class="qa_item__num">02</div>
-                    <div class="qa_item__title">Why would I need it?</div>
-                    <div class="qa_item__text">
-                      <p>You need Lykke Wallet if:</p>
-                      <ol>
-                        <li>You want to invest your money in different currencies.</li>
-                        <li>You want to buy shares.</li>
-                        <li>You want to issue your own shares.</li>
-                      </ol>
-                    </div>
-                  </div>
+                <div class="hint">iOS 8.0+ and Android 4.4.2+ required</div>
+              </div>
+              <div class="col-md-5">
+                <div class="section__img">
+                  <img src="img/homepage/mockup-main@2x.png" alt="main" width="516" height="742">
                 </div>
               </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                  <div class="qa_item">
-                    <div class="qa_item__num">03</div>
-                    <div class="qa_item__title">What do I need to pay for?</div>
-                    <div class="qa_item__text">
-                      Nothing. There is no charge to use Lykke Wallet, and the commission rate is 0 percent.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-xs-12">
-                  <div class="qa_item">
-                    <div class="qa_item__num">04</div>
-                    <div class="qa_item__title">How can I start using Lykke Wallet?</div>
-                    <div class="qa_item__text">
-                      <ol>
-                        <li>Download the free <a href="https://appsto.re/ru/Dwjvcb.i" target="_blank">iOS</a> or <a href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet" target="_blank">Android app</a>.</li>
-                        <li>Register your Lykke Wallet.</li>
-                        <li>Put some money into your wallet: Deposit bitcoins, transfer funds from a bank card or e-wallet, or make a bank wire transfer.</li>
-                        <li>Start trading!</li>
-                      </ol>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                  <div class="qa_item">
-                    <div class="qa_item__num">05</div>
-                    <div class="qa_item__title">What if I am no good in technology?</div>
-                    <div class="qa_item__text">
-                      You don’t need any special knowledge. If you use the Internet, social media, online banking, or other apps on your smartphone, you are skilled enough to manage your Lykke Wallet.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-xs-12">
-                  <div class="qa_item">
-                    <div class="qa_item__num">06</div>
-                    <div class="qa_item__title">Is it safe to put my money into Lykke Wallet?</div>
-                    <div class="qa_item__text">
-                      Unlike on traditional exchanges, you don’t need to trust your money to the marketplace. Lykke Wallet is a multisignature wallet, which is like a safe with two keys. You have one key, and the exchange has the other. No one can take your money, even if your personal key is stolen.
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                  <div class="qa_item">
-                    <div class="qa_item__num">07</div>
-                    <div class="qa_item__title">What if anything happens to the exchange? </div>
-                    <div class="qa_item__text">
-                      When you put your money into a Lykke Wallet, Lykke emails you a signed refund transaction. If the exchange is compromised, you’ll get your money back within two weeks.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-xs-12">
-                  <div class="qa_item">
-                    <div class="qa_item__num">08</div>
-                    <div class="qa_item__title">How can I get my money out of Lykke Wallet?</div>
-                    <div class="qa_item__text">
-                      You can withdraw your money to your account at any time without paying a fee.
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
             </div>
           </div>
         </div>
       </div>
-
     </section>
 
-    <section class="landing landing--apps section--padding">
+    <section class="section section_gray section_features section--padding">
       <div class="container">
-        <div class="col-sm-6 col-md-5">
-          <div class="h2">Download now</div>
-          <div class="h3 h3--opacity">It’s free</div>
-        </div>
-        <div class="col-sm-6 col-md-7">
-          <div class="apps">
-            <div class="apps_apple"><a href="https://appsto.re/ru/Dwjvcb.i" target="_blank"><img src="img/appstore-badge.svg" width="203" alt="appstore"></a></div>
-            <div class="apps_google"><a href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet" target="_blank"><img src="img/google-play.svg" width="203" alt="googleplay"></a></div>
+        <div class="row">
+          <div class="col-md-8 automargin">
+            <div class="text-center">
+              <div class="h1 section__title"><img src="img/lykke_wallet_logo.svg" alt="lykke wallet logo" width="80"> LykkeWallet</div>
+              <p class="lead">The Lykke Wallet mobile application for iOS and Android is the key element of the Lykke trading ecosystem. Our wallet  app makes it easy for you to trade currencies and cryptocurrencies. You can buy and sell assets such as bitcoin and ether on the open-source Lykke Exchange, our next-generation trading platform,with immediate settlement and direct ownership, thanks to distributed ledger technology, all at zero percent commission.</p>
+              <a href="" class="btn btn--flat btn_open_video"><img src="img/homepage/play-btn.svg" alt="play" width="40" height="40"> Watch how it works</a>
+            </div>
+            <div class="features features--list">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="features__item">
+                    <div class="features__img"><img src="img/landing/icn/comisssion_free_icn.svg" width="70" alt="comisssion_free"></div>
+                    <div class="features__content">
+                      <div class="features__title">0% commission</div>
+                      <div class="features__text">Zero broker commission.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="features__item">
+                    <div class="features__img"><img src="img/landing/icn/low_spreads_icn.svg" width="62" alt="low_spreads"></div>
+                    <div class="features__content">
+                      <div class="features__title">Low spreads</div>
+                      <div class="features__text">Matching engine with spread priority.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="features__item">
+                    <div class="features__img"><img src="img/landing/icn/guaranteed_execution_icn.svg" width="80" alt="guaranteed_execution"></div>
+                    <div class="features__content">
+                      <div class="features__title">Guaranteed execution</div>
+                      <div class="features__text">Trading at human speed. Best execution guaranteed!</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="features__item">
+                    <div class="features__img"><img src="img/landing/icn/immediate_settlement_icn.svg" width="63" alt="immediate_settlement"></div>
+                    <div class="features__content">
+                      <div class="features__title">Immediate settlement</div>
+                      <div class="features__text">Your trade is settled in minutes.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="features__item">
+                    <div class="features__img"><img src="img/landing/icn/direct_ownership_icn.svg" width="70" alt="direct_ownership"></div>
+                    <div class="features__content">
+                      <div class="features__title">Direct ownership</div>
+                      <div class="features__text">Guaranteed by the blockchain.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="features__item">
+                    <div class="features__img"><img src="img/landing/icn/security_icn.svg" width="60" alt="security"></div>
+                    <div class="features__content">
+                      <div class="features__title">100% security</div>
+                      <div class="features__text">Orders are approved by fingerprint. Your private key is stored on the device.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="landing landing--info section--padding">
+    <section class="section section_about section--padding">
       <div class="container">
         <div class="row">
-          <div class="col-sm-11 automargin">
+          <div class="col-md-10 automargin">
+            <div class="row">
+              <div class="col-sm-5">
+                <div class="h2 section__title">How to start using LykkeWallet?</div>
+                <p class="lead">You won’t believe how easy it is to get up and running on our trading platform. Just follow these simple steps:</p>
+
+                <div class="section__img">
+                  <img src="img/homepage/mockup-register@2x.png" alt="main" width="556" height="599">
+                </div>
+              </div>
+              <div class="col-sm-7">
+                <ol class="list list--counter_black">
+                  <li>
+                    <h4>Download</h4>
+                    <p>Download your free Lykke Wallet app for iOS or Android.</p>
+                    <div class="apps apps--small">
+                      <div class="apps_apple"><a href="https://appsto.re/ru/Dwjvcb.i" target="_blank"><img src="img/appstore-badge.svg" width="170" alt="apps_apple"></a></div>
+                      <div class="apps_google"><a href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet" target="_blank"><img src="img/google-play.svg" width="170" alt="apps_google"></a></div>
+                    </div>
+                  </li>
+                  <li>
+                    <h4>Register</h4>
+                    <p>Register your Lykke Wallet.</p>
+                  </li>
+                  <li>
+                    <h4>You are the human</h4>
+                    <p>Provide a photo, ID and proof of address. The app guides you through the process. Five minutes, and you’re done.</p>
+                  </li>
+                  <li>
+                    <h4>Deposit your wallet</h4>
+                    <p>Put some money into your Lykke Wallet: Deposit bitcoins, transfer funds from a bank card or e-wallet, or make a bank wire transfer.</p>
+                  </li>
+                  <li>
+                    <h4>Start trading!</h4>
+                    <p>Start trading!</p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section_discover section_gray section--padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 automargin">
+            <div class="h2 section__title text-center">Discover the benefits</div>
+            <p class="lead text-center">Our mobile app comes complete with<br>everything that you need to trade:</p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list list--check">
+                  <li>Choose the type of asset that you want to buy, sell or trade: FX currencies, bitcoins, ethers, or colored coins/tokens.</li>
+                  <li>Take advantage of instant information about asset prices: track the price of bitcoins and other exchange rates in real time.</li>
+                  <li>Assume  control of your assets: check balances, transaction history and blockchain details for all transactions at a glance.</li>
+                  <li>Conveniently organize your funds using trading and private wallets.</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list list--check">
+                  <li>Use your existing wallets on the Lykke Exchange: import a private key into the app, and use the assets for trading or investing.</li>
+                  <li>Make operations with digital money fast, easy and for free: deposit and spend bitcoins and ethers via a QR code with no fee.</li>
+                  <li>Protect the mobile trading app and orders confirmation with a PIN.</li>
+                  <li>Remotely disable access if your iPhone or Android phone is lost or stolen.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section_faq section--padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 automargin">
+            <div class="h2 section__title text-center">Frequently asked questions</div>
+
+            <div class="panel_group panel_group--faq" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel--accordion">
+                <div class="panel_heading" role="tab" id="headingOne">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4 class="panel_title">What is an ICO?</h4>
+                  </a>
+                </div>
+                <div id="collapseOne" class="panel_collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel_body">
+                    <p>ICO stands for “Initial Coin Offering” and it is the way of raising capital through a crowdfunding campaign with the use of crypto-assets as investment. A digital asset, the coin or the token, is issued for a purpose and are sold to raise money for the said purpose.</p>
+                    <p>After the ICO process is done, the coins are traded on crypto-exchanges and market supply and demand decides on their fair pricing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--accordion">
+                <div class="panel_heading" role="tab" id="heading2">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                    <h4 class="panel_title">Why would I need it?</h4>
+                  </a>
+                </div>
+                <div id="collapse2" class="panel_collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                  <div class="panel_body">
+                    <p>ICO stands for “Initial Coin Offering” and it is the way of raising capital through a crowdfunding campaign with the use of crypto-assets as investment. A digital asset, the coin or the token, is issued for a purpose and are sold to raise money for the said purpose.</p>
+                    <p>After the ICO process is done, the coins are traded on crypto-exchanges and market supply and demand decides on their fair pricing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--accordion">
+                <div class="panel_heading" role="tab" id="heading3">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                    <h4 class="panel_title">You need Lykke Wallet if:</h4>
+                  </a>
+                </div>
+                <div id="collapse3" class="panel_collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                  <div class="panel_body">
+                    <p>ICO stands for “Initial Coin Offering” and it is the way of raising capital through a crowdfunding campaign with the use of crypto-assets as investment. A digital asset, the coin or the token, is issued for a purpose and are sold to raise money for the said purpose.</p>
+                    <p>After the ICO process is done, the coins are traded on crypto-exchanges and market supply and demand decides on their fair pricing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--accordion">
+                <div class="panel_heading" role="tab" id="heading4">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                    <h4 class="panel_title">What do I need to pay for?</h4>
+                  </a>
+                </div>
+                <div id="collapse4" class="panel_collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                  <div class="panel_body">
+                    <p>ICO stands for “Initial Coin Offering” and it is the way of raising capital through a crowdfunding campaign with the use of crypto-assets as investment. A digital asset, the coin or the token, is issued for a purpose and are sold to raise money for the said purpose.</p>
+                    <p>After the ICO process is done, the coins are traded on crypto-exchanges and market supply and demand decides on their fair pricing.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--accordion">
+                <div class="panel_heading" role="tab" id="heading5">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                    <h4 class="panel_title">What if I am no good with technology?</h4>
+                  </a>
+                </div>
+                <div id="collapse5" class="panel_collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                  <div class="panel_body">
+                    <p>You don’t need any special knowledge. If you use the Internet, social media, online banking, or other apps on your smartphone, you are skilled enough to manage your Lykke Wallet.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--accordion">
+                <div class="panel_heading" role="tab" id="heading6">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                    <h4 class="panel_title">Is it safe to put my money into Lykke Wallet?</h4>
+                  </a>
+                </div>
+                <div id="collapse6" class="panel_collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                  <div class="panel_body">
+                    <p>You don’t need any special knowledge. If you use the Internet, social media, online banking, or other apps on your smartphone, you are skilled enough to manage your Lykke Wallet.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--accordion">
+                <div class="panel_heading" role="tab" id="heading7">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                    <h4 class="panel_title">What if anything happens to the exchange?</h4>
+                  </a>
+                </div>
+                <div id="collapse7" class="panel_collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                  <div class="panel_body">
+                    <p>You don’t need any special knowledge. If you use the Internet, social media, online banking, or other apps on your smartphone, you are skilled enough to manage your Lykke Wallet.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel--accordion">
+                <div class="panel_heading" role="tab" id="heading8">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="true" aria-controls="collapse8">
+                    <h4 class="panel_title">How can I get my money out of Lykke Wallet?</h4>
+                  </a>
+                </div>
+                <div id="collapse8" class="panel_collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                  <div class="panel_body">
+                    <p>You don’t need any special knowledge. If you use the Internet, social media, online banking, or other apps on your smartphone, you are skilled enough to manage your Lykke Wallet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="block_support">
+              <div class="block_support__title"><img src="img/homepage/support-icn.svg" width="30" height="30" alt="support"> Support</div>
+              <div class="hint">Can’t find the answer? We are here to help you at all times:</div>
+              <a href="mailto:support@lykke.com" class="btn btn--flat">support@lykke.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section_apps section_gray section--padding">
+      <div class="container">
+        <div class="col-md-8">
+          <img src="img/lykke_wallet_logo.svg" class="pull-left section_apps__logo" alt="lykke wallet logo" width="80">
+          <div class="section__title">
+            <div class="h2">Start trading with LykkeWallet</div>
+            <div class="h3"><a href="#" class="scrollTo">Download now</a></div>
+          </div>
+        </div>
+        <div class="col-md-4 text-right">
+          <a href="/" class="btn btn--primary btn_custom">Get your Lykke wallet <span class="fw-normal">It’s free</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section_disc section--padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Trading financial products involves significant risk and can result in the loss of your invested capital. You should not invest more than you can afford to lose and should ensure that you fully understand the risks involved. Trading leveraged products may not be suitable for all investors. Before trading, please take into consideration your level of experience, investment objectives and seek independent financial advice if necessary. It is the responsibility of the Client to ascertain whether he/ she is permitted to use the services of Lykke Vanuatu Limited based on the legal requirements in his/ her country of residence. Please read full
+              <a href="/">Risk&nbsp;Disclosure</a>.</p>
+            <p>Spot FX trading is provided by Lykke Corp UK. Leveraged FX & CFD trading is only available to Lykke Vanuatu clients who reside in Asian and African countries. Lykke services are not available to the residents of US, Canada, Japan, Australia. For full list of countries please refer to the
+              <a href="/">Terms&nbsp;of&nbsp;Use</a>.</p>
+          </div>
+          <div class="col-md-6">
+            <p>Lykke Corp (Lykke AG) is registered in Zurich, Switzerland. Identification number CHE-345.258.499.
+              <a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0203039707&amt=020&toBeModified=0&validOnly=0&lang=4&sort=0">Commercial register</a>.</p>
+            <p>Lykke Corp UK Limited is a company registered in England number 10093552 limited by shares with its registered office at 86-90 Paul Street, London EC2A 4NE</p>
+            <p>Lykke Vanuatu Limited is regulated by the Vanuatu Financial Services Commission (VFSC) of Vanuatu with Company number 17909</p>
+            <p>Risk warning: Trading leveraged products can result in losses that exceed your deposits. Ensure you understand the risks.
+              <a href="">Read full Risk&nbsp;Disclosure</a>.</p>
+          </div>
+        </div>
+
+        <div class="separator"></div>
+      </div>
+    </section>
+  </article>
+
+  <footer class="footer footer_homepage">
+    <div class="footer__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="apps apps--left">
+              <div class="apps_apple"><a href="https://appsto.re/ru/Dwjvcb.i" target="_blank"><img src="img/appstore-badge.svg" width="170" alt="apps_apple"></a></div>
+              <div class="apps_google"><a href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet" target="_blank"><img src="img/google-play.svg" width="170" alt="apps_google"></a></div>
+            </div>
+
+            <div class="block_subscribe">
+              <h5>Newsletter</h5>
+              <p class="hint">Get our latest news right in your mailbox</p>
+
+              <form class="form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <i class="icon icon--mail"></i>
+                    <input type="email" placeholder="E-mail address" class="form-control">
+                  </div>
+                  <button class="btn btn-sm btn--primary">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="footer_nav">
+              <div class="footer_nav__row">
+                <div class="footer_nav__col">
+                  <menu class="nav nav--list">
+                    <li class="nav__title">Services</li>
+                    <li><a href="">Lykke Streams</a></li>
+                    <li><a href="">Blockchain Explorer</a></li>
+                  </menu>
+                </div>
+                <div class="footer_nav__col">
+                  <menu class="nav nav--list">
+                    <li class="nav__title">For clients</li>
+                    <li><a href="">Invest</a></li>
+                    <li><a href="">Wallet</a></li>
+                    <li><a href="">Exchange</a></li>
+                    <li><a href="">B2B</a></li>
+                    <li><a href="">FAQ</a></li>
+                  </menu>
+                </div>
+                <div class="footer_nav__col">
+                  <menu class="nav nav--list">
+                    <li class="nav__title">About us</li>
+                    <li><a href="">Leadership</a></li>
+                    <li><a href="">Technology</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">White Paper</a></li>
+                  </menu>
+                </div>
+                <div class="footer_nav__col">
+                  <menu class="nav nav--list">
+                    <li class="nav__title">Get in touch</li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Open positions</a></li>
+                    <li><a href="">Join as Blockchain Accelerator</a></li>
+                  </menu>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-4">
+            <div class="footer_links">
+              <span class="copy">© 2017 Lykke, Inc.</span>
+              <span class="middot">&middot;</span>
+              <a href="">Privacy Policy</a>
+              <span class="middot">&middot;</span>
+              <a href="">Terms of Use</a>
+            </div>
+          </div>
+
+          <div class="col-sm-8">
             <ul class="social social--footer_alt">
               <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
               <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
@@ -598,31 +737,14 @@
               <li><a href="https://www.linkedin.com/company/lykke-ag" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i></a></li>
               <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i></a></li>
               <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item"><i class="icon icon--telegram"></i></a></li>
+              <li><a href="https://lykkecommunity.slack.com" target="_blank" class="social__item"><i class="icon icon--slack"></i></a></li>
             </ul>
-
-            <div class="landing__text">
-              <div class="row">
-                <div class="col-md-6">
-                  <p>Trading financial products involves significant risk and can result in the loss of your invested capital. You should not invest more than you can afford to lose, and you should ensure that you fully understand the risks involved. Trading leveraged products may not be suitable for all investors. Before trading, please take into consideration your level of experience and investment objectives, and seek independent financial advice if necessary. It is the responsibility of you, the client, to ascertain whether you are permitted to use the services of Lykke Vanuatu Limited based on the legal requirements in your country of residence.</p>
-                  <p>Spot FX trading is provided by Lykke Corp UK. Leveraged FX & CFD trading is only available to Lykke Vanuatu clients who reside in Asian and African countries. Lykke services are not available to the residents of United States, Canada, Japan, and Australia. </p>
-                </div>
-                <div class="col-md-6">
-                  <p><b>Lykke Corp (Lykke AG)</b> is registered in Zurich, Switzerland, with identification number <a href="http://zh.powernet.ch/webservices/inet/HRG/HRG.asmx/getHRGHTML?chnr=0203039707&amt=020&toBeModified=0&validOnly=0&lang=4&sort=0">CHE-345.258.499</a>.</p>
-                  <p><b>Lykke Corp UK Limited</b> is a company registered in England with number 10093552, limited by shares. The registered office is located at 86-90 Paul Street, London EC2A 4NE.</p>
-                  <p><b>Lykke Vanuatu Limited</b> is regulated by the Vanuatu Financial Services Commission (VFSC) of Vanuatu with company number 17909.</p>
-                  <p>© 2016 Lykke. All rights reserved.</p>
-                </div>
-              </div>
-
-              <hr>
-
-              <p><b>Risk warning.</b> Trading leveraged products can result in losses that exceed your deposits. Ensure you understand the risks. Please read <a href="https://lykke.com/city/terms_of_use">Terms of Use</a> and <a href="https://lykke.com/city/privacy_policy">Privacy Policy</a>.</p>
-            </div>
           </div>
+
         </div>
       </div>
-    </section>
-  </article>
+    </div>
+  </footer>
 
   <script src="js/vendor/jquery.min.js"></script>
   <script src="js/vendor/bootstrap-custom.min.js"></script>
@@ -632,41 +754,6 @@
   <script src="js/functions.js"></script>
   <!-- endbuild -->
 
-  <script>
-    var tag = document.createElement('script');
-
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-    var player;
-
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId : 'h5T2gRGcMso',
-        height: '390',
-        width: '640',
-        events: {
-          'onReady': onPlayerReady
-        }
-      });
-    }
-
-    function onPlayerReady(event) {
-
-      // bind events
-      var playButton = document.getElementById("btn_video");
-      playButton.addEventListener("click", function() {
-        player.playVideo();
-
-        console.log('play')
-
-        $('.landing--video').addClass('video_played');
-      });
-
-    }
-  </script>
 </body>
 
 </html>

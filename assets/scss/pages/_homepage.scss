@@ -1,0 +1,500 @@
+.homepage {
+  .hint {
+    color: rgba($secondary, .6);
+    line-height: 1.71;
+
+    @include rem(font-size, 14px);
+  }
+
+  .lead {
+    @include rem(line-height, 35px);
+    @include rem(margin-bottom, 20px);
+
+    color: rgba($secondary, .6);
+  }
+
+  .section {
+    &__title {
+      letter-spacing: -.01em;
+
+      @include rem(margin-bottom, 17px);
+
+      img {
+        position: relative;
+
+        @include rem(top, -5px);
+        @include rem(margin-right, 5px);
+        @include rem(margin-left, -40px);
+      }
+    }
+
+    &__subtitle {
+      font-size: 28px;
+      line-height: 1.43;
+      text-align: left;
+      color: rgba($secondary, .6);
+
+      @include rem(margin-bottom, 38px);
+      @include rem(font-size, 28px);
+    }
+  }
+}
+
+.section_gray {
+  background-color: rgb(249, 250, 250);
+}
+
+.section_lead {
+  @include rem(padding, 115px 0 130px);
+
+  .apps {
+    text-align: left;
+
+    @include rem(margin-top, 14px);
+    @include rem(margin-bottom, 18px);
+  }
+
+  .section__img {
+    position: absolute;
+    z-index: 2;
+
+    @include rem(right, -19px);
+    @include rem(top, -57px);
+  }
+}
+
+.btn_custom {
+  width: 320px;
+  max-width: 100%;
+
+  @include rem(margin-bottom, 20px);
+
+  span {
+    margin-left: 4px;
+  }
+}
+
+.section_features {
+
+  @include rem(padding, 180px 0 50px);
+
+  .btn_open_video {
+    @include rem(margin-top, -8px);
+    @include rem(margin-bottom, 10px);
+  }
+
+  .features--list {
+    @include rem(margin, 80px 0 0);
+  }
+}
+
+.section_about {
+  overflow: hidden;
+
+  @include rem(padding, 95px 0 55px);
+
+  .h2 {
+    @include rem(margin-bottom, 8px);
+  }
+
+  .lead {
+    @include rem(padding-right, 30px);
+  }
+
+  .section__img {
+    @include rem(margin-left, -95px);
+    @include rem(margin-top, 75px);
+    @include rem(margin-bottom, -375px);
+  }
+}
+
+.section_faq {
+  .panel_heading {
+    background-color: transparent;
+
+    a:after {
+      display: none;
+    }
+  }
+}
+
+.section_discover {
+  @include rem(padding, 95px 0 80px);
+
+  .section__title {
+    @include rem(margin-bottom, 10px);
+  }
+
+  .lead {
+    @include rem(margin-bottom, 73px);
+  }
+}
+
+.section_faq {
+  @include rem(padding, 100px 0 90px);
+
+  .section__title {
+    @include rem(margin-bottom, 70px);
+  }
+
+  .panel_group {
+    @include rem(margin-bottom, 40px);
+  }
+
+  .panel_group--faq {
+    .panel_heading a {
+      @include rem(padding, 18px 40px 19px 0);
+    }
+
+    .panel_body p {
+      @include rem(margin-bottom, 10px);
+    }
+  }
+}
+
+.section_apps {
+  @include rem(padding, 80px 0);
+
+  &__logo {
+    @include rem(margin-left, -16px);
+    @include rem(margin-top, -2px);
+    @include rem(margin-right, 40px);
+  }
+
+  .btn_custom {
+    margin-bottom: 0;
+
+    @include rem(margin-top, 20px);
+  }
+  
+  .section__title {
+    overflow: hidden;
+    margin-bottom: 0;
+
+    .h2 {
+      @include rem(margin-bottom, 7px);
+    }
+
+    .h3 {
+      margin-bottom: 0;
+      font-weight: normal;
+      color: rgba($secondary, .6);
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.section_disc {
+  @include rem(padding, 40px 0 0);
+
+  p {
+    @include rem(font-size, 14px);
+    @include rem(line-height, 20px);
+    @include rem(margin-bottom, 10px);
+
+    color: #8c94a0;
+
+    a {
+      color: $secondary;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .separator {
+    border-bottom: 1px solid #ebedef;
+
+    @include rem(margin-top, 30px);
+  }
+}
+
+.fw-light {
+  font-weight: $fw-light;
+}
+
+.fw-normal {
+  font-weight: $fw-regular;
+}
+
+.apps {
+  &--left,
+  &--small {
+    text-align: left;
+
+    .apps_apple,
+    .apps_google {
+      padding: 0;
+
+      @include rem(margin-right, 16px);
+    }
+  }
+
+  &--small {
+    .apps_apple,
+    .apps_google {
+      @include rem(margin-right, 12px);
+
+      img {
+        width: 140px;
+      }
+    }
+  }
+}
+
+.btn_open_video {
+  img {
+    position: relative;
+    top: -2px;
+
+    @include rem(margin-right, 10px);
+    @include rem(width, 40px);
+    @include rem(height, 40px);
+    @include transition(transform $transition-default);
+  }
+
+  &:hover {
+    img {
+      @include scale(1.05);
+    }
+  }
+}
+
+.features {
+  &--list {
+    .row {
+      font-size: 0;
+
+      > div {
+        display: inline-block;
+        vertical-align: top;
+        float: none;
+      }
+    }
+
+    .features__item {
+      width: 100%;
+      max-width: 100%;
+      text-align: left;
+
+      @include rem(margin-bottom, 62px);
+    }
+
+    .features__img {
+      float: left;
+
+      @include rem(width, 70px);
+      @include rem(margin-right, 30px);
+      @include rem(margin-top, 6px);
+
+      img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+    
+    .features__content {
+      overflow: hidden;
+    }
+
+    .features__title {
+      font-weight: $fw-semi;
+      line-height: 1.9;
+
+      @include rem(font-size, 21px);
+    }
+
+    .features__text {
+      color: rgba($secondary, .6);
+      line-height: 1.67;
+
+      @include rem(font-size, 18px);
+    }
+  }
+}
+
+.list {
+  &--counter_black {
+    list-style-type: decimal;
+    counter-reset: list_counter;
+
+    .apps {
+      @include rem(margin-top, 20px);
+    }
+
+    h4 {
+      margin-bottom: 2px;
+    }
+
+    p {
+      color: rgba($secondary, .8);
+    }
+
+    li {
+      position: relative;
+      display: block;
+
+      @include rem(padding-left, 50px);
+      @include rem(margin, 7px 0 37px);
+
+      &:before {
+        counter-increment: list_counter;
+        content: counter(list_counter);
+        font-weight: $fw-semi;
+        line-height: 1.8;
+        color: $white;
+        display: block !important;
+        position: absolute;
+        left: 0;
+        background-color: $text;
+        border-radius: 100px;
+        text-align: center;
+
+        @include rem(font-size, 18px);
+        @include rem(top, 4px);
+        @include rem(width, 30px);
+        @include rem(height, 30px);
+      }
+    }
+  }
+
+  &--check {
+    @include rem(margin-bottom, 20px);
+
+    li {
+      position: relative;
+      display: block;
+      color: rgba($secondary, .8);
+      line-height: 1.67;
+
+      @include rem(font-size, 18px);
+      @include rem(padding-left, 45px);
+      @include rem(padding-right, 40px);
+      @include rem(margin-bottom, 30px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        font-family: 'icon';
+        display: block !important;
+        content: '\e90d';
+        position: absolute;
+        left: 0;
+        color: $primary;
+
+        @include rem(font-size, 28px);
+        @include rem(top, -8px);
+      }
+    }
+  }
+}
+
+.footer_homepage {
+  .footer {
+    &__top {
+      @include rem(padding, 40px 0 20px);
+    }
+
+    &__bottom {
+      background: transparent;
+
+      @include rem(padding, 25px 0 40px);
+      @include rem(font-size, 14px);
+
+      a {
+        color: #657180;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  .middot {
+    @include rem(margin, 0 4px);
+  }
+
+  .apps {
+    @include rem(margin-bottom, 38px);
+  }
+
+  .social {
+    padding: 0;
+    text-align: right;
+
+    > li {
+      @include rem(margin-left, 8px);
+    }
+
+    .icon {
+      @include rem(font-size, 18px);
+    }
+  }
+
+  .footer_links {
+    @include rem(padding, 12px 0)
+  }
+}
+
+
+.footer_nav {
+  display: table;
+  width: 100%;
+
+  &__row {
+    display: table-row;
+  }
+
+  &__col {
+    display: table-cell;
+    vertical-align: top;
+    width: 25%;
+
+    &:first-child {
+      width: 28%;
+    }
+  }
+}
+
+.nav {
+  &--list {
+    line-height: 1.56;
+    text-align: left;
+    margin-top: 0;
+
+    @include rem(font-size, 16px);
+
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    > li {
+      @include rem(margin-bottom, 10px);
+
+      > a {
+        display: inline;
+        padding: 0;
+        color: #657180;
+        background: transparent !important;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+
+    .nav__title {
+      color: $text;
+      font-weight: $fw-semi;
+    }
+  }
+}

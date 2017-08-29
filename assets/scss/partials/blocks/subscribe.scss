@@ -1,0 +1,59 @@
+.block_subscribe {
+  h5 {
+    line-height: 1.5;
+
+    @include rem(font-size, 16px);
+    @include rem(margin-bottom, 5px);
+  }
+
+  .hint {
+    line-height: 1.43;
+    color: #8c94a0;
+
+    @include rem(font-size, 14px);
+  }
+
+  .form {
+    @include rem(margin-top, 10px);
+  }
+
+  .form-group {
+    max-width: 392px;
+    position: relative;
+
+    @include rem(padding-right, 120px);
+
+    .btn {
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: 1.7em;
+
+      @include rem(font-size, 14px);
+    }
+  }
+
+  .form-control {
+    @include rem(height, 40px);
+    @include rem(font-size, 14px);
+    @include rem(padding, 10px 20px);
+
+    line-height: 1.71;
+  }
+
+  .input-group {
+    .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-right: 0;
+      color: #b2b8bf;
+
+      @include rem(padding, 9px 12px);
+
+      + .form-control {
+        @include rem(padding-left, 44px);
+      }
+    }
+  }
+}

@@ -151,13 +151,45 @@
   .news_article__title {
     text-align: center;
     color: $white;
-    margin-bottom: 0;
+
+    @include rem(margin-bottom, 20px);
   }
+
 
   &__info {
     position: absolute;
-    bottom: 0;
     left: 15px;
     right: 15px;
+
+    @include rem(left, 15px);
+    @include rem(left, 15px);
+    @include rem(bottom, 45px);
+    @include rem(padding, 20px 0);
+  }
+
+  .label {
+    vertical-align: middle;
+    letter-spacing: .18em;
+
+    @include rem(margin-right, 15px);
+  }
+
+  .info_list {
+    display: inline-block;
+    vertical-align: middle;
+
+    .middot {
+      @include rem(margin, 0 5px);
+    }
+
+    li {
+      display: inline-block;
+      color: rgba(#fff, .8);
+    }
+
+    a {
+      color: inherit;
+    }
   }
 }
+

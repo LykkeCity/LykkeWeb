@@ -1,0 +1,28 @@
+.block_support {
+  @include rem(margin-bottom, 17px);
+
+  &__title {
+    font-weight: $fw-semi;
+    line-height: 1.67;
+    color: $text;
+
+    @include rem(font-size, 18px);
+    @include rem(margin-bottom, 15px);
+
+    img {
+      @include rem(margin-right, 12px);
+      @include rem(margin-top, -4px);
+    }
+  }
+
+  .hint.hint {
+    @include rem(font-size, 16px);
+    @include rem(margin-bottom, 5px);
+  }
+
+  .btn--flat {
+    padding: 0;
+
+    @include rem(font-size, 16px);
+  }
+}
