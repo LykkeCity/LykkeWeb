@@ -2735,6 +2735,8 @@ tbody.collapse.in { display: table-row-group; }
 
 .homepage .section__title img { position: relative; top: -5px; top: -0.3125rem; margin-right: 5px; margin-right: 0.3125rem; margin-left: -40px; margin-left: -2.5rem; }
 
+.homepage .section__img img { pointer-events: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
 .homepage .section__subtitle { font-size: 28px; line-height: 1.43; text-align: left; color: rgba(63, 77, 96, 0.6); margin-bottom: 38px; margin-bottom: 2.375rem; font-size: 28px; font-size: 1.75rem; }
 
 .section_gray { background-color: #f9fafa; }
@@ -2745,7 +2747,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .section_lead .section__img { position: absolute; z-index: 2; right: -19px; right: -1.1875rem; top: -57px; top: -3.5625rem; }
 
-.btn_custom { width: 320px; max-width: 100%; margin-bottom: 20px; margin-bottom: 1.25rem; }
+.btn_custom { width: 230px; max-width: 100%; margin-bottom: 20px; margin-bottom: 1.25rem; }
 
 .btn_custom span { margin-left: 4px; }
 
