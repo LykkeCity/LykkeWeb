@@ -1,0 +1,34 @@
+.nav {
+  &--list {
+    line-height: 1.56;
+    text-align: left;
+    margin-top: 0;
+
+    @include rem(font-size, 16px);
+
+    &:before,
+    &:after {
+      display: none;
+    }
+
+    > li {
+      @include rem(margin-bottom, 10px);
+
+      > a {
+        display: inline;
+        padding: 0;
+        color: #657180;
+        background: transparent !important;
+
+        &:hover {
+          color: $secondary;
+        }
+      }
+    }
+
+    .nav__title {
+      color: $text;
+      font-weight: $fw-semi;
+    }
+  }
+}

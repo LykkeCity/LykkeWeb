@@ -27,6 +27,8 @@
 @import '../../node_modules/LykkeFramework/assets/scss/partials/pagination';
 
 // optional
+@import 'partials/vendor/jquery.fancybox';
+
 @import 'partials/qa';
 @import 'partials/trading_data';
 @import 'partials/apps';
@@ -41,6 +43,9 @@
 @import 'partials/blocks/markets';
 @import 'partials/blocks/support';
 @import 'partials/blocks/subscribe';
+@import 'partials/blocks/footer';
+@import 'partials/blocks/nav';
+@import 'partials/blocks/lists';
 
 // optional pages
 @import 'pages/homepage';
@@ -82,4 +87,12 @@ h1, .h1 {
 
 .header {
   border-bottom: 0;
+}
+
+.fw-light {
+  font-weight: $fw-light;
+}
+
+.fw-normal {
+  font-weight: $fw-regular;
 }

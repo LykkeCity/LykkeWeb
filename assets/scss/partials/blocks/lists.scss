@@ -1,0 +1,77 @@
+.list {
+  &--counter_black {
+    list-style-type: decimal;
+    counter-reset: list_counter;
+
+    .apps {
+      @include rem(margin-top, 20px);
+    }
+
+    h4 {
+      margin-bottom: 2px;
+    }
+
+    p {
+      color: rgba($secondary, .8);
+    }
+
+    li {
+      position: relative;
+      display: block;
+
+      @include rem(padding-left, 50px);
+      @include rem(margin, 7px 0 37px);
+
+      &:before {
+        counter-increment: list_counter;
+        content: counter(list_counter);
+        font-weight: $fw-semi;
+        line-height: 1.8;
+        color: $white;
+        display: block !important;
+        position: absolute;
+        left: 0;
+        background-color: $text;
+        border-radius: 100px;
+        text-align: center;
+
+        @include rem(font-size, 18px);
+        @include rem(top, 4px);
+        @include rem(width, 30px);
+        @include rem(height, 30px);
+      }
+    }
+  }
+
+  &--check {
+    @include rem(margin-bottom, 20px);
+
+    li {
+      position: relative;
+      display: block;
+      color: rgba($secondary, .8);
+      line-height: 1.67;
+
+      @include rem(font-size, 18px);
+      @include rem(padding-left, 45px);
+      @include rem(padding-right, 40px);
+      @include rem(margin-bottom, 30px);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:before {
+        font-family: 'icon';
+        display: block !important;
+        content: '\e90d';
+        position: absolute;
+        left: 0;
+        color: $primary;
+
+        @include rem(font-size, 28px);
+        @include rem(top, -8px);
+      }
+    }
+  }
+}

@@ -11,13 +11,15 @@
     "gulp-livereload": "3.8.1",
     "gulp-minify-html": "1.0.4",
     "gulp-rev": "6.0.1",
-    "gulp-sass": "2.1.1",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "1.5.1",
     "gulp-usemin": "0.3.16"
   },
   "dependencies": {
+    "autosize": "3.0.20",
+    "fancybox": "git+https://github.com/fancyapps/fancybox.git",
     "jquery": "1.12.4",
     "jquery-inview": "git+https://github.com/protonet/jquery.inview.git",
-    "autosize": "3.0.20"
+    "node-sass": "^4.5.3"
   }
 }

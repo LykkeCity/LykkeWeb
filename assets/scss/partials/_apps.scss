@@ -1,3 +1,5 @@
+
+
 .apps {
   font-size: 0;
   text-align: center;
@@ -27,6 +29,29 @@
     @include rem(margin, 70px 0 100px);
   }
 
+  &--left,
+  &--small {
+    text-align: left;
+
+    .apps_apple,
+    .apps_google {
+      padding: 0;
+
+      @include rem(margin-right, 16px);
+    }
+  }
+
+  &--small {
+    .apps_apple,
+    .apps_google {
+      @include rem(margin-right, 12px);
+
+      img {
+        width: 140px;
+      }
+    }
+  }
+
   @media (max-width: $screen-landscape) {
     padding: 0;
 
@@ -37,6 +62,19 @@
     img {
       width: 160px;
       max-width: 100%;
+    }
+
+    &--small {
+      text-align: center;
+      margin-left: -5px;
+      margin-right: -5px;
+
+      .apps_apple,
+      .apps_google {
+        margin: 0;
+        padding: 0 5px;
+        max-width: 50%;
+      }
     }
   }
 

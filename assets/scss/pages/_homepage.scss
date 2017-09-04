@@ -39,13 +39,30 @@
     }
 
     &__subtitle {
-      font-size: 28px;
       line-height: 1.43;
       text-align: left;
       color: rgba($secondary, .6);
 
       @include rem(margin-bottom, 38px);
       @include rem(font-size, 28px);
+    }
+  }
+  
+  @media all and (max-width: $screen-landscape) {
+    .section {
+      &__subtitle {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      &__title {
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: -0.3px;
+        margin-bottom: 13px;
+        text-align: center;
+      }
     }
   }
 }
@@ -71,6 +88,32 @@
     @include rem(right, -19px);
     @include rem(top, -57px);
   }
+
+  @media all and (max-width: $screen-landscape) {
+    padding: 32px 0;
+    text-align: center;
+
+    .apps {
+      text-align: center;
+    }
+
+    .btn_custom,
+    .section__title,
+    .hint {
+      width: 290px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn_custom {
+      margin-bottom: 10px;
+    }
+
+    .hint {
+      text-align: left;
+    }
+  }
 }
 
 .btn_custom {
@@ -85,7 +128,6 @@
 }
 
 .section_features {
-
   @include rem(padding, 180px 0 50px);
 
   .btn_open_video {
@@ -95,6 +137,10 @@
 
   .features--list {
     @include rem(margin, 80px 0 0);
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    padding: 30px 0;
   }
 }
 
@@ -223,39 +269,6 @@
   }
 }
 
-.fw-light {
-  font-weight: $fw-light;
-}
-
-.fw-normal {
-  font-weight: $fw-regular;
-}
-
-.apps {
-  &--left,
-  &--small {
-    text-align: left;
-
-    .apps_apple,
-    .apps_google {
-      padding: 0;
-
-      @include rem(margin-right, 16px);
-    }
-  }
-
-  &--small {
-    .apps_apple,
-    .apps_google {
-      @include rem(margin-right, 12px);
-
-      img {
-        width: 140px;
-      }
-    }
-  }
-}
-
 .btn_open_video {
   img {
     position: relative;
@@ -324,187 +337,6 @@
       line-height: 1.67;
 
       @include rem(font-size, 18px);
-    }
-  }
-}
-
-.list {
-  &--counter_black {
-    list-style-type: decimal;
-    counter-reset: list_counter;
-
-    .apps {
-      @include rem(margin-top, 20px);
-    }
-
-    h4 {
-      margin-bottom: 2px;
-    }
-
-    p {
-      color: rgba($secondary, .8);
-    }
-
-    li {
-      position: relative;
-      display: block;
-
-      @include rem(padding-left, 50px);
-      @include rem(margin, 7px 0 37px);
-
-      &:before {
-        counter-increment: list_counter;
-        content: counter(list_counter);
-        font-weight: $fw-semi;
-        line-height: 1.8;
-        color: $white;
-        display: block !important;
-        position: absolute;
-        left: 0;
-        background-color: $text;
-        border-radius: 100px;
-        text-align: center;
-
-        @include rem(font-size, 18px);
-        @include rem(top, 4px);
-        @include rem(width, 30px);
-        @include rem(height, 30px);
-      }
-    }
-  }
-
-  &--check {
-    @include rem(margin-bottom, 20px);
-
-    li {
-      position: relative;
-      display: block;
-      color: rgba($secondary, .8);
-      line-height: 1.67;
-
-      @include rem(font-size, 18px);
-      @include rem(padding-left, 45px);
-      @include rem(padding-right, 40px);
-      @include rem(margin-bottom, 30px);
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      &:before {
-        font-family: 'icon';
-        display: block !important;
-        content: '\e90d';
-        position: absolute;
-        left: 0;
-        color: $primary;
-
-        @include rem(font-size, 28px);
-        @include rem(top, -8px);
-      }
-    }
-  }
-}
-
-.footer_homepage {
-  .footer {
-    &__top {
-      @include rem(padding, 40px 0 20px);
-    }
-
-    &__bottom {
-      background: transparent;
-
-      @include rem(padding, 25px 0 40px);
-      @include rem(font-size, 14px);
-
-      a {
-        color: #657180;
-
-        &:hover {
-          color: $secondary;
-        }
-      }
-    }
-  }
-
-  .middot {
-    @include rem(margin, 0 4px);
-  }
-
-  .apps {
-    @include rem(margin-bottom, 38px);
-  }
-
-  .social {
-    padding: 0;
-    text-align: right;
-
-    > li {
-      @include rem(margin-left, 8px);
-    }
-
-    .icon {
-      @include rem(font-size, 18px);
-    }
-  }
-
-  .footer_links {
-    @include rem(padding, 12px 0)
-  }
-}
-
-
-.footer_nav {
-  display: table;
-  width: 100%;
-
-  &__row {
-    display: table-row;
-  }
-
-  &__col {
-    display: table-cell;
-    vertical-align: top;
-    width: 25%;
-
-    &:first-child {
-      width: 28%;
-    }
-  }
-}
-
-.nav {
-  &--list {
-    line-height: 1.56;
-    text-align: left;
-    margin-top: 0;
-
-    @include rem(font-size, 16px);
-
-    &:before,
-    &:after {
-      display: none;
-    }
-
-    > li {
-      @include rem(margin-bottom, 10px);
-
-      > a {
-        display: inline;
-        padding: 0;
-        color: #657180;
-        background: transparent !important;
-
-        &:hover {
-          color: $secondary;
-        }
-      }
-    }
-
-    .nav__title {
-      color: $text;
-      font-weight: $fw-semi;
     }
   }
 }
