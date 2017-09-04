@@ -3964,6 +3964,36 @@ iframe#twitter-widget-1 *, iframe#twitter-widget-2 * { max-width: 100% !importan
 
 .form hr { border-bottom: 0; border-top-width: 1px; width: 100%; max-width: 100%; margin: 10px 0 40px; margin: 0.625rem 0 2.5rem; }
 
+.content_group { margin-bottom: 60px; margin-bottom: 3.75rem; }
+
+.content_group__header { margin-bottom: 35px; margin-bottom: 2.1875rem; }
+
+.content_group .status_icon { margin-bottom: 30px; margin-bottom: 1.875rem; }
+
+.content_group h3 { text-align: center; margin-bottom: 40px; margin-bottom: 2.5rem; }
+
+.content_group .asset_link_list { margin-bottom: 50px; margin-bottom: 3.125rem; }
+
+.content_group .asset_link__icon { margin-right: 15px; margin-right: 0.9375rem; }
+
+.content_group .asset_link__icon img { width: 50px; width: 3.125rem; }
+
+.content_group .asset_link__title { font-weight: 600; margin-bottom: 0; }
+
+.content_group .asset_link__title span { font-weight: 400; }
+
+.content_group .apps--buttons { text-align: left; margin-top: 14px; margin-top: 0.875rem; }
+
+.content_group .apps--buttons .btn { font-size: 14px; height: 30px; padding: 5px 14px; margin-right: 10px; margin-bottom: 5px; }
+
+.content_group .apps--buttons .btn img { display: inline-block; vertical-align: middle; position: relative; margin-right: 10px; top: -2px; }
+
+.content_group .block_support__title { margin-bottom: 7px; margin-bottom: 0.4375rem; }
+
+.content_group .block_support .hint, .content_group .block_support .btn--flat { font-size: 18px; font-size: 1.125rem; }
+
+@media all and (max-width: 767px) { .content_group .apps--buttons .btn img { width: auto; } }
+
 .zEWidget-launcher { z-index: 100 !important; }
 
 @media all and (min-width: 1200px) { .footer_in_view .zEWidget-launcher { bottom: 100px !important; } }

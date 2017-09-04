@@ -1,0 +1,83 @@
+.content_group {
+  @include rem(margin-bottom, 60px);
+
+  &__header {
+    @include rem(margin-bottom, 35px);
+  }
+
+  .status_icon {
+    @include rem(margin-bottom, 30px);
+  }
+
+  h3 {
+    text-align: center;
+
+    @include rem(margin-bottom, 40px);
+  }
+
+  .asset_link_list {
+    @include rem(margin-bottom, 50px);
+  }
+
+  .asset_link {
+    &__icon {
+      @include rem(margin-right, 15px);
+
+      img {
+        @include rem(width, 50px);
+      }
+    }
+
+    &__title {
+      font-weight: $fw-semi;
+      margin-bottom: 0;
+
+      span {
+        font-weight: $fw-regular;
+      }
+    }
+  }
+
+  .apps--buttons {
+    text-align: left;
+
+    @include rem(margin-top, 14px);
+
+    .btn {
+      font-size: 14px;
+      height: 30px;
+      padding: 5px 14px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        margin-right: 10px;
+        top: -2px;
+      }
+    }
+  }
+
+  .block_support {
+    &__title {
+      @include rem(margin-bottom, 7px);
+    }
+
+    .hint,
+    .btn--flat {
+      @include rem(font-size, 18px);
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    .apps--buttons {
+      .btn {
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+}
