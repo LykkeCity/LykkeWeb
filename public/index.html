@@ -18,6 +18,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="css/vendor/bootstrap-custom.min.css">
+  <link rel="stylesheet" href="css/vendor/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css?v2">
 
   <!--[if lte IE 9]>
@@ -311,7 +312,7 @@
                   FX&nbsp;and digital assets</h1>
                 <div class="section__subtitle">Access easily. Use for free.<br>
                   Settle immediately. Own directly.</div>
-                <a href="/" class="btn btn--primary btn_custom">Create free account</a>
+                <a href="#about" data-scroll-offset="100" class="smooth_scroll btn btn--primary btn_custom">Create free account</a>
                 <div class="apps apps--small">
                   <div class="apps_apple"><a href="https://appsto.re/ru/Dwjvcb.i" target="_blank"><img src="img/appstore-badge.svg" width="170" alt="apps_apple"></a></div>
                   <div class="apps_google"><a href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet" target="_blank"><img src="img/google-play.svg" width="170" alt="apps_google"></a></div>
@@ -319,7 +320,7 @@
                 <div class="hint">iOS 8.0+ and Android 4.4.2+ required</div>
               </div>
               <div class="col-sm-4 col-md-5 hidden-xs">
-                <div class="section__img">
+                <div class="section__img parallax_element" data-depth=".1">
                   <img src="img/homepage/mockup-main@2x.png" alt="main" width="516" height="742">
                 </div>
               </div>
@@ -336,7 +337,7 @@
             <div class="text-center">
               <div class="h1 section__title"><img src="img/lykke_wallet_logo.svg" alt="lykke wallet logo" width="80"> LykkeWallet</div>
               <p class="lead">The Lykke Wallet mobile application for iOS and Android is the key element of the Lykke trading ecosystem. Our wallet  app makes it easy for you to trade currencies and cryptocurrencies. You can buy and sell assets such as bitcoin and ether on the open-source Lykke Exchange, our next-generation trading platform,with immediate settlement and direct ownership, thanks to distributed ledger technology, all at zero percent commission.</p>
-              <a href="" class="btn btn--flat btn_open_video"><img src="img/homepage/play-btn.svg" alt="play" width="40" height="40"> Watch how it works</a>
+              <a data-fancybox href="https://www.youtube.com/watch?v=Le3b6km81uc&feature=youtu.be" class="fancybox_link btn btn--flat btn_open_video"><img src="img/homepage/play-btn.svg" alt="play" width="40" height="40"> Watch how it works</a>
             </div>
             <div class="features features--list">
               <div class="row">
@@ -406,14 +407,14 @@
         <div class="section__img visible-xs">
           <img src="img/homepage/mockup-main.png" alt="section_img" width="238">
         </div>
-        <div class="row">
+        <div class="row" id="about">
           <div class="col-md-10 automargin">
             <div class="row">
               <div class="col-sm-5">
                 <div class="h2 section__title">How to start using LykkeWallet?</div>
                 <p class="lead">You won’t believe how easy it is to get up and running on our trading platform. Just follow these simple steps:</p>
 
-                <div class="section__img hidden-xs">
+                <div class="section__img hidden-xs parallax_element" data-depth=".1">
                   <img src="img/homepage/mockup-register@2x.png" alt="main" width="556" height="599">
                 </div>
               </div>
@@ -605,7 +606,7 @@
           </div>
         </div>
         <div class="col-md-4 text-right">
-          <a href="/" class="btn btn--primary btn_custom">Create free account</a>
+          <a href="#about" data-scroll-offset="200" class="smooth_scroll btn btn--primary btn_custom">Create free account</a>
         </div>
       </div>
     </section>
@@ -742,10 +743,15 @@
   <script src="js/vendor/bootstrap-custom.min.js"></script>
   <script src="js/vendor/fastclick.min.js"></script>
   <script src="js/vendor/jquery.inview.min.js"></script>
+  <script src="js/vendor/jquery.fancybox.min.js"></script>
   <!-- build:js js/functions.js -->
   <script src="js/functions.js"></script>
   <!-- endbuild -->
 
+
+  <script>
+
+  </script>
 </body>
 
 </html>

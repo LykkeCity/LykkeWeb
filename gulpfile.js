@@ -28,7 +28,7 @@ gulp.task('copy-js-vendors', function () {
       './node_modules/LykkeFramework/assets/js/vendor/html5shiv.js',
       './node_modules/LykkeFramework/assets/js/vendor/bootstrap.min.js',
       './node_modules/jquery-inview/jquery.inview.min.js',
-      './node_modules/fancybox/dist/js/jquery.fancybox.pack.js',
+      './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
       './node_modules/autosize/dist/autosize.min.js'
     ])
     .pipe(gulp.dest('./public/js/vendor'));
@@ -36,7 +36,8 @@ gulp.task('copy-js-vendors', function () {
 
 gulp.task('copy-css-vendors', function () {
   return gulp.src([
-      './node_modules/LykkeFramework/assets/vendor/bootstrap-custom.min.css'
+      './node_modules/LykkeFramework/assets/vendor/bootstrap-custom.min.css',
+      './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
     ])
     .pipe(gulp.dest('./public/css/vendor'));
 });

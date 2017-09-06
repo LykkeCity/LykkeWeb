@@ -73,6 +73,7 @@
   @media all and (max-width: $screen-mobile) {
     .form-group {
       padding-right: 0;
+      max-width: none;
 
       .btn {
         position: static;

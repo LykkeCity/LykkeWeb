@@ -92,7 +92,7 @@
     z-index: 2;
 
     @include rem(right, -19px);
-    @include rem(top, -57px);
+    @include rem(top, -65px);
   }
 
   @media all and (max-width: $screen-tablet) {
@@ -154,7 +154,7 @@
   }
 
   @media all and (max-width: $screen-tablet) {
-    padding-top: 100px;
+    padding-top: 140px;
   }
 
   @media all and (max-width: $screen-landscape) {
@@ -228,7 +228,7 @@
 
   .section__img {
     @include rem(margin-left, -95px);
-    @include rem(margin-top, 75px);
+    @include rem(margin-top, 30px);
     @include rem(margin-bottom, -375px);
   }
 

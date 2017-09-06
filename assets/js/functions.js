@@ -203,11 +203,12 @@ function initForms() {
 function initSmoothScroll() {
   $('.smooth_scroll').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
+      var target = $(this.hash),
+          offset = $(this).data('scroll-offset') ? $(this).data('scroll-offset') : 0;
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - offset
         }, 1000);
         return false;
       }
@@ -288,6 +289,33 @@ function initStickyNav() {
   }).trigger('resize');
 }
 
+function initParallaxScroll() {
+  function parallax(element) {
+    $(element).each(function() {
+      var scrolled = parseInt($(window).scrollTop() - $(this).offset().top),
+        depth = $(this).attr('data-depth') ? $(this).attr('data-depth') : .1;
+
+      if (!isMobile && wW >= 992) {
+        $(this).css({
+          '-webkit-transform': 'translate3d(0,' + (-(scrolled * depth)) + 'px, 0)',
+          '-moz-transform': 'translate3d(0,' + (-(scrolled * depth)) + 'px, 0)',
+          '-ms-transform': 'translate3d(0,' + (-(scrolled * depth)) + 'px, 0)',
+          '-o-transform': 'translate3d(0,' + (-(scrolled * depth)) + 'px, 0)',
+          'transform': 'translate3d(0,' + (-(scrolled * depth)) + 'px, 0)'
+        });
+      }
+      else {
+        $(this).removeAttr('css');
+      }
+    });
+  }
+
+  $(window).bind('scroll',function() {
+    parallax('.parallax_element');
+  }).trigger('scroll');
+}
+
+
 // Init
 
 $(document).ready(function() {
@@ -301,5 +329,6 @@ $(document).ready(function() {
   initForms();
   initSmoothScroll();
   initAffix();
+  initParallaxScroll();
 });
 
