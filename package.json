@@ -2,7 +2,7 @@
   "name": "LykkeWeb",
   "private": true,
   "devDependencies": {
-    "LykkeFramework": "latest",
+    "LykkeFramework": "^0.3.39",
     "compass-mixins": "0.12.10",
     "del": "2.2.0",
     "gulp": "3.9.0",
@@ -16,6 +16,7 @@
     "gulp-usemin": "0.3.16"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "git+https://github.com/fancyapps/fancybox.git",
     "autosize": "3.0.20",
     "fancybox": "git+https://github.com/fancyapps/fancybox.git",
     "jquery": "1.12.4",

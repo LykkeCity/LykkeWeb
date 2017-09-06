@@ -54,14 +54,20 @@
         font-size: 20px;
         text-align: center;
         margin-bottom: 25px;
+        line-height: 1.6;
       }
 
       &__title {
-        font-size: 34px;
-        line-height: 1.18;
         letter-spacing: -0.3px;
         margin-bottom: 13px;
         text-align: center;
+        font-size: 26px;
+        line-height: 1.38;
+      }
+
+      .container {
+        width: 350px;
+        max-width: 100%;
       }
     }
   }
@@ -89,29 +95,37 @@
     @include rem(top, -57px);
   }
 
+  @media all and (max-width: $screen-tablet) {
+    .section__img {
+      left: -100px;
+      right: auto;
+    }
+  }
+
   @media all and (max-width: $screen-landscape) {
     padding: 32px 0;
     text-align: center;
 
     .apps {
       text-align: center;
-    }
-
-    .btn_custom,
-    .section__title,
-    .hint {
-      width: 290px;
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
+      margin-top: 16px;
     }
 
     .btn_custom {
       margin-bottom: 10px;
+      padding: 12px 10px;
+      font-size: 18px;
+      width: 100%;
     }
 
     .hint {
       text-align: left;
+      font-size: 10px;
+    }
+
+    .section__title {
+      font-size: 34px;
+      line-height: 1.18;
     }
   }
 }
@@ -139,8 +153,63 @@
     @include rem(margin, 80px 0 0);
   }
 
+  @media all and (max-width: $screen-tablet) {
+    padding-top: 100px;
+  }
+
   @media all and (max-width: $screen-landscape) {
     padding: 30px 0;
+
+    .section__title {
+      margin-bottom: 5px;
+      font-size: 34px;
+      line-height: 1.18;
+
+      img {
+        width: 64px;
+        margin-right: 0;
+      }
+    }
+
+    .section__title {
+      line-height: 1;
+    }
+
+    .btn_open_video {
+      margin-top: 5px;
+      font-size: 15px;
+    }
+
+    .lead {
+      font-size: 17px;
+      line-height: 1.45;
+      color: $secondary;
+      text-align: left;
+    }
+
+    .features--list {
+      margin: 14px auto 0;
+
+      .row > div {
+        display: block;
+      }
+
+      .features__img {
+        margin-right: 20px;
+        width: 58px;
+      }
+
+      .features__item {
+        height: auto;
+        margin-bottom: 18px;
+      }
+
+      .features__title {
+        font-size: 17px;
+        line-height: 1.4;
+        margin-top: 10px;
+      }
+    }
   }
 }
 
@@ -162,14 +231,25 @@
     @include rem(margin-top, 75px);
     @include rem(margin-bottom, -375px);
   }
-}
 
-.section_faq {
-  .panel_heading {
-    background-color: transparent;
+  @media all and (max-width: $screen-landscape) {
+    text-align: center;
 
-    a:after {
-      display: none;
+    .section__img {
+      margin: -35px 0 40px 0;
+      text-align: center;
+    }
+
+    .h2 {
+      font-size: 26px;
+      line-height: 1.35;
+      margin-bottom: 5px;
+    }
+
+    .lead {
+      font-size: 17px;
+      line-height: 1.41;
+      margin-bottom: 40px;
     }
   }
 }
@@ -184,6 +264,16 @@
   .lead {
     @include rem(margin-bottom, 73px);
   }
+
+  @media all and (max-width: $screen-landscape) {
+    padding: 45px 0;
+
+    .lead {
+      font-size: 17px;
+      line-height: 1.41;
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .section_faq {
@@ -191,6 +281,14 @@
 
   .section__title {
     @include rem(margin-bottom, 70px);
+  }
+
+  .panel_heading {
+    background-color: transparent;
+
+    a:after {
+      display: none;
+    }
   }
 
   .panel_group {
@@ -206,6 +304,25 @@
       @include rem(margin-bottom, 10px);
     }
   }
+
+  @media all and (max-width: $screen-landscape) {
+    padding: 50px 0;
+
+    .panel_group--faq {
+      .panel_heading a {
+        padding: 14px 20px 14px 0;
+      }
+
+      .panel_title {
+        font-size: 17px;
+      }
+
+      .panel_body p {
+        font-size: 15px;
+        line-height: 1.6;
+      }
+    }
+  }
 }
 
 .section_apps {
@@ -219,8 +336,7 @@
 
   .btn_custom {
     margin-bottom: 0;
-
-    @include rem(margin-top, 20px);
+    margin-top: 20px;
   }
   
   .section__title {
@@ -239,6 +355,29 @@
       a {
         color: inherit;
       }
+    }
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    text-align: center;
+    padding: 45px 0;
+
+    .text-right {
+      text-align: left !important;
+    }
+
+    .container.container {
+      width: 380px;
+    }
+
+    &__logo {
+      float: none !important;
+      margin-right: 0;
+    }
+
+    .btn {
+      width: 100%;
+      font-size: 17px;
     }
   }
 }
@@ -266,6 +405,15 @@
     border-bottom: 1px solid #ebedef;
 
     @include rem(margin-top, 30px);
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    padding: 20px 0 0;
+
+    p {
+      font-size: 11px;
+      line-height: 16px;
+    }
   }
 }
 
@@ -304,6 +452,7 @@
       max-width: 100%;
       text-align: left;
 
+      @include clearfix;
       @include rem(margin-bottom, 62px);
     }
 

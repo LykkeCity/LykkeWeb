@@ -43,6 +43,13 @@
       border-left: 0;
     }
 
+    .icon {
+      margin-right: 0;
+      opacity: .6;
+
+      @include rem(font-size, 12px);
+    }
+
     &__title {
       color: rgba($secondary, .6);
 

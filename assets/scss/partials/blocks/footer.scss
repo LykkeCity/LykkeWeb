@@ -46,7 +46,94 @@
   }
 
   .footer_links {
-    @include rem(padding, 12px 0)
+    white-space: nowrap;
+
+    @include rem(padding, 12px 0);
+    @include reset-list-style;
+
+    li {
+      display: inline;
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &__top {
+      padding: 15px 0;
+
+      .row > div {
+        margin-bottom: 0;
+      }
+    }
+
+    &__bottom {
+      padding-top: 0;
+    }
+
+    .separator {
+      margin-bottom: 32px;
+    }
+
+    .social {
+      text-align: center;
+      margin-bottom: 20px;
+
+      .icon {
+        font-size: 16px;
+      }
+    }
+
+    .footer_links {
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .apps {
+      margin-left: -5px;
+      margin-right: -5px;
+      margin-bottom: 35px;
+
+      .apps_google,
+      .apps_apple {
+        max-width: 50%;
+        padding: 0 5px;
+      }
+
+      img {
+        width: 140px;
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    .social {
+      width: 220px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+
+      > li {
+        margin: 0 5px 10px;
+
+        > a {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    .footer_links {
+      padding: 0;
+      white-space: normal;
+
+      .middot {
+        display: none;
+      }
+
+      li {
+        display: block;
+        margin-bottom: 6px;
+      }
+    }
   }
 }
 
@@ -65,6 +152,22 @@
 
     &:first-child {
       width: 28%;
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    display: block;
+
+    &__row {
+      display: block;
+      font-size: 0;
+    }
+
+    &__col {
+      display: inline-block;
+      width: 50% !important;
+      float: none;
+      margin-bottom: 20px;
     }
   }
 }

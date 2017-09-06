@@ -1,8 +1,8 @@
 .block_subscribe {
   h5 {
     line-height: 1.5;
+    font-size: 16px;
 
-    @include rem(font-size, 16px);
     @include rem(margin-bottom, 5px);
   }
 
@@ -54,6 +54,55 @@
       + .form-control {
         @include rem(padding-left, 44px);
       }
+    }
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    margin-bottom: 35px;
+    text-align: left;
+
+    .hint {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      font-size: 14px;
+    }
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    .form-group {
+      padding-right: 0;
+
+      .btn {
+        position: static;
+        width: 100%;
+        font-size: 13px;
+        height: 40px;
+        padding: 10px 20px;
+      }
+    }
+
+    .input-group {
+      margin-bottom: 15px;
+
+      .icon {
+        font-size: 18px;
+        top: 4px;
+        left: 4px;
+
+        + .form-control {
+          padding-left: 42px;
+        }
+      }
+    }
+
+    .form-control {
+      height: 40px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 13px;
+      margin-bottom: 0;
     }
   }
 }

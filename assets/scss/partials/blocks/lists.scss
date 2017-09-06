@@ -34,11 +34,10 @@
         background-color: $text;
         border-radius: 100px;
         text-align: center;
-
-        @include rem(font-size, 18px);
-        @include rem(top, 4px);
-        @include rem(width, 30px);
-        @include rem(height, 30px);
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        top: 4px;
       }
     }
   }
@@ -71,6 +70,49 @@
 
         @include rem(font-size, 28px);
         @include rem(top, -8px);
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &--counter_black {
+      h4 {
+        margin-bottom: 0;
+      }
+
+      li {
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 45px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:before {
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: 0 auto 10px;
+          position: relative;
+        }
+      }
+
+      .apps {
+        margin-top: 10px;
+      }
+    }
+
+    &--check {
+      margin-bottom: 17px;
+
+      li {
+        padding: 0 0 0 35px;
+        margin-bottom: 17px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }

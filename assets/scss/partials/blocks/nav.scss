@@ -31,4 +31,17 @@
       font-weight: $fw-semi;
     }
   }
+
+  @media all and (max-width: $screen-landscape) {
+    &--list {
+      font-size: 14px;
+      line-height: 1.43;
+
+      .nav__title {
+        font-size: 14px;
+      }
+
+      > li {}
+    }
+  }
 }
