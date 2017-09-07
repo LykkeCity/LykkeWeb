@@ -2870,7 +2870,7 @@ tbody.collapse.in { display: table-row-group; }
 
 @media all and (max-width: 767px) { .homepage .section__subtitle { font-size: 20px; text-align: center; margin-bottom: 25px; line-height: 1.6; }
   .homepage .section__title { letter-spacing: -0.3px; margin-bottom: 13px; text-align: center; font-size: 26px; line-height: 1.38; }
-  .homepage .section .container { width: 350px; max-width: 100%; } }
+  .homepage .section .container { width: 400px; max-width: 100%; } }
 
 .section_gray { background-color: #f9fafa; }
 
