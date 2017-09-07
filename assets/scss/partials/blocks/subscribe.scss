@@ -49,7 +49,8 @@
       margin-right: 0;
       color: #b2b8bf;
 
-      @include rem(padding, 9px 12px);
+      @include rem(font-size, 26px);
+      @include rem(padding, 7px 10px);
 
       + .form-control {
         @include rem(padding-left, 44px);
@@ -88,9 +89,9 @@
       margin-bottom: 15px;
 
       .icon {
-        font-size: 18px;
-        top: 4px;
-        left: 4px;
+        font-size: 24px;
+        top: 3px;
+        left: 2px;
 
         + .form-control {
           padding-left: 42px;

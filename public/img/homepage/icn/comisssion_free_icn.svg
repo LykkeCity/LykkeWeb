@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="74" viewBox="0 0 72 74">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#20D330"/>
+            <stop offset="100%" stop-color="#13B72A"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <path stroke="#333" stroke-width="2" d="M45.789 6.1A33.93 33.93 0 0 0 34 4C15.222 4 0 19.222 0 38s15.222 34 34 34 34-15.222 34-34c0-5.07-1.11-9.88-3.099-14.201"/>
+        <path fill="url(#a)" d="M44.18 10.837A28.937 28.937 0 0 0 34 9C17.984 9 5 21.984 5 38s12.984 29 29 29 29-12.984 29-29c0-4.437-.997-8.642-2.778-12.402-1.03.262-2.11.402-3.222.402-7.18 0-13-5.82-13-13 0-.737.061-1.46.18-2.163z"/>
+        <ellipse cx="34" cy="38" stroke="#FFF" stroke-linecap="round" stroke-width="2" rx="12" ry="15"/>
+        <g transform="translate(44)">
+            <circle cx="13" cy="13" r="13" stroke="#333" stroke-width="2"/>
+            <g transform="translate(7 7)">
+                <path stroke="#333" stroke-linecap="round" stroke-width="2" d="M1 10.652L10.652 1"/>
+                <circle cx="2" cy="2" r="2" fill="#333"/>
+                <circle cx="10" cy="10" r="2" fill="#333"/>
+            </g>
+        </g>
+    </g>
+</svg>

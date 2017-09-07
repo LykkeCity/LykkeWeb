@@ -2,7 +2,7 @@
   "name": "LykkeWeb",
   "private": true,
   "devDependencies": {
-    "LykkeFramework": "^0.3.39",
+    "LykkeFramework": "^0.3.40",
     "compass-mixins": "0.12.10",
     "del": "2.2.0",
     "gulp": "3.9.0",

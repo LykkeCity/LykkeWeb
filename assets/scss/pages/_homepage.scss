@@ -296,8 +296,16 @@
   }
 
   .panel_group--faq {
+    .panel_title {
+      @include transition(color $transition-default);
+    }
+
     .panel_heading a {
       @include rem(padding, 18px 40px 19px 0);
+
+      &:hover .panel_title {
+        color: $primary;
+      }
     }
 
     .panel_body p {
@@ -459,7 +467,7 @@
     .features__img {
       float: left;
 
-      @include rem(width, 70px);
+      @include rem(width, 80px);
       @include rem(margin-right, 30px);
       @include rem(margin-top, 6px);
 

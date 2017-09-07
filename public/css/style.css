@@ -2743,7 +2743,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .block_subscribe .form-control { height: 40px; height: 2.5rem; font-size: 14px; font-size: 0.875rem; padding: 10px 20px; padding: 0.625rem 1.25rem; line-height: 1.71; }
 
-.block_subscribe .input-group .icon { position: absolute; top: 0; left: 0; margin-right: 0; color: #b2b8bf; padding: 9px 12px; padding: 0.5625rem 0.75rem; }
+.block_subscribe .input-group .icon { position: absolute; top: 0; left: 0; margin-right: 0; color: #b2b8bf; font-size: 26px; font-size: 1.625rem; padding: 7px 10px; padding: 0.4375rem 0.625rem; }
 
 .block_subscribe .input-group .icon + .form-control { padding-left: 44px; padding-left: 2.75rem; }
 
@@ -2754,7 +2754,7 @@ tbody.collapse.in { display: table-row-group; }
 @media all and (max-width: 543px) { .block_subscribe .form-group { padding-right: 0; max-width: none; }
   .block_subscribe .form-group .btn { position: static; width: 100%; font-size: 13px; height: 40px; padding: 10px 20px; }
   .block_subscribe .input-group { margin-bottom: 15px; }
-  .block_subscribe .input-group .icon { font-size: 18px; top: 4px; left: 4px; }
+  .block_subscribe .input-group .icon { font-size: 24px; top: 3px; left: 2px; }
   .block_subscribe .input-group .icon + .form-control { padding-left: 42px; }
   .block_subscribe .form-control { height: 40px; padding-top: 5px; padding-bottom: 5px; font-size: 13px; margin-bottom: 0; } }
 
@@ -2944,7 +2944,11 @@ tbody.collapse.in { display: table-row-group; }
 
 .section_faq .panel_group { margin-bottom: 40px; margin-bottom: 2.5rem; }
 
+.section_faq .panel_group--faq .panel_title { -webkit-transition: color 0.3s ease; -moz-transition: color 0.3s ease; -o-transition: color 0.3s ease; transition: color 0.3s ease; }
+
 .section_faq .panel_group--faq .panel_heading a { padding: 18px 40px 19px 0; padding: 1.125rem 2.5rem 1.1875rem 0; }
+
+.section_faq .panel_group--faq .panel_heading a:hover .panel_title { color: #0DA7FC; }
 
 .section_faq .panel_group--faq .panel_body p { margin-bottom: 10px; margin-bottom: 0.625rem; }
 
@@ -2998,7 +3002,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .features--list .features__item:after, .features--list .features__item:before { content: ""; display: table; clear: both; }
 
-.features--list .features__img { float: left; width: 70px; width: 4.375rem; margin-right: 30px; margin-right: 1.875rem; margin-top: 6px; margin-top: 0.375rem; }
+.features--list .features__img { float: left; width: 80px; width: 5rem; margin-right: 30px; margin-right: 1.875rem; margin-top: 6px; margin-top: 0.375rem; }
 
 .features--list .features__img img { max-width: 100%; width: auto; height: auto; }
 
