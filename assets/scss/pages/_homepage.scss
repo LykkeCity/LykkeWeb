@@ -13,6 +13,10 @@
     color: rgba($secondary, .6);
   }
 
+  .separator {
+    border-bottom: 1px solid #ebedef;
+  }
+
   .section {
     &__title {
       letter-spacing: -.01em;
@@ -147,10 +151,11 @@
   .btn_open_video {
     @include rem(margin-top, -8px);
     @include rem(margin-bottom, 10px);
+    @include rem(font-size, 22px);
   }
 
   .features--list {
-    @include rem(margin, 80px 0 0);
+    @include rem(margin, 70px 0 0);
   }
 
   @media all and (max-width: $screen-tablet) {
@@ -314,7 +319,7 @@
   }
 
   @media all and (max-width: $screen-landscape) {
-    padding: 50px 0;
+    padding: 50px 0 20px;
 
     .panel_group--faq {
       .panel_heading a {
@@ -333,8 +338,18 @@
   }
 }
 
+.section_actions {
+  @include rem(padding, 58px 0);
+
+  @media all and (max-width: $screen-tablet) {
+    padding: 45px 0;
+  }
+}
+
 .section_apps {
-  @include rem(padding, 80px 0);
+  text-align: center;
+
+  @include rem(padding, 100px 0);
 
   &__logo {
     @include rem(margin-left, -16px);
@@ -368,7 +383,7 @@
 
   @media all and (max-width: $screen-tablet) {
     text-align: center;
-    padding: 45px 0;
+    padding: 45px 0 52px;
 
     .text-right {
       text-align: left !important;
@@ -376,6 +391,14 @@
 
     .container.container {
       width: 380px;
+    }
+
+    .section__title {
+      .h2 {
+        font-size: 26px;
+        line-height: 1.38;
+        margin-bottom: 4px;
+      }
     }
 
     &__logo {
@@ -386,12 +409,14 @@
     .btn {
       width: 100%;
       font-size: 17px;
+      height: 50px;
+      padding-top: 14px;
     }
   }
 }
 
 .section_disc {
-  @include rem(padding, 40px 0 0);
+  padding: 0;
 
   p {
     @include rem(font-size, 14px);
@@ -410,14 +435,10 @@
   }
 
   .separator {
-    border-bottom: 1px solid #ebedef;
-
-    @include rem(margin-top, 30px);
+    @include rem(margin-bottom, 40px);
   }
 
   @media all and (max-width: $screen-landscape) {
-    padding: 20px 0 0;
-
     p {
       font-size: 11px;
       line-height: 16px;

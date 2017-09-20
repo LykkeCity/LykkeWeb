@@ -8,11 +8,14 @@
 
     @include rem(font-size, 18px);
     @include rem(margin-bottom, 15px);
+  }
 
-    img {
-      @include rem(margin-right, 12px);
-      @include rem(margin-top, -4px);
-    }
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    @include rem(margin-right, 12px);
+    @include rem(margin-top, -4px);
   }
 
   .hint.hint {
@@ -26,20 +29,70 @@
     @include rem(font-size, 16px);
   }
 
+  &--accent {
+    text-align: center;
+
+    .block_support__icon {
+      display: block;
+      margin: 0;
+
+      @include rem(margin-bottom, 20px);
+    }
+
+    .block_support__title {
+      line-height: 1.67;
+
+      @include rem(font-size, 21px);
+      @include rem(margin-bottom, 2px);
+    }
+
+    .hint.hint {
+      line-height: 1.67;
+
+      @include rem(font-size, 18px);
+      @include rem(margin-bottom, 10px);
+    }
+
+    .btn--flat {
+      @include rem(font-size, 18px);
+    }
+  }
+
   @media all and (max-width: $screen-landscape) {
     margin-bottom: 5px;
 
     &__title {
       margin-bottom: 4px;
       font-size: 15px;
+    }
 
+    &__icon {
       img {
         width: 24px;
+        height: auto;
       }
     }
 
     .hint.hint {
       margin-bottom: 0;
+    }
+
+    &--accent {
+      text-align: center;
+      margin-bottom: 40px;
+
+      .block_support__icon {
+        margin-bottom: 14px;
+      }
+
+      .block_support__title {
+        font-size: 17px;
+        line-height: 1.41;
+      }
+
+      .hint.hint {
+        margin-bottom: 6px;
+      }
     }
   }
 }

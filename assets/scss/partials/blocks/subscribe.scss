@@ -18,19 +18,32 @@
   }
 
   .form-group {
-    max-width: 392px;
+    max-width: 322px;
     position: relative;
 
-    @include rem(padding-right, 120px);
+    @include rem(padding-right, 50px);
+  }
 
-    .btn {
-      position: absolute;
-      right: 0;
+  .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 1.7em;
+
+    @include rem(font-size, 14px);
+
+    .icon {
+      position: relative;
       top: 0;
-      line-height: 1.7em;
-
-      @include rem(font-size, 14px);
     }
+  }
+
+  .btn--circle {
+    line-height: normal;
+
+    @include rem(min-width, 40px);
+    @include rem(height, 40px);
+    @include rem(padding, 5px);
   }
 
   .form-control {
@@ -44,17 +57,71 @@
   .input-group {
     .icon {
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 0;
       margin-right: 0;
       color: #b2b8bf;
 
+      @include translate(0, -50%);
       @include rem(font-size, 26px);
       @include rem(padding, 7px 10px);
 
       + .form-control {
         @include rem(padding-left, 44px);
       }
+    }
+  }
+
+  &--accent {
+    text-align: center;
+    margin-bottom: 0;
+
+    .block_subscribe__icon {
+      display: block;
+      margin: 0;
+
+      @include rem(margin-bottom, 20px);
+    }
+
+    .block_subscribe__title {
+      line-height: 1.67;
+
+      @include rem(font-size, 21px);
+      @include rem(margin-bottom, 2px);
+    }
+
+    .hint.hint {
+      line-height: 1.67;
+
+      @include rem(font-size, 18px);
+      @include rem(margin-bottom, 10px);
+    }
+
+    .input-group .icon + .form-control {
+      @include rem(padding-left, 47px);
+    }
+
+    .form-group {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 370px;
+      margin-bottom: 0;
+
+      @include rem(padding-right, 65px);
+    }
+
+    .form {
+      @include rem(margin-top, 24px);
+    }
+
+    .form-control {
+      @include rem(height, 50px);
+      @include rem(font-size, 16px);
+    }
+
+    .btn--circle {
+      @include rem(min-width, 50px);
+      @include rem(height, 50px);
     }
   }
 
@@ -66,23 +133,56 @@
       margin-bottom: 20px;
     }
 
-    h5 {
-      font-size: 14px;
+    &--accent {
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &__icon {
+      img {
+        width: 24px;
+        height: auto;
+      }
+    }
+
+    &--accent {
+      .block_subscribe__icon {
+        margin-bottom: 14px;
+      }
+
+      .block_subscribe__title {
+        font-size: 17px;
+        line-height: 1.41;
+      }
+
+      .hint.hint {
+        margin-bottom: 6px;
+      }
+
+      .form {
+        margin-top: 16px;
+      }
     }
   }
 
   @media all and (max-width: $screen-mobile) {
-    .form-group {
-      padding-right: 0;
-      max-width: none;
-
-      .btn {
-        position: static;
-        width: 100%;
-        font-size: 13px;
-        height: 40px;
-        padding: 10px 20px;
+    &__title {
+      .footer & {
+        font-size: 14px;
+        margin-bottom: 4px;
       }
+    }
+
+    .form-group {
+      max-width: none;
+      padding-right: 50px;
+    }
+
+    .btn--circle {
+      width: 40px;
+      height: 40px;
     }
 
     .input-group {
@@ -90,7 +190,6 @@
 
       .icon {
         font-size: 24px;
-        top: 3px;
         left: 2px;
 
         + .form-control {

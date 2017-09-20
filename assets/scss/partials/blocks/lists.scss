@@ -78,6 +78,11 @@
     &--counter_black {
       h4 {
         margin-bottom: 0;
+        font-size: 17px;
+      }
+
+      p {
+        font-size: 15px;
       }
 
       li {
@@ -109,6 +114,7 @@
       li {
         padding: 0 0 0 35px;
         margin-bottom: 17px;
+        font-size: 15px;
 
         &:last-child {
           margin-bottom: 0;

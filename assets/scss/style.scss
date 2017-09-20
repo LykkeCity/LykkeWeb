@@ -71,6 +71,16 @@
       bottom: 100px !important;
     }
   }
+  
+  @media all and (max-width: $screen-landscape) {
+    .footer_in_view & {
+      bottom: 100px !important;
+    }
+  }
+
+  @media (max-width: 543px) {
+    display: none !important;
+  }
 }
 
 @media (max-width: 543px) {
@@ -97,4 +107,25 @@ h1, .h1 {
 
 .fw-normal {
   font-weight: $fw-regular;
+}
+
+body {
+  padding-bottom: 420px;
+}
+
+
+@media (max-width: 543px) {
+  body {
+    padding-bottom: 800px;
+  }
+}
+
+.status_icon {
+  &--success {
+    background: $green url(../img/success_icn.svg) no-repeat center;
+
+    &:before {
+      display: none;
+    }
+  }
 }

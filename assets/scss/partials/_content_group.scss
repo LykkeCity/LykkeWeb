@@ -1,5 +1,6 @@
 .content_group {
   @include rem(margin-bottom, 60px);
+  @include rem(margin-top, 45px);
 
   &__header {
     @include rem(margin-bottom, 35px);
@@ -72,6 +73,8 @@
   }
 
   @media all and (max-width: $screen-landscape) {
+    margin-top: 0;
+
     .apps--buttons {
       .btn {
         img {
