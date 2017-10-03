@@ -1,37 +1,9 @@
-.page--text {
-  .section--lead {
-    @include rem(padding, 100px 0);
-
-    h1, .h1 {
-      margin-bottom: 0 !important;
-
-      + * {
-        @include rem(margin-top, 20px);
-      }
-    }
-  }
-
-  .page_border {
-    @include rem(margin-bottom, 60px);
-  }
-
-  @media all and (max-width: $screen-landscape) {
-    .section--lead {
-      @include rem(padding, 70px 0);
-    }
-  }
-
-  @media (min-width: $screen-tablet + 1) {
-    .col-md-7.pull-right {
-      margin-right: percentage(1/12);
-    }
-  }
-}
-
 .text {
   @include rem(margin-bottom, 50px);
 
   .lead {
+    line-height: 1.6;
+
     @include rem(margin-bottom, 45px);
   }
 
@@ -52,7 +24,7 @@
 
   p, ul, ol {
     + h2, + h3, + h4, + h5 {
-      @include rem(margin-top, 50px);
+      @include rem(margin-top, 45px);
     }
   }
 
@@ -81,7 +53,124 @@
   }
 }
 
+.page_text {
+  .section--lead {
+    @include rem(padding, 105px 0);
+
+    h1, .h1 {
+      margin-bottom: 0 !important;
+
+      + * {
+        @include rem(margin-top, 20px);
+      }
+    }
+  }
+
+  h2, .h2 {
+    @include rem(margin-top, 90px);
+    @include rem(margin-bottom, 47px !important);
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    + .landing_media_stack {
+      .landing_media {
+        @include rem(margin-top, 10px !important);
+      }
+    }
+  }
+
+  h4, .h4 {
+    @include rem(margin-bottom, 5px !important);
+  }
+
+  p {
+    @include rem(margin-bottom, 25px);
+
+    + h2, + .h2 {
+      @include rem(margin-top, 85px !important);
+    }
+  }
+
+  .page_border {
+    @include rem(margin-bottom, 60px);
+  }
+
+  .landing_media {
+    @include rem(margin, 80px 0);
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    .section--lead {
+      @include rem(padding, 70px 0);
+    }
+  }
+
+  @media (min-width: $screen-tablet + 1) {
+    .col-md-7.pull-right {
+      margin-right: percentage(1/12);
+    }
+  }
+}
+
+.landing_media_stack {
+  .landing_media {
+    @include rem(margin, 50px 0);
+  }
+
+  + .landing_media_stack {
+    .landing_media {
+      @include rem(margin-top, 24px);
+    }
+  }
+
+  + h2, + .h2 {
+    @include rem(margin-top, 30px !important);
+  }
+  
+  @media all and (max-width: $screen-mobile-tiny) {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .col-xs-6 {
+      width: 100%;
+      float: none;
+    }
+  }
+}
+
+.landing_media {
+  &__desc {
+    @include rem(margin-top, 28px);
+    @include rem(margin-bottom, 10px !important);
+  }
+
+  &--sm {
+    @include rem(margin-bottom, 50px);
+  }
+
+  .hint {
+    color: rgba($secondary, .6);
+
+    @include rem(font-size, 16px);
+    @include rem(line-height, 24px);
+
+  }
+}
+
+.inline_media {
+  position: relative;
+  top: -1px;
+
+  @include rem(margin, 0 3px);
+}
+
 .banner_apps {
+  margin-top: -50px;
+  margin-left: -60px;
+
   &__img {
     float: left;
 
@@ -95,13 +184,16 @@
   
   &__content {
     overflow: hidden;
+    max-width: 248px;
 
-    @include rem(padding-top, 70px);
+    @include rem(padding-top, 67px);
     @include rem(padding-right, 20px);
   }
 
   .text-muted {
     @include rem(margin-bottom, 30px);
+    @include rem(font-size, 16px);
+    @include rem(line-height, 24px);
   }
 
   .apps {
@@ -145,7 +237,8 @@
   }
 
   @media all and (max-width: $screen-desktop) {
-    padding: 20px 0;
+    margin-top: 0;
+    margin-left: 0;
 
     &__content {
       padding-top: 0;
@@ -160,6 +253,7 @@
 
   @media all and (max-width: $screen-landscape) {
     text-align: center;
+    padding: 20px 0;
 
     .main_projects_list {
       &__title {
@@ -173,6 +267,10 @@
 
     h5 {
       font-size: 18px;
+    }
+
+    &__content {
+      max-width: none;
     }
 
     .text-muted {
