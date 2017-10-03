@@ -158,6 +158,10 @@
     @include rem(margin, 70px 0 0);
   }
 
+  .lead {
+    color: $secondary;
+  }
+
   @media all and (max-width: $screen-tablet) {
     padding-top: 140px;
   }
@@ -447,6 +451,8 @@
 }
 
 .btn_open_video {
+  @include rem(font-size, 22px);
+
   img {
     position: relative;
     top: -2px;
@@ -515,6 +521,61 @@
       line-height: 1.67;
 
       @include rem(font-size, 18px);
+    }
+  }
+}
+
+.section_card {
+  background-color: #000;
+  color: $white;
+
+  @include rem(padding, 100px 0);
+
+  .section__title {
+    color: $white;
+    text-align: left;
+
+    @include rem(margin-bottom, 6px);
+  }
+
+  .btn--flat {
+    @include rem(font-size, 22px);
+    @include rem(padding, 5px);
+    @include rem(margin, 0 -5px);
+  }
+
+  p.lead, p {
+    color: rgba($white, .8);
+    text-align: left;
+  }
+
+  .section__img {
+    @include rem(margin-top, 57px);
+    @include rem(margin-left, 65px);
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    padding: 45px 0;
+
+    .section__img {
+      margin-left: 0;
+
+      img {
+        @include transform(translate(-90px, 0))
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    .section__img {
+      margin-left: 0;
+
+      img {
+        max-width: 100%;
+        height: auto;
+
+        @include transform(none)
+      }
     }
   }
 }

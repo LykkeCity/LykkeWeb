@@ -124,8 +124,21 @@ body {
   &--success {
     background: $green url(../img/success_icn.svg) no-repeat center;
 
+    @include background-size(contain);
+
     &:before {
       display: none;
     }
+  }
+}
+
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-color: $gray-25;
+
+  &:focus {
+    border-color: $gray-light;
   }
 }

@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
-    <g fill="none" fill-rule="evenodd">
-        <circle cx="20" cy="20" r="20" fill="#0DA7FC"/>
-        <path fill="#FFF" d="M26.385 20.307l-10.508 6.13a.5.5 0 0 1-.752-.433V13.746a.5.5 0 0 1 .752-.432l10.508 6.13a.5.5 0 0 1 0 .863z"/>
-    </g>
-</svg>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><title>Group 6</title><g fill="none" fill-rule="evenodd"><circle fill="#0da7fc" cx="20" cy="20" r="20"/><path d="M27.894 20.704L15.35 29.158c-.457.308-1.08.187-1.388-.27-.11-.166-.17-.36-.17-.56V11.422c0-.55.447-1 1-1 .2 0 .393.06.56.172l12.542 8.454c.458.308.58.93.27 1.388-.07.107-.163.198-.27.27z" fill="#FFF"/></g></svg>

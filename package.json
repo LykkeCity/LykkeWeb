@@ -13,14 +13,13 @@
     "gulp-rev": "6.0.1",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "1.5.1",
-    "gulp-usemin": "0.3.16"
+    "gulp-usemin": "0.3.16",
+    "node-sass": "^4.5.3"
   },
   "dependencies": {
     "@fancyapps/fancybox": "git+https://github.com/fancyapps/fancybox.git",
     "autosize": "3.0.20",
-    "fancybox": "git+https://github.com/fancyapps/fancybox.git",
     "jquery": "1.12.4",
-    "jquery-inview": "git+https://github.com/protonet/jquery.inview.git",
-    "node-sass": "^4.5.3"
+    "jquery-inview": "git+https://github.com/protonet/jquery.inview.git"
   }
 }
