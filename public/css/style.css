@@ -207,8 +207,6 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 
 .icon--fb:before { content: "\e927"; }
 
-.icon--mail:before { content: "\e937"; }
-
 .icon--comment:before { content: "\e922"; }
 
 .icon--arrow-down:before { content: "\e90f"; }
@@ -360,6 +358,12 @@ figcaption { font-weight: normal; font-style: normal; font-stretch: normal; line
 .icon--recycle:before { content: "\e95f"; }
 
 .icon--reverse:before { content: "\e961"; }
+
+.icon--show_password:before { content: "\e965"; }
+
+.icon--hide_password:before { content: "\e966"; }
+
+.icon--arrow_expand:before { content: "\e968"; }
 
 .store_icon { background-position: center; background-repeat: no-repeat; display: inline-block; vertical-align: middle; position: relative; }
 
@@ -895,6 +899,8 @@ label.error { display: none !important; }
 
 .btn--flat { background: transparent !important; color: #0DA7FC !important; }
 
+.btn--flat[disabled] { background-color: transparent !important; }
+
 .btn--go { margin: 60px 0 40px; }
 
 .btn--default { border: 1px solid #e1e1e1; background: transparent; color: #3F4D60 !important; font-weight: normal; font-size: 16px; font-size: 1rem; padding: 13px 21px; padding: 0.8125rem 1.3125rem; }
@@ -966,6 +972,12 @@ label.error { display: none !important; }
 .btn-group .btn:first-child { border-radius: 50px 0 0 50px; }
 
 .btn-group .btn:last-child { border-radius: 0 50px 50px 0; padding: 7px 18px; }
+
+.btn_loading { overflow: hidden; pointer-events: none; cursor: default; background-color: #EBEDEF !important; }
+
+.btn_loading:before { content: ''; position: absolute; top: 0; right: 0; left: 0; bottom: 0; background-color: #EBEDEF; }
+
+.btn_loading:after { content: ''; position: absolute; left: 0; right: 0; top: 50%; margin: -12px auto 0; width: 24px; height: 24px; border-radius: 100px; border: 3px solid rgba(63, 77, 96, 0.3); border-top-color: transparent; animation: spin .5s linear infinite; }
 
 .social__item { text-decoration: none !important; margin-right: 40px; margin-right: 2.5rem; }
 
@@ -1753,6 +1765,26 @@ tbody.collapse.in { display: table-row-group; }
 
 .label--flat.label--gray { color: rgba(63, 77, 96, 0.35); }
 
+.label--muted.label--primary { background-color: rgba(13, 167, 252, 0.15); color: #0DA7FC; }
+
+.label--muted.label--violet { background-color: rgba(171, 0, 255, 0.15); color: #ab00ff; }
+
+.label--muted.label--green { background-color: rgba(19, 183, 42, 0.15); color: #13B72A; }
+
+.label--muted.label--red { background-color: rgba(255, 62, 46, 0.15); color: #FF3E2E; }
+
+.label--muted.label--yellow { background-color: rgba(255, 174, 44, 0.15); color: #FFAE2C; }
+
+.label--muted.label--gray { background-color: #EBEDEF; color: #8c94a0; }
+
+.label_group { font-size: 0; }
+
+.label_group .label { display: inline-block; vertical-align: middle; float: none; border-radius: 0; margin-left: 0; margin-right: 0; }
+
+.label_group .label:first-child { border-radius: 4px 0 0 4px; }
+
+.label_group .label:last-child { border-radius: 0 4px 4px 0; }
+
 .winner_label { font-size: 10px; font-weight: 700; color: #bcc1c8; width: 22px; height: 22px; display: inline-block; vertical-align: middle; text-align: center; line-height: 22px; background: url(../img/competition/winner_2.svg) no-repeat center; }
 
 .winner_label--yellow { color: #fff; background: url(../img/competition/winner_1.svg) no-repeat center; }
@@ -2441,7 +2473,7 @@ tbody.collapse.in { display: table-row-group; }
 
 .landing--video { -webkit-background-image: linear-gradient(-179deg, #0DA7FC 0%, #0388EF 100%); background-image: linear-gradient(-179deg, #0DA7FC 0%, #0388EF 100%); position: relative; }
 
-.landing--video:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; opacity: 0.9; -webkit-background-image: linear-gradient(-179deg, #0DA7FC 0%, #0388EF 100%); background-image: linear-gradient(-179deg, #0DA7FC 0%, #0388EF 100%); -webkit-transition: opacity 0.3s ease; -moz-transition: opacity 0.3s ease; -o-transition: opacity 0.3s ease; transition: opacity 0.3s ease; }
+.landing--video:after { display: none; }
 
 .landing--video .container { width: 1280px; }
 

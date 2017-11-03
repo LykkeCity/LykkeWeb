@@ -204,18 +204,7 @@
     position: relative;
 
     &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index:2;
-      opacity: 0.9;
-
-      -webkit-background-image: linear-gradient(-179deg, #0DA7FC 0%, #0388EF 100%);
-      background-image: linear-gradient(-179deg, #0DA7FC 0%, #0388EF 100%);
-      @include transition(opacity .3s ease);
+      display: none;
     }
 
     .container {
