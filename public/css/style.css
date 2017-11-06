@@ -3899,7 +3899,7 @@ iframe#twitter-widget-1 *, iframe#twitter-widget-2 * { max-width: 100% !importan
 
 .inline_media { position: relative; top: -1px; margin: 0 3px; margin: 0 0.1875rem; }
 
-.banner_apps { margin-top: -50px; margin-left: -60px; }
+.banner_apps { margin-left: -60px; }
 
 .banner_apps__img { float: left; margin-left: -120px; margin-left: -7.5rem; margin-right: 30px; margin-right: 1.875rem; }
 
