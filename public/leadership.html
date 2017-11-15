@@ -187,34 +187,34 @@
           <div class="leadership_list">
 
             <div class="leadership_item">
-              <a href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
+              <div data-target="#leadership_modal" class="leadership_item__control" data-toggle="modal">
                 <div class="leadership_item__image" data-big-image="img/corp/leadership/big/2-ivliev.jpg"><img src="img/corp/leadership/2-ivliev-preview.jpg" alt="ivliev"></div>
                 <div class="leadership_item__info">
                   <div class="leadership_item__title h3">Sergey Ivliev</div>
                   <div class="leadership_item__desc">Products & Operations</div>
-                  <div class="leadership_item__text">Sergey&rsquo;s dream is&nbsp;to&nbsp;make financial market better, faster and more inclusive. For 16&nbsp;years being an&nbsp;industry professional, lecturer, author, events curator, member of&nbsp;editorial boards of&nbsp;academic journals and expert councils he&nbsp;contributes to&nbsp;promote best practices of&nbsp;financial markets and risk management. Executed and supervised 100+ large scale system implementation projects with total revenue exceeding 40&nbsp;Mio. Regional Director at&nbsp;PRMIA Russia and associate professor at&nbsp;Perm State University.</div>
+                  <div class="leadership_item__text">Sergey&rsquo;s <a href="">dream</a> is&nbsp;to&nbsp;make financial market better, faster and more inclusive. For 16&nbsp;years being an&nbsp;industry professional, lecturer, author, events curator, member of&nbsp;editorial boards of&nbsp;academic journals and expert councils he&nbsp;contributes to&nbsp;promote best practices of&nbsp;financial markets and risk management. Executed and supervised 100+ large scale system implementation projects with total revenue exceeding 40&nbsp;Mio. Regional Director at&nbsp;PRMIA Russia and associate professor at&nbsp;Perm State University.</div>
                 </div>
-              </a>
+              </div>
             </div>
             <div class="leadership_item">
-              <a href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
+              <div href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
                 <div class="leadership_item__image" data-big-image="img/corp/leadership/big/3-nikulin.jpg"><img src="img/corp/leadership/3-nikulin-preview.jpg" alt="nikulin"></div>
                 <div class="leadership_item__info">
                   <div class="leadership_item__title h3">Michael Nikulin</div>
                   <div class="leadership_item__desc">Technology</div>
                   <div class="leadership_item__text">Michael is&nbsp;an&nbsp;architect, designer and developer with 10&nbsp;year experience in&nbsp;creating market solutions for financial institutions, including Anti-Money Laundering, Fraud Detection and Financial Markets Compliance solutions. Combines deep knowledge of&nbsp;financial architecture with Blockchain settlement mechanisms.</div>
                 </div>
-              </a>
+              </div>
             </div>
             <div class="leadership_item">
-              <a href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
+              <div href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
                 <div class="leadership_item__image" data-big-image="img/corp/leadership/big/4-mechenkova.jpg"><img src="img/corp/leadership/4-mechenkova-preview.jpg" alt="mechenkova"></div>
                 <div class="leadership_item__info">
                   <div class="leadership_item__title h3">Lena Mechenkova</div>
                   <div class="leadership_item__desc">Communications</div>
                   <div class="leadership_item__text">Lena is&nbsp;a&nbsp;communications professional with more than 17&nbsp;years&rsquo; experience in&nbsp;public relations and mass media. Areas of&nbsp;expertise include corporate communications, internal communications, event management, change communications, writing, and public speaking.</div>
                 </div>
-              </a>
+              </div>
             </div>
             <div class="leadership_item">
               <a href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
@@ -227,14 +227,14 @@
               </a>
             </div>
             <div class="leadership_item">
-              <a href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
+              <div href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
                 <div class="leadership_item__image" data-big-image="img/corp/leadership/big/5-golub.jpg"><img src="img/corp/leadership/5-golub-preview.jpg" alt="golub"></div>
                 <div class="leadership_item__info">
                   <div class="leadership_item__title h3">Anton Golub</div>
                   <div class="leadership_item__desc">Science</div>
                   <div class="leadership_item__text">Anton worked at&nbsp;the Manchester Business School as&nbsp;a&nbsp;Marie Curie research fellow on&nbsp;high frequency trading, market micro-structure and Flash Crashes.</div>
                 </div>
-              </a>
+              </div>
             </div>
             <div class="leadership_item">
               <a href="#leadership_modal" class="leadership_item__control" data-toggle="modal">
@@ -352,8 +352,6 @@
     var target = $(event.relatedTarget);
     var image = target.find('.leadership_item__image').data('big-image'),
         content = target.find('.leadership_item__info').html();
-
-    console.log(image);
 
     var modal = $(this);
     modal.find('.leadership_modal__image').css({backgroundImage: 'url('+image+')'});
