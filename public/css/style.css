@@ -4120,6 +4120,48 @@ iframe#twitter-widget-1 *, iframe#twitter-widget-2 * { max-width: 100% !importan
 
 .form hr { border-bottom: 0; border-top-width: 1px; width: 100%; max-width: 100%; margin: 10px 0 40px; margin: 0.625rem 0 2.5rem; }
 
+.btn_back { position: absolute; left: 20px; top: 10px; }
+
+.relative { position: relative; }
+
+.block_fees { margin-top: 25px; margin-top: 1.5625rem; margin-bottom: 100px; margin-bottom: 6.25rem; }
+
+.block_fees strong { font-size: 18px; font-weight: 600; line-height: 1.67; letter-spacing: 0.2px; text-align: left; color: #111111; display: block; margin-top: 40px; margin-top: 2.5rem; margin-bottom: 6px; margin-bottom: 0.375rem; font-size: 18px; font-size: 1.125rem; }
+
+.block_fees .h2 { margin-bottom: 12px; margin-bottom: 0.75rem; }
+
+@media all and (max-width: 480px) { .block_fees .col-xs-6 { width: 100%; } }
+
+h3 + .nav_tabs_container { margin-top: -20px; margin-top: -1.25rem; }
+
+.nav_tabs_container { white-space: nowrap; overflow: hidden; border-bottom: 1px solid #e1e1e1; margin-bottom: 25px !important; margin-bottom: 1.5625rem !important; height: 58px; height: 3.625rem; }
+
+.nav_tabs_container .btn { padding: 15px; padding: 0.9375rem; }
+
+.nav_tabs_container .nav-tabs { margin: 0 !important; overflow: hidden; overflow-x: auto; border-bottom: 0; padding-bottom: 25px; padding-bottom: 1.5625rem; }
+
+.nav_tabs_container .nav-tabs > li { list-style: none !important; display: inline-block; vertical-align: top; float: none; margin-right: 26px; margin-right: 1.625rem; }
+
+.nav_tabs_container .nav-tabs > li:before { display: none; }
+
+.nav_tabs_container .nav-tabs > li:last-child { margin-right: 0; }
+
+.nav_tabs_container .nav-tabs > li > a { position: relative; padding: 15px 0; padding: 0.9375rem 0; }
+
+.page_fees { color: #333333; }
+
+.page_fees p, .page_fees ul, .page_fees li, .page_fees ol { color: #333333; }
+
+.page_fees .tab-content { margin-bottom: 95px; margin-bottom: 5.9375rem; }
+
+.page_fees .table--simple { color: #333333; }
+
+.page_fees .table--simple tr th { text-transform: none; font-size: 18px; font-weight: 600; line-height: 1.67; letter-spacing: 0.2px; color: #111; white-space: nowrap; }
+
+.page_fees .table--simple tr th, .page_fees .table--simple tr td { padding-left: 0; vertical-align: top; }
+
+.page_fees .table--simple tr td { font-size: 16px; line-height: 1.5; text-align: left; }
+
 .content_group { margin-bottom: 60px; margin-bottom: 3.75rem; margin-top: 45px; margin-top: 2.8125rem; }
 
 .content_group__header { margin-bottom: 35px; margin-bottom: 2.1875rem; }

@@ -1,0 +1,128 @@
+.btn_back {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.relative {
+  position: relative;
+}
+
+.block_fees {
+  @include rem(margin-top, 25px);
+  @include rem(margin-bottom, 100px);
+
+  strong {
+    font-size: 18px;
+    font-weight: $fw-semi;
+    line-height: 1.67;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #111111;
+    display: block;
+
+    @include rem(margin-top, 40px);
+    @include rem(margin-bottom, 6px);
+    @include rem(font-size, 18px);
+  }
+
+  .h2 {
+    @include rem(margin-bottom, 12px);
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    .col-xs-6 {
+      width: 100%;
+    }
+  }
+}
+
+h3 + .nav_tabs_container {
+  @include rem(margin-top, -20px);
+}
+
+.nav_tabs_container {
+  white-space: nowrap;
+  overflow: hidden;
+  border-bottom: 1px solid #e1e1e1;
+
+  @include rem(margin-bottom, 25px !important);
+  @include rem(height, 58px);
+
+  .btn {
+    @include rem(padding, 15px);
+  }
+
+  .nav-tabs {
+    margin: 0 !important;
+    overflow: hidden;
+    overflow-x: auto;
+    border-bottom: 0;
+
+    @include rem(padding-bottom, 25px);
+
+    > li {
+      list-style: none !important;
+      display: inline-block;
+      vertical-align: top;
+      float: none;
+
+      @include rem(margin-right, 26px);
+
+      &:before {
+        display: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      > a {
+        position: relative;
+
+        @include rem(padding, 15px 0);
+      }
+    }
+  }
+}
+
+.page_fees {
+  color: #333333;
+
+  p, ul, li, ol {
+    color: #333333;
+  }
+
+  .tab-content {
+    @include rem(margin-bottom, 95px);
+  }
+
+  .table {
+    &--simple {
+      color: #333333;
+
+      tr {
+        th {
+          text-transform: none;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 1.67;
+          letter-spacing: 0.2px;
+          color: #111;
+          white-space: nowrap;
+        }
+
+        th, td {
+          padding-left: 0;
+          vertical-align: top;
+        }
+
+        td {
+          font-size: 16px;
+          line-height: 1.5;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
