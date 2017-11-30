@@ -39,6 +39,7 @@
 @import 'partials/plate';
 @import 'partials/categories';
 @import 'partials/slick';
+@import 'partials/camera';
 
 @import 'partials/blocks/markets';
 @import 'partials/blocks/support';
@@ -61,6 +62,7 @@
 @import 'pages/report';
 @import 'pages/ico';
 @import 'pages/fees';
+@import 'pages/kyc';
 
 @import 'partials/content_group';
 
@@ -142,4 +144,14 @@ body {
   &:focus {
     border-color: $gray-light;
   }
+}
+
+.page__subtitle {
+  font-weight: normal;
+}
+
+.top_banner {
+  position: absolute;
+  top: 0;
+
 }

@@ -26,7 +26,7 @@
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
@@ -152,168 +152,113 @@
 
           <div class="header_user dropdown__control">
             <a href="/Home/SignIn">
-              <div class="header_login__title">Sign in</div>
+              <!--<div class="header_login__title">Sign in</div>-->
 
-              <!--<div class="header_user__img">
+              <div class="header_user__img">
                 <img src="img/user_default.svg" width="40" alt="user_image">
               </div>
 
-              <div class="header_login__title">Leroy</div>-->
+              <div class="header_login__title">Leroy</div>
             </a>
           </div>
 
           <!--TODO dropdown-->
-          <!-- <div class="dropdown__container">
+          <div class="dropdown__container">
             <ul class="dropdown__nav">
               <li><a href="/Home/LogOut">Sign Out</a></li>
             </ul>
-          </div>-->
+          </div>
 
         </div>
-
-        <!--TODO search-->
-        <!--
-        <div class="header_actions__search">
-          <button class="btn btn--icon btn_open_search" type="button">
-            <i class="icon icon--search"></i>
-          </button>
-        </div>
-        -->
       </div>
     </div>
 
-    <div class="header_search">
-      <div class="container">
-        <div class="header_search__inner">
-          <div class="header_search__buttons">
-            <button type="button" class="btn btn-sm btn--flat hidden-xs btn_close_header">Cancel</button>
-            <button type="button" class="btn btn-sm btn--primary hidden-xs">Search</button>
-            <button type="button" class="btn btn--icon visible-xs btn_close_header">
-              <i class="icon icon--cancel_round"></i>
-            </button>
-          </div>
-          <div class="header_search__field">
-            <button class="header_search__btn btn btn--icon" type="button">
-              <i class="icon icon--search"></i>
-            </button>
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
 </div>
 
-<div class="header_nav_container">
-  <nav class="header_nav">
-    <div class="header_nav__inner">
-      <div class="container">
-        <ul class="header_nav__list nav_list">
-          <li class="nav_list__item"><a href="/exchange">Exchange</a></li>
-          <li class="nav_list__item"><a href="/community">Community</a></li>
-          <li class="nav_list__item"><a href="/community">Company</a></li>
-          <li class="nav_list__item"><a href="/b2b">B2B</a></li>
-          <li class="nav_list__item nav_list__item--active"><a href="ico_platform.html">ICO Platform</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<nav class="site_nav">
-  <div class="site_nav__inner">
+<nav class="header_nav">
+  <div class="header_nav__inner">
     <div class="container">
-      <ul class="header_nav__list nav_list nav_list--alt">
-        <li class="nav_list__item"><a href="">Apply for an ICO</a></li>
-        <li class="nav_list__item"><a href="ico_platform_faq.html">FAQ</a></li>
+      <ul class="header_nav__list nav_list">
+        <li class="nav_list__item"><a href="/exchange">Exchange</a></li>
+        <li class="nav_list__item"><a href="/community">Community</a></li>
+        <li class="nav_list__item"><a href="/community">Company</a></li>
+        <li class="nav_list__item"><a href="/b2b">B2B</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="contact_us_widget">
-  <div class="container">
-    <a href="mailto:accelerator@lykke.com" class="btn btn_contact btn-sm pull-right btn_affix affix-top" data-spy="affix" style="right: 15px;"><i class="icon icon--mail"></i> <span class="hidden-xs">Contact us</span></a>
-  </div>
-</div>
-
-<article class="content page">
-  <section class="section section--lead section--padding">
+<nav class="site_nav">
+  <div class="site_nav__inner">
     <div class="container">
+      <ul class="header_nav__list nav_list nav_list--alt">
+        <li class="nav_list__item"><a href="lykkex_rulebook.html">LykkeX Rulebook</a></li>
+        <li class="nav_list__item nav_list__item--active"><a href="term_conditions_colored_coins.html">Term of Issuance</a></li>
+        <li class="nav_list__item"><a href="https://api.lykkex.com/swagger/ui/index#/" target="_blank">LykkeX API</a></li>
+        <li class="nav_list__item"><a href="https://github.com/LykkeCity/" target="_blank">Github</a></li>
+        <li class="nav_list__item"><a href="https://lykke.com/Whitepaper_LykkeExchange.pdf">White Paper</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<article class="content page page_fees">
+  <section class="section section--padding">
+    <div class="container text">
       <div class="row">
-        <div class="col-sm-7 automargin">
-          <h1 class="text-center page__title">Lykke <span>ICO Platform</span></h1>
-          <h2 class="h3 page__subtitle">Move capital from where it is – to where it is needed</h2>
 
-          <p class="lead">Raising capital through an IPO is an expensive, time-consuming process, even if you have access to this process at all. Transformational ideas might never reach market, because they disrupt the status quo too much.</p>
-
-          <div class="text">
-            <p>
-              But with an ICO, or Initial Coin Offering, traditional finance is no longer a concern. If you have something of value that you can quantify—a cryptocurrency, a service, a share of stock, or anything else that you can imagine—you can represent this asset as a digital coin and trade it on the Lykke Exchange.
-            </p>
-            <p>
-              Reach motivated investors around the globe on our transparent, fair, and secure trading platform, where the only barrier to entry is your own innovation.
-            </p>
-
-            <p>Here are just a few of the ways that we can help your project to succeed:</p>
-
-            <ul>
-              <li>By providing technical consultation services from our unparalleled team of crypto market experts, from guiding you through the tokenization concept to maximizing the position of your enterprise at every stage of the ICO</li>
-              <li>By presenting your ICO to Lykke investors and users</li>
-              <li>By connecting you to our network of reliable legal counsel for advice on regulation and so on</li>
-              <li>By listing your token on the Lykke Exchange, a well regarded, dynamic digital marketplace</li>
-            </ul>
-
-            <p>We are working closely with regulators worldwide toward offering a fully endorsed trading platform and ICO solution. A number of services within the context of an ICO, such as technical and business consultation services, are generally unregulated. We may therefore provide these to you without further legal consideration. However, we are currently limited as to what we can offer with regard to regulated services, such as the listing of certain tokens and marketing them to investors. For every ICO service or listing request, we must make a decision with regard to its regulatory status before we proceed. We ask that you apply for our services through this ICO portal for that purpose.</p>
-
-            <p>For more information about our regulatory status, click the headings below.</p>
-
-            <br>
-            <br>
-
-            <div class="panel_group panel_group--faq" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel--accordion">
-                <div class="panel_heading" role="tab" id="headingOne">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h4 class="panel_title">Trading platform</h4>
-                  </a>
-                </div>
-                <div id="collapseOne" class="panel_collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel_body">
-                    <p>Unregulated tokens may be listed on a number of our trading venues. Currently, we are licensed to deal in tokens that qualify as securities through Lykke Vanuatu. We are also in the process of obtaining a number of additional licenses, which will enable us to offer a fully regulated trading platform. Specifically:</p>
-                    <ul>
-                      <li>We are applying to operate an organized trading facility in Switzerland.</li>
-                      <li>We are applying to operate a multilateral trading facility in the United Kingdom.</li>
-                      <li>We are applying to be a licensed market operator in Singapore.</li>
-                      <li>We are applying for licenses to operate an exchange in the United States.</li>
-                    </ul>
-
-                    <p>Until we obtain these licenses, however, we might not be able to list your token on the Lykke Exchange, or there might be limits regarding the type of token that we can list (such as retail or accredited) or the residency of participating investors.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="panel panel--accordion">
-                <div class="panel_heading" role="tab" id="heading2">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                    <h4 class="panel_title">ICO services</h4>
-                  </a>
-                </div>
-                <div id="collapse2" class="panel_collapse collapse" role="tabpanel" aria-labelledby="heading2">
-                  <div class="panel_body">
-                    <p>We are currently in the process of obtaining a number of licenses that will enable us to provide a number of regulated services in the context of an ICO, such as underwriting and marketing. In the meantime, we  might not be able to provide these services to you with regard to your token, or there might be limits regarding the type of token that we can support (such as retail or accredited) or the residency of potential investors.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="text-center">
-            <a href="/apply-ico" class="btn btn--primary">Apply for an ICO</a>
-          </div>
-
+        <div class="relative hidden-xs">
+          <a href="" class="btn_back">
+            <img src="img/back_icn.svg" width="30" height="12" alt="back">
+          </a>
         </div>
+
+        <div class="col-sm-8 automargin">
+          <h1>LykkeX API Developers Information</h1>
+          <br>
+          <h3 class="mb0">Trading API Swagger definition:</h3>
+          <p><a href="https://hft-api.lykke.com/swagger/ui/" target="_blank">https://hft-api.lykke.com/swagger/ui/</a></p>
+
+          <h3 class="mb0">Realtime price feed</h3>
+          <p><a href="https://wamp.lykke.com/" target="_blank">https://wamp.lykke.com/</a></p>
+
+          <h3>Examples for the trading algos</h3>
+          <p>Lykke has launched multiple competitions to develop open source examples of using LykkeX API. The following results will be available - see links below.</p>
+
+          <ul>
+            <li><a href="https://streams.lykke.com/Project/ProjectDetails/java-simple-trading-algorithm-development" target="_blank">Java</a></li>
+            <li><a href="https://streams.lykke.com/Project/ProjectDetails/c-simple-trading-algorithm-development" target="_blank">C#</a></li>
+            <li><a href="https://streams.lykke.com/Project/ProjectDetails/python-simple-trading-algorithm-development" target="_blank">Python</a></li>
+            <li><a href="https://streams.lykke.com/Project/ProjectDetails/any-language-simple-trading-algorithm-development" target="_blank">Other languages</a></li>
+          </ul>
+
+          <h3>How to get API Key</h3>
+
+          <ol class="list_styled">
+            <li>Use the following link to create API Wallet: <br>
+              <a href="https://wallet.lykke.com/wallets/hft" target="_blank">https://wallet.lykke.com/wallets/hft</a>
+            </li>
+            <li>Create a new API Wallet and save provided API Key securely</li>
+            <li>Deposit funds from the Trading wallet: <br>
+              <a href="https://wallet.lykke.com/transfer" target="_blank">https://wallet.lykke.com/transfer</a>
+            </li>
+            <li>
+              <p>Confirm transfer using the LykkeWallet app</p>
+              <div class="apps apps--left">
+                <div class="apps_apple"><a href="https://appsto.re/ru/Dwjvcb.i" target="_blank"><img src="img/appstore-badge.svg" width="170" alt="apps_apple"></a></div>
+                <div class="apps_google"><a href="https://play.google.com/store/apps/details?id=com.lykkex.LykkeWallet" target="_blank"><img src="img/google-play.svg" width="170" alt="apps_google"></a></div>
+              </div>
+              <small class="text-muted">IOS 8+ and Android 4.4.2+ required</small>
+            </li>
+
+          </ol>
+
+          <h3>Fees for trading through API </h3>
+
+          <p>Please see the following link: <a href="https://lykke.com/trading-conditions" target="_blank">https://lykke.com/trading-conditions</a></p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -347,6 +292,7 @@
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap-custom.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
+<script src="js/vendor/jquery.inview.min.js"></script>
 <!-- build:js js/functions.js -->
 <script src="js/functions.js"></script>
 <!-- endbuild -->

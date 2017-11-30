@@ -1,0 +1,172 @@
+.page_kyc {
+  p {
+    @include rem(font-size, 16px);
+  }
+}
+
+.form {
+  &--kyc {
+    .control-label {
+      @include rem(padding-top, 5px)
+    }
+
+    .radio {
+      @include rem(margin-bottom, 10px);
+    }
+
+    .submit-group {
+      text-align: center;
+
+      @include rem(margin, 25px 0);
+
+      .btn {
+        width: 380px;
+        max-width: 100%;
+
+        @include rem(margin-bottom, 10px);
+      }
+    }
+  }
+}
+
+.form-control {
+  &.radio__label {
+    @include rem(padding-top, 18px);
+    @include rem(padding-bottom, 18px);
+    @include rem(padding-left, 55px);
+    @include rem(height, 60px);
+
+    &:after,
+    &:before {
+      @include rem(left, 20px);
+      @include rem(top, 18px);
+    }
+
+    &:after {
+      @include rem(left, 27px);
+      @include rem(top, 25px);
+    }
+  }
+}
+
+.fileupload-group {
+  @include rem(margin, 10px 0);
+
+  .form-group {
+    @include rem(margin-bottom, 30px);
+  }
+
+  .fileupload {
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 1px $gray-25;
+    padding-bottom: 100%;
+    color: #333;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include background-size(cover);
+
+    &__notice {
+      position: absolute;
+      font-weight: $fw-semi;
+      line-height: 1.56;
+      margin-left: 0;
+      color: inherit;
+      z-index:4;
+
+      @include rem(bottom, 17px);
+      @include rem(left, 20px);
+      @include rem(right, 20px);
+      @include rem(font-size, 16px);
+
+      .hint {
+        display: block;
+        opacity: 0.8;
+        font-size: 14px;
+        line-height: 1.43;
+        text-align: left;
+
+        @include rem(font-size, 14px);
+        @include rem(margin-top, 2px);
+      }
+    }
+
+    &__actions {
+      position: absolute;
+      z-index:4;
+
+      @include rem(top, 14px);
+      @include rem(left, 12px);
+
+      .btn {
+        color: inherit;
+
+        @include transition(opacity $transition-default);
+        @include rem(padding, 10px);
+
+        &:focus,
+        &:hover {
+          color: inherit !important;
+        }
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+
+    &--uploaded,
+    &--fail {
+      color: #fff;
+      background-color: $gray-25;
+      box-shadow: none;
+    }
+
+    &--fail {
+      &:after {
+        content: '';
+        z-index:0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($red, .8);
+      }
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    .fileupload__actions {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      .btn {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        vertical-align: top;
+
+        .icon {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 400px) {
+    .row > div {
+      width: 100%;
+    }
+
+    .fileupload {
+      padding-bottom: 60%;
+    }
+  }
+}

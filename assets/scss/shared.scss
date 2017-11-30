@@ -1,0 +1,31 @@
+@import "../../node_modules/LykkeFramework/assets/scss/style-minimal.scss";
+@import "../../node_modules/LykkeFramework/assets/scss/style-necessaries.scss";
+
+// elements
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/subscribe';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/footer';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/nav';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/lists';
+@import '../../node_modules/LykkeFramework/assets/scss/partials/blocks/apps';
+
+.header {
+  border-bottom: 0;
+}
+
+@media (max-width: 543px) {
+  .header__logo {
+    width: 32px;
+  }
+}
+
+
+body {
+  padding-bottom: 420px;
+}
+
+
+@media (max-width: 543px) {
+  body {
+    padding-bottom: 800px;
+  }
+}

@@ -300,45 +300,9 @@
     }
   }
 
-  .panel_group {
-    @include rem(margin-bottom, 40px);
-  }
-
-  .panel_group--faq {
-    .panel_title {
-      @include transition(color $transition-default);
-    }
-
-    .panel_heading a {
-      @include rem(padding, 18px 40px 19px 0);
-
-      &:hover .panel_title {
-        color: $primary;
-      }
-    }
-
-    .panel_body p {
-      @include rem(margin-bottom, 10px);
-    }
-  }
 
   @media all and (max-width: $screen-landscape) {
     padding: 50px 0 20px;
-
-    .panel_group--faq {
-      .panel_heading a {
-        padding: 14px 20px 14px 0;
-      }
-
-      .panel_title {
-        font-size: 17px;
-      }
-
-      .panel_body p {
-        font-size: 15px;
-        line-height: 1.6;
-      }
-    }
   }
 }
 
@@ -575,6 +539,47 @@
         height: auto;
 
         @include transform(none)
+      }
+    }
+  }
+}
+
+.panel_group {
+  @include rem(margin-bottom, 40px);
+
+  .panel_heading {
+    background-color: transparent;
+  }
+
+  &--faq {
+    .panel_title {
+      @include transition(color $transition-default);
+    }
+
+    .panel_heading a {
+      @include rem(padding, 18px 40px 19px 0);
+
+      &:hover .panel_title {
+        color: $primary;
+      }
+    }
+
+    .panel_body p {
+      @include rem(margin-bottom, 10px);
+    }
+
+    @media all and (max-width: $screen-landscape) {
+      .panel_heading a {
+        padding: 14px 20px 14px 0;
+      }
+
+      .panel_title {
+        font-size: 17px;
+      }
+
+      .panel_body p {
+        font-size: 15px;
+        line-height: 1.6;
       }
     }
   }

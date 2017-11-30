@@ -1,0 +1,125 @@
+.camera_stream {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  canvas {
+    display: none;
+  }
+
+  &__frame {
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    pointer-events: none;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+    border: solid 1px rgba(#fff, .2);
+    box-shadow: 0 0 0 1000px rgba(#111, .8);
+    display: none;
+
+    @include transform(translate(-50%, -50%));
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  &__controls,
+  &__shoot {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    display: none;
+
+    @include rem(bottom, 72px);
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  &__controls {
+    display: none;
+    z-index: 2;
+
+    .btn--flat {
+      color: #fff !important;
+
+      @include rem(margin-right, 10px);
+    }
+  }
+
+  &__snap {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    display: none;
+
+    @include transform(translate(-50%, -50%));
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  &__shoot {
+    z-index: 2;
+
+    @include rem(width, 50px);
+    @include rem(height, 50px);
+
+    .icon {
+      @include rem(margin, -5px);
+    }
+  }
+}
+
+.camera_modal {
+  background: #111;
+
+  .modal-body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .close {
+    display: block;
+    z-index: 100;
+    color: rgba(#fff, .6);
+
+    @include rem(width, 40px);
+    @include rem(height, 40px);
+    @include rem(right, 10px);
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .icon {
+      @include rem(font-size, 40px);
+    }
+  }
+}

@@ -315,6 +315,35 @@ function initParallaxScroll() {
   }).trigger('scroll');
 }
 
+// Fileupload
+
+function initFileUpload() {
+  $('._upload_file').on(touchendOrClick, function (e) {
+    e.preventDefault();
+
+    var id = $(this).data('file-id');
+
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          $(id).parents('.fileupload')
+            .removeClass('fileupload--fail')
+            .addClass('fileupload--uploaded')
+            .attr('style', 'background-image: url('+ e.target.result +')');
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $(id).click().on('change', function () {
+      readURL(this);
+    })
+  })
+}
+
 
 // Init
 
@@ -330,5 +359,6 @@ $(document).ready(function() {
   initSmoothScroll();
   initAffix();
   initParallaxScroll();
+  initFileUpload();
 });
 

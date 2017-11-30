@@ -16,6 +16,10 @@ gulp.task('sass', function () {
     .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
     .pipe(gulp.dest('./public/css'))
     .pipe(livereload());
+  gulp.src('./assets/scss/shared.scss')
+    .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
+    .pipe(gulp.dest('./public/css'))
+    .pipe(livereload());
   gulp.src('./assets/scss/style.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('./dist/css'))

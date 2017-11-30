@@ -209,86 +209,277 @@
       <div class="row">
 
         <div class="relative hidden-xs">
-          <a href="" class="btn_back">
+          <a href="#" onclick="history.back()" class="btn_back">
             <img src="img/back_icn.svg" width="30" height="12" alt="back">
           </a>
         </div>
 
         <div class="col-sm-8 automargin">
-          <h1>Trading conditions</h1>
+          <h1>Margin Trading</h1>
           <br>
-          <h2>Taker and Maker Relations</h2>
+          <h3>Placing Orders</h3>
 
           <p>When a new order is placed through the API, it can be filled immediately or placed in the order book, depending on the order price and amount you set.</p>
-          <p>In case your entire order is completed right away, you are recognized as a Taker. You will be charged in the amount of 0.19%.</p>
-          <p>If your order can not be filled with existing orders immediately, your order is placed in the order book. As soon it is matched, your order will be completed. In this case, you are a Maker and you will pay 0.10% fee. You can cancel the order that is in the order book until it is filled.</p>
-          <p>Although a combined scenario is possible, in which your new order is partially completed immediately, and partially placed in the order book. In this case, you are a taker for the fulfilled part and you pay a taker fee of 0.19%. Accordingly, for the remainder part of the order, you are a Maker and will be charged in amount of 0.10% once it is matched.</p>
+          <p>When placing an order you specify:</p>
+          <ul>
+            <li>Order Instrument and Direction (Long / Short)</li>
+            <li>Order Amount is usually measured in base asset units of the Order, I.e. 1 BTCUSD is buy 1 BTC and sell corresponding amount of USD</li>
+          </ul>
+          <p>When a trader places a buy or sell order, before he/she is allowed to submit the order the system will check that he/she has enough Free Margin available to reserve the Initial Margin. </p>
 
-          <h3>Taker and Maker Fees</h3>
-          <p>Maker/Taker fees depends on the trading volume for each asset  pair for last 31 days. </p>
+          <h3>Margin and Profit & Loss (PnL)</h3>
+
+          <p>Before you are able to trade you first must deposit some assets to fund your margin account. The asset needed depends on the margin account nominal currency, which is seen in account name. For instance for “Lykke Vanuatu BTC” account you would use Bitcoins.</p>
+          <p>All PnL settlements and margin requirement calculations are done in your account nominal currency</p>
+          <p>The following are important rules regarding Margin Requirements</p>
+
+          <ul>
+            <li>To evaluate the margin requirements we calculate [Value Of Order] =  [Order Amount] * [Order Base Asset to Account Nominal Currency exchange rate], i.e. how much the order amount is worth in nominal currency of your account</li>
+            <li>For Buy and Sell orders the <u>Initial Margin</u> = [Value of Order] / [Initial Leverage].</li>
+            <li>For all positions the Maintenance Required Margin = SumForAllPosition ([Value of Order] / [Maintenance Leverage] ).</li>
+            <li>Used Margin equals Maintenance Required Margin.</li>
+            <li>To avoid liquidation on your position you should maintain your margin account Total Balance > 100% of Maintenance Required Margin. If a trader violates this condition he is notified by email and in app notification, which is called Margin Call.</li>
+            <li>The position will be liquidated immediately if Total Balance becomes < 50% of Maintenance Required Margin.</li>
+            <li>Total Balance is Balance plus unrealised PnL from all open positions. It is also often called Equity.</li>
+            <li>Balance is your Deposits less your Withdrawals plus realised PnL from positions.</li>
+            <li>Free Margin is Total Balance less Used Margin is the margin available to open new positions.</li>
+          </ul>
+
+          <p>Lykke Vanuatu reserves the right to change any margin policies. Lykke Vanuatu will notify traders of any change via email announcements.</p>
+
+          <h3>Position funding</h3>
+          <p>All open positions on Lykke are subject to funding.</p>
+          <p>Funding is calculated based on open position duration measured up to seconds accuracy and based on corresponding annual swap rate (see instruments list above).</p>
+          <p>Funding is taken into account in position PnL each second.</p>
+
+          <h2>Trading conditions</h2>
+          <h3>Account</h3>
+
+          <ul>
+            <li>Nominal currency is Bitcoins, i.e. the collateral deposit is made in BTC as well as PnL settlements.</li>
+            <li>Cash in and Cash out through Lykke UK Wallet with zero commission.</li>
+            <li>Cash outs may be delayed up to 24 hours for security reasons.</li>
+            <li>Maximum deposit 1 BTC (limit will be gradually increased over time).</li>
+            <li>Margin Call: 100% Equity to Maintenance Margin Requirement ratio.</li>
+            <li>Stop Out: 50% Equity to Maintenance Margin Requirement ratio.</li>
+            <li>Trading terminal: Lykke Wallet Mobile App, iOS and Android.</li>
+            <li>Web terminal is coming soon.</li>
+          </ul>
+
+          <h3>Crypto trading</h3>
+          <ul>
+            <li>BTCUSD</li>
+            <li>Maintenance Leverage: 3 to 1</li>
+            <li>Initial Leverage: 3 to 1</li>
+            <li>Maximum order size: 3 BTC</li>
+            <li>Maximum position size: 3 BTC</li>
+            <li>Swap rate for LONG positions is 91.25% annual rate charged rounded up to seconds level, for SHORT positions 91.25% similarly.</li>
+            <li>Execution commission is 0%</li>
+            <li>Trading schedule: 24/7. There may be scheduled maintenance interruptions on weekends announced in advance.</li>
+          </ul>
+
+          <h3>Fiat Trading</h3>
+          <ul>
+            <li>Pairs with USD, CHF, EUR, GBP, JPY, see the full list for details below.</li>
+            <li>Maintenance Leverage: 200 to 1</li>
+            <li>Initial Leverage: 200 to 1</li>
+            <li>Maximum order size: 200’000 USD/CHF/EUR/GBP, 20’000’000JPY</li>
+            <li>Maximum position size: 200’000 USD/CHF/EUR/GBP, 20’000’000JPY</li>
+            <li>Swap rate for LONG positions is < 2% annual rate charged rounded up to seconds level, for SHORT positions <2% similarly.</li>
+            <li>Execution commission is 0%</li>
+            <li>Trading schedule: 22:05 GMT Sunday - 20:55 GMT Friday</li>
+            <li>Pending Orders are unavailable 55 minutes prior trade closure and 55 minutes after opening (All pending orders cancelled)</li>
+          </ul>
+
+          <h3>Order types</h3>
+          <ul>
+            <li>Market Order</li>
+            <li>Stop Loss / Take Profit Market Order</li>
+            <li>Pending Market Order (very similar to Limit Orders) - the order is executed when best price matches the target price of the order. The resulting price may differ from the best price if the best price volume is not enough to fill the whole order.</li>
+            <li>Pending Stop Loss / Take Profit Market Order (very similar to Take Profit/Stop Loss Limit Orders)</li>
+          </ul>
+
+          <h3>List of Instruments</h3>
 
           <table class="table table--simple">
             <tbody><tr>
-              <th>Maker fee</th>
-              <th>Taker fee</th>
-              <th>Volume for 31 days</th>
+              <th>Instrument</th>
+              <th>Leverage<br> initial</th>
+              <th>Leverage<br> maintenance</th>
+              <th>Swap Long,<br> % annual rate</th>
+              <th>Swap Short,<br> % annual rate</th>
             </tr>
             <tr>
-              <td>0.10%</td>
-              <td>0.19%</td>
-              <td>0..1%</td>
+              <td>BTCUSD</td>
+              <td>3</td>
+              <td>3</td>
+              <td>-200</td>
+              <td>-200</td>
             </tr>
             <tr>
-              <td>0.09%</td>
-              <td>0.18%</td>
-              <td>> 1%</td>
+              <td>CHFJPY</td>
+              <td>200</td>
+              <td>200</td>
+              <td>-2.56</td>
+              <td>0.15</td>
             </tr>
             <tr>
-              <td>0.08%</td>
-              <td>0.17%</td>
-              <td>> 2.5%%</td>
+              <td>EURCHF</td>
+              <td>200</td>
+              <td>200</td>
+              <td>0.07</td>
+              <td>-1.3</td>
             </tr>
             <tr>
-              <td>0.07%</td>
-              <td>0.16%</td>
-              <td>> 5%%</td>
+              <td>EURGBP</td>
+              <td>200</td>
+              <td>200</td>
+              <td>-1.9</td>
+              <td>0.11</td>
             </tr>
             <tr>
-              <td>0.06%</td>
-              <td>0.15%</td>
-              <td>> 10%%</td>
+              <td>EURJPY</td>
+              <td>200</td>
+              <td>200</td>
+              <td>-1.31</td>
+              <td>0.11</td>
             </tr>
             <tr>
-              <td>0.05%</td>
-              <td>0.14%</td>
-              <td>> 20%%</td>
+              <td>EURUSD</td>
+              <td>200</td>
+              <td>200</td>
+              <td>-2.19</td>
+              <td>0.11</td>
             </tr>
+            <tr>
+              <td>GBPCHF</td>
+              <td>200</td>
+              <td>200</td>
+              <td>1.2</td>
+              <td>-1.3</td>
+            </tr>
+            <tr>
+              <td>GBPJPY</td>
+              <td>200</td>
+              <td>200</td>
+              <td>0.11</td>
+              <td>-2.56</td>
+            </tr>
+            <tr>
+              <td>GBPUSD</td>
+              <td>200</td>
+              <td>200</td>
+              <td>-0.55</td>
+              <td>-1.1</td>
+            </tr>
+            <tr>
+              <td>USDCHF</td>
+              <td>200</td>
+              <td>200</td>
+              <td>-1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>USDJPY</td>
+              <td>200</td>
+              <td>200</td>
+              <td>0.04</td>
+              <td>-1.02</td>
+            </tr>
+
+            <tr>
+              <td colspan="5" style="border-bottom: 0"><small class="text-muted">these conditions are valid from 22.11.2017 until further notice.</small></td>
+            </tr>
+
             </tbody>
           </table>
-          <br><br>
 
-          <h3>Beta Testing Period Fees</h3>
-          <p>Currently the API is in the beta testing stage. It will be announced additionally when the beta testing period is finished. During the beta testing period Maker/Taker fees are zero.</p>
+          <p>One contract is 1 unit of Instrument’s base asset. For each instrument XXXYYY, XXX is the base asset and YYY is the quote asset. Long contract is buy 1 unit of base asset and sell corresponding amount of quote asset. Short contract is sell 1 unit of base asset and buy corresponding amount of quote asset.</p>
 
-          <h3>Special Discounted Fees for Betatesters</h3>
-          <p>Lykke also provides special discounts for Beta Testers during the first 31 days after the beta testing period is finished. Beta Tester is a client with at least one successful trade using Lykke API during the beta testing period.</p>
+          <h2>Countries that are not eligible for the marginal trade</h2>
 
-          <p>During the first 31 days after the beta testing period the following fees will be applied for Beta Testers.</p>
-          <table class="table table--simple">
-            <tbody><tr>
-              <th>Maker fee</th>
-              <th>Taker fee</th>
-            </tr>
-            <tr>
-              <td>0.05%</td>
-              <td>0.14%</td>
-            </tr>
-            </tbody>
-          </table>
-          <br><br>
-
-          <h2>Throughput Limit</h2>
-          <p>Currently the API is in the beta testing stage. API throughput limit is 300 requests per minute for a single client.</p>
+          <h4>Americas</h4>
+          <div class="row">
+            <div class="col-sm-6 col-md-4">
+              <p>USA</p>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <p>Canada: British Columbia, Quebec and Saskatchewan</p>
+            </div>
+          </div>
+          <h4>Asia and Australia</h4>
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <p>Japan</p>
+              <p>Singapore</p>
+              <p>Australia</p>
+              <p>Iran</p>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <p>Iraq</p>
+              <p>Syria</p>
+              <p>New Zealand</p>
+              <p>China</p>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <p>South Korea</p>
+              <p>Democratic People's Republic of Korea (DPRK)</p>
+              <p>Vanuatu</p>
+            </div>
+          </div>
+          <h4>Africa</h4>
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <p>Ethiopia</p>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <p>Uganda</p>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <p>Yemen</p>
+            </div>
+          </div>
+          <h4>Europe</h4>
+          <div class="row">
+            <div class="col-xs-6 col-sm-4">
+              <p>Austria</p>
+              <p>Belgium</p>
+              <p>Bulgaria</p>
+              <p>Bosnia and Herzegovina</p>
+              <p>Czech Republic</p>
+              <p>Cyprus</p>
+              <p>Denmark</p>
+              <p>Estonia</p>
+              <p>Finland</p>
+              <p>France</p>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <p>Germany</p>
+              <p>Greece</p>
+              <p>Hungary</p>
+              <p>Iceland</p>
+              <p>Ireland</p>
+              <p>Italy</p>
+              <p>Latvia</p>
+              <p>Liechtenstein</p>
+              <p>Lithuania</p>
+              <p>Luxembourg</p>
+              <p>Malta</p>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+              <p>Netherlands</p>
+              <p>Norway</p>
+              <p>Poland</p>
+              <p>Portugal</p>
+              <p>Romania</p>
+              <p>Russia</p>
+              <p>Slovakia</p>
+              <p>Slovenia</p>
+              <p>Spain</p>
+              <p>Sweden</p>
+              <p>United Kingdom</p>
+            </div>
+          </div>
         </div>
 
       </div>
