@@ -1,9 +1,18 @@
 .homepage {
   .hint {
-    color: rgba($secondary, .6);
+    color: #8c94a0;
     line-height: 1.71;
 
     @include rem(font-size, 14px);
+  }
+
+  .features--list {
+    text-align: left;
+    background-color: transparent;
+
+    .features__item {
+
+    }
   }
 
   .lead {
@@ -82,26 +91,43 @@
 }
 
 .section_lead {
-  @include rem(padding, 115px 0 130px);
+  @include rem(padding, 115px 0 88px);
 
   .apps {
     text-align: left;
 
     @include rem(margin-top, 14px);
-    @include rem(margin-bottom, 18px);
+    @include rem(margin-bottom, 14px);
+  }
+
+  .social {
+    @include rem(margin-top, 50px);
+    @include rem(margin-bottom, -55px);
+
+    > li {
+      @include rem(margin-left, 9px);
+
+      &:first-child {
+        margin-left: 0 !important;
+      }
+
+      .icon {
+        @include rem(font-size, 16px);
+      }
+    }
   }
 
   .section__img {
     position: absolute;
     z-index: 2;
 
-    @include rem(right, -19px);
+    @include rem(left, 19px);
     @include rem(top, -65px);
   }
 
   @media all and (max-width: $screen-tablet) {
     .section__img {
-      left: -100px;
+      left: -40px;
       right: auto;
     }
   }
@@ -113,6 +139,25 @@
     .apps {
       text-align: center;
       margin-top: 16px;
+    }
+
+    .social {
+      margin: 40px auto 0;
+
+      > li {
+        margin-left: 0;
+        margin-right: 25px;
+        margin-bottom: 10px;
+        width: 34px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .icon {
+          font-size: 20px;
+        }
+      }
     }
 
     .btn_custom {

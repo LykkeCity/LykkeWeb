@@ -240,7 +240,7 @@ function initStickyNav() {
   var didScroll;
   var lastScrollTop = 0;
   var delta = 5;
-  var navHeight = $('.header_nav').outerHeight();
+  var navHeight = $('.header_nav').outerHeight() + $('.header').offset().top;
 
   $(window).scroll(function(event){
     didScroll = true;

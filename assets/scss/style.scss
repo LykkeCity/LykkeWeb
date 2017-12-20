@@ -150,8 +150,55 @@ body {
   font-weight: normal;
 }
 
-.top_banner {
-  position: absolute;
-  top: 0;
+.top_banner_container {
+  position: relative;
+  padding: 20px 0 0;
 
+  ~ .header_container .header,
+  ~ .header_nav_container .header_nav {
+      position: static;
+
+    &.affix {
+      top: 0;
+      position: fixed;
+    }
+  }
+
+  ~ .header_nav_container .header_nav {
+    &.affix-top {
+      padding-top: 0 !important;
+
+      @include rem(height, 59px !important)
+    }
+  }
+}
+
+.top_banner {
+  background: #12113B url(../img/banner_bg.png) no-repeat center right;
+  border-radius: 12px;
+  font-family: $ff-alt;
+  color: #fff;
+  height: 120px;
+
+  @include rem(padding, 20px 60px);
+  @include background-size(cover);
+
+  &__title {
+    font-weight: bold;
+
+    @include rem(font-size, 36px);
+    @include rem(line-height, 40px);
+    @include rem(margin-bottom, 8px);
+  }
+
+  &__subtitle {
+    font-weight: $fw-semi;
+
+    @include rem(font-size, 20px);
+    @include rem(line-height, 24px);
+  }
+
+  @media all and (max-width: $screen-mobile) {
+    padding: 22px 30px;
+  }
 }
