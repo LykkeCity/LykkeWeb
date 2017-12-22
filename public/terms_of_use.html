@@ -2,7 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,10 +28,12 @@
   <![endif]-->
 
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-68151354-1', 'auto');
     ga('send', 'pageview');
@@ -36,7 +41,7 @@
   </script>
 
   <!-- Start of lykkex Zendesk Widget script -->
-  <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","lykkex.zendesk.com");
+  <script>/*<![CDATA[*/window.zEmbed || function (e, t) { var n, o, d, i, s, a = [], r = document.createElement("iframe"); window.zEmbed = function () { a.push(arguments) }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document; try { o = s } catch (c) { n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s } o.open()._l = function () { var o = this.createElement("script"); n && (this.domain = n), o.id = "js-iframe-async", o.src = e, this.t = +new Date, this.zendeskHost = t, this.zEQueue = a, this.body.appendChild(o) }, o.write('<body onload="document._l();">'), o.close() }("https://assets.zendesk.com/embeddable_framework/main.js", "lykkex.zendesk.com");
   /*]]>*/</script>
   <!-- End of lykkex Zendesk Widget script -->
 
@@ -44,521 +49,940 @@
 
 <body>
 
-<aside class="menu_overlay"></aside>
+  <aside class="menu_overlay"></aside>
 
-<aside class="sidebar_menu">
-  <div class="sidebar_menu__inner">
-    <div class="sidebar_menu__header">
-      <button class="btn btn--icon btn_close_menu">
-        <i class="icon icon--close"></i>
-      </button>
-      <div class="header_logo">
-        <a href="/">
-          <img class="header_logo__img" src="img/lykke_new.svg" height="40" alt="lykke_logo">
-        </a>
-      </div>
-    </div>
-
-    <div class="sidebar_menu__body">
-      <ul class="main_projects_list">
-        <li class="main_projects_list__item">
-          <a href="https://www.lykke.com/" target="_blank" class="main_projects_list__link">
-            <div class="main_projects_list__img">
-              <img src="img/lykke_wallet_logo.svg" alt="lykke_wallet_logo" width="50">
-            </div>
-            <div class="main_projects_list__content">
-              <div class="main_projects_list__title">Lykke<span>Wallet</span></div>
-              <div class="main_projects_list__text">
-                Trade FX and Digital Assets
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li class="main_projects_list__item">
-          <a href="https://streams.lykke.com/" target="_blank" class="main_projects_list__link">
-            <div class="main_projects_list__img">
-              <img src="img/streams_logo.svg" alt="streams_logo" width="50">
-            </div>
-            <div class="main_projects_list__content">
-              <div class="main_projects_list__title">Lykke<span>Streams</span></div>
-              <div class="main_projects_list__text">
-                Collaboration platform. Here the great ideas meet bright minds
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li class="main_projects_list__item">
-          <a href="https://blockchainexplorer.lykke.com/" target="_blank" class="main_projects_list__link">
-            <div class="main_projects_list__img">
-              <img src="img/bl_explorer_logo.svg" alt="bl_explorer_logo" width="50">
-            </div>
-            <div class="main_projects_list__content">
-              <div class="main_projects_list__title">Blockchain<span>Explorer</span></div>
-              <div class="main_projects_list__text">
-                Explore the Blockchain. Search transaction, assets, addresses or blocks
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li class="main_projects_list__item">
-          <a href="" target="_blank" class="main_projects_list__link">
-            <div class="main_projects_list__img">
-              <img src="img/issuer_portal_logo.svg" alt="issuer_portal_logo" width="50">
-            </div>
-            <div class="main_projects_list__content">
-              <div class="main_projects_list__title">Issuer<span>Portal</span></div>
-              <div class="main_projects_list__text">
-                Create and manage your digital assets
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul>
-
-    </div>
-
-    <div class="sidebar_menu__footer">
-      <ul class="social">
-        <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i><span> Facebook</span></a></li>
-        <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i><span> Twitter</span></a></li>
-        <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon icon--instagram"></i><span> Instagram</span></a></li>
-        <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon icon--youtube"></i><span> Youtube</span></a></li>
-        <li><a href="https://www.linkedin.com/company/lykke" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i><span> Linkedin</span></a></li>
-        <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i><span> Reddit</span></a></li>
-        <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item"><i class="icon icon--telegram"></i><span> Telegram</span></a></li>
-      </ul>
-    </div>
-  </div>
-</aside>
-
-<div class="header_container">
-  <header class="header">
-    <div class="container">
-      <div class="header__menu_button">
-        <button class="btn btn_menu btn--icon" type="button">
-          <span></span>
+  <aside class="sidebar_menu">
+    <div class="sidebar_menu__inner">
+      <div class="sidebar_menu__header">
+        <button class="btn btn--icon btn_close_menu">
+          <i class="icon icon--close"></i>
         </button>
+        <div class="header_logo">
+          <a href="/">
+            <img class="header_logo__img" src="img/lykke_new.svg" height="40" alt="lykke_logo">
+          </a>
+        </div>
       </div>
-      <div class="header__logo header_logo">
-        <a href="/">
-          <img class="header_logo__img" src="img/lykke_new.svg" height="36" alt="lykke_logo">
-        </a>
-      </div>
-      <div class="header__actions header_actions pull-right">
-        <div class="header_actions__login header_login pull-right">
 
-          <div class="header_user dropdown__control">
-            <a href="/Home/SignIn">
-              <!--<div class="header_login__title">Sign in</div>-->
-
-              <div class="header_user__img">
-                <img src="img/user_default.svg" width="40" alt="user_image">
+      <div class="sidebar_menu__body">
+        <ul class="main_projects_list">
+          <li class="main_projects_list__item">
+            <a href="https://www.lykke.com/" target="_blank" class="main_projects_list__link">
+              <div class="main_projects_list__img">
+                <img src="img/lykke_wallet_logo.svg" alt="lykke_wallet_logo" width="50">
               </div>
-
-              <div class="header_login__title">Leroy</div>
+              <div class="main_projects_list__content">
+                <div class="main_projects_list__title">Lykke
+                  <span>Wallet</span>
+                </div>
+                <div class="main_projects_list__text">
+                  Trade FX and Digital Assets
+                </div>
+              </div>
             </a>
-          </div>
+          </li>
 
-          <!--TODO dropdown-->
-          <div class="dropdown__container">
-            <ul class="dropdown__nav">
-              <li><a href="/Home/LogOut">Sign Out</a></li>
-            </ul>
-          </div>
+          <li class="main_projects_list__item">
+            <a href="https://streams.lykke.com/" target="_blank" class="main_projects_list__link">
+              <div class="main_projects_list__img">
+                <img src="img/streams_logo.svg" alt="streams_logo" width="50">
+              </div>
+              <div class="main_projects_list__content">
+                <div class="main_projects_list__title">Lykke
+                  <span>Streams</span>
+                </div>
+                <div class="main_projects_list__text">
+                  Collaboration platform. Here the great ideas meet bright minds
+                </div>
+              </div>
+            </a>
+          </li>
 
-        </div>
+          <li class="main_projects_list__item">
+            <a href="https://blockchainexplorer.lykke.com/" target="_blank" class="main_projects_list__link">
+              <div class="main_projects_list__img">
+                <img src="img/bl_explorer_logo.svg" alt="bl_explorer_logo" width="50">
+              </div>
+              <div class="main_projects_list__content">
+                <div class="main_projects_list__title">Blockchain
+                  <span>Explorer</span>
+                </div>
+                <div class="main_projects_list__text">
+                  Explore the Blockchain. Search transaction, assets, addresses or blocks
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="main_projects_list__item">
+            <a href="" target="_blank" class="main_projects_list__link">
+              <div class="main_projects_list__img">
+                <img src="img/issuer_portal_logo.svg" alt="issuer_portal_logo" width="50">
+              </div>
+              <div class="main_projects_list__content">
+                <div class="main_projects_list__title">Issuer
+                  <span>Portal</span>
+                </div>
+                <div class="main_projects_list__text">
+                  Create and manage your digital assets
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="sidebar_menu__footer">
+        <ul class="social">
+          <li>
+            <a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item">
+              <i class="icon icon--fb_simple"></i>
+              <span> Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/LykkeCity" target="_blank" class="social__item">
+              <i class="icon icon--tw"></i>
+              <span> Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="http://instagram.com/lykkecity" target="_blank" class="social__item">
+              <i class="icon icon--instagram"></i>
+              <span> Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item">
+              <i class="icon icon--youtube"></i>
+              <span> Youtube</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/lykke" target="_blank" class="social__item">
+              <i class="icon icon--linkedin-icn"></i>
+              <span> Linkedin</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item">
+              <i class="icon icon--reddit"></i>
+              <span> Reddit</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item">
+              <i class="icon icon--telegram"></i>
+              <span> Telegram</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+  </aside>
 
-  </header>
-</div>
+  <div class="header_container">
+    <header class="header">
+      <div class="container">
+        <div class="header__menu_button">
+          <button class="btn btn_menu btn--icon" type="button">
+            <span></span>
+          </button>
+        </div>
+        <div class="header__logo header_logo">
+          <a href="/">
+            <img class="header_logo__img" src="img/lykke_new.svg" height="36" alt="lykke_logo">
+          </a>
+        </div>
+        <div class="header__actions header_actions pull-right">
+          <div class="header_actions__login header_login pull-right">
 
-<nav class="header_nav">
-  <div class="header_nav__inner">
-    <div class="container">
-      <ul class="header_nav__list nav_list">
-        <li class="nav_list__item"><a href="/exchange">Exchange</a></li>
-        <li class="nav_list__item"><a href="/community">Community</a></li>
-        <li class="nav_list__item"><a href="/community">Company</a></li>
-        <li class="nav_list__item"><a href="/b2b">B2B</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+            <div class="header_user dropdown__control">
+              <a href="/Home/SignIn">
+                <!--<div class="header_login__title">Sign in</div>-->
 
-<nav class="site_nav">
-  <div class="site_nav__inner">
-    <div class="container">
-      <ul class="header_nav__list nav_list nav_list--alt">
-        <li class="nav_list__item"><a href="lykkex_rulebook.html">LykkeX Rulebook</a></li>
-        <li class="nav_list__item nav_list__item--active"><a href="term_conditions_colored_coins.html">Term of Issuance</a></li>
-        <li class="nav_list__item"><a href="https://api.lykkex.com/swagger/ui/index#/" target="_blank">LykkeX API</a></li>
-        <li class="nav_list__item"><a href="https://github.com/LykkeCity/" target="_blank">Github</a></li>
-        <li class="nav_list__item"><a href="https://lykke.com/Whitepaper_LykkeExchange.pdf">White Paper</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <div class="header_user__img">
+                  <img src="img/user_default.svg" width="40" alt="user_image">
+                </div>
 
-<article class="content">
-  <section class="section--padding section--lead">
-    <div class="container">
-      <div class="col-sm-8 automargin">
-        <div class="inline-edit text"
-             data-page-id="20">
-          <h1 id="terms_of_use" class="sectionedit1 page-header">Terms of Use</h1>
-          <div class="level1">
-            <p><a class="media mediafile mf_pdf" title="lykke.termsofuse.pdf (176.4 KB)" href="~/media/lykke.termsofuse.pdf">PDF Version</a></p>
-            <p><em>08 JULY 2016</em></p>
-            <p>PLEASE READ THESE TERMS OF USE CAREFULLY. BY CLICKING TO ACCEPT, OR BY ACCESSING OR USING OUR SERVICES, YOU AGREE TO BE BOUND BY THESE TERMS OF USE AND ALL TERMS INCORPORATED BY REFERENCE. If you are accepting these terms on behalf of an entity, you confirm that you are authorized on behalf of that entity to agree to be bound by these Terms of Use and all terms incorporated by reference and to enter into a legally binding Transaction (Transaction means the creation of the binding contract with counterparties).</p>
-          </div>
-          <h2 id="scope" class="sectionedit2">SCOPE</h2>
-          <div class="level2">
-            <p>These are the Terms of Use of Lykke Corp and all its affiliates or subsidiaries (hereinafter referred &ldquo;Lykke&rdquo;, &rdquo;we&rdquo; or &ldquo;us&rdquo;). Lykke Corp is incorporated under the laws of Switzerland with registration number CHE-345.258.499 and registered address</p>
-            <p>Hus&auml;cherstrasse 4, 8907 Wettswil am Albis, Switzerland. These Terms apply to any access and use of our website at <a class="urlextern" title="https://lykkex.com" href="https://lykkex.com/" rel="nofollow">https://lykkex.com</a>, our online services, our Android and iOS mobile apps, and any of our services related to or utilizing any of the foregoing, which we refer to in these Terms, collectively, as &ldquo;Services&rdquo;, &ldquo;Lykke Services&rdquo; or &ldquo;our Services&rdquo;.</p>
-          </div>
-          <h2 id="eligibility_and_agreement" class="sectionedit3">ELIGIBILITY AND AGREEMENT</h2>
-          <div class="level2">
-            <p>Participation in Lykke Services is open to all who want to trade in Colored Coins for Lykke shares with domicile in Switzerland. Lykke hereby grants you a revocable, non-exclusive, non-transferable licence solely to access and use Lykke Services during the term of your participation in accordance with the provisions of these Rules.</p>
-            <p>You must ensure that you use and access Lykke Services only in your own name and for your own account.</p>
-            <p>If you are acting for a legal entity, you must ensure that you:</p>
-            <p>(a) use and access Lykke Services and the Information on behalf of the legal entity; and</p>
-            <p>(b) that you are authorised to enter into Transactions on behalf of the legal entity;</p>
-            <p>Lykke may, at any time and for any reason and without notice, terminate, suspend or change the username and/or password of any Authorised Person.</p>
-          </div>
-          <h2 id="our_privacy_policy" class="sectionedit4">OUR PRIVACY POLICY</h2>
-          <div class="level2">
-            <p>Our Privacy Policy is located at <a class="urlextern" title="https://www.lykke.com/privacy_policy" href="https://www.lykke.com/privacy_policy" rel="nofollow">https://www.lykke.com/privacy_policy</a>. Our Privacy Policy describes how we collect, use, and share your personal information.</p>
-          </div>
-          <h2 id="changes_to_these_terms" class="sectionedit5">CHANGES TO THESE TERMS</h2>
-          <div class="level2">
-            <p>The present Terms may change from time to time, including but not limited to cases of changes in our Services, in technology, in regulation and for any other case that Lykke deems as appropriate to take measures. In case of a change, we will provide you notice of such change by e-mail and by posting the updated Terms on our website and changing the &ldquo;Last Updated&rdquo; date above. Any amended Terms shall become effective not earlier than 14 days after they are posted and shall apply prospectively to the use of the Services upon effectiveness of such changes. However, in case the changes address new functions of Lykke Services or they are made for any legal reasons, they shall be of immediate effect. Upon effectiveness of the change as described above, the change of Terms shall be considered as accepted by you in case you continue using the Services. Therefore, in case you do not agree to any amended Term, you must immediately cease using the Services.</p>
-          </div>
-          <h2 id="the_lykke_services" class="sectionedit6">THE LYKKE SERVICES</h2>
-          <div class="level2">
-            <p>Lykke is a provider of an electronic wallet service (Lykke Wallet). This Wallet can be accessed by the use of the Lykke app. Like a physical wallet, the purpose of this electronic Wallet is simply storage. The objects being stored in the Lykke Wallet are Lykke Coins representing digitally Lykke Shares. A Lykke coin is a colored coin that is issued by Lykke Corp. One Lykke colored coin is 0.01 (one one-hundredth) of one share of Lykke Corp. 100 Lykke colored coins are one share of Lykke Corp..</p>
-            <p>Within the Lykke app the user can buy or sell Lykke Coins by using a national currency or the digital currency bitcoin as payment option for buying and selling Lykke Coins.</p>
-            <p>Lykke Wallet is no platform for bitcoin trading and therefore does not set any stock prices on bitcoins. Bitcoin is solely a payment option for buying or selling Lykke Coins.</p>
-            <p>Our Services may evolve over time. This means we may apply changes, replace, or discontinue (temporarily or permanently) our Services at any time for any reasonable cause with two days&rsquo; notice or without notice in case of a Force Majeure. In this case, you may be prevented from accessing or using our Services. If, in our sole discretion, we decide to permanently discontinue our Services, we will provide you with a notice via our website.</p>
-            <p>A Force Majeure Event includes without limitation each of the following:</p>
-            <p>a) Government actions, the outbreak of war or hostilities, the threat of war, acts of terrorism, national emergency, riot, civil disturbance, sabotage, requisition, or any other international calamity, economic or political crisis;</p>
-            <p>b) Act of God, earthquake, tsunami, hurricane, typhoon, accident, storm, flood, fire, epidemic or other natural disaster;</p>
-            <p>c) Labour disputes and lock-out;</p>
-            <p>f) Breakdown, failure or malfunction of any electronic, network and communication lines (not due to the bad faith or wilful default of Lykke);</p>
-            <p>g) Any event, act or circumstances not reasonably within Lykke&rsquo;s control and the effect of that event(s) is such that Lykke is not in a position to take any reasonable action to cure the default.</p>
-            <p>Subject to the terms of these Terms of Use and the Rules, Lykke shall use reasonable efforts to make available, operate and maintain Lykke Services during the validity of these Terms and to permit you to access and use Lykke Services in accordance with these Terms and the Rules. Lykke shall use all reasonable efforts to promptly notify you of any difficulties experienced by us or other members with respect to their access to or use of Lykke Services, but only to the extent that Lykke is aware of such difficulties and reasonably determines that they are material to the User&rsquo;s access to the use of Lykke Services. Similarly, the User shall notify Lykke in writing the soonest possible in case it becomes aware of any material technical failures of or difficulties with Lykke Services or upon becoming aware of any material breach (or any event which, by giving notice and/or the lapse of time, would constitute a material breach) of these Terms.</p>
-          </div>
-          <h2 id="deposit_and_withdrawal_of_funds" class="sectionedit7">DEPOSIT AND WITHDRAWAL OF FUNDS</h2>
-          <div class="level2">
-            <p>In the event that you are accepted by Lykke as its customer, Lykke will open a Client Account for you, which will be activated upon your deposit of Lykke Coins.</p>
-            <p>You may deposit funds into your Client Account at any time during the course of these Terms. Funds as means of payment for Lykke Coins will be accepted via bank transfer, debit/credit card (MasterCard, Visa) or any other method of electronic money transfer (where the originator is you) acceptable by Lykke from time to time. Lykke will not accept third party or anonymous payments in your account.</p>
-            <p>Lykke will affect withdrawals of your funds, either upon the receipt of a form bearing your signature (which must match the specimen of your signature provided to Lykke) or upon an application for withdrawal made via Lykke&rsquo;s Online Trading System.</p>
-            <p>Upon Lykke receiving an instruction from you to withdraw funds from your Account, Lykke shall pay the said amount within five Business Days, if the following requirements are met:</p>
-            <p>a) The withdrawal instruction includes all necessary information;</p>
-            <p>b) The instruction is to make a bank transfer to your bank account; and</p>
-            <p>c) At the moment of payment, your Account balance exceeds or is equal to the amount specified in the withdrawal instruction including all payment charges.</p>
-            <p>Withdrawals will only be effected towards your personal bank account. Lykke will not to effect withdrawals to any other third party or anonymous account.</p>
-            <p>Lykke reserves the right to decline a withdrawal request when you ask for a specific transfer method and Lykke has the right to suggest an alternative.</p>
-            <p>All payment and transfer charges will be borne by you and the Company shall debit your Client Account for these charges.</p>
-            <p>If you make a payment by bank transfer, by credit card or any other method of electronic money transfer, Lykke shall credit your Client Account with the relevant amount within one Business Day after the amount is cleared in the bank account of Lykke. Your deposit balance will be depicted in the distributed ledger.</p>
-            <p>Note: Lykke Coins do not carry monetary value themselves, but rather act as title transfer. The monetary value of a deposit resides on the book of the operator bank.</p>
-          </div>
-          <h2 id="price_volatility_of_lykke_coins" class="sectionedit8">PRICE VOLATILITY OF LYKKE COINS</h2>
-          <div class="level2">
-            <p>Lykke cannot and does not guarantee that the transactions in Lykke Coins will be profitable. You acknowledge and agree that the transactions in Lykke Coins may be highly volatile (i.e. high volatility may occur during important news events, economic surprises, unusual social events etc.) and that buying and selling, financial Lykke involve the risk of acquiring shares in a start-up company.. LYKKE WALLET</p>
-            <p>To buy or sell Lykke Coins with Lykke Wallet, simply click on the price button at the so called &ldquo;Exchange&rdquo; tab of our App. You will be taken through a process that specifies and confirms the buy or sell order. The trade matched is broadcasted on the blockchain via Open Asset protocol and can be traced via Lykke blockchain explorer or Coinprism (see <a class="urlextern" title="http://www.coinprism.com" href="http://www.coinprism.com/" rel="nofollow">www.coinprism.com</a> for further details). Lykke charges no fees for matching the trades.</p>
-            <p>Colored coins consensus network is solely responsible for verifying and confirming the trades via the Services,. Except in cases prescribed by law Lykke cannot and does not confirm, cancel, or reverse Lykke Coin transactions, other than confirming the network&rsquo;s completion of a transaction. The network is operated by a decentralized network of independent third parties. You acknowledge, agree and accept that the Lykke Coin transaction may not be completed, or may be substantially delayed, by the network. When you send the buy or sell order via the Services, you authorize us to match your order and submit the resulted trade transaction in Lykke Coins to the network in accordance with the instructions you provide via the Services.</p>
-          </div>
-          <h2 id="wallet_address_and_private_key" class="sectionedit9">WALLET ADDRESS AND PRIVATE KEY</h2>
-          <div class="level2">
-            <p>When you create an account, the Services generate and store an encrypted digitalprivate and public key pair that you may use to send buy or sell orders in Lykke Coins. The public key generated by the Services works as your Lykke Coins&rsquo; Lykke Wallet address, and may be shared with the network and with others to complete Lykke Coins&rsquo; transactions. The private key uniquely matches the Lykke Wallet address and must be used in conjunction with the Lykke Wallet address to authorize the transfer of Lykke Coins from or to that Lykke Wallet address.</p>
-            <p>The private key is stored on the secured area of your mobile phone encrypted by the password. The private key is also stored as SHA-265 encrypted string at Lykke cloud infrastructure, so that you may use multiple devices or recover Lykke Wallet on another device in case your device is lost or stolen. The private key is encrypted by your password. The password may be temporarily stored encrypted by PIN/TouchID during the opened session. When the session closes due to logging out, or inactivity timeout, or the application is reinstalled, or by demand of the user, or by the action of the Lykke compliance service, you have to login again using your password. The password cannot be recovered. In case you forget your password, you will need to wait until the lock period is over in order to refund your colored coins. Please refer to the Privacy Policy for further details.</p>
-          </div>
-          <h2 id="custody_of_lykke_coins" class="sectionedit10">CUSTODY OF LYKKE COINS</h2>
-          <div class="level2">
-            <p>Lykke does not obtain nor benefit of any legal or beneficial right, title or interest in your Lykke Coins that you store in your Wallet. The trading Lykke Wallet is 2-of-2 multisignature address: one signature (private key) is controlled by you and the second signature (private key) is controlled by Lykke.</p>
-            <p>You need to make sure that your coins are properly backed up and protected from theft. Your coins are stored in the multisignature Lykke Wallet address 2-of-2 (Client and Wallet) that means that two private keys are needed to spend the coins, both yours and the Wallet's. . The Lykke Wallet cannot spend your coins without asking for your signature even if the Lykke Wallet was compromised. If your key was stolen, the thief cannot steal coins without having the Lykke Walletsprivate key.</p>
-          </div>
-          <h2 id="refunding" class="sectionedit11">REFUNDING</h2>
-          <div class="level2">
-            <p>Refunding provides you the guarantee of getting your Lykke Coins back from the multisignatures wallet. Refunding is a transaction spending Lykke coins form your multisignature wallet into your own Lykke Wallet. The refunding transaction signed by Lykke off the blockchain is sent to your mail. The refunding transaction has LockTime parameter that allows to you to broadcast the transaction after 30 days. The refunding transaction becomes invalid after each trade that spends the same outputs of the multisignature address. Lykke generates the new refunding transaction after each trade or after depositing new coins.</p>
-          </div>
-          <h2 id="ownership_of_intellectual_property_rights" class="sectionedit12">OWNERSHIP OF INTELLECTUAL PROPERTY RIGHTS</h2>
-          <div class="level2">
-            <p>We retain all legal rights, titles, and interests (including all copyright, trademark, patent, trade secrets, and all other intellectual property rights) in our Services and all content on our Services, including our trademarks, service marks, designs, logos, URLs, and trade names that are displayed on our Service, which we refer to in these Terms, collectively, as the Lykke Materials. We hereby grant you a limited, non-exclusive, and non-sublicensable license to access and use the Lykke Materials for your personal or internal business use. Such license is subject to these Terms and does not permit any resale of the Lykke Materials; Additionally, the license does not permit the distribution, public performance or public display of any Lykke Materials, neither modifying or otherwise making any derivative uses of the Lykke Materials, or any portion thereof or any use of the Lykke Materials other than for their intended purposes. The license granted under this Section will automatically be terminated if we suspend or terminate your access to the Services.You should be aware that in relation to any feedback, suggestions, ideas or other information or materials regarding Lykke or our Services that you provide elsewhere either by email, posting through our Services or otherwise, we will own exclusive rights, including all intellectual property rights (hereinafter referred as the &ldquo;Feedback&rdquo;). Any Feedback you submit is non-confidential and automatically becomes the sole property of Lykke. We will be entitled to the unrestricted use and dissemination of such Feedback for any purpose, commercial or otherwise, without acknowledgment or compensation to you. You may not use, copy or retransmit anything from our website without our prior permission. In case of breach of the present Terms, please note that we reserve all our legal rights not expressly granted herein.</p>
-          </div>
-          <h2 id="authorized_users_of_our_services" class="sectionedit13">AUTHORIZED USERS OF OUR SERVICES</h2>
-          <div class="level2">
-            <p>You are permitted to use our Services, only as you have been authorized by us. You are responsible for ensuring that your personal information in your account profile is updated and correct, including your email address and mobile phone number, as well as the KYC data provided. You are also responsible for maintaining adequate security, control and confidentiality of your account information, including any personal identification numbers (PINs), passwords, <abbr title="Application Programming Interface">API</abbr> keys or other codes associated with your account and any activity occurring within that account. The loss or compromise of this information may result in unauthorized access of your account, which may result in loss or theft of any colored coins held in your account. If you believe your account has been compromised, or you need to report a security incident, or you have experienced any operational problems, or have a security concern, please contact us immediately at support@lykkex.com describing the issue at hand as thoroughly as possible including the date, type of problem and part of the Lykke site or Lykke Services where you experienced that problem. You are responsible for (i) immediately notifying us of any unauthorized use of your password or account or any other breach of security, and (ii) ensuring that you log out from your account at the end of each session when accessing the Lykke Services. We have no responsibility for any loss that you suffer as a result of failing to comply with this section or failure to follow or act on any notices or alerts that we may send to you.</p>
-          </div>
-          <h2 id="using_smstext" class="sectionedit14">USING SMS/TEXT</h2>
-          <div class="level2">
-            <p>To use the Lykke Services, you must provide a valid mobile phone number. This number is used as part of the authentication process. As part of using the Lykke Services, you are agreeing to receive SMS/text messages from us. Please note that while we do not charge you for SMS/text messages, your mobile carrier&rsquo;s standard messaging rates will apply. Failure to provide a valid mobile phone number may result in restriction of your use of the Lykke Services. If Lykke suspects that your mobile number is invalid or that you are using a VOIP service to circumvent the requirement to provide a valid mobile phone number, Lykke may suspend or otherwise restrict your use of the Lykke Services.</p>
-          </div>
-          <h2 id="registration_requirements" class="sectionedit15">REGISTRATION REQUIREMENTS</h2>
-          <div class="level2">
-            <p>It is on the sole discretion of Lykke whether it will approve the opening of accounts. Additionally, Lykke reserves the right to temporarily or permanently suspend accounts, including where required or recommended by applicable governmental, regulatory or law enforcement requirements or where you fail to provide sufficient information to verify your identity. The Lykke Services are for the use only of the registered account holder. You agree that the information you provide to Lykke during the account creation and any subsequent identity verification processes is accurate and complete, and will be updated as necessary to keep it so. If you are under 18 years of age, you are not authorized to use the Lykke Services, with or without registering.</p>
-          </div>
-          <h2 id="prohibited_activities" class="sectionedit16">PROHIBITED ACTIVITIES</h2>
-          <div class="level2">
-            <p>You agree that you will not use the Lykke Services to perform any type or sort of illegal activity or to take any action that negatively affects the performances of the Lykke Services. You may not engage via the Services in any of the following activities, nor help a third party in any such activity to: (1) attempt to gain unauthorized access to our Services or another user&rsquo;s account, (2) make any attempt to bypass or circumvent any security features, (3) violate any law, statute, ordinance, or regulation, (4) reproduce, duplicate, copy, sell or resell our Services for any purpose except as authorized in these Terms, (5) engage in any activity that is abusive or interferes with or disrupts our Services. If you are blocked by Lykke from accessing the Lykke Services, you agree not to implement any measures to circumvent such blocking. Use of our Services in connection with any transaction involving illegal products or services is prohibited. Lykke compliance service implements regular checks on the traces of colored coins transactions to discourage the use of funds of dubious origin, including Ponzi schemes, Tor internet, mixers, etc. Lykke reserves the right to temporarily or permanently suspend your account or otherwise restrict your use of the Lykke Services if any violation of this section occurs. Additionally, in case of a customer&rsquo;s violation, Lykke reserves its legal rights.</p>
-          </div>
-          <h2 id="termination" class="sectionedit17">TERMINATION</h2>
-          <div class="level2">
-            <p>The Services by Lykke will be terminated on thirty days' notice by the user or by Lykke, effective at the end of a month. Notice of termination must be served in writing by registered letter</p>
-            <p>By deleting the app and selling his coins the user closes his user account.</p>
-            <p>Lykke reserves the right to close an account without prior notice immediately on the grounds of misusage particularly violations of the Terms of Use or any national law.</p>
-          </div>
-          <h2 id="inactive_accounts" class="sectionedit18">INACTIVE ACCOUNTS</h2>
-          <div class="level2">
-            <p>Should your account remain dormant for a period of six [6] months, Lykke reserves the right to close the account. Lykke will notify you in writing of the account closure. An email to the email address provided at the time of application will suffice for this purpose.</p>
-            <p>Should there be a residual balance on the closed account of CHF 25.00 or less, or any local currency equivalent, Lykke reserves the right to use these funds to meet any administrative costs incurred during the closure of the account.</p>
-            <p>Should there be a residual balance on the closed account greater than CHF 25.00, or any local currency equivalent, Lykke will transfer such funds back to the account from which your initial deposit was made or to an account updated by you and advised to Lykke during the normal operation of the account.</p>
-            <p>With regard to the above Clause, Lykke reserves the right to deduct CHF25.00, or any local currency equivalent, from any residual balance on the closed account greater than CHF25.00, or any local currency equivalent, to meet any administrative costs incurred during the closure of the account.</p>
-          </div>
-          <h2 id="default" class="sectionedit19">DEFAULT</h2>
-          <div class="level2">
-            <p>Each of the following constitutes an &ldquo;Event of Default&rdquo;:</p>
-            <p>a) The failure of the customer to perform any obligation due to Lykke;</p>
-            <p>b) Where any representation or warranty made by the customer is or becomes untrue;</p>
-            <p>c) The customer is unable to pay the customer&rsquo;s debts (if any arise) when they fall due;</p>
-            <p>d) The customer (if the customer is an individual) dies or is declared absent or becomes of unsound mind;</p>
-            <p>e) Any other circumstance where Lykke reasonably believes that it is necessary or desirable to take any action set out in the below paragraph;</p>
-            <p>f) The customer involves Lykke in any type of fraud or illegality;</p>
-            <p>g) An action set out in the below paragraph is required by a competent regulatory authority or body or court;</p>
-            <p>h) In cases of material violation by the customer of the requirements established by legislation of Switzerland or other countries, such materiality determined in good faith by Lykke;</p>
-            <p>i) If Lykke suspects that the customer is engaged into money laundering activities or terrorist financing or other criminal activities.</p>
-            <p>If an Event of Default occurs, Lykke may at its absolute discretion, at any time and without prior Written Notice, take one or more of the following actions:</p>
-            <p>a) Terminate these Terms without notice;</p>
-            <p>b) Debit the customer account(s) for the amounts which are due to Lykke (if any);</p>
-            <p>c) Close any or all of the customer accounts held with Lykke;</p>
-            <p>d) Combine customer accounts, consolidate the balances in such customer accounts and to set off those balances;</p>
-            <p>e) Refuse to open new accounts for the customer.</p>
-          </div>
-          <h2 id="trademarks" class="sectionedit20">TRADEMARKS</h2>
-          <div class="level2">
-            <p>Lykke and Lykke logo are our trademarks, registered trademarks and/or service marks. Any other trademarks mentioned in our website or mobile apps are the property of their respective owners. Each Party hereby agrees that it shall not use the name, trademark or proprietary indicia of the other Party</p>
-            <p>in any advertising, announcement, press release or promotional materials without such other Party&rsquo;s prior written consent.</p>
-          </div>
-          <h2 id="confidentiality" class="sectionedit21">CONFIDENTIALITY</h2>
-          <div class="level2">
-            <p>Each of the Parties hereto acknowledges and agrees that the other Party will receive or have access to Confidential Information.</p>
-            <p>Both Parties undertake in respect of Confidential Information of which they are the recipient:</p>
-            <p>a) to treat such information as confidential;</p>
-            <p>b) not, without the disclosing party&rsquo;s prior written consent, which is not to be unreasonably withheld, to communicate or disclose any part of such information to any person except to:</p>
-            <ul>
-              <li class="level1">
-                <div class="li">those of its Representatives, on a need to know basis who are directly involved in using or providing or facilitating the provision or use of the Services; or</div>
-              </li>
-              <li class="level1">
-                <div class="li">the recipient&rsquo;s auditors, professional advisors and any other persons or bodies having a legal right or duty to have access to, or knowledge of, the Confidential Information in connection with the business of the recipient;</div>
-              </li>
-            </ul>
-            <p>c) to ensure that all recipients mentioned in paragraph (b)(i) above are made aware, prior to disclosure, of the confidential nature of the Confidential Information and that they owe a duty of confidence to the disclosing party and to ensure that such recipient&rsquo;s comply with this paragraph (Confidentiality); and</p>
-            <p>d) not to use or circulate such information within its own organisation except to the extent necessary for the purposes of, and in compliance with, the restrictions in this paragraph.</p>
-            <p>The obligations in this paragraph will not apply to any Confidential Information which is:</p>
-            <p>a) in the recipient&rsquo;s possession (with full right to disclose) before receiving it; or</p>
-            <p>b) becomes public knowledge other than by breach of this paragraph; or</p>
-            <ul>
-              <li class="level1">
-                <div class="li">independently developed by the recipient without access to or use of the Confidential Information; or</div>
-              </li>
-              <li class="level1">
-                <div class="li">lawfully received from a third party (with full right to disclose); or</div>
-              </li>
-              <li class="level1">
-                <div class="li">trade data and which has to be disclosed to regulators under EMIR.b) becomes public knowledge other than by breach of this paragraph; or</div>
-              </li>
-            </ul>
-            <p>c) it is considered as publicly available Market Data.</p>
-            <p>Either party may disclose any Confidential Information (including all or any part of these Terms) if obliged to do so in order to comply with Applicable Laws, including following the request from any competent court, regulator or similar Governmental Authority. To the extent it is legally permissible to do so, such party will promptly notify the other party in writing of such obligation on request.</p>
-            <p>Upon termination of these Terms, each Party will, within a reasonable period of time thereafter, return all Confidential Information received from the other Party and copies made thereof by the receiving Party, or certify in writing that, to the best of its knowledge and belief, all such Confidential Information has been destroyed; provided, however, that each Party may retain an archival copy of the disclosing Party&rsquo;s Confidential Information to be used only in the event of a dispute regarding these Terms or as may be required in connection with legal or regulatory matters involving these Terms.</p>
-          </div>
-          <h2 id="no_advice" class="sectionedit22">NO ADVICE</h2>
-          <div class="level2">
-            <p>Lykke is not acting and cannot act as an advisor, including as to any financial, legal, investment, insurance and/or tax matters. Any information provided by Lykke is for general information only. You are solely responsible for determining whether any contemplated transaction is appropriate for you. In case you are not sure whether you should enter or not in such a business relation, we strongly recommend that you use an external advisor.</p>
-          </div>
-          <h2 id="indemnification" class="sectionedit23">INDEMNIFICATION</h2>
-          <div class="level2">
-            <p>You agree to indemnify, defend and hold us, our employees, agents, consultants, subsidiaries, partners, affiliates, and licensors, harmless against any and all claims, costs, losses, damages, liabilities, judgments and expenses (including reasonable fees of attorneys and other professionals) arising from or in any way related to your use of our Services, your violation of these Terms, or your violation of any rights of any other person or entity.</p>
-          </div>
-          <h2 id="limitation_of_liability" class="sectionedit24">LIMITATION OF LIABILITY</h2>
-          <div class="level2">
-            <p>Lykke is liable to Lykke Users for direct loss caused by defective performance of a contract where the wilful intent or negligence is attributable to Lykke.</p>
-            <p>Lykke shall assume no liability for any further claims, e.g. relating to compensation for indirect or consequential loss, lost profit or loss of earnings, unrealised savings or additional expense incurred, regardless of the legal grounds.</p>
-            <p>The Lykke User shall bear any losses arising as a result of orders that are not properly legible or as a result of forged or unauthorised orders, except in cases where Lykke is at fault. Responsibility for the authenticity, accuracy and completeness of orders and data transmitted shall &ndash; expect in cases where Lykke is at fault &ndash; rest solely with the Lykke User, even when Lykke does not receive these orders/data directly from the Lykke User, but through the third parties.</p>
-            <p>Lykke shall assume no liability for losses if, for reasons for which Lykke cannot be held responsible, Lykke has been prevented from performing the transaction properly or on time, for example as a result of force Force majeure or measures, orders and/or decrees issued by domestic or foreign governmental authorities.</p>
-            <p>In particular, Lykke shall assume no liability for actions (e.g. declarations of Default), failure to take action or any suspension or restriction of services by any element within the blockchain. Furthermore, Lykke shall assume no liability for the consequences of official directives with regard to any means of payments allowed for the Lykke Wallet.</p>
-            <p>Lykke shall not be liable for the conduct of third parties that it mandates, provided it has exercised due diligence when choosing and instructing them.</p>
-            <p>If the Lykke User has as a result of wilful intent or negligence, e.g. breach of its contractual obligations, contributed to causing and/or aggravating a loss, the extent to which Lykke and the Lykke User must bear the loss shall be determined in accordance with the principles of contributory negligence (Article 44 of the Swiss Code of Obligations). The Lykke User has an obligation to prevent and reduce loss..</p>
-          </div>
-          <h2 id="complaints_and_disputes" class="sectionedit25">COMPLAINTS AND DISPUTES</h2>
-          <div class="level2">
-            <p>If you wish to report an error or a complaint, he must send an email to Lykke&rsquo;s Customer Support Department at support@lykkex.com.</p>
-            <p>The Following information will need to be included:</p>
-            <p>a) Customer name and surname;</p>
-            <p>b) Customer Account number (or other recognition details);</p>
-            <p>c) Detailed enquiry description;</p>
-            <p>e) The date and time that the issue arose.</p>
-            <p>If you receive a response from the Customer Support Department but deems that the matter needs to be addressed further, you may ask the Customer Department to forward it to the Compliance Department or contact directly the Compliance Department at compliance@lykke.com. Both the Customer Support Department and the Compliance Department shall:</p>
-            <ul>
-              <li class="level1">
-                <div class="li">send an initial email confirming the receipt of your complaint,</div>
-              </li>
-              <li class="level1">
-                <div class="li">send an official response to you within 14 Business Days respectively;</div>
-              </li>
-              <li class="level1">
-                <div class="li">try to resolve the matter as soon as reasonably possible;</div>
-              </li>
-              <li class="level1">
-                <div class="li">inform you of the outcome.</div>
-              </li>
-            </ul>
-            <p>Additionally, you must inform the Company about any trading error within 24 hours from the error time, otherwise Lykke will not be able to investigate the error. Any trading error coming from Lykke will be amended where possible. If a situation arises which is not expressly covered by these Terms, the parties agree to try to resolve the matter on the basis of good faith and fairness and by taking such action as is consistent with market practice.</p>
-            <p>The customer&rsquo;s right to take legal action remains unaffected by the existence or use of any complaints procedures referred to above.</p>
-          </div>
-          <h2 id="disclaimer_of_warranties" class="sectionedit26">DISCLAIMER OF WARRANTIES</h2>
-          <div class="level2">
-            <p>OUR SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; WITH NO WARRANTY OF ANY KIND. Your use of our Services is at your sole risk. We and our licensors, service providers or subcontractors (if any) make no representations or warranties about the suitability of the information, software, products and services contained in our Services for any purpose or their compliance with any accounting rules, principles or laws, and expressly disclaim any representation or warranty that the Services will be free from errors, viruses or other harmful components, that communications to or from the Services will be secure and not intercepted, that the services and other capabilities offered from the Services will be uninterrupted, or that their content will be accurate, complete or timely. EXCEPT AS EXPRESSLY STATED IN THESE TERMS, WE DISCLAIM ALL WARRANTIES AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A PARTICULAR PURPOSE. YOU ACKNOWLEDGE THAT YOU HAVE NOT ENTERED INTO THIS AGREEMENT IN RELIANCE UPON ANY WARRANTY OR REPRESENTATION EXCEPT THOSE SPECIFICALLY SET FORTH IN THESE TERMS. Some jurisdictions do not allow the disclaimer of implied terms in contracts with consumers, so some or all of the disclaimers in this section may not apply to you.</p>
-          </div>
-          <h2 id="place_of_jurisdiction_and_governing_law" class="sectionedit27">PLACE OF JURISDICTION AND GOVERNING LAW</h2>
-          <div class="level2">
-            <p>You and Lykke agree to arbitrate any dispute arising from these Terms or your use of our Services, except for disputes in which either party seeks equitable and other relief for the alleged unlawful use of copyrights, trademarks, trade names, logos, trade secrets, or patents. ARBITRATION PREVENTS YOU FROM SUING IN COURT OR FROM HAVING A JURY TRIAL. You and Lykke agree to notify each other in writing of any dispute within thirty (30) days of when it arises. Notice to Lykke shall be sent to support@lykkex.com. You and Lykke further agree:</p>
-            <ul>
-              <li class="level1">
-                <div class="li">to attempt informal resolution prior to any demand for arbitration;</div>
-              </li>
-              <li class="level1">
-                <div class="li">that any arbitration will occur in Switzerland;</div>
-              </li>
-              <li class="level1">
-                <div class="li">that arbitration will be conducted confidentially by a single arbitrator in accordance with the rules of Switzerland and</div>
-              </li>
-              <li class="level1">
-                <div class="li">that the courts in Switzerland have exclusive jurisdiction over any appeals of an arbitration award and over any suit between the parties not subject to arbitration.</div>
-              </li>
-            </ul>
-            <p>Other than class procedures and remedies discussed below, the arbitrator has the authority to grant any remedy that would otherwise be available in court. Any dispute between the parties will be governed by these Terms and the laws of Switzerland, without giving effect to any conflict of laws principles that may provide for the application of the law of another jurisdiction. WHETHER THE DISPUTE IS HEARD IN ARBITRATION OR IN COURT, YOU AND LYKKE WILL NOT COMMENCE AGAINST THE OTHER A CLASS ACTION, CLASS ARBITRATION OR REPRESENTATIVE ACTION OR PROCEEDING.</p>
-          </div>
-          <h2 id="record_keeping" class="sectionedit28">RECORD KEEPING</h2>
-          <div class="level2">
-            <p>Under Applicable Regulations, Lykke will keep records containing your personal data, trading information, account opening documents, communications and anything else which relates to you for at least five years after termination of the these Terms.</p>
-          </div>
-          <h2 id="limitations" class="sectionedit29">LIMITATIONS</h2>
-          <div class="level2">
-            <p>To the extent allowed by applicable law, you agree that you will bring any claim or cause of action arising from or relating to your access or use of our Services within two years from the date on which such claim or action arose or accrued or such claim or cause of action will be irrevocably waived.</p>
-          </div>
-          <h2 id="no_waiver" class="sectionedit30">NO WAIVER</h2>
-          <div class="level2">
-            <p>Our failure to exercise or enforce any right or provision or remedy of these Terms or to seek redress for violations or to insist upon strict performance of any condition or provision of these Terms, shall not constitute an implied waiver of that right or provision.</p>
-          </div>
-          <h2 id="assignment_entire_agreement" class="sectionedit31">ASSIGNMENT. ENTIRE AGREEMENT</h2>
-          <div class="level2">
-            <p>Lykke may assign these Terms to its parent company, affiliate or subsidiary, or in connection with a merger, consolidation, or sale or other disposition of all or substantially all of its assets. These Terms, together with any other agreements that apply to you, such as our Developer Terms, constitute the entire and exclusive agreement between us and you regarding its subject matter, and supersede and replace any previous or contemporaneous written or oral contract, warranty, representation or understanding regarding its subject matter.</p>
-          </div>
-          <h2 id="severability" class="sectionedit32">SEVERABILITY</h2>
-          <div class="level2">
-            <p>If for any reason a court of competent jurisdiction finds any provision of these Terms invalid or unenforceable or illegal or contravene any rule, regulation or law of any Market or regulator,that part will be deemed to have been excluded from these Terms from the beginning, and these Terms will be interpreted and enforced as though the provision had never been included and the legality or enforceability of the remaining provisions of the Terms or the legality, validity or enforceability of this provision in accordance with the law and/or regulation of any other jurisdiction, shall not be affected but should remain in full force and effect.</p>
-          </div>
-          <h2 id="misscellaneous" class="sectionedit33">MISSCELLANEOUS</h2>
-          <div class="level2">
-            <p>All rights and remedies provided to Lykke under the Agreement are cumulative and are not exclusive of any rights or remedies provided by law.</p>
-            <p>Where the customer comprises two or more persons, the liabilities and obligations under these Terms shall be joint and several. Any warning or other notice given to one of the persons which form the customer shall be deemed to have been given to all the persons who form the customer. Any Order given by one of the persons who form the customer shall be deemed to have been given by all the persons who form the customer.</p>
-          </div>
-          <h2 id="communications_and_written_notices" class="sectionedit34">COMMUNICATIONS AND WRITTEN NOTICES</h2>
-          <div class="level2">
-            <p>Unless the contrary is specifically provided in these Terms, any notice, instruction, request or other communication to be given to Lykke by the customer under these Terms shall be in writing and shall be sent to Lykke&rsquo;s address below (or to any other address which Lykke may from time to time specify to the customer for this purpose) by email, facsimile, post if posted in Switzerland, or airmail if posted outside Switzerland, or commercial courier service and shall be deemed delivered only when actually received by Lykke at:</p>
-            <p>Lykke Corp UK</p>
-            <p>Address: 86-90 Paul Street, London. EC2A 4NE</p>
-            <p>Tel: +41 61 588 04 02</p>
-            <p>Email: support@lykkex.com</p>
-            <p>In order to communicate with the customer, Lykke may use any of the following:</p>
-            <ul>
-              <li class="level1">
-                <div class="li">email;</div>
-              </li>
-              <li class="level1">
-                <div class="li">Lykke&rsquo;s online system internal mail;</div>
-              </li>
-              <li class="level1">
-                <div class="li">facsimile transmission;</div>
-              </li>
-              <li class="level1">
-                <div class="li">telephone;</div>
-              </li>
-              <li class="level1">
-                <div class="li">post;</div>
-              </li>
-              <li class="level1">
-                <div class="li">commercial courier service;</div>
-              </li>
-              <li class="level1">
-                <div class="li">air mail;</div>
-              </li>
-              <li class="level1">
-                <div class="li">or Lykke&rsquo;s Website/Live Chat.</div>
-              </li>
-            </ul>
-            <p>The methods of communication specified in this paragraph are also considered a Written Notice.</p>
-            <p>Any communications sent to the customer (documents, notices, confirmations, statements etc.) are deemed received:</p>
-            <p>a) If sent by email, within one hour after emailing it;</p>
-            <p>b) If sent by Lykke&rsquo;s online system internal mail, immediately after sending it;</p>
-            <p>c) If sent by facsimile transmission, upon receipt by the sender of a transmission report from its facsimile machine confirming receipt of the message by recipient&rsquo;s facsimile machine during the Business Hours at its destination.</p>
-            <p>d) If sent by telephone, once the telephone conversation has been finished;</p>
-            <p>e) If sent by post, seven calendar days after posting it;</p>
-            <p>f) If sent via commercial courier service, at the date of signing of the document on receipt of such notice;</p>
-            <p>g) If sent by air mail, eight Business Days after the date of their dispatch;</p>
-            <p>h) If posted on Lykke&rsquo;s Webpage, within one hour after it has been posted;</p>
-            <p>In order to communicate with the customer, Lykke will use the contact details provided by the customer whilst opening the Customer Account or as updated later on. Hence, the customer has an obligation to notify Lykke immediately of any change in the customer&rsquo;s contact details.</p>
-            <p>Faxed documents received by Lykke may be electronically scanned and reproduction of the scanned version shall constitute conclusive evidence of such faxed instructions.</p>
-          </div>
-          <h2 id="contact_us" class="sectionedit35">CONTACT US</h2>
-          <div class="level2">
-            <p>If you have any questions about this privacy policy, or Lykke collection and use of information, please contact us: support@lykkex.com.</p>
+                <div class="header_login__title">Leroy</div>
+              </a>
+            </div>
+
+            <!--TODO dropdown-->
+            <div class="dropdown__container">
+              <ul class="dropdown__nav">
+                <li>
+                  <a href="/Home/LogOut">Sign Out</a>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
+
+    </header>
+  </div>
+
+  <nav class="header_nav">
+    <div class="header_nav__inner">
+      <div class="container">
+        <ul class="header_nav__list nav_list">
+          <li class="nav_list__item">
+            <a href="/exchange">Exchange</a>
+          </li>
+          <li class="nav_list__item">
+            <a href="/community">Community</a>
+          </li>
+          <li class="nav_list__item">
+            <a href="/community">Company</a>
+          </li>
+          <li class="nav_list__item">
+            <a href="/b2b">B2B</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </section>
+  </nav>
 
-</article>
+  <nav class="site_nav">
+    <div class="site_nav__inner">
+      <div class="container">
+        <ul class="header_nav__list nav_list nav_list--alt">
+          <li class="nav_list__item">
+            <a href="lykkex_rulebook.html">LykkeX Rulebook</a>
+          </li>
+          <li class="nav_list__item nav_list__item--active">
+            <a href="term_conditions_colored_coins.html">Term of Issuance</a>
+          </li>
+          <li class="nav_list__item">
+            <a href="https://api.lykkex.com/swagger/ui/index#/" target="_blank">LykkeX API</a>
+          </li>
+          <li class="nav_list__item">
+            <a href="https://github.com/LykkeCity/" target="_blank">Github</a>
+          </li>
+          <li class="nav_list__item">
+            <a href="https://lykke.com/Whitepaper_LykkeExchange.pdf">White Paper</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<footer class="footer">
-  <div class="footer__bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-7 text-right pull-right">
-          <div class="clearfix">
-            <ul class="social social--footer_alt">
-              <li><a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i></a></li>
-              <li><a href="https://twitter.com/LykkeCity" target="_blank" class="social__item"><i class="icon icon--tw"></i></a></li>
-              <li><a href="http://instagram.com/lykkecity" target="_blank" class="social__item"><i class="icon icon--instagram"></i></a></li>
-              <li><a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item"><i class="icon icon--youtube"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/lykke" target="_blank" class="social__item"><i class="icon icon--linkedin-icn"></i></a></li>
-              <li><a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item"><i class="icon icon--reddit"></i></a></li>
-              <li><a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item"><i class="icon icon--telegram"></i></a></li>
-            </ul>
+  <article class="content">
+    <section class="section--padding section--lead">
+      <div class="container">
+        <div class="col-sm-8 automargin">
+          <div class="inline-edit text" data-page-id="20">
+            <h1 id="terms_of_use" class="sectionedit1 page-header">Terms of Use</h1>
+            <div class="level1">
+              <p>
+                <em>22 DECEMBER 2017</em>
+              </p>
+              <p>PLEASE READ THESE TERMS OF USE CAREFULLY. BY CLICKING TO ACCEPT, OR BY ACCESSING OR USING OUR SERVICES, YOU
+                AGREE TO BE BOUND BY THESE TERMS OF USE AND ALL TERMS INCORPORATED BY REFERENCE.</p>
+              <p>If you are accepting these terms on behalf of an entity, you confirm that you are authorized on behalf of that
+                entity to agree to be bound by these Terms of Use and all terms incorporated by reference and to enter into
+                a legally binding Transaction (Transaction means the creation of the binding contract with counterparties).</p>
+            </div>
+            <h2 id="scope" class="sectionedit2">SCOPE</h2>
+            <div class="level2">
+              <p>These are the Terms of Use of Lykke Corp and all its affiliates or subsidiaries (hereinafter referred &ldquo;Lykke&rdquo;,
+                &rdquo;we&rdquo; or &ldquo;us&rdquo;).</p>
+              <p>
+                These Terms apply to any access and use of our Android and iOS mobile apps, our website at
+                <a class="urlextern" title="https://lykkex.com" href="https://lykkex.com/" rel="nofollow">https://lykkex.com</a>, our online services, and any of our services related to or utilizing any of the foregoing,
+                which we refer to in these Terms, collectively, as &ldquo;Services&rdquo, &ldquo;Lykke Services&rdquo; or
+                &ldquo;our Services&rdquo;.</p>
+            </div>
+            <h2 id="eligibility_and_agreement" class="sectionedit3">ELIGIBILITY AND AGREEMENT</h2>
+            <div class="level2">
+              <p>Participation in Lykke Services is open to all who want to trade in digital assets listed on Lykke. You must
+                ensure that you use and access Lykke Services only in your own name and for your own account.</p>
+              <p>If you are acting for a legal entity, you must ensure that you:</p>
+              <p>(a) use and access Lykke Services and the Information on behalf of the legal entity; and</p>
+              <p>(b) that you are authorised to enter into Transactions on behalf of the legal entity;</p>
+              <p>Lykke may, at any time and for any reason and without notice, terminate, suspend or change the username and/or
+                password of any Authorised Person.</p>
+              <p>To use the Lykke Services, you must provide a valid mobile phone number and e-mail address. The number is used
+                as part of the authentication process. As part of using the Lykke Services, you are agreeing to receive unencrypted
+                e-mails and SMS/text messages from us. Please note that while we do not charge you for SMS/text messages,
+                your mobile carrier’s standard messaging rates will apply. Failure to provide a valid mobile phone number
+                may result in restriction of your use of the Lykke Services. If Lykke suspects that your mobile number is
+                invalid or that you are using a VOIP service to circumvent the requirement to provide a valid mobile phone
+                number, Lykke may suspend, terminate or otherwise restrict your use of the Lykke Services.
+              </p>
+
+
+            </div>
+            <h2 id="anti_money_laundering" class="sectionedit4">ANTI-MONEY-LAUNDERING (AML) REGULATIONS</h2>
+            <div class="level2">
+              <p>You acknowledge and agree that Lykke must proceed all necessary checks according the applicable AML regulations,
+                in particular but not limited to Know Your Customer (KYC) checks before allowing you to use the Lykke Services.
+              </p>
+            </div>
+            <h2 id="registration_requirements" class="sectionedit5">REGISTRATION REQUIREMENTS</h2>
+            <div class="level2">
+              <p>The Lykke Services are for the use only of the registered account holder. You agree that the information you
+                provide to Lykke during the account creation and any subsequent identity verification processes is accurate
+                and complete, and will be updated as necessary to keep it so. If you are under 18 years of age, you are not
+                authorized to use the Lykke Services.</p>
+              <p>It is on the sole discretion of Lykke whether it will approve the opening of accounts. Additionally, Lykke
+                reserves the right to temporarily or permanently suspend accounts, including where required or recommended
+                by applicable governmental, regulatory or law enforcement requirements or where you fail to provide sufficient
+                information to verify your identity.
+              </p>
+
+            </div>
+            <h2 id="the_lykke_services" class="sectionedit6">THE LYKKE SERVICES</h2>
+            <div class="level2">
+              <p>Lykke is a provider of an electronic wallet service (Lykke Wallet). This Wallet can be accessed by the use
+                of the Lykke app. The purpose of this electronic Wallet is trading in and storing of digital assets. The
+                assets being traded and stored in the Lykke Wallet are accepted to be listed on Lykke trading venues.
+              </p>
+              <p>Within the Lykke app the user can buy or sell digital assets by using a national currency or the digital currencies
+                bitcoin (BTC) and ether (ETH) as payment option for buying and selling.
+              </p>
+
+            </div>
+            <h2 id="your_responsibilities_regarding_the_use_of_the_services" class="sectionedit7">YOUR RESPONSIBILITIES REGARDING THE USE OF THE SERVICES</h2>
+            <div class="level2">
+              <p>You are responsible for ensuring that your personal information in your account profile is updated and correct,
+                including your email address and mobile phone number, as well as the KYC data provided. You are also responsible
+                for maintaining adequate security, control and confidentiality of your device access, your account information,
+                including any personal identification numbers (PINs), passwords, 12-word-backup/restore-key, API keys or
+                other codes associated with your account and any activity occurring within that account. The loss or compromise
+                of this information may result in unauthorized access of your account, which may result in loss or theft
+                of any securities, derivatives and financial instruments held in your account. </p>
+              <p>If you believe your account has been compromised, or you need to report a security incident, or you have experienced
+                any operational problems, or have a security concern, please contact us immediately at support@lykke.com
+                describing the issue at hand as thoroughly as possible including the date, type of problem and part of the
+                Lykke site or Lykke Services where you experienced that problem. You are responsible for (i) immediately
+                notifying us of any unauthorized use of your password or account or any other breach of security, and (ii)
+                ensuring that you log out from your account at the end of each session when accessing the Lykke Services</p>
+              <p>We have no responsibility for any loss that you suffer as a result of failing to comply with this section or
+                failure to follow or act on any notices or alerts that we may send to you.
+              </p>
+            </div>
+            <h2 id="avialability_of_services" class="sectionedit8">AVAILABILITY OF SERVICES
+            </h2>
+            <div class="level2">
+              <p>Lykke will provide a wallet on a mobile application, a web application, communication tools and an API interface.
+                You will provide the requirements to use these instruments. Lykke is not liable for the functionality of
+                any other systems than the ones which it provides.</p>
+              <p>Subject to these Terms, Lykke shall use reasonable efforts to make available, operate and maintain the Lykke
+                Services during the term of these Terms and to permit you to access and use the Lykke Services in accordance
+                with these Terms. Lykke shall use all reasonable efforts to promptly notify you of any difficulties experienced
+                by us or other participants with respect to their access to or the use of the Lykke Services, but only to
+                the extent that Lykke is aware of such difficulties and reasonably determines that they are material to your
+                access and use of the Lykke Services. Similarly, you shall notify Lykke the soonest possible in case you
+                become aware of any material technical failures of or difficulties with the Lykke Services or upon becoming
+                aware of any material breach (or any event which, by giving notice and/or the lapse of time, would constitute
+                a material breach) of these Terms.</p>
+              <p>Our Services may evolve over time. This means we may apply changes, replace, or discontinue (temporarily or
+                permanently) our Services at any time for any reasonable cause with two days’ notice or without notice in
+                case of a Force Majeure. In this case, you may be prevented from accessing or using our Services. If, in
+                our sole discretion, we decide to permanently discontinue our Services, we will provide you with a notice
+                via our website and via e-mail.
+              </p>
+
+            </div>
+            <h2 id="force_majeure" class="sectionedit9">FORCE MAJEURE</h2>
+            <div class="level2">
+              <p>A Force Majeure Event includes without limitation each of the following:
+              </p>
+              <p>a) Government actions, the outbreak of war or hostilities, the threat of war, acts of terrorism, national emergency,
+                riot, civil disturbance, sabotage, requisition, or any other international calamity, economic or political
+                crisis;
+              </p>
+              <p>b) Act of God, earthquake, tsunami, hurricane, typhoon, accident, storm, flood, fire, epidemic or other natural
+                disaster;
+              </p>
+              <p>c) Labour disputes and lock-out;
+              </p>
+              <p>f) Breakdown, failure or malfunction of any electronic, network and communication lines (not due to the fault
+                of Lykke);
+              </p>
+              <p>g) Any event, act or circumstances not reasonably within Lykke’s control and the effect of that event(s) is
+                such that Lykke is not in a position to take any reasonable action to cure the default.
+              </p>
+            </div>
+            <h2 id="deposit_trading_and_withdrawal" class="sectionedit10">DEPOSIT, TRADING AND WITHDRAWAL</h2>
+            <div class="level2">
+              <p>In the event that you are accepted by Lykke as its participant, Lykke will open a Client Account for you, which
+                will be activated upon your deposit of funds.
+              </p>
+              <p>You may deposit funds into your Client Account at any time during the duration of contractual relationship
+                established by these Terms. Funds as means of payment for securities, derivatives and financial instruments
+                will be accepted via bank transfer, debit/credit card (MasterCard, Visa, etc.), digital currency transfer
+                (BTC, ETH, etc.) or any other method of electronic money transfer (where the originator is you) acceptable
+                by Lykke from time to time. Lykke will not accept third party or anonymous payments in favour of your account.
+              </p>
+              <p>To buy or sell digital assets with the Lykke Wallet, simply click on the price button at the so called “Exchange”
+                tab of our App. You will be taken through a process that specifies and confirms the buy or sell order.
+              </p>
+              <p>Lykke's settlement process is based on public blockchains operated by a decentralized network of independent
+                third parties. You acknowledge, agree and accept that a transaction on Lykke may not be completed, or may
+                be substantially delayed, by the network.
+              </p>
+              <p>Lykke will perform withdrawals of your funds, upon an application for withdrawal made via Lykke Wallet. Upon
+                Lykke receiving an instruction from you to withdraw funds from your Account, Lykke shall pay the said amount
+                within five Business Days, if the following requirements are met:
+              </p>
+              <p>a) The withdrawal instruction includes all necessary information;
+              </p>
+              <p>b) The instruction is to make a bank transfer to your bank account or digital currency to your blockchain address;
+                and
+              </p>
+              <p>c) At the moment of payment, your Client Account balance exceeds or is equal to the amount specified in the
+                withdrawal instruction including all payment charges.
+              </p>
+              <p>Withdrawals will only be executed by crediting your personal bank account. Lykke will not to effect withdrawals
+                by transferring the funds to any other third party or to an anonymous account.
+              </p>
+              <p>Lykke reserves the right to decline a withdrawal request when you ask for a specific transfer method and Lykke
+                has the right to suggest an alternative.
+              </p>
+              <p>All payment and transfer charges will be borne by you and Lykke is entitled to debit your Client Account for
+                these charges.
+              </p>
+              <p>If you make a payment by bank transfer, by credit card or any other method of electronic money transfer, Lykke
+                shall credit your Client Account with the relevant amount within one Business Day after the amount is credited
+                to the bank account of Lykke.
+              </p>
+            </div>
+            <h2 id="finality_and_irrevocability" class="sectionedit11">FINALITY AND IRREVOCABILITY</h2>
+            <div class="level2">
+              <p>Any transaction is only final when settled on the blockchain.</p>
+              <p>Trades can be revoked by either you or Lykke unless commitment transactions are signed and sent to the blockchain.</p>
+            </div>
+            <h2 id="canselation" class="sectionedit12">CANCELLATION</h2>
+            <div class="level2">
+              <p>Lykke shall, in its discretion, elect to avoid any transaction rendering the transaction void ab initio where:
+              </p>
+              <p>(a) your admission as participant has been suspended by Lykke;
+              </p>
+              <p>(b) the listing of the assets in respect of which a transaction is instructed has been suspended;
+              </p>
+              <p>(c) you are in Default (see section 18);
+              </p>
+              <p>(d) Lykke determines at its discretion that incomplete, or conflicting details have been submitted by you,
+                or any third parties in relation to a transaction;
+              </p>
+              <p>(e) the transaction results or appears to result from a communication or information technology error or problem
+                or to be a mistrade;
+              </p>
+              <p>(f) the transaction is or appears in the sole discretion of Lykke to be tainted by or connected with fraud,
+                illegality, insider dealing, market abuse, money laundering or any other breach of applicable laws and regulations
+                or contractual arrangements;
+              </p>
+              <p>(g) the transaction is or appears to be a result of an Event of Force Majeure;
+              </p>
+              <p>(h) the transaction is one which any governmental authority, requires or requests that Lykke treat as void
+                and Lykke considers, in its discretion, that compliance with such a request would be appropriate.
+              </p>
+              <p>Lykke shall not incur any liability as a result of losses sustained by you by reason of such cancellation.
+              </p>
+            </div>
+            <h2 id="risks_and_price_volatility" class="sectionedit13">RISKS AND PRICE VOLATILITY</h2>
+            <div class="level2">
+              <p>You understand and accept the risks in connection with trading securities, derivatives and financial instruments
+                on Lykke and using the Services as set forth above and hereinafter. In particular, but not limited to, you
+                understand the inherent risks listed hereinafter: </p>
+              <p>a) Risk of software weaknesses: You understand and accept that the underlying software application and software
+                platform (i.e. the Bitcoin and Ethereum blockchain) is still in an early development stage and unproven,
+                why there is no warranty that the Services will be uninterrupted or error- free and why there is an inherent
+                risk that the software could contain weaknesses, vulnerabilities or bugs causing, inter alia, the complete
+                loss of funds. </p>
+              <p>b) Regulatory risk: You understand and accept that the blockchain technology allows new forms of interaction
+                and that it is possible that certain jurisdictions will apply existing regulations on, or introduce new regulations
+                addressing, blockchain technology based applications, which may be contrary to the current setup of Lykke
+                and which may, inter alia, result in substantial modifications of the Lykke Services, including its termination.
+              </p>
+              <p>c) Risk of loss of private key: Lykke can only be accessed by using the wallet with a combination of your account
+                information (address), private key and password. The private key is encrypted with a password. You understand
+                and accept that if your private key file and password respectively got lost or stolen, the obtained products
+                associated with your account (address) or password will be unrecoverable and will be permanently lost.
+              </p>
+              <p>d) Risk of theft: You understand and accept that the underlying software application and software platform
+                (i.e. the Bitcoin and Ethereum blockchain) may be exposed to attacks by hackers or other individuals that
+                could result in theft or loss of funds.
+              </p>
+              <p>e) Risk of mining attacks: You understands and accepts that, the blockchain used for the Lykke is susceptible
+                to mining attacks, including but not limited to double-spend attacks, majority mining power attacks, “selfish-mining”
+                attacks, and race condition attacks. Any successful attacks present a risk to the Lykke Services.
+              </p>
+              <p>Lykke cannot and does not guarantee that the transactions will be profitable. You acknowledge and agree that
+                the transactions may be highly volatile (i.e. high volatility may occur during important news events, economic
+                surprises, unusual social events etc.) and that buying and selling products involves the risk of acquiring
+                rights against an issuer who might not be creditworthy.
+              </p>
+            </div>
+            <h2 id="public_and_private_key_custody" class="sectionedit14">PUBLIC AND PRIVATE KEY, CUSTODY</h2>
+            <div class="level2">
+              <p>When you create an account, the Services generate and store an encrypted digital private and public key pair
+                that you may use to send buy or sell orders. The public key generated by the Services works as your Lykke
+                Wallet address, and may be shared with the network and with others to complete the transactions. The private
+                key uniquely matches the Lykke Wallet address and must be used in conjunction with the Lykke Wallet address
+                to authorize the transfer of products from or to that Lykke Wallet address.
+              </p>
+              <p>The private key is stored on the secured area of your mobile phone encrypted by the password. The private key
+                is also stored as SHA-265 encrypted string at Lykke cloud infrastructure, so that you may use multiple devices
+                or recover Lykke Wallet on another device in case your device is lost or stolen. The private key is encrypted
+                by your password. The password may be temporarily stored encrypted by PIN/TouchID during the opened session.
+                When the session closes due to logging out, or inactivity timeout, or the application is reinstalled, or
+                by demand of the user, or by the action of the Lykke compliance service, you have to login again using your
+                password. The password cannot be recovered. In case you forget your password, you will need to wait until
+                the lock period is over in order to refund your funds. Please refer to the Privacy Policy for further details.
+              </p>
+              <p>The digital products stored in the private wallets in the Lykke Wallet are controlled by your private key.
+                The digital products stored in the trading wallet in the Lykke Wallet are controlled by the private key of
+                Lykke.
+              </p>
+            </div>
+            <h2 id="data_protection" class="sectionedit15">DATA PROTECTION</h2>
+            <div class="level2">
+              <p>The information provided pursuant to these Terms will be used by Lykke and/or any of its group undertakings,
+                (together with other Lykke Companies, the “Group”) for the purposes of providing you with digital products,
+                services and data pursuant to these Terms and enabling the Group to perform its business activities.</p>
+              <p>You acknowledge and agree that any entity within the Group may disclose your data, including Personal Data
+                and Sensitive Personal Data as defined under the Swiss Federal Data Protection Act (“Participant Data”) to
+                organisations within and outside of the Group for the purpose of providing digital assets, services and data
+                to you, and performing its business activities and any other activities.
+              </p>
+              <p>You explicitly consent to the export of your data to a location outside your country of domicile and to third
+                parties outside the Group.</p>
+            </div>
+            <h2 id="prohibited_activities" class="sectionedit16">PROHIBITED ACTIVITIES</h2>
+            <div class="level2">
+              <p>You agree that you will not use the Lykke Services to perform any type or sort of illegal activity or to take
+                any action that negatively affects the performances of the Lykke Services. You may not engage via the Services
+                in any of the following activities, nor help a third party in any such activity to:
+              </p>
+              <p>1) attempt to gain unauthorized access to our Services or another user’s account,
+              </p>
+              <p>2) make any attempt to bypass or circumvent any security features,
+              </p>
+              <p>3) violate any law, statute, ordinance, or regulation,
+              </p>
+              <p>4) reproduce, duplicate, copy, sell or resell our Services for any purpose except as authorized in these Terms,
+              </p>
+              <p>5) engage in any activity that is abusive or interferes with or disrupts our Services.
+              </p>
+              <p>If you are blocked by Lykke from accessing the Lykke Services, you agree not to implement any measures to circumvent
+                such blocking. Use of our Services in connection with any transaction involving illegal products or services
+                is prohibited. Lykke compliance service implements regular checks on the traces of transactions to discourage
+                the use of funds of dubious origin, including Ponzi schemes, Tor internet, mixers, etc. Lykke reserves the
+                right to temporarily or permanently suspend your account or otherwise restrict your use of the Lykke Services
+                if any violation of this section occurs. Additionally, in case of a participant’s violation, Lykke reserves
+                its legal rights.
+              </p>
+            </div>
+            <h2 id="defoult" class="sectionedit17">DEFAULT</h2>
+            <div class="level2">
+              <p>Each of the following constitutes an “Event of Default”:
+              </p>
+              <p>a) Your failure to perform any obligation due to Lykke;
+              </p>
+              <p>b) Where any representation or warranty made by you is or becomes untrue;
+              </p>
+              <p>c) You are unable to pay your debts (if any arise) when they fall due;
+              </p>
+              <p>d) Your death (if the participant is an individual) or you are declared absent or become of unsound mind;
+              </p>
+              <p>e) Any other circumstance where Lykke reasonably believes that it is necessary or desirable to take any action
+                set out in the below paragraph;
+              </p>
+              <p>f) You are performing a prohibited activity as specified in section 16, you involve Lykke in any type of fraud
+                or illegality and if Lykke suspects that you are engaged into money laundering activities or terrorist financing
+                or other criminal activities;
+              </p>
+              <p>g) Commencement of proceedings or investigations against you by an governmental authority, including but not
+                limited to the request for an action set out in the below paragraph by a competent governmental authority
+                or body or court;
+              </p>
+              <p>h) In cases of material violation by you of the requirements established by any applicable laws, such materiality
+                determined in good faith by Lykke;
+              </p>
+              <p>i) any other situation where it would not be in the best interest of Lykke that you continue to be a participant.
+              </p>
+              <p>If an Event of Default occurs, Lykke may at its absolute discretion, at any time and without prior notice,
+                take one or more of the following actions:
+              </p>
+              <p>a) Terminate these Terms without notice;
+              </p>
+              <p>b) Debit your account(s) for the amounts which are due to Lykke (if any);
+              </p>
+              <p>c) Close any or all of your accounts held with Lykke;
+              </p>
+              <p>d) Combine your accounts, consolidate the balances in such participant accounts and to set off those balances;
+              </p>
+              <p>e) Refuse to open new accounts for you.
+              </p>
+
+
+            </div>
+            <h2 id="confidentiality" class="sectionedit18">CONFIDENTIALITY
+            </h2>
+            <div class="level2">
+              <p>Each of Lykke and you hereto acknowledge and agree that the other party will receive or have access to Confidential
+                Information.
+              </p>
+              <p>You and Lykke undertake in respect of Confidential Information of which they are the recipient:
+              </p>
+              <p>a) to treat such information as confidential;
+              </p>
+              <p>b) not, without the disclosing party’s prior written consent, which is not to be unreasonably withheld, to
+                communicate or disclose any part of such information to any person except to:
+              </p>
+              <ul>
+                <li class="level1">
+                  <div class="li">those of its Representatives, on a need to know basis who are directly involved in using or providing or
+                    facilitating the provision or use of the Services; or</div>
+                </li>
+                <li class="level1">
+                  <div class="li">the recipient&rsquo;s auditors, professional advisors and any other persons or bodies having a legal right
+                    or duty to have access to, or knowledge of, the Confidential Information in connection with the business
+                    of the recipient;</div>
+                </li>
+              </ul>
+              <p>c) to ensure that all recipients mentioned in paragraph (b)(i) above are made aware, prior to disclosure, of
+                the confidential nature of the Confidential Information and that they owe a duty of confidence to the disclosing
+                party and to ensure that such recipients comply with this paragraph (Confidentiality); and
+              </p>
+              <p>d) not to use or circulate such information within its own organisation except to the extent necessary for
+                the purposes of, and in compliance with, the restrictions in this paragraph.
+              </p>
+              <p>The obligations in this paragraph will not apply to any Confidential Information which is:
+              </p>
+              <p>a) in the recipient’s possession (with full right to disclose) before receiving it; or
+              </p>
+              <p>b) becomes public knowledge other than by breach of this paragraph; or
+              </p>
+              <p>c) independently developed by the recipient without access to or use of the Confidential Information; or
+              </p>
+              <p>d) independently developed by the recipient without access to or use of the Confidential Information; or
+              </p>
+              <p>e) trade data and which has to be disclosed to governmental authorities according to applicable laws, or
+
+              </p>
+              <p>f) it is considered as publicly available Market Data.
+              </p>
+
+              <p>Either party may disclose any Confidential Information (including all or any part of these Terms) if obliged
+                to do so in order to comply with applicable laws, including following the request from any competent court,
+                regulator or similar governmental authority. To the extent it is legally permissible to do so, such party
+                will promptly notify the other party in writing of such obligation on request.
+              </p>
+              <p>Upon termination of these Terms, each of you and Lykke will, within a reasonable period of time thereafter,
+                return all Confidential Information received from the other party and copies made thereof by the receiving
+                party, or certify in writing that, to the best of its knowledge and belief, all such Confidential Information
+                has been destroyed; provided, however, that each party may retain an archival copy of the disclosing party’s
+                Confidential Information to be used only in the event of a dispute regarding these Terms or as may be required
+                in connection with legal or regulatory matters involving these Terms.
+              </p>
+            </div>
+            <h2 id="indemnification" class="sectionedit19">INDEMNIFICATION</h2>
+            <div class="level2">
+              <p>You agree to indemnify, defend and hold Lykke, its employees, agents, consultants, subsidiaries, partners,
+                affiliates, and licensors, harmless against any and all claims, costs, losses, damages, liabilities, judgments
+                and expenses (including reasonable fees of attorneys and other professionals) arising from or in any way
+                related to your use of our Services, your violation of these Terms, or your violation of any rights of any
+                other person or entity.
+              </p>
+
+
+
+            </div>
+            <h2 id="limitation_of_liability" class="sectionedit20">LIMITATION OF LIABILITY
+            </h2>
+            <div class="level2">
+              <p>Lykke is liable to you for direct loss caused by defective performance of a contract where the wilful intent
+                or negligence is attributable to Lykke.
+              </p>
+              <p>Lykke shall assume no liability for any further claims, e.g. relating to compensation for indirect or consequential
+                loss, lost profit or loss of earnings, unrealised savings or additional expense incurred, regardless of the
+                legal grounds.
+              </p>
+              <p>You are fully aware that the access to and the use of the Lykke Services through the Internet, the wallet and
+                from abroad might violate foreign laws applicable to you. You undertake to inform yourself and to assume
+                sole liability for any risks relating to such foreign legislation. Any responsibility of Lykke regarding
+                the possible infringement of foreign laws in connection with your use of the Services from abroad is expressly
+                and completely excluded.
+              </p>
+              <p>You shall bear any losses arising as a result of orders that are not properly legible or as a result of forged
+                or unauthorised orders, except in cases where Lykke is at fault. Responsibility for the authenticity, accuracy
+                and completeness of orders and data transmitted shall – expect in cases where Lykke is at fault – rest solely
+                with the you, even when Lykke does not receive these orders/data directly from the you, but through the third
+                parties.
+              </p>
+              <p>Lykke shall assume no liability for losses if, for reasons for which Lykke cannot be held responsible, Lykke
+                has been prevented from performing the transaction properly or on time, for example as a result of force
+                Force Majeure or measures, orders and/or decrees issued by domestic or foreign governmental authorities.
+              </p>
+              <p>In particular, Lykke shall assume no liability for actions (e.g. declarations of Default), failure to take
+                action or any suspension or restriction of services by any element within the blockchain. Furthermore, Lykke
+                shall assume no liability for the consequences of official directives with regard to any means of payments
+                allowed for the Lykke Wallet.
+              </p>
+              <p>Lykke shall not be liable for the conduct of third parties that it mandates, provided it has exercised due
+                diligence when choosing and instructing them.
+              </p>
+              <p>If you have as a result of wilful intent or negligence, e.g. breach of your contractual obligations, contributed
+                to causing and/or aggravating a loss, the extent to which Lykke and you must bear the loss shall be determined
+                in accordance with the principles of contributory negligence. You acknowledge that you have an obligation
+                to prevent and reduce loss.
+              </p>
+            </div>
+            <h2 id="termination" class="sectionedit21">TERMINATION</h2>
+            <div class="level2">
+              <p>The Services by Lykke will be terminated on thirty days' notice by the user or by Lykke, effective at the end
+                of a month. Notice of termination must be served in writing by registered letter
+              </p>
+              <p>By deleting the app and selling his coins the user closes his user account.
+              </p>
+              <p>Lykke reserves the right to close an account without prior notice immediately on the grounds of misusage particularly
+                violations of the Terms of Use or any applicable law.
+              </p>
+            </div>
+            <h2 id="complaints_and_disputes" class="sectionedit22">COMPLAINTS AND DISPUTES</h2>
+            <div class="level2">
+              <p>In the event that an alleged breach, controversy, claim, dispute or difference (a Dispute) arises between you
+                and Lykke out of or in connection with these Terms (including but not limited to the validity, performance,
+                breach or termination thereof), the parties shall seek to resolve the matter by negotiation by referring
+                the matter first to:
+              </p>
+              <p>a) any member of your executive management in case of legal persons, or you personally if you are acting as
+                a natural person
+              </p>
+              <p>In the case of Lykke, to the Lykke Customer Support Department.
+              </p>
+              <p>If you wish to report an error or a Dispute, you must send an email to Lykke’s Customer Support Department
+                at support@lykke.com.
+              </p>
+              <p>The Following information will need to be included:
+              </p>
+              <p>a) your name and surname;
+              </p>
+              <p>b) Customer Account number (or other recognition details);
+              </p>
+              <p>c) Detailed enquiry description;
+              </p>
+              <p>e) The date and time that the issue arose.
+              </p>
+              <p>If you receive a response from the Customer Support Department but deems that the matter needs to be addressed
+                further, you may ask the Customer Department to forward it to the Compliance Department or contact directly
+                the Compliance Department at compliance@lykke.com. Both the Customer Support Department and the Compliance
+                Department shall:
+              </p>
+              <ul>
+                <li class="level1">
+                  <div class="li">send an initial email confirming the receipt of your complaint,
+                  </div>
+                </li>
+
+                <li class="level1">
+                  <div class="li">send an official response to you within 14 Business Days respectively;
+                  </div>
+                </li>
+
+                <li class="level1">
+                  <div class="li">try to resolve the matter as soon as reasonably possible;
+                  </div>
+                </li>
+
+                <li class="level1">
+                  <div class="li">inform you of the outcome.
+                  </div>
+                </li>
+              </ul>
+
+              <p>Additionally, you must inform Lykke about any trading error within 24 hours from the error time, otherwise
+                Lykke will not be able to investigate the error. Any trading error coming from Lykke will be amended where
+                possible. If a situation arises which is not expressly covered by these Terms, the parties agree to try to
+                resolve the matter on the basis of good faith and fairness and by taking such action as is consistent with
+                market practice.
+              </p>
+              <p>Your right to take legal action remains unaffected by the existence or use of any complaints procedures referred
+                to above.
+              </p>
+            </div>
+            <h2 id="dispute_resolution_place_of_jurisdiction_and_governing_law" class="sectionedit23">DISPUTE RESOLUTION, PLACE OF JURISDICTION AND GOVERNING LAW
+            </h2>
+            <div class="level2">
+              <p>These Terms and the contractual documents mentioned in section 2 shall exclusively be governed by and construed
+                in accordance with the substantive laws of Switzerland, excluding the Swiss International Private Law Act,
+                as amended from time to time.
+              </p>
+              <p>In the event that the parties are unable to resolve a Dispute in accordance with section 22, then the parties
+                hereby irrevocably submit such Dispute to the exclusive jurisdiction of the courts of Zurich (venue being
+                Zurich 1), Switzerland.
+              </p>
+            </div>
+            <h2 id="record_keeping" class="sectionedit24">RECORD KEEPING
+            </h2>
+            <div class="level2">
+              <p>Lykke will keep records containing your personal data, trading information, account opening documents, communications
+                and anything else which relates to you in accordance with applicable laws, but at least for five years after
+                termination of these Terms.
+              </p>
+            </div>
+            <h2 id="taxation" class="sectionedit25">TAXATION</h2>
+            <div class="level2">
+              <p>You bear the sole responsibility to determine if your use of the Services, and/or any other action or transaction
+                related to your digital assets on Lykke have tax implications for you.
+              </p>
+              <p>By using the Services, and to the extent permitted by law, you agree not to hold any third party (including)
+                liable for any tax liability associated with or arising from the operation of the Services or any other action
+                or transaction related to Lykke.
+              </p>
+            </div>
+            <h2 id="fees" class="sectionedit26">FEES</h2>
+            <div class="level2">
+              <p>The price for the Lykke Services are published on the website
+                <a class="urlextern" title="https://lykkex.com" href="https://lykkex.com/" rel="nofollow">https://lykkex.com</a>.
+              </p>
+            </div>
+            <h2 id="assignment_entire_agreement" class="sectionedit27">ASSIGNMENT / ENTIRE AGREEMENT</h2>
+            <div class="level2">
+              <p>Lykke may assign these Terms to its parent company, affiliate or subsidiary, or in connection with a merger,
+                consolidation, or sale or other disposition of all or substantially all of its assets. These Terms, together
+                with any other agreements that apply to you constitute the entire and exclusive agreement between us and
+                you regarding its subject matter, and supersede and replace any previous or contemporaneous written or oral
+                contract, warranty, representation or understanding regarding its subject matter.
+              </p>
+            </div>
+            <h2 id="severability" class="sectionedit28">SEVERABILITY
+            </h2>
+            <div class="level2">
+              <p>If for any reason a court of competent jurisdiction finds any provision of these Terms invalid or unenforceable
+                or illegal or contravene any rule, regulation or law of any Market or regulator, that part will be deemed
+                to have been excluded from these Terms from the beginning, and these Terms will be interpreted and enforced
+                as though the provision had never been included and the legality or enforceability of the remaining provisions
+                of the Terms or the legality, validity or enforceability of this provision in accordance with the law and/or
+                regulation of any other jurisdiction, shall not be affected but should remain in full force and effect.
+              </p>
+            </div>
+            <h2 id="changes_to_these_terms" class="sectionedit29">CHANGES TO THESE TERMS</h2>
+            <div class="level2">
+              <p>The present Terms may change from time to time, including but not limited to cases of changes in our Services,
+                in technology, in regulation and for any other case that Lykke deems as appropriate to take measures. In
+                case of a change, we will provide you notice of such change by e-mail and by posting the updated Terms on
+                our website and changing the “Last Updated” date above. Any amended Terms shall become effective not earlier
+                than 14 days after they are posted and shall apply prospectively to the use of the Services upon effectiveness
+                of such changes. However, in case the changes address new functions of Lykke Services or they are made for
+                any legal reasons, they shall be of immediate effect. Upon effectiveness of the change as described above,
+                the change of Terms shall be considered as accepted by you in case you continue using the Services. Therefore,
+                in case you do not agree to any amended Term, you must immediately cease using the Services.
+              </p>
+            </div>
+            <h2 id="communications_and_written_notices" class="sectionedit30">COMMUNICATIONS AND WRITTEN NOTICES</h2>
+            <div class="level2">
+              <p>Unless the contrary is specifically provided in these Terms, any notice, instruction, request or other communication
+                to be given to Lykke by the participant under these Terms shall be in writing and shall be sent to Lykke’s
+                address below (or to any other address which Lykke may from time to time specify to the participant for this
+                purpose) by email, post if posted in , or airmail if posted outside , or commercial courier service and shall
+                be deemed delivered only when actually received by Lykke at:
+              </p>
+              <p>Any communications sent to the participant (documents, notices, confirmations, statements etc.) are deemed
+                received:
+              </p>
+              <p>a) If sent by email, within one hour after emailing it;
+              </p>
+              <p>b) If sent by Lykke’s online system internal mail or support chat, immediately after sending it;
+              </p>
+              <p>c) If sent by telephone, once the telephone conversation has been finished;
+              </p>
+              <p>d) If sent by post, seven calendar days after posting it;
+              </p>
+              <p>e) If sent via commercial courier service, at the date of signing of the document on receipt of such notice;
+              </p>
+              <p>f) If sent by air mail, eight Business Days after the date of their dispatch;
+              </p>
+              <p>g) If posted on Lykke’s Webpage, within one hour after it has been posted;
+              </p>
+              <p>In order to communicate with the participant, Lykke will use the contact details provided by the participant
+                whilst opening the Customer Account or as updated later on. Hence, the participant has an obligation to notify
+                Lykke immediately of any change in the participant’s contact details.
+              </p>
+            </div>
+            <h2 id="contact_us" class="sectionedit35">CONTACT US</h2>
+            <div class="level2">
+              <p>If you have any questions about this privacy policy, or Lykke collection and use of information, please contact
+                us:
+                <a class="urlextern" title="support@lykke.com" href="support@lykke.com" rel="nofollow">support@lykke.com</a>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-xs-12 col-md-5 text-left">
-          <div class="footer__copy">&copy; Lykke 2017. All rights reserved</div>
+      </div>
+    </section>
+
+  </article>
+
+  <footer class="footer">
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-7 text-right pull-right">
+            <div class="clearfix">
+              <ul class="social social--footer_alt">
+                <li>
+                  <a href="https://www.facebook.com/groups/542506412568917/" target="_blank" class="social__item">
+                    <i class="icon icon--fb_simple"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/LykkeCity" target="_blank" class="social__item">
+                    <i class="icon icon--tw"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://instagram.com/lykkecity" target="_blank" class="social__item">
+                    <i class="icon icon--instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCmMYipGdKMF0kzfaE-PXsNQ" target="_blank" class="social__item">
+                    <i class="icon icon--youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/lykke" target="_blank" class="social__item">
+                    <i class="icon icon--linkedin-icn"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.reddit.com/r/lykke/" target="_blank" class="social__item">
+                    <i class="icon icon--reddit"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.co/TmjMYnQD7T" target="_blank" class="social__item">
+                    <i class="icon icon--telegram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-5 text-left">
+            <div class="footer__copy">&copy; Lykke 2017. All rights reserved</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="js/vendor/jquery.min.js"></script>
-<script src="js/vendor/bootstrap-custom.min.js"></script>
-<script src="js/vendor/fastclick.min.js"></script>
-<script src="js/vendor/jquery.inview.min.js"></script>
-<!-- build:js js/functions.js -->
-<script src="js/functions.js"></script>
-<!-- endbuild -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/bootstrap-custom.min.js"></script>
+  <script src="js/vendor/fastclick.min.js"></script>
+  <script src="js/vendor/jquery.inview.min.js"></script>
+  <!-- build:js js/functions.js -->
+  <script src="js/functions.js"></script>
+  <!-- endbuild -->
 
 </body>
+
 </html>
