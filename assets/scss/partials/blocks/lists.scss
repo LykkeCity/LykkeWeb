@@ -45,6 +45,10 @@
   &--check {
     @include rem(margin-bottom, 20px);
 
+    a {
+      font-weight: $fw-semi;
+    }
+
     li {
       position: relative;
       display: block;

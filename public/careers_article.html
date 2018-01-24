@@ -24,6 +24,10 @@
   <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
   <![endif]-->
 
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Full Stack Developer/Architect with focus on real-time analytics and trading systems" />
+  <meta property="og:description"   content="Backend  |  Full time  |  Remote" />
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -176,18 +180,20 @@
   </header>
 </div>
 
-<nav class="header_nav">
-  <div class="header_nav__inner">
-    <div class="container">
-      <ul class="header_nav__list nav_list">
-        <li class="nav_list__item"><a href="/exchange">Exchange</a></li>
-        <li class="nav_list__item"><a href="/community">Community</a></li>
-        <li class="nav_list__item"><a href="/community">Company</a></li>
-        <li class="nav_list__item"><a href="/b2b">B2B</a></li>
-      </ul>
+<div class="header_nav_container">
+  <nav class="header_nav">
+    <div class="header_nav__inner">
+      <div class="container">
+        <ul class="header_nav__list nav_list">
+          <li class="nav_list__item"><a href="/exchange">Exchange</a></li>
+          <li class="nav_list__item"><a href="/community">Community</a></li>
+          <li class="nav_list__item"><a href="/community">Company</a></li>
+          <li class="nav_list__item"><a href="/b2b">B2B</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
 <nav class="site_nav">
   <div class="site_nav__inner">
@@ -203,9 +209,9 @@
   </div>
 </nav>
 
-<article class="content page page_fees">
+<article class="content page page_careers_article">
   <section class="section section--padding">
-    <div class="container text">
+    <div class="container">
       <div class="row">
 
         <div class="relative hidden-xs">
@@ -214,108 +220,57 @@
           </a>
         </div>
 
-        <div class="col-sm-8 automargin">
-          <h1>Fees</h1>
-          <h2>Taker and Maker Relations</h2>
+        <div class="col-sm-8 col-lg-8 automargin">
+          <div class="page_careers__title">
+            <h1 class="h2 page__title">Full Stack Developer/Architect with focus on real-time analytics and trading systems</h1>
+            <h3 class="h4 page__subtitle">Backend  <span class="middot">&middot;</span>  Full time  <span class="middot">&middot;</span>  Remote</h3>
+          </div>
 
-          <p>When a new order is placed through the API, it can be filled immediately or placed in the order book, depending on the order price and amount you set.</p>
-          <p>In case your entire order is completed right away, you are recognized as a Taker. You will be charged in the amount of 0.19%.</p>
-          <p>If your order can not be filled with existing orders immediately, your order is placed in the order book. As soon it is matched, your order will be completed. In this case, you are a Maker and you will pay 0.10% fee. You can cancel the order that is in the order book until it is filled.</p>
-          <p>Although a combined scenario is possible, in which your new order is partially completed immediately, and partially placed in the order book. In this case, you are a taker for the fulfilled part and you pay a taker fee of 0.19%. Accordingly, for the remainder part of the order, you are a Maker and will be charged in amount of 0.10% once it is matched.</p>
-          <br>
+          <div class="text">
+            <h3>About Lykke</h3>
+            <p>Lykke is changing the world of financial markets. Blockchain technologies, stream analytics, HF trading, community centered finance (such as P2P lending), and crowdfunding are just some of the ways in which we are doing it.</p>
+            <p>We are looking for developers at all levels of experience who are ready to work with the most advanced system architectures in financial systems and community-based portals. </p>
 
-          <h3>Taker and Maker Fees</h3>
-          <p>Maker/Taker fees depends on the trading volume for each asset  pair for last 31 days. </p>
+            <h3>Levels </h3>
+            <ul>
+              <li>Senior (Full Stack Developers/Architects)</li>
+              <li>Expert (Full Stack Developer)</li>
+              <li>Junior (Developer)</li>
+            </ul>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <table class="table table--simple">
-                <tbody><tr>
-                  <th>Maker fee</th>
-                  <th>Taker fee</th>
-                  <th>Volume for 31&nbsp;days</th>
-                </tr>
-                <tr class="_current">
-                  <td>0.10%</td>
-                  <td>0.19%</td>
-                  <td>0.1% <span class="current_pin"></span></td>
-                </tr>
-                <tr>
-                  <td>0.09%</td>
-                  <td>0.18%</td>
-                  <td>> 1%</td>
-                </tr>
-                <tr>
-                  <td>0.08%</td>
-                  <td>0.17%</td>
-                  <td>> 2.5%</td>
-                </tr>
-                <tr>
-                  <td>0.07%</td>
-                  <td>0.16%</td>
-                  <td>> 5%</td>
-                </tr>
-                <tr>
-                  <td>0.06%</td>
-                  <td>0.15%</td>
-                  <td>> 10%</td>
-                </tr>
-                <tr>
-                  <td>0.05%</td>
-                  <td>0.14%</td>
-                  <td>> 20%</td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="col-lg-5 col-lg-offset-1">
-              <br>
-              <div class="fees_info">
-                <div class="fees_info__item">
-                  <p><strong>Exchange 30-day volume</strong></p>
-                  <div class="h2">474,795.95 BTC</div>
-                </div>
+            <h3>Ecosystem</h3>
 
-                <div class="fees_info__item">
-                  <p><strong>Your 30-day volume</strong></p>
-                  <div class="h2">474,795.95 BTC</div>
-                  <div class="hint">(>0.1%)</div>
-                </div>
+            <ul>
+              <li>High-frequency web-based streaming architecture for trading and big data analysis (low latency, high throughput, fault tolerance)</li>
+              <li>Complex event and stream processing</li>
+              <li>Stream-based real-time analytics</li>
+              <li>Real-time metrics</li>
+              <li>CQRS, event sourcing</li>
+              <li>Messaging patterns</li>
+              <li>Loose coupling, microservices</li>
+              <li>Elasticsearch</li>
+              <li>.NET Core</li>
+              <li>High-performance message broker (such as Kafka)</li>
+              <li>Stream processor (such as Storm, Flink, Amazon Kinesis, and so on)</li>
+              <li>NoSQL databases (such as MongoDB)</li>
+              <li>In-memory databases (such as Redis)</li>
+              <li>Docker</li>
+            </ul>
 
-                <div class="fees_info__item">
-                  <p><strong>You current fee rate</strong></p>
-                  <div class="h2">0.19%</div>
-                </div>
+            <a href="" class="btn btn--primary">Apply now</a>
+
+            <div class="article_footer">
+              <div class="social social--simple pull-right">
+                <!-- TODO URL-->
+                <a href="http://www.facebook.com/share.php?u=http://www.lykke.com/careers&title=Lykke Careers – Full Stack Developer/Architect with focus on real-time analytics and trading systems" target="_blank" class="social__item"><i class="icon icon--fb_simple"></i> Share</a>
+                <a href="http://twitter.com/intent/tweet?status=Lykke Careers – Full Stack Developer/Architect with focus on real-time analytics and trading systems+http://www.lykke.com/careers" target="_blank" class="social__item"><i class="icon icon--tw"></i> Tweet</a>
+              </div>
+
+              <div class="card__actions text-left">
+                <div class="action_text">Posted: Dec 12, 2017</div>
               </div>
             </div>
           </div>
-          <br><br>
-
-          <h3>Beta Testing Period Fees</h3>
-          <p>Currently the API is in the beta testing stage. It will be announced additionally when the beta testing period is finished. During the beta testing period Maker/Taker fees are zero.</p>
-
-          <br>
-          <br>
-
-          <h3>Special Discounted Fees for Betatesters</h3>
-          <p>Lykke also provides special discounts for Beta Testers during the first 31 days after the beta testing period is finished. Beta Tester is a client with at least one successful trade using Lykke API during the beta testing period.</p>
-
-          <p>During the first 31 days after the beta testing period the following fees will be applied for Beta Testers.</p>
-          <table class="table table--simple">
-            <tbody><tr>
-              <th>Maker fee</th>
-              <th class="text-left">Taker fee</th>
-            </tr>
-            <tr>
-              <td>0.05%</td>
-              <td class="text-left">0.14%</td>
-            </tr>
-            </tbody>
-          </table>
-          <br><br>
-
-          <h2>Throughput Limit</h2>
-          <p>Currently the API is in the beta testing stage. API throughput limit is 300 requests per minute for a single client.</p>
         </div>
 
       </div>
@@ -348,13 +303,42 @@
   </div>
 </footer>
 
+<div class="modal camera_modal fade" id="camera" tabindex="-1" role="dialog" aria-labelledby="cameraModalLabel">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i></button>
+
+  <div class="modal-body">
+
+    <div class="camera_stream">
+      <video class="camera_stream__video _camera_video"></video>
+      <div class="camera_stream__frame _camera_frame"></div>
+      <img class="camera_stream__snap _camera_snap">
+
+      <p class="camera_stream__message _camera_message"></p>
+
+      <a href="#" class="btn btn--circle camera_stream__shoot _take_photo" title="Take Photo"><i class="icon icon--photo"></i></a>
+
+      <div class="camera_stream__controls _camera_controls">
+        <a href="#" class="btn btn--flat camera_stream__delete _delete_photo" title="Reshoot">Reshoot</a>
+        <a href="#" class="btn camera_stream__delete _use_photo" title="Use Photo" data-dismiss="modal" aria-label="Close">Use photo</a>
+      </div>
+
+      <!-- Hidden canvas element. Used for taking snapshot of video. -->
+      <canvas></canvas>
+    </div>
+
+  </div>
+</div>
+
+
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap-custom.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/vendor/jquery.inview.min.js"></script>
 <!-- build:js js/functions.js -->
 <script src="js/functions.js"></script>
+<script src="js/camera.js"></script>
 <!-- endbuild -->
+
 
 </body>
 </html>

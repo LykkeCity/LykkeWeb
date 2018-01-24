@@ -1,0 +1,245 @@
+.page_careers_article {
+  .section--padding {
+    @include rem(padding, 82px 0);
+  }
+
+  .text {
+    h3, h2 {
+      @include rem(margin-bottom, 12px);
+    }
+
+    ul li:before {
+      color: #111;
+      top: -3px;
+
+      @include rem(margin-right, 18px);
+    }
+  }
+
+  .page_careers__title {
+    text-align: left;
+
+    .page__title {
+      text-align: left !important;
+    }
+
+    .page__subtitle {
+      text-align: left !important;
+      color: #8a96a1;
+
+      @include rem(margin-top, 10px);
+    }
+  }
+}
+
+.page_careers {
+  color: #111;
+
+  p {
+    color: #111;
+  }
+
+  h1.page__title {
+    @include rem(margin-bottom, 25px !important);
+
+    &.text-left {
+      text-align: left !important;
+    }
+
+    + h3 {
+      @include rem(margin-bottom, 10px !important);
+    }
+  }
+
+  .lead {
+    @include rem(margin-bottom, 35px !important);
+  }
+
+  .buttons {
+    @include rem(margin-bottom, 90px);
+
+    .btn--primary {
+      min-width: 245px;
+    }
+  }
+
+  &__image {
+    @include rem(margin, 90px -275px)
+  }
+
+  .page__header {
+    @include rem(margin-top, 90px);
+    @include rem(margin-bottom, 68px);
+
+    .page__title {
+      @include rem(margin-bottom, 10px !important);
+    }
+
+    .page__subtitle {
+      color: #8a96a1;
+      margin-bottom: 0 !important;
+
+      @include rem(font-size, 22px !important);
+    }
+  }
+
+  @media all and (max-width: $screen-landscape) {
+    &__image {
+      margin: 40px -30px;
+    }
+
+    .page__header {
+      margin: 40px 0;
+    }
+
+    .buttons {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.article_footer {
+  border-top: solid 1px #ebedef;
+
+  @include rem(margin-top, 60px);
+  @include rem(padding, 25px 0);
+
+  .social {
+    a {
+      color: #111;
+      font-weight: 600;
+
+      @include rem(font-size, 16px);
+    }
+
+    .icon {
+      @include rem(font-size, 16px);
+      @include rem(margin-right, 10px);
+    }
+  }
+}
+
+.about_item {
+  @include rem(margin-bottom, 62px);
+
+  &__icon {
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+
+    @include rem(margin-bottom, 20px);
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  &__title {
+    font-weight: $fw-semi;
+    line-height: 1.52;
+
+    @include rem(margin, 0 0 3px);
+    @include rem(font-size, 22px);
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    padding: 0;
+    margin-bottom: 40px;
+
+    &__icon {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media all and (max-width: $screen-mobile-old) {
+    text-align: center;
+    width: 340px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__icon {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.about_list {
+  @media all and (max-width: $screen-mobile-old) {
+    .col-xs-6 {
+      width: 100%;
+      float: none;
+    }
+  }
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #ebedef;
+  max-width: none;
+  width: 100%;
+}
+
+.careers_list {
+  border-top: 1px solid #ebedef;
+
+  @include rem(margin-bottom, 80px);
+}
+
+.careers_item {
+  border-bottom: 1px solid #ebedef;
+  display: table;
+  width: 100%;
+
+  a {
+    color: inherit;
+  }
+
+  @include rem(font-size, 18px);
+
+  &__info,
+  &__actions {
+    display: table-cell;
+    vertical-align: middle;
+
+    @include rem(padding, 20px 0);
+  }
+
+  &__info {
+    width: 80%;
+
+    @include rem(padding-right, 20px);
+  }
+
+  &__actions {
+    text-align: right;
+    white-space: nowrap;
+
+    a {
+      font-weight: $fw-semi;
+      color: $primary;
+
+      @include rem(padding, 20px 0);
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: $fw-semi;
+    line-height: 1.59;
+    color: #111;
+
+    @include rem(font-size, 22px);
+  }
+
+  &__desc {
+    color: $gray-dark;
+    line-height: 1.67;
+  }
+}

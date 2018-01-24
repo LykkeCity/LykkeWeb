@@ -1,4 +1,6 @@
 .text {
+  color: #111;
+
   @include rem(margin-bottom, 50px);
 
   .lead {
@@ -9,6 +11,10 @@
 
   ul, ol {
     @include rem(margin, 10px 0 40px);
+
+    li {
+      color: #111;
+    }
   }
 
   h2, h3, h4, h5 {
@@ -16,6 +22,7 @@
     @include rem(margin-top, 30px);
 
     text-align: left;
+    color: #111;
 
     &:first-child {
       margin-top: 0;
@@ -23,6 +30,8 @@
   }
 
   p, ul, ol {
+    color: #111;
+
     + h2, + h3, + h4, + h5 {
       @include rem(margin-top, 45px);
     }
@@ -30,6 +39,7 @@
 
   h1 {
     text-align: left;
+    color: #111;
 
     @include rem(margin-top, 50px);
 
@@ -285,4 +295,14 @@
       }
     }
   }
+}
+
+.page__header {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4 p {
+    color: #111;
+  }
+}
+
+.lead, .text .lead {
+  color: #111;
 }

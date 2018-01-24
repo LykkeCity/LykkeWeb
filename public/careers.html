@@ -24,6 +24,10 @@
   <script type="text/javascript" src="js/vendor/html5shiv.js"></script>
   <![endif]-->
 
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Full Stack Developer/Architect with focus on real-time analytics and trading systems" />
+  <meta property="og:description"   content="Backend  |  Full time  |  Remote" />
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -176,18 +180,20 @@
   </header>
 </div>
 
-<nav class="header_nav">
-  <div class="header_nav__inner">
-    <div class="container">
-      <ul class="header_nav__list nav_list">
-        <li class="nav_list__item"><a href="/exchange">Exchange</a></li>
-        <li class="nav_list__item"><a href="/community">Community</a></li>
-        <li class="nav_list__item"><a href="/community">Company</a></li>
-        <li class="nav_list__item"><a href="/b2b">B2B</a></li>
-      </ul>
+<div class="header_nav_container">
+  <nav class="header_nav">
+    <div class="header_nav__inner">
+      <div class="container">
+        <ul class="header_nav__list nav_list">
+          <li class="nav_list__item"><a href="/exchange">Exchange</a></li>
+          <li class="nav_list__item"><a href="/community">Community</a></li>
+          <li class="nav_list__item"><a href="/community">Company</a></li>
+          <li class="nav_list__item"><a href="/b2b">B2B</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 
 <nav class="site_nav">
   <div class="site_nav__inner">
@@ -203,119 +209,183 @@
   </div>
 </nav>
 
-<article class="content page page_fees">
+<article class="content page page_careers">
   <section class="section section--padding">
-    <div class="container text">
+    <div class="container">
       <div class="row">
 
-        <div class="relative hidden-xs">
-          <a href="" class="btn_back">
-            <img src="img/back_icn.svg" width="30" height="12" alt="back">
-          </a>
-        </div>
+        <div class="col-sm-8 col-lg-8 automargin">
+          <h1 class="h1 page__title text-left">Careers</h1>
+          <h3>Lykke is the best place to change the world!</h3>
 
-        <div class="col-sm-8 automargin">
-          <h1>Fees</h1>
-          <h2>Taker and Maker Relations</h2>
+          <p class="lead">At Lykke, we take our inspiration from ideas like crowdsourcing and decentralization. We believe that each staff member contributes to our success. But only by working together will we achieve our highest potential. Join our team and make a difference.</p>
 
-          <p>When a new order is placed through the API, it can be filled immediately or placed in the order book, depending on the order price and amount you set.</p>
-          <p>In case your entire order is completed right away, you are recognized as a Taker. You will be charged in the amount of 0.19%.</p>
-          <p>If your order can not be filled with existing orders immediately, your order is placed in the order book. As soon it is matched, your order will be completed. In this case, you are a Maker and you will pay 0.10% fee. You can cancel the order that is in the order book until it is filled.</p>
-          <p>Although a combined scenario is possible, in which your new order is partially completed immediately, and partially placed in the order book. In this case, you are a taker for the fulfilled part and you pay a taker fee of 0.19%. Accordingly, for the remainder part of the order, you are a Maker and will be charged in amount of 0.10% once it is matched.</p>
-          <br>
+          <div class="buttons">
+            <a href="#careers_list" class="btn btn--primary smooth_scroll">Search for a job now</a>
+            <a href="mailto:jobs@lykke.com" class="btn btn--flat">jobs@lykke.com</a>
+          </div>
 
-          <h3>Taker and Maker Fees</h3>
-          <p>Maker/Taker fees depends on the trading volume for each asset  pair for last 31 days. </p>
+          <div class="page_careers__image">
+            <img src="img/careers/team-switzerland.jpg" alt="team-switzerland" class="img-responsive">
+          </div>
 
-          <div class="row">
-            <div class="col-lg-6">
-              <table class="table table--simple">
-                <tbody><tr>
-                  <th>Maker fee</th>
-                  <th>Taker fee</th>
-                  <th>Volume for 31&nbsp;days</th>
-                </tr>
-                <tr class="_current">
-                  <td>0.10%</td>
-                  <td>0.19%</td>
-                  <td>0.1% <span class="current_pin"></span></td>
-                </tr>
-                <tr>
-                  <td>0.09%</td>
-                  <td>0.18%</td>
-                  <td>> 1%</td>
-                </tr>
-                <tr>
-                  <td>0.08%</td>
-                  <td>0.17%</td>
-                  <td>> 2.5%</td>
-                </tr>
-                <tr>
-                  <td>0.07%</td>
-                  <td>0.16%</td>
-                  <td>> 5%</td>
-                </tr>
-                <tr>
-                  <td>0.06%</td>
-                  <td>0.15%</td>
-                  <td>> 10%</td>
-                </tr>
-                <tr>
-                  <td>0.05%</td>
-                  <td>0.14%</td>
-                  <td>> 20%</td>
-                </tr>
-                </tbody>
-              </table>
+          <div class="page__header text-center">
+            <h2 class="h2 page__title">Benefits</h2>
+            <h4 class="h4 page__subtitle">Why you should choose Lykke</h4>
+          </div>
+
+          <div class="about_list">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="about_item">
+                  <div class="about_item__icon">
+                    <img src="img/careers/innovation_icn.svg" alt="community_icn" width="64" height="64">
+                  </div>
+                  <div class="about_item__title"><b>Spirit of innovation</b></div>
+                  <p>We love to rethink old assumptions, and we like to use the latest technologies to help us work as smartly as possible. We want to expose you you to a wide range of possibilities... and to have you do the same for us!</p>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="about_item">
+                  <div class="about_item__icon">
+                    <img src="img/careers/remote_icn.svg" alt="remote_icn" width="64" height="64">
+                  </div>
+                  <div class="about_item__title">
+                    <b>Remote work</b>
+                  </div>
+                  <p>You can work from any place in the world. The main performance measure is the result. </p>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-5 col-lg-offset-1">
-              <br>
-              <div class="fees_info">
-                <div class="fees_info__item">
-                  <p><strong>Exchange 30-day volume</strong></p>
-                  <div class="h2">474,795.95 BTC</div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="about_item">
+                  <div class="about_item__icon">
+                    <img src="img/careers/initiative_icn.svg" alt="initiative_icn" width="64" height="64">
+                  </div>
+                  <div class="about_item__title"><b>Encouraging initiatives</b></div>
+                  <p>We are always open to your ideas. At Lykke, we deal in dream projects.</p>
                 </div>
-
-                <div class="fees_info__item">
-                  <p><strong>Your 30-day volume</strong></p>
-                  <div class="h2">474,795.95 BTC</div>
-                  <div class="hint">(>0.1%)</div>
+              </div>
+              <div class="col-xs-6">
+                <div class="about_item">
+                  <div class="about_item__icon">
+                    <img src="img/careers/equality_icn.svg" alt="equality_icn" width="64" height="64">
+                  </div>
+                  <div class="about_item__title">
+                    <b>Equality</b>
+                  </div>
+                  <p>All the employees of our company are equal. We are free to express our point of view. All of us are heard. We listen to each other.</p>
                 </div>
-
-                <div class="fees_info__item">
-                  <p><strong>You current fee rate</strong></p>
-                  <div class="h2">0.19%</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="about_item">
+                  <div class="about_item__icon">
+                    <img src="img/careers/community_icn.svg" alt="community_icn" width="64" height="64">
+                  </div>
+                  <div class="about_item__title">
+                    <b>Community</b>
+                  </div>
+                  <p>Everyone in Lykke stands ready to assist you or give you advice. </p>
                 </div>
               </div>
             </div>
           </div>
-          <br><br>
+        </div>
+        <hr>
+        <div class="col-sm-8 col-lg-8 automargin" id="careers_list">
+          <div class="page__header text-center">
+            <h2 class="h2 page__title">Open positions</h2>
+            <h4 class="h4 page__subtitle">Here are our current job openings</h4>
+          </div>
 
-          <h3>Beta Testing Period Fees</h3>
-          <p>Currently the API is in the beta testing stage. It will be announced additionally when the beta testing period is finished. During the beta testing period Maker/Taker fees are zero.</p>
+          <div class="careers_list">
+            <div class="careers_item">
+              <div class="careers_item__info">
+                <div class="careers_item__title"><a href="">C# Developer</a></div>
+                <div class="careers_item__desc">
+                  Backend
+                  <span class="middot">&middot;</span>
+                  Part time
+                  <span class="middot">&middot;</span>
+                  Remote
+                </div>
+              </div>
+              <div class="careers_item__actions">
+                <a href="careers_article.html">View details</a>
+              </div>
+            </div>
+            <div class="careers_item">
+              <div class="careers_item__info">
+                <div class="careers_item__title"><a href="">Finance Assistant 60–100%</a></div>
+                <div class="careers_item__desc">
+                  Finance
+                  <span class="middot">&middot;</span>
+                  Full time
+                  <span class="middot">&middot;</span>
+                  Remote
+                </div>
+              </div>
+              <div class="careers_item__actions">
+                <a href="careers_article.html">View details</a>
+              </div>
+            </div>
+            <div class="careers_item">
+              <div class="careers_item__info">
+                <div class="careers_item__title">Full Stack Developer/Architect with focus on real-time analytics and trading systems</div>
+                <div class="careers_item__desc">
+                  Backend
+                  <span class="middot">&middot;</span>
+                  Full time
+                  <span class="middot">&middot;</span>
+                  Remote
+                </div>
+              </div>
+              <div class="careers_item__actions">
+                <a href="careers_article.html">View details</a>
+              </div>
+            </div>
+            <div class="careers_item">
+              <div class="careers_item__info">
+                <div class="careers_item__title">Product Manager</div>
+                <div class="careers_item__desc">
+                  Product
+                  <span class="middot">&middot;</span>
+                  Full time
+                  <span class="middot">&middot;</span>
+                  Remote
+                </div>
+              </div>
+              <div class="careers_item__actions">
+                <a href="careers_article.html">View details</a>
+              </div>
+            </div>
+            <div class="careers_item">
+              <div class="careers_item__info">
+                <div class="careers_item__title">UI/UX Designer for Android apps</div>
+                <div class="careers_item__desc">
+                  Design
+                  <span class="middot">&middot;</span>
+                  Full time
+                  <span class="middot">&middot;</span>
+                  Remote
+                </div>
+              </div>
+              <div class="careers_item__actions">
+                <a href="careers_article.html">View details</a>
+              </div>
+            </div>
 
-          <br>
-          <br>
 
-          <h3>Special Discounted Fees for Betatesters</h3>
-          <p>Lykke also provides special discounts for Beta Testers during the first 31 days after the beta testing period is finished. Beta Tester is a client with at least one successful trade using Lykke API during the beta testing period.</p>
 
-          <p>During the first 31 days after the beta testing period the following fees will be applied for Beta Testers.</p>
-          <table class="table table--simple">
-            <tbody><tr>
-              <th>Maker fee</th>
-              <th class="text-left">Taker fee</th>
-            </tr>
-            <tr>
-              <td>0.05%</td>
-              <td class="text-left">0.14%</td>
-            </tr>
-            </tbody>
-          </table>
-          <br><br>
+          </div>
+        </div>
 
-          <h2>Throughput Limit</h2>
-          <p>Currently the API is in the beta testing stage. API throughput limit is 300 requests per minute for a single client.</p>
+        <div class="col-sm-8 col-lg-6 automargin text-center">
+          <p>Haven't found a position for you? Send your resume/suggest a project you'd
+            like to lead for Lykke: <a href="mailto:jobs@lykke.com"><b>jobs@lykke.com</b></a></p>
         </div>
 
       </div>
@@ -348,13 +418,42 @@
   </div>
 </footer>
 
+<div class="modal camera_modal fade" id="camera" tabindex="-1" role="dialog" aria-labelledby="cameraModalLabel">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="icon icon--close"></i></button>
+
+  <div class="modal-body">
+
+    <div class="camera_stream">
+      <video class="camera_stream__video _camera_video"></video>
+      <div class="camera_stream__frame _camera_frame"></div>
+      <img class="camera_stream__snap _camera_snap">
+
+      <p class="camera_stream__message _camera_message"></p>
+
+      <a href="#" class="btn btn--circle camera_stream__shoot _take_photo" title="Take Photo"><i class="icon icon--photo"></i></a>
+
+      <div class="camera_stream__controls _camera_controls">
+        <a href="#" class="btn btn--flat camera_stream__delete _delete_photo" title="Reshoot">Reshoot</a>
+        <a href="#" class="btn camera_stream__delete _use_photo" title="Use Photo" data-dismiss="modal" aria-label="Close">Use photo</a>
+      </div>
+
+      <!-- Hidden canvas element. Used for taking snapshot of video. -->
+      <canvas></canvas>
+    </div>
+
+  </div>
+</div>
+
+
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/bootstrap-custom.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 <script src="js/vendor/jquery.inview.min.js"></script>
 <!-- build:js js/functions.js -->
 <script src="js/functions.js"></script>
+<script src="js/camera.js"></script>
 <!-- endbuild -->
+
 
 </body>
 </html>
